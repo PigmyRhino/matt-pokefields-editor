@@ -1,0 +1,7 @@
+door
+stairs
+cave
+ladder
+hole
+gap
+teleport

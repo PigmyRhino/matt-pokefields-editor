@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route10_picnicker_carol",
+  "display_name": "Picnicker Carol",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 500,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "nidoran_f",
+      "ability": "poison_point",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 12,
+      "iv_def": 15,
+      "iv_spa": 17,
+      "iv_spd": 15,
+      "iv_spe": 14,
+      "moves": [
+        "growl",
+        "scratch",
+        "double_kick",
+        "poison_sting"
+      ]
+    },
+    {
+      "species": "elekid",
+      "ability": "static",
+      "nature": "naive",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 15,
+      "iv_def": 13,
+      "iv_spa": 16,
+      "iv_spd": 13,
+      "iv_spe": 18,
+      "moves": [
+        "quick_attack",
+        "leer",
+        "thunder_shock",
+        "low_kick"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I found this Elekid near the power plant and raised it myself! It's my pride and joy!",
+    "loss": "Oh Elekid, you did your best! That's all that matters!",
+    "post_defeat": "Elekid spins its arms to generate electricity. It's the cutest thing!"
+  },
+  "rebattle": "daily"
+}

@@ -1,0 +1,129 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "azalea_gym",
+      "display_name": "Cerulean City Gym",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "azalea_gym",
+      "polygon": [
+        [
+          1.0,
+          3.0
+        ],
+        [
+          16.0,
+          3.0
+        ],
+        [
+          16.0,
+          19.0
+        ],
+        [
+          1.0,
+          19.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 8,
+      "tile_y": 19
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_cerulean_gym_leader_misty",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Gym Leader Misty",
+        "sprite": 164,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 8,
+      "tile_y": 6,
+      "vision_range": 0
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_cerulean_gym_swimmer_diana",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Swimmer Diana",
+        "sprite": 139,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 3,
+      "tile_y": 12,
+      "vision_range": 1
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          2
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "kanto_cerulean_gym_swimmer_luis",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Swimmer Luis",
+        "sprite": 138,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 11,
+      "tile_y": 9,
+      "vision_range": 1
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_8_18",
+      "target_warp": "",
+      "tile_x": 8,
+      "tile_y": 18
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_7_18",
+      "target_map": "kanto",
+      "target_warp": "t_295_61",
+      "tile_x": 8,
+      "tile_y": 19,
+      "warp_type": ""
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Bill's House",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          15.0,
+          2.0
+        ],
+        [
+          15.0,
+          10.0
+        ],
+        [
+          0.0,
+          10.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 7,
+      "tile_y": 10
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Bill? He moved."
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Heard there were more exotic Pokemon in Galar."
+            },
+            "id": "n2",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_7_6",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Old Man Theodore",
+        "sprite": 39,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 7,
+      "tile_y": 6
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_7_9",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 9
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_7_9",
+      "target_map": "kanto",
+      "target_warp": "t_351_4",
+      "tile_x": 7,
+      "tile_y": 10,
+      "warp_type": ""
+    }
+  ]
+}

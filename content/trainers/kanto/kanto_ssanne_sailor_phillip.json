@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_sailor_phillip",
+  "display_name": "Sailor Phillip",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 420,
+  "payout_per_level": 18,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "goldeen",
+      "ability": "swift_swim",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 17,
+      "iv_def": 14,
+      "iv_spa": 11,
+      "iv_spd": 14,
+      "iv_spe": 16,
+      "moves": [
+        "peck",
+        "tail_whip",
+        "water_sport",
+        "horn_attack"
+      ]
+    },
+    {
+      "species": "krabby",
+      "ability": "hyper_cutter",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 15,
+      "iv_atk": 19,
+      "iv_def": 16,
+      "iv_spa": 8,
+      "iv_spd": 12,
+      "iv_spe": 13,
+      "moves": [
+        "bubble",
+        "leer",
+        "vice_grip",
+        "harden"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I fish up the meanest Pokemon in the sea! Goldeen and Krabby — battle ready!",
+    "loss": "You're a better fisherman than me! Those were my best catches!",
+    "post_defeat": "The ocean around Vermilion is teeming with Water types. Cast a line sometime!"
+  },
+  "rebattle": "daily"
+}

@@ -1,0 +1,35 @@
+{
+  "unique_name": "kanto_route24_youngster_donnie",
+  "display_name": "Youngster Donnie",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 200,
+  "payout_per_level": 5,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "oddish",
+      "ability": "chlorophyll",
+      "nature": "hardy",
+      "moves": [],
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17,
+      "level_offset": 1
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "My mom says I'm not allowed to own any Pokemon.",
+    "loss": "Oddish were hers! Mine would be better.",
+    "win": "Haha, sorry.",
+    "post_defeat": "Someday, I'll be a famous Pokemon Trainer!"
+  },
+  "scaling_min_level": 18
+}

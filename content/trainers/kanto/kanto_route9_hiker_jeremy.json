@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route9_hiker_jeremy",
+  "display_name": "Hiker Jeremy",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 480,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "nidoran_m",
+      "ability": "poison_point",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 17,
+      "iv_def": 14,
+      "iv_spa": 10,
+      "iv_spd": 13,
+      "iv_spe": 14,
+      "moves": [
+        "peck",
+        "leer",
+        "focus_energy",
+        "double_kick"
+      ]
+    },
+    {
+      "species": "mankey",
+      "ability": "vital_spirit",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 17,
+      "iv_def": 13,
+      "iv_spa": 10,
+      "iv_spd": 14,
+      "iv_spe": 18,
+      "moves": [
+        "scratch",
+        "leer",
+        "low_kick",
+        "karate_chop"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've been hiking these rocky trails for years! My Pokemon are as tough as this terrain!",
+    "loss": "You've got legs like a mountain goat! And Pokemon to match!",
+    "post_defeat": "The best way to train is to take the hardest path. That's my motto."
+  },
+  "rebattle": "daily"
+}

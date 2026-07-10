@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route3_youngster_calvin",
+  "display_name": "Youngster Calvin",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 200,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "spearow",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "iv_hp": 13,
+      "iv_atk": 14,
+      "iv_def": 11,
+      "iv_spa": 10,
+      "iv_spd": 11,
+      "iv_spe": 16,
+      "moves": [],
+      "level_offset": 1
+    },
+    {
+      "species": "mankey",
+      "ability": "vital_spirit",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 16,
+      "iv_def": 12,
+      "iv_spa": 10,
+      "iv_spd": 13,
+      "iv_spe": 15,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "I just caught a Mankey! It's always angry but that makes it strong!",
+    "loss": "Mankey threw a tantrum and we still lost...",
+    "post_defeat": "Mankey calm down when you give them a Pecha Berry. Try it!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

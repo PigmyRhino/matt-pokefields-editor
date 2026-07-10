@@ -1,0 +1,124 @@
+{
+  "unique_name": "kanto_cerulean_gym_leader_misty",
+  "display_name": "Gym Leader Misty",
+  "sprite": null,
+  "rank": "Pro",
+  "music_key": null,
+  "payout_base": 1400,
+  "payout_per_level": 40,
+  "badge_award": 1,
+  "items": [],
+  "initial_field": {
+    "weather": "Rain"
+  },
+  "team": [
+    {
+      "species": "staryu",
+      "ability": "natural_cure",
+      "nature": "timid",
+      "gender": "genderless",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 0,
+      "ev_atk": 0,
+      "ev_def": 0,
+      "ev_spa": 252,
+      "ev_spd": 0,
+      "ev_spe": 252,
+      "moves": [
+        "recover",
+        "tackle",
+        "water_pulse",
+        "bubble_beam"
+      ],
+      "level_offset": 0
+    },
+    {
+      "species": "psyduck",
+      "ability": "cloud_nine",
+      "nature": "modest",
+      "gender": "female",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 252,
+      "ev_atk": 0,
+      "ev_def": 0,
+      "ev_spa": 252,
+      "ev_spd": 0,
+      "ev_spe": 6,
+      "moves": [
+        "water_pulse",
+        "confusion",
+        "disable",
+        "scratch"
+      ],
+      "level_offset": 1
+    },
+    {
+      "species": "starmie",
+      "ability": "natural_cure",
+      "nature": "timid",
+      "gender": "genderless",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 0,
+      "ev_atk": 0,
+      "ev_def": 6,
+      "ev_spa": 252,
+      "ev_spd": 0,
+      "ev_spe": 252,
+      "moves": [
+        "water_pulse",
+        "recover",
+        "bubble_beam",
+        "confusion"
+      ],
+      "level_offset": 3,
+      "held_item": "sitrus_berry"
+    },
+    {
+      "species": "marill",
+      "ability": "huge_power",
+      "nature": "adamant",
+      "gender": "female",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 0,
+      "ev_atk": 252,
+      "ev_def": 0,
+      "ev_spa": 0,
+      "ev_spd": 0,
+      "ev_spe": 252,
+      "moves": [
+        "water_pulse",
+        "defense_curl",
+        "tail_whip",
+        "surf"
+      ],
+      "level_offset": 1
+    }
+  ],
+  "dialogue": {
+    "start": "Hi, you're a new face! I'm Misty, the Cerulean Gym Leader. Water types are my specialty — think you can swim against my tide?",
+    "loss": "Wow! You really know how to handle Water Pokemon. You've earned the Cascade Badge!",
+    "post_defeat": "The Cascade Badge lets you use Cut outside of battle. It's essential for exploring!"
+  },
+  "rebattle": "weekly",
+  "scaling_min_level": 20
+}

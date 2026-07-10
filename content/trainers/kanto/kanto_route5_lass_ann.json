@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route5_lass_ann",
+  "display_name": "Lass Ann",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 280,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "oddish",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 15,
+      "iv_atk": 11,
+      "iv_def": 14,
+      "iv_spa": 17,
+      "iv_spd": 14,
+      "iv_spe": 12,
+      "moves": [
+        "absorb",
+        "sweet_scent",
+        "acid",
+        "sleep_powder"
+      ]
+    },
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "rash",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 15,
+      "iv_atk": 14,
+      "iv_def": 13,
+      "iv_spa": 16,
+      "iv_spd": 11,
+      "iv_spe": 13,
+      "moves": [
+        "vine_whip",
+        "growth",
+        "wrap",
+        "sleep_powder"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I raise Grass Pokemon because they're elegant and beautiful! Show me what you've got!",
+    "loss": "Your Pokemon's strength outshines even my beautiful Bellsprout.",
+    "post_defeat": "Grass types like sunny weather. Come back on a sunny day and we'll battle again!"
+  },
+  "rebattle": "daily"
+}

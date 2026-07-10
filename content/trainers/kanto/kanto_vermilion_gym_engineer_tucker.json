@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_vermilion_gym_engineer_tucker",
+  "display_name": "Engineer Tucker",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 580,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "voltorb",
+      "ability": "static",
+      "nature": "timid",
+      "gender": "genderless",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 12,
+      "iv_def": 16,
+      "iv_spa": 17,
+      "iv_spd": 15,
+      "iv_spe": 20,
+      "moves": [
+        "tackle",
+        "screech",
+        "sonic_boom",
+        "spark"
+      ]
+    },
+    {
+      "species": "elekid",
+      "ability": "static",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 15,
+      "iv_spa": 15,
+      "iv_spd": 15,
+      "iv_spe": 20,
+      "moves": [
+        "quick_attack",
+        "swift",
+        "shock_wave",
+        "low_kick"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I designed the electric traps in this gym myself! The Pokemon are custom-tuned too!",
+    "loss": "Your battle style bypassed all my security systems!",
+    "post_defeat": "The switches in this gym are hidden in trash cans. Old Surge loves his puzzles."
+  },
+  "rebattle": "daily"
+}

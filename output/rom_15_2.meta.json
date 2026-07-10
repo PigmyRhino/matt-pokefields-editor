@@ -1,0 +1,89 @@
+{
+  "area_zones": [],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 7,
+      "tile_y": 11
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "The Diglett that tunneled this cave must have been enormous. Comes out all the way in Vermillion!"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "rom15_2_Resident",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Resident",
+        "sprite": 34,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 10,
+      "tile_y": 7
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 0,
+      "name": "t_7_1",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 2
+    },
+    {
+      "direction": 3,
+      "name": "t_7_10",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 10
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_7_10",
+      "target_map": "kanto",
+      "target_warp": "t_78_146",
+      "tile_x": 7,
+      "tile_y": 11,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_7_1",
+      "target_map": "kanto",
+      "target_warp": "t_78_141",
+      "tile_x": 7,
+      "tile_y": 1,
+      "warp_type": ""
+    }
+  ]
+}

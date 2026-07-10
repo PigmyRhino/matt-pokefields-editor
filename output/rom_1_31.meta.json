@@ -1,0 +1,135 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "ambience_night_route1",
+      "day_track": "cave_1",
+      "display_name": "Underground Path",
+      "name": "area_0",
+      "night_ambience": "ambience_night_route1",
+      "night_track": "cave_1",
+      "polygon": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          5.0,
+          2.0
+        ],
+        [
+          5.0,
+          3.0
+        ],
+        [
+          4.0,
+          3.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          5.0,
+          4.0
+        ],
+        [
+          5.0,
+          5.0
+        ],
+        [
+          7.0,
+          5.0
+        ],
+        [
+          7.0,
+          62.0
+        ],
+        [
+          3.0,
+          62.0
+        ],
+        [
+          3.0,
+          61.0
+        ],
+        [
+          4.0,
+          61.0
+        ],
+        [
+          4.0,
+          60.0
+        ],
+        [
+          3.0,
+          60.0
+        ],
+        [
+          3.0,
+          59.0
+        ],
+        [
+          1.0,
+          59.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 2,
+      "tile_y": 60
+    },
+    {
+      "flags": 0,
+      "tile_x": 5,
+      "tile_y": 3
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_3_60",
+      "target_warp": "",
+      "tile_x": 3,
+      "tile_y": 60
+    },
+    {
+      "direction": 1,
+      "name": "t_4_3",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 3
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_4_3",
+      "target_map": "rom_1_30",
+      "target_warp": "t_7_4",
+      "tile_x": 5,
+      "tile_y": 3,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_3_60",
+      "target_map": "rom_1_32",
+      "target_warp": "t_7_4",
+      "tile_x": 2,
+      "tile_y": 60,
+      "warp_type": ""
+    }
+  ]
+}

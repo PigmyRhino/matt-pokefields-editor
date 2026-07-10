@@ -1,0 +1,75 @@
+{
+  "unique_name": "kanto_ssanne_fisherman_chip",
+  "display_name": "Fisherman Chip",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 380,
+  "payout_per_level": 16,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "goldeen",
+      "ability": "swift_swim",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 12,
+      "iv_atk": 10,
+      "iv_def": 14,
+      "iv_spa": 6,
+      "iv_spd": 10,
+      "iv_spe": 12,
+      "moves": [
+        "peck",
+        "tail_whip",
+        "water_sport",
+        "horn_attack"
+      ]
+    },
+    {
+      "species": "magikarp",
+      "ability": "swift_swim",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 13,
+      "iv_atk": 11,
+      "iv_def": 14,
+      "iv_spa": 7,
+      "iv_spd": 11,
+      "iv_spe": 14,
+      "moves": [
+        "splash",
+        "tackle"
+      ]
+    },
+    {
+      "species": "gyarados",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 24,
+      "iv_def": 20,
+      "iv_spa": 14,
+      "iv_spd": 20,
+      "iv_spe": 18,
+      "moves": [
+        "bite",
+        "dragon_rage",
+        "thrash",
+        "leer"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Don't laugh at my Magikarp! One of them already evolved — and you're about to meet it!",
+    "loss": "Even Gyarados couldn't save me! What a battle!",
+    "post_defeat": "It took me months to evolve my first Magikarp. Patience is everything."
+  },
+  "rebattle": "daily"
+}

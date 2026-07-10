@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route24_youngster_jimmy",
+  "display_name": "Youngster Jimmy",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 200,
+  "payout_per_level": 5,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "pikachu",
+      "ability": "static",
+      "nature": "hardy",
+      "moves": [],
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17,
+      "gender": "male",
+      "level_offset": 2
+    },
+    {
+      "species": "squirtle",
+      "ability": "torrent",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "We moved here from Johto. Pokemon from there started appearing here not long after.",
+    "post_defeat": "Are we the reason the Johto Pokemon are here?",
+    "loss": "You're good!",
+    "win": "I didn't think I would win."
+  }
+}

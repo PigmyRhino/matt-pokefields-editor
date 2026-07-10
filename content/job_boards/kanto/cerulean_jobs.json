@@ -1,0 +1,176 @@
+// Cerulean City job board. Species from kanto_route4/24/25 patches + the
+// route 24/25 old-rod tables (Magikarp); trainers are Nugget Bridge / Route 25
+// daily locals, Misty is the weekly gym anchor.
+{
+  "board_id": "cerulean_jobs",
+  "name": "Cerulean City",
+  "daily_slots": 3,
+  "weekly_slots": 2,
+  "jobs": [
+    {
+      "job_id": "cerulean_oddish_overgrowth",
+      "title": "Oddish Overgrowth",
+      "description": "Oddish are overrunning the gardens along Routes 24 and 25. Weed them out.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "oddish",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_abra_request",
+      "title": "Psychic Study",
+      "description": "A researcher at the cape needs a live Abra. Catch one before it teleports away.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "abra",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3000
+        },
+        {
+          "kind": "item",
+          "item": "quick_ball",
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_magikarp_haul",
+      "title": "Magikarp Haul",
+      "description": "The fish market buys Magikarp by the bucket. Rod them out of the water north of town.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "magikarp",
+        "count": 3
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 1800
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_herb_basket",
+      "title": "Herbalist's Basket",
+      "description": "The herbalist needs wild herbs for her remedies. Forage a basketful around the cape.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "wild_herb",
+        "count": 6
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 1500
+        },
+        {
+          "kind": "skill_xp",
+          "skill": "foraging",
+          "amount": 300
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_bridge_bully",
+      "title": "Bridge Bully",
+      "description": "Camper Alan holds up traffic on Nugget Bridge with endless challenges. Clear the way.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_trainer",
+        "trainer": "kanto_nuggetbridge_camper_alan"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_sparring_partners",
+      "title": "Sparring Partners Wanted",
+      "description": "Keep your team sharp — win a handful of battles, any opponent will do.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "win_battles",
+        "count": 5
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3500
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_challenge_misty",
+      "title": "Make Waves",
+      "description": "Show the gym you've got what it takes — defeat Misty in an official rematch.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "defeat_trainer",
+        "trainer": "kanto_cerulean_gym_leader_misty"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 12000
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_shiny_proof",
+      "title": "A Rare Find",
+      "description": "Bring proof of a shiny capture — any species will do. The collector pays handsomely.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "catch_pokemon",
+        "shiny": true,
+        "count": 1
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 75000
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_bridge_gauntlet",
+      "title": "Nugget Bridge Gauntlet",
+      "description": "Run the bridge the hard way — win trainer battles until they stop lining up.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "trainer_only": true,
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 10000
+        },
+        {
+          "kind": "item",
+          "item": "oran_berry",
+          "qty": 10
+        }
+      ]
+    }
+  ]
+}

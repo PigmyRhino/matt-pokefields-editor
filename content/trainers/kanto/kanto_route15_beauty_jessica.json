@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_route15_beauty_jessica",
+  "display_name": "Beauty Jessica",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 840,
+  "payout_per_level": 30,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "nidorina",
+      "ability": "poison_point",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 23,
+      "iv_atk": 15,
+      "iv_def": 20,
+      "iv_spa": 22,
+      "iv_spd": 20,
+      "iv_spe": 19,
+      "moves": [
+        "double_kick",
+        "poison_sting",
+        "bite",
+        "body_slam"
+      ]
+    },
+    {
+      "species": "venomoth",
+      "ability": "shield_dust",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 24,
+      "iv_atk": 15,
+      "iv_def": 19,
+      "iv_spa": 24,
+      "iv_spd": 21,
+      "iv_spe": 24,
+      "moves": [
+        "psybeam",
+        "sleep_powder",
+        "stun_spore",
+        "silver_wind"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    },
+    {
+      "species": "pidgeotto",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "gust",
+        "sand_attack",
+        "quick_attack",
+        "wing_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The coastal air does wonders for my skin — and my Pokemon's spirits!",
+    "loss": "Your battling style is as refreshing as the ocean breeze!",
+    "post_defeat": "Venomoth's wings shimmer in the ocean mist. Absolutely gorgeous."
+  },
+  "rebattle": "daily"
+}

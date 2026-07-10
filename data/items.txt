@@ -1,0 +1,1300 @@
+713|Abomasite
+716|Absolite
+588|Absorb Bulb
+112|Adamant Orb
+2352|Adamantine Axe Head
+2109|Adamantine Bar
+1072|Adamantine Birch Axe
+1122|Adamantine Birch Hoe
+1022|Adamantine Birch Pickaxe
+1222|Adamantine Birch Shovel
+1172|Adamantine Birch Trowel
+2009|Adamantine Chunk
+2156|Adamantine Dust
+1065|Adamantine Elm Axe
+1115|Adamantine Elm Hoe
+1015|Adamantine Elm Pickaxe
+1215|Adamantine Elm Shovel
+1165|Adamantine Elm Trowel
+2351|Adamantine Hoe Head
+1086|Adamantine Juniper Axe
+1136|Adamantine Juniper Hoe
+1036|Adamantine Juniper Pickaxe
+1236|Adamantine Juniper Shovel
+1186|Adamantine Juniper Trowel
+1100|Adamantine Magnolia Axe
+1150|Adamantine Magnolia Hoe
+1050|Adamantine Magnolia Pickaxe
+1250|Adamantine Magnolia Shovel
+1200|Adamantine Magnolia Trowel
+1058|Adamantine Oak Axe
+1108|Adamantine Oak Hoe
+1008|Adamantine Oak Pickaxe
+1208|Adamantine Oak Shovel
+1158|Adamantine Oak Trowel
+2354|Adamantine Pickaxe Head
+1079|Adamantine Rowan Axe
+1129|Adamantine Rowan Hoe
+1029|Adamantine Rowan Pickaxe
+1229|Adamantine Rowan Shovel
+1179|Adamantine Rowan Trowel
+1257|Adamantine Shears
+2353|Adamantine Shovel Head
+1093|Adamantine Sycamore Axe
+1143|Adamantine Sycamore Hoe
+1043|Adamantine Sycamore Pickaxe
+1243|Adamantine Sycamore Shovel
+1193|Adamantine Sycamore Trowel
+2355|Adamantine Trowel Head
+883|Adrenaline Orb
+711|Aerodactylite
+706|Aggronite
+139|Aguav Berry
+584|Air Balloon
+718|Alakazite
+844|Aloraichium Z
+796|Altarianite
+697|Ampharosite
+200|Amulet Coin
+18|Antidote
+182|Apicot Berry
+2577|Aqua Shard
+130|Aspear Berry
+2716|Aspear Ointment
+683|Assault Vest
+798|Audinite
+21|Awakening
+176|Babiri Berry
+707|Banettite
+2804|Barbed Hook
+30001|Beach Bottom (Black)
+30002|Beach Bottom (Blue)
+30003|Beach Bottom (Green)
+30004|Beach Bottom (Pink)
+30005|Beach Bottom (Red)
+20122|Beach Top (Black)
+20123|Beach Top (Blue)
+20124|Beach Top (Green)
+20125|Beach Top (Pink)
+20126|Beach Top (Red)
+40001|Beanie (Black)
+40002|Beanie (Purple)
+811|Beedrillite
+40003|Beret
+43|Berry Juice
+427|Bicycle
+273|Big Root
+587|Binding Band
+2052|Birch Log
+2059|Birch Plank
+2307|Birch Shovel Handle
+2308|Birch Tool Handle
+2306|Birch Trowel Handle
+40009|Bird Hat
+2807|Bitter Bait
+218|Black Belt
+217|Black Glasses
+2517|Black Paint
+258|Black Sludge
+2764|Blank Ball
+2589|Blank Shard
+700|Blastoisinite
+703|Blazikenite
+65|Blue Flute
+2515|Blue Paint
+2505|Blue Status Powder
+2753|Bolt Ball
+40004|Bonnet
+190|Bright Powder
+2322|Bronze Axe Head
+2102|Bronze Bar
+1066|Bronze Birch Axe
+1116|Bronze Birch Hoe
+1216|Bronze Birch Shovel
+1166|Bronze Birch Trowel
+2151|Bronze Dust
+1059|Bronze Elm Axe
+1109|Bronze Elm Hoe
+1209|Bronze Elm Shovel
+1159|Bronze Elm Trowel
+2321|Bronze Hoe Head
+1080|Bronze Juniper Axe
+1130|Bronze Juniper Hoe
+1230|Bronze Juniper Shovel
+1180|Bronze Juniper Trowel
+1094|Bronze Magnolia Axe
+1144|Bronze Magnolia Hoe
+1244|Bronze Magnolia Shovel
+1194|Bronze Magnolia Trowel
+2267|Bronze Nails
+1052|Bronze Oak Axe
+1102|Bronze Oak Hoe
+1002|Bronze Oak Pickaxe
+1202|Bronze Oak Shovel
+1152|Bronze Oak Trowel
+2324|Bronze Pickaxe Head
+1073|Bronze Rowan Axe
+1123|Bronze Rowan Hoe
+1223|Bronze Rowan Shovel
+1173|Bronze Rowan Trowel
+2263|Bronze Screw
+1251|Bronze Shears
+2323|Bronze Shovel Head
+1087|Bronze Sycamore Axe
+1137|Bronze Sycamore Hoe
+1237|Bronze Sycamore Shovel
+1187|Bronze Sycamore Trowel
+2325|Bronze Trowel Head
+2451|Brown Apricorn
+2521|Brown Paint
+601|Bug Gem
+907|Bug Memory
+828|Buginium Z
+2477|Bugwort
+565|Burn Drive
+19|Burn Heal
+49|Calcium
+808|Cameruptite
+30006|Capris (Aqua)
+30007|Capris (Beige)
+30008|Capris (Black)
+30009|Capris (Green)
+30010|Capris (Navy)
+2579|Carapace Shard
+48|Carbos
+2475|Caster Fern
+40005|Cat Ears
+40006|Cat Ears (VIP)
+589|Cell Battery
+226|Charcoal
+2262|Charcoal
+699|Charizardite X
+717|Charizardite Y
+172|Charti Berry
+126|Cheri Berry
+2714|Cheri Ointment
+16|Cherish Ball
+127|Chesto Berry
+177|Chilan Berry
+566|Chill Drive
+197|Choice Band
+264|Choice Scarf
+274|Choice Specs
+166|Chople Berry
+30016|Classy Bottom (Black)
+30017|Classy Bottom (Blue)
+30018|Classy Bottom (Brown)
+30019|Classy Bottom (Grey)
+30020|Classy Bottom (Red)
+30011|Classy Pants (Beige)
+30012|Classy Pants (Black)
+30013|Classy Pants (Grey)
+30014|Classy Pants (Navy)
+30015|Classy Pants (Wine)
+20001|Classy Top (Beige)
+20006|Classy Top (Beige)
+20002|Classy Top (Black)
+20007|Classy Top (Black)
+20003|Classy Top (Grey)
+20008|Classy Top (Grey)
+20004|Classy Top (Navy)
+20009|Classy Top (Purple)
+20005|Classy Top (Wine)
+20010|Classy Top (Wine)
+201|Cleanse Tag
+2004|Coal Chunk
+169|Coba Berry
+175|Colbur Berry
+20011|Collared Shirt (Black)
+20012|Collared Shirt (Navy)
+20013|Collared Shirt (Sky)
+20014|Collared Shirt (White)
+20015|Collared Shirt (Wine)
+2200|Common Bird Nest
+2240|Common Clue Scroll
+2220|Common Geode
+2100|Copper Bar
+2001|Copper Chunk
+2508|Cotton
+40007|Crown (Gold)
+40008|Crown (Silver)
+187|Custap Berry
+262|Damp Rock
+604|Dark Gem
+917|Dark Memory
+832|Darkinium Z
+109|Dawn Stone
+839|Decidium Z
+204|Deep Sea Scale
+203|Deep Sea Tooth
+257|Destiny Knot
+40011|Devil Horns
+805|Diancite
+56|Dire Hit
+2483|Direshroom
+7|Dive Ball
+2482|Doppel Bonnet
+563|Douse Drive
+288|Draco Plate
+2582|Draco Shard
+227|Dragon Fang
+668|Dragon Gem
+916|Dragon Memory
+212|Dragon Scale
+831|Dragonium Z
+289|Dread Plate
+2581|Dread Shard
+2800|Dressed Lure
+2806|Dry Bait
+301|Dubious Disc
+13|Dusk Ball
+108|Dusk Stone
+2761|Earth Ball
+282|Earth Plate
+2586|Earth Shard
+846|Eevium Z
+2511|Egg
+590|Eject Button
+299|Electirizer
+593|Electric Gem
+913|Electric Memory
+898|Electric Seed
+820|Electrium Z
+40|Elixir
+2051|Elm Log
+2058|Elm Plank
+2304|Elm Shovel Handle
+2305|Elm Tool Handle
+2303|Elm Trowel Handle
+2576|Ember Shard
+2712|Energy Ointment
+34|Energy Powder
+35|Energy Root
+185|Enigma Berry
+2203|Epic Bird Nest
+2243|Epic Clue Scroll
+2223|Epic Geode
+78|Escape Rope
+38|Ether
+30027|Evening Bottom (Beige)
+30028|Evening Bottom (Black)
+30029|Evening Bottom (Pink)
+30030|Evening Bottom (Purple)
+30031|Evening Bottom (Wine)
+206|Everstone
+581|Eviolite
+193|Exp. Share
+245|Expert Belt
+834|Fairium Z
+731|Fairy Gem
+918|Fairy Memory
+40012|Feather Hat
+40013|Fedora
+2766|Ferro Ball
+596|Fighting Gem
+902|Fighting Memory
+823|Fightinium Z
+136|Figy Berry
+2802|Finder's Lure
+2701|Fine Remedy
+591|Fire Gem
+910|Fire Memory
+82|Fire Stone
+818|Firium Z
+280|Fist Plate
+2502|Flaafy Wool
+250|Flame Orb
+275|Flame Plate
+2751|Flare Ball
+582|Float Stone
+40014|Flower (Blue)
+40015|Flower (Red)
+64|Fluffy Tail
+599|Flying Gem
+903|Flying Memory
+826|Flyinium Z
+207|Focus Band
+252|Focus Sash
+30021|Formal Pants (Black)
+30022|Formal Pants (Blue)
+30023|Formal Pants (Brown)
+30024|Formal Pants (Grey)
+30025|Formal Pants (Pink)
+30026|Formal Pants (Red)
+20016|Formal Top (Beige)
+20017|Formal Top (Black)
+20018|Formal Top (Blue)
+20019|Formal Top (Pink)
+20020|Formal Top (Red)
+2750|Freeze Ball
+2555|Freeze Vial
+30|Fresh Water
+2575|Frost Shard
+27|Full Heal
+293|Full Incense
+23|Full Restore
+797|Galladite
+179|Ganlon Berry
+722|Garchompite
+2762|Garden Ball
+696|Gardevoirite
+695|Gengarite
+603|Ghost Gem
+908|Ghost Memory
+830|Ghostium Z
+804|Glalitite
+2550|Glass
+2551|Glass Vial
+40016|Glasses (Blue)
+40017|Glasses (Red)
+2454|Gold Apricorn
+2337|Gold Axe Head
+2106|Gold Bar
+1069|Gold Birch Axe
+1119|Gold Birch Hoe
+1019|Gold Birch Pickaxe
+1219|Gold Birch Shovel
+1169|Gold Birch Trowel
+2006|Gold Chunk
+2153|Gold Dust
+1062|Gold Elm Axe
+1112|Gold Elm Hoe
+1012|Gold Elm Pickaxe
+1212|Gold Elm Shovel
+1162|Gold Elm Trowel
+2336|Gold Hoe Head
+1083|Gold Juniper Axe
+1133|Gold Juniper Hoe
+1033|Gold Juniper Pickaxe
+1233|Gold Juniper Shovel
+1183|Gold Juniper Trowel
+1097|Gold Magnolia Axe
+1147|Gold Magnolia Hoe
+1047|Gold Magnolia Pickaxe
+1247|Gold Magnolia Shovel
+1197|Gold Magnolia Trowel
+1055|Gold Oak Axe
+1105|Gold Oak Hoe
+1005|Gold Oak Pickaxe
+1205|Gold Oak Shovel
+1155|Gold Oak Trowel
+2524|Gold Paint
+2339|Gold Pickaxe Head
+1076|Gold Rowan Axe
+1126|Gold Rowan Hoe
+1026|Gold Rowan Pickaxe
+1226|Gold Rowan Shovel
+1176|Gold Rowan Trowel
+1254|Gold Shears
+2338|Gold Shovel Head
+1090|Gold Sycamore Axe
+1140|Gold Sycamore Hoe
+1040|Gold Sycamore Pickaxe
+1240|Gold Sycamore Shovel
+1190|Gold Sycamore Trowel
+2340|Gold Trowel Head
+594|Grass Gem
+912|Grass Memory
+821|Grassium Z
+901|Grassy Seed
+2765|Grave Ball
+3|Great Ball
+2514|Green Paint
+150|Grepa Berry
+263|Grip Claw
+442|Griseous Orb
+598|Ground Gem
+905|Ground Memory
+825|Groundium Z
+55|Guard Spec.
+715|Gyaradosite
+397|HM01
+398|HM02
+399|HM03
+400|HM04
+401|HM05
+402|HM06
+403|HM07
+404|HM08
+45|HP Up
+174|Haban Berry
+10002|Hair 1 (Black)
+10003|Hair 1 (Blond)
+10005|Hair 1 (Blue)
+10001|Hair 1 (Brown)
+10006|Hair 1 (Cyan)
+10004|Hair 1 (Ginger)
+10007|Hair 1 (Green)
+10008|Hair 1 (Pink)
+10009|Hair 1 (Purple)
+10010|Hair 1 (Red)
+10011|Hair 1 (White)
+10013|Hair 2 (Black)
+10014|Hair 2 (Blond)
+10016|Hair 2 (Blue)
+10012|Hair 2 (Brown)
+10017|Hair 2 (Cyan)
+10015|Hair 2 (Ginger)
+10018|Hair 2 (Green)
+10019|Hair 2 (Pink)
+10020|Hair 2 (Purple)
+10021|Hair 2 (Red)
+10022|Hair 2 (White)
+10024|Hair 3 (Black)
+10025|Hair 3 (Blond)
+10027|Hair 3 (Blue)
+10023|Hair 3 (Brown)
+10028|Hair 3 (Cyan)
+10026|Hair 3 (Ginger)
+10029|Hair 3 (Green)
+10030|Hair 3 (Pink)
+10031|Hair 3 (Purple)
+10032|Hair 3 (Red)
+10033|Hair 3 (White)
+10035|Hair 4 (Black)
+10036|Hair 4 (Blond)
+10038|Hair 4 (Blue)
+10034|Hair 4 (Brown)
+10039|Hair 4 (Cyan)
+10037|Hair 4 (Ginger)
+10040|Hair 4 (Green)
+10041|Hair 4 (Pink)
+10042|Hair 4 (Purple)
+10043|Hair 4 (Red)
+10044|Hair 4 (White)
+40018|Hair Band
+215|Hard Stone
+40019|Headband
+14|Heal Ball
+36|Heal Powder
+2708|Healing Tincture
+2810|Hearty Bait
+2485|Hearty Grains
+2718|Heat Pack
+261|Heat Rock
+2650|Heavy Boots
+719|Heracronite
+2651|Hiking Boots
+149|Hondew Berry
+2512|Honey
+20021|Hoodie (Black)
+20022|Hoodie (Blue)
+20026|Hoodie (Cap Up) (Black)
+20027|Hoodie (Cap Up) (Blue)
+20028|Hoodie (Cap Up) (Green)
+20029|Hoodie (Cap Up) (Purple)
+20030|Hoodie (Cap Up) (Red)
+20023|Hoodie (Green)
+20024|Hoodie (Purple)
+20025|Hoodie (Red)
+705|Houndoominite
+25|Hyper Potion
+2705|Hyper Tonic
+140|Iapapa Berry
+595|Ice Gem
+20|Ice Heal
+915|Ice Memory
+2717|Ice Pack
+885|Ice Stone
+279|Icicle Plate
+822|Icium Z
+259|Icy Rock
+840|Incinium Z
+285|Insect Plate
+47|Iron
+2327|Iron Axe Head
+255|Iron Ball
+2103|Iron Bar
+2484|Iron Barktongue
+1067|Iron Birch Axe
+1117|Iron Birch Hoe
+1017|Iron Birch Pickaxe
+1217|Iron Birch Shovel
+1167|Iron Birch Trowel
+2003|Iron Chunk
+2152|Iron Dust
+1060|Iron Elm Axe
+1110|Iron Elm Hoe
+1210|Iron Elm Shovel
+1160|Iron Elm Trowel
+2326|Iron Hoe Head
+1081|Iron Juniper Axe
+1131|Iron Juniper Hoe
+1031|Iron Juniper Pickaxe
+1231|Iron Juniper Shovel
+1181|Iron Juniper Trowel
+1095|Iron Magnolia Axe
+1145|Iron Magnolia Hoe
+1045|Iron Magnolia Pickaxe
+1245|Iron Magnolia Shovel
+1195|Iron Magnolia Trowel
+2268|Iron Nails
+1053|Iron Oak Axe
+1103|Iron Oak Hoe
+1003|Iron Oak Pickaxe
+1203|Iron Oak Shovel
+1153|Iron Oak Trowel
+2329|Iron Pickaxe Head
+290|Iron Plate
+1074|Iron Rowan Axe
+1124|Iron Rowan Hoe
+1024|Iron Rowan Pickaxe
+1224|Iron Rowan Shovel
+1174|Iron Rowan Trowel
+2264|Iron Screw
+1252|Iron Shears
+2328|Iron Shovel Head
+1088|Iron Sycamore Axe
+1138|Iron Sycamore Hoe
+1038|Iron Sycamore Pickaxe
+1238|Iron Sycamore Shovel
+1188|Iron Sycamore Trowel
+2330|Iron Trowel Head
+188|Jaboca Berry
+30032|Jeans (Aqua)
+30033|Jeans (Black)
+30034|Jeans (Grey)
+30035|Jeans (Navy)
+30036|Jeans (Sky)
+2652|Jump Boots
+20036|Jumpsuit Alt Top (Black)
+20037|Jumpsuit Alt Top (Blue)
+20038|Jumpsuit Alt Top (Green)
+20039|Jumpsuit Alt Top (Red)
+20040|Jumpsuit Alt Top (Yellow)
+30037|Jumpsuit Pants (Black)
+30038|Jumpsuit Pants (Blue)
+30039|Jumpsuit Pants (Green)
+30040|Jumpsuit Pants (Red)
+30041|Jumpsuit Pants (Yellow)
+30042|Jumpsuit Pants Alt (Black)
+30043|Jumpsuit Pants Alt (Blue)
+30044|Jumpsuit Pants Alt (Green)
+30045|Jumpsuit Pants Alt (Red)
+30046|Jumpsuit Pants Alt (Yellow)
+20031|Jumpsuit Top (Black)
+20032|Jumpsuit Top (Blue)
+20033|Jumpsuit Top (Green)
+20034|Jumpsuit Top (Red)
+20035|Jumpsuit Top (Yellow)
+2054|Juniper Log
+2061|Juniper Plank
+2313|Juniper Shovel Handle
+2314|Juniper Tool Handle
+2312|Juniper Trowel Handle
+714|Kangaskhanite
+173|Kasib Berry
+167|Kebia Berry
+147|Kelpsy Berry
+2479|King's Leaf
+198|King’s Rock
+256|Lagging Tail
+183|Lansat Berry
+2654|Lantern
+760|Latiasite
+761|Latiosite
+42|Lava Cookie
+232|Lax Incense
+2587|Leaf Shard
+85|Leaf Stone
+236|Leek
+211|Leftovers
+2204|Legendary Bird Nest
+2244|Legendary Clue Scroll
+2224|Legendary Geode
+32|Lemonade
+131|Leppa Berry
+178|Liechi Berry
+247|Life Orb
+213|Light Ball
+246|Light Clay
+30047|Long Skirt (Black)
+30048|Long Skirt (Blue)
+30049|Long Skirt (Green)
+30050|Long Skirt (Pink)
+30051|Long Skirt (Purple)
+20041|Long Sleeve (Black)
+20042|Long Sleeve (Green)
+20043|Long Sleeve (Orange)
+20044|Long Sleeve (Purple)
+20045|Long Sleeve (Yellow)
+809|Lopunnite
+30052|Lord Suit Pants
+20046|Lord Suit Top (Purple)
+20047|Lord Suit Top (Red)
+712|Lucarionite
+296|Luck Incense
+208|Lucky Egg
+233|Lucky Punch
+134|Lum Berry
+688|Luminous Moss
+113|Lustrous Orb
+11|Luxury Ball
+300|Magmarizer
+219|Magnet
+2803|Magnet Lure
+2056|Magnolia Log
+2063|Magnolia Plank
+2319|Magnolia Shovel Handle
+2320|Magnolia Tool Handle
+2318|Magnolia Trowel Handle
+138|Mago Berry
+721|Manectite
+2501|Mareep Wool
+843|Marshadium Z
+2455|Master Apricorn
+1|Master Ball
+720|Mawilite
+41|Max Elixir
+39|Max Ether
+24|Max Potion
+77|Max Repel
+29|Max Revive
+2706|Max Tonic
+278|Meadow Plate
+20092|Medal Summer Top
+2710|Medical Salve
+704|Medichamite
+2476|Medicinal Leek
+196|Mental Herb
+799|Metagrossite
+210|Metal Coat
+234|Metal Powder
+254|Metronome
+847|Mewnium Z
+701|Mewtwonite X
+702|Mewtwonite Y
+186|Micle Berry
+2509|Milk
+284|Mind Plate
+2583|Mind Shard
+40020|Miner Hat
+30091|Miner Pants
+20127|Miner Vest
+40021|Mining Helmet
+216|Miracle Seed
+900|Misty Seed
+2347|Mithril Axe Head
+2108|Mithril Bar
+1071|Mithril Birch Axe
+1121|Mithril Birch Hoe
+1021|Mithril Birch Pickaxe
+1221|Mithril Birch Shovel
+1171|Mithril Birch Trowel
+2008|Mithril Chunk
+2155|Mithril Dust
+1064|Mithril Elm Axe
+1114|Mithril Elm Hoe
+1014|Mithril Elm Pickaxe
+1214|Mithril Elm Shovel
+1164|Mithril Elm Trowel
+2346|Mithril Hoe Head
+1085|Mithril Juniper Axe
+1135|Mithril Juniper Hoe
+1035|Mithril Juniper Pickaxe
+1235|Mithril Juniper Shovel
+1185|Mithril Juniper Trowel
+1099|Mithril Magnolia Axe
+1149|Mithril Magnolia Hoe
+1049|Mithril Magnolia Pickaxe
+1249|Mithril Magnolia Shovel
+1199|Mithril Magnolia Trowel
+2270|Mithril Nails
+1057|Mithril Oak Axe
+1107|Mithril Oak Hoe
+1007|Mithril Oak Pickaxe
+1207|Mithril Oak Shovel
+1157|Mithril Oak Trowel
+2349|Mithril Pickaxe Head
+1078|Mithril Rowan Axe
+1128|Mithril Rowan Hoe
+1028|Mithril Rowan Pickaxe
+1228|Mithril Rowan Shovel
+1178|Mithril Rowan Trowel
+2266|Mithril Screw
+1256|Mithril Shears
+2348|Mithril Shovel Head
+1092|Mithril Sycamore Axe
+1142|Mithril Sycamore Hoe
+1042|Mithril Sycamore Pickaxe
+1242|Mithril Sycamore Shovel
+1192|Mithril Sycamore Trowel
+2350|Mithril Trowel Head
+2274|Mithril Wire
+33|Moomoo Milk
+81|Moon Stone
+40022|Muhaichen Hat
+243|Muscle Band
+2010|Mushroom
+2510|Mushrooms
+2758|Mystic Ball
+220|Mystic Water
+2110|Mythrantine Bar
+8|Nest Ball
+6|Net Ball
+223|Never-Melt Ice
+669|Normal Gem
+817|Normalium Z
+2050|Oak Log
+2057|Oak Plank
+2301|Oak Shovel Handle
+2302|Oak Tool Handle
+2300|Oak Trowel Handle
+161|Occa Berry
+291|Odd Incense
+54|Old Gateau
+20048|Open Jacket (Blue)
+20049|Open Jacket (Green)
+20050|Open Jacket (Orange)
+20051|Open Jacket (Pink)
+20052|Open Jacket (Red)
+132|Oran Berry
+2450|Orange Apricorn
+2520|Orange Paint
+110|Oval Stone
+53|PP Max
+51|PP Up
+30053|Pants & Boots (Beige)
+30054|Pants & Boots (Black)
+30055|Pants & Boots (Grey)
+30056|Pants & Boots (Navy)
+30057|Pants & Boots (Sky)
+22|Paralyze Heal
+616|Pass Orb
+162|Passho Berry
+170|Payapa Berry
+128|Pecha Berry
+2713|Pecha Ointment
+30058|Pencil Skirt (Black)
+30059|Pencil Skirt (Green)
+30060|Pencil Skirt (Grey)
+30061|Pencil Skirt (Navy)
+30062|Pencil Skirt (Wine)
+2711|Pep-Up Ointment
+2478|Pep-Up Plant
+2709|Pep-Up Powder
+133|Persim Berry
+181|Petaya Berry
+803|Pidgeotite
+835|Pikanium Z
+877|Pikashunium Z
+891|Pink Nectar
+2516|Pink Paint
+710|Pinsirite
+2767|Pixie Ball
+684|Pixie Plate
+2592|Pixie Shard
+2487|Plant Fibre
+2342|Platinum Axe Head
+2107|Platinum Bar
+1070|Platinum Birch Axe
+1120|Platinum Birch Hoe
+1020|Platinum Birch Pickaxe
+1220|Platinum Birch Shovel
+1170|Platinum Birch Trowel
+2007|Platinum Chunk
+2154|Platinum Dust
+1063|Platinum Elm Axe
+1113|Platinum Elm Hoe
+1013|Platinum Elm Pickaxe
+1213|Platinum Elm Shovel
+1163|Platinum Elm Trowel
+2341|Platinum Hoe Head
+1084|Platinum Juniper Axe
+1134|Platinum Juniper Hoe
+1034|Platinum Juniper Pickaxe
+1234|Platinum Juniper Shovel
+1184|Platinum Juniper Trowel
+1098|Platinum Magnolia Axe
+1148|Platinum Magnolia Hoe
+1048|Platinum Magnolia Pickaxe
+1248|Platinum Magnolia Shovel
+1198|Platinum Magnolia Trowel
+1056|Platinum Oak Axe
+1106|Platinum Oak Hoe
+1006|Platinum Oak Pickaxe
+1206|Platinum Oak Shovel
+1156|Platinum Oak Trowel
+2344|Platinum Pickaxe Head
+1077|Platinum Rowan Axe
+1127|Platinum Rowan Hoe
+1027|Platinum Rowan Pickaxe
+1227|Platinum Rowan Shovel
+1177|Platinum Rowan Trowel
+1255|Platinum Shears
+2343|Platinum Shovel Head
+1091|Platinum Sycamore Axe
+1141|Platinum Sycamore Hoe
+1041|Platinum Sycamore Pickaxe
+1241|Platinum Sycamore Shovel
+1191|Platinum Sycamore Trowel
+2345|Platinum Trowel Head
+222|Poison Barb
+597|Poison Gem
+904|Poison Memory
+2552|Poison Vial
+824|Poisonium Z
+2600|PokePoppet
+4|Poké Ball
+63|Poké Doll
+146|Pomeg Berry
+17|Potion
+2763|Power Ball
+248|Power Herb
+2588|Power Shard
+12|Premier Ball
+841|Primarium Z
+580|Prism Scale
+897|Protective Pads
+298|Protector
+46|Protein
+600|Psychic Gem
+914|Psychic Memory
+899|Psychic Seed
+827|Psychium Z
+297|Pure Incense
+2452|Purple Apricorn
+892|Purple Nectar
+2522|Purple Paint
+2507|Purple Status Powder
+148|Qualot Berry
+15|Quick Ball
+194|Quick Claw
+251|Quick Powder
+2655|Raft
+2525|Rainbow Paint
+40023|Ranger Hat
+30092|Ranger Pants
+20128|Ranger Vest
+2202|Rare Bird Nest
+50|Rare Candy
+2242|Rare Clue Scroll
+2222|Rare Geode
+129|Rawst Berry
+2715|Rawst Ointment
+303|Razor Claw
+304|Razor Fang
+302|Reaper Cloth
+585|Red Card
+67|Red Flute
+889|Red Nectar
+2513|Red Paint
+2275|Refined Tumblestone
+2700|Remedy
+9|Repeat Ball
+79|Repel
+2707|Restore Tonic
+37|Revival Herb
+28|Revive
+40024|Ribbon
+30063|Ribbon Skirt (Blue)
+30064|Ribbon Skirt (Green)
+30065|Ribbon Skirt (Pink)
+30066|Ribbon Skirt (Red)
+30067|Ribbon Skirt (Wine)
+164|Rindo Berry
+586|Ring Target
+602|Rock Gem
+292|Rock Incense
+906|Rock Memory
+829|Rockium Z
+583|Rocky Helmet
+295|Rose Incense
+723|Roseli Berry
+2053|Rowan Log
+2060|Rowan Plank
+2310|Rowan Shovel Handle
+2311|Rowan Tool Handle
+2309|Rowan Trowel Handle
+189|Rowap Berry
+2653|Rubber Boots
+1051|Rusty Axe
+1101|Rusty Hoe
+1001|Rusty Pickaxe
+1201|Rusty Shovel
+1151|Rusty Trowel
+795|Sablenite
+687|Sachet
+44|Sacred Ash
+5|Safari Ball
+690|Safety Goggles
+180|Salac Berry
+810|Salamencite
+2150|Sand
+2757|Scale Ball
+20058|Scarf Layered Top (Black)
+20059|Scarf Layered Top (Blue)
+20060|Scarf Layered Top (Brown)
+20061|Scarf Layered Top (Red)
+20062|Scarf Layered Top (Yellow)
+20063|Scarf Shirt (Black)
+20064|Scarf Shirt (Blue)
+20065|Scarf Shirt (Brown)
+20066|Scarf Shirt (Red)
+20067|Scarf Shirt (Yellow)
+20053|Scarf Top (Black)
+20054|Scarf Top (Blue)
+20055|Scarf Top (Green)
+20056|Scarf Top (Red)
+20057|Scarf Top (Yellow)
+794|Sceptilite
+20068|School Uniform (Dark)
+20069|School Uniform (Light)
+30068|School Uniform Bottom (Dark)
+30069|School Uniform Bottom (Light)
+30070|Schoolgirl Skirt (Dark)
+30071|Schoolgirl Skirt (Light)
+709|Scizorite
+209|Scope Lens
+231|Sea Incense
+2756|Shade Ball
+221|Sharp Beak
+800|Sharpedonite
+272|Shed Shell
+230|Shell Bell
+40010|Shiny Bird Hat
+107|Shiny Stone
+20070|Shirt (Black)
+20071|Shirt (Blue)
+20072|Shirt (Green)
+20073|Shirt (Red)
+20074|Shirt (White)
+20075|Shirt Combo (Black)
+20076|Shirt Combo (Blue)
+20077|Shirt Combo (Red)
+20078|Shirt Combo (White)
+20079|Shirt Combo (Wine)
+564|Shock Drive
+30072|Shorts (Black)
+30073|Shorts (Blue)
+30074|Shorts (Green)
+30075|Shorts (Red)
+30076|Shorts (White)
+168|Shuca Berry
+2500|Silk
+228|Silk Scarf
+2276|Silph Chip
+2453|Silver Apricorn
+2105|Silver Bar
+2005|Silver Chunk
+2523|Silver Paint
+199|Silver Powder
+2506|Silver Status Powder
+135|Sitrus Berry
+283|Sky Plate
+2580|Sky Shard
+2554|Sleep Vial
+801|Slowbronite
+205|Smoke Ball
+260|Smooth Rock
+845|Snorlium Z
+689|Snowball
+31|Soda Pop
+214|Soft Sand
+2456|Soiled Apricorn
+2591|Solid Shard
+2486|Sootfoot Root
+195|Soothe Bell
+202|Soul Dew
+2809|Sour Bait
+224|Spell Tag
+2805|Spicy Bait
+2590|Spirit Shard
+276|Splash Plate
+287|Spooky Plate
+184|Starf Berry
+2332|Steel Axe Head
+2104|Steel Bar
+1068|Steel Birch Axe
+1118|Steel Birch Hoe
+1018|Steel Birch Pickaxe
+1218|Steel Birch Shovel
+1168|Steel Birch Trowel
+1061|Steel Elm Axe
+1111|Steel Elm Hoe
+1211|Steel Elm Shovel
+1161|Steel Elm Trowel
+605|Steel Gem
+2331|Steel Hoe Head
+1082|Steel Juniper Axe
+1132|Steel Juniper Hoe
+1032|Steel Juniper Pickaxe
+1232|Steel Juniper Shovel
+1182|Steel Juniper Trowel
+1096|Steel Magnolia Axe
+1146|Steel Magnolia Hoe
+1046|Steel Magnolia Pickaxe
+1246|Steel Magnolia Shovel
+1196|Steel Magnolia Trowel
+909|Steel Memory
+2269|Steel Nails
+1054|Steel Oak Axe
+1104|Steel Oak Hoe
+1004|Steel Oak Pickaxe
+1204|Steel Oak Shovel
+1154|Steel Oak Trowel
+2334|Steel Pickaxe Head
+1075|Steel Rowan Axe
+1125|Steel Rowan Hoe
+1025|Steel Rowan Pickaxe
+1225|Steel Rowan Shovel
+1175|Steel Rowan Trowel
+2265|Steel Screw
+1253|Steel Shears
+2333|Steel Shovel Head
+1089|Steel Sycamore Axe
+1139|Steel Sycamore Hoe
+1039|Steel Sycamore Pickaxe
+1239|Steel Sycamore Shovel
+1189|Steel Sycamore Trowel
+2335|Steel Trowel Head
+2273|Steel Wire
+833|Steelium Z
+802|Steelixite
+265|Sticky Barb
+2260|Stone
+2760|Stone Ball
+286|Stone Plate
+2585|Stone Shard
+40025|Straw Hat
+2272|Strong Twine
+2656|Stun Baton v1
+2657|Stun Baton v2
+2658|Stun Baton v3
+2601|Stun Battery v1
+2602|Stun Battery v2
+2603|Stun Battery v3
+2553|Stun Vial
+40026|Summer Hat
+30077|Summer Pants (Black)
+30078|Summer Pants (Blue)
+30083|Summer Pants (Blue)
+30079|Summer Pants (Green)
+30084|Summer Pants (Green)
+30085|Summer Pants (Pink)
+30086|Summer Pants (Purple)
+30080|Summer Pants (Red)
+30087|Summer Pants (Red)
+30081|Summer Pants (White)
+30082|Summer Pants (Yellow)
+30088|Summer Pants (Yellow)
+20080|Summer Top (Black)
+20081|Summer Top (Blue)
+20086|Summer Top (Blue)
+20082|Summer Top (Green)
+20087|Summer Top (Green)
+20083|Summer Top (Navy)
+20088|Summer Top (Pink)
+20089|Summer Top (Purple)
+20084|Summer Top (Red)
+20090|Summer Top (Red)
+20085|Summer Top (Yellow)
+20091|Summer Top (Yellow)
+20093|Summer Top V2
+20094|Summer Top V3
+40027|Sun Hat
+80|Sun Stone
+26|Super Potion
+76|Super Repel
+2704|Super Tonic
+2702|Superb Remedy
+793|Swampertite
+2754|Swarm Ball
+2808|Sweet Bait
+2503|Sweet Slime
+2481|Swordcap
+2055|Sycamore Log
+2062|Sycamore Plank
+2316|Sycamore Shovel Handle
+2317|Sycamore Tool Handle
+2315|Sycamore Trowel Handle
+305|TM01
+306|TM02
+307|TM03
+308|TM04
+309|TM05
+310|TM06
+311|TM07
+312|TM08
+313|TM09
+314|TM10
+749|TM100
+315|TM11
+316|TM12
+317|TM13
+318|TM14
+319|TM15
+320|TM16
+321|TM17
+322|TM18
+323|TM19
+324|TM20
+325|TM21
+326|TM22
+327|TM23
+328|TM24
+329|TM25
+330|TM26
+331|TM27
+332|TM28
+333|TM29
+334|TM30
+335|TM31
+336|TM32
+337|TM33
+338|TM34
+339|TM35
+340|TM36
+341|TM37
+342|TM38
+343|TM39
+344|TM40
+345|TM41
+346|TM42
+347|TM43
+348|TM44
+349|TM45
+350|TM46
+351|TM47
+352|TM48
+353|TM49
+354|TM50
+355|TM51
+356|TM52
+357|TM53
+358|TM54
+359|TM55
+360|TM56
+361|TM57
+362|TM58
+363|TM59
+364|TM60
+365|TM61
+366|TM62
+367|TM63
+368|TM64
+369|TM65
+370|TM66
+371|TM67
+372|TM68
+373|TM69
+374|TM70
+375|TM71
+376|TM72
+377|TM73
+378|TM74
+379|TM75
+380|TM76
+381|TM77
+382|TM78
+383|TM79
+384|TM80
+385|TM81
+386|TM82
+387|TM83
+388|TM84
+389|TM85
+390|TM86
+391|TM87
+392|TM88
+393|TM89
+394|TM90
+395|TM91
+396|TM92
+659|TM93
+660|TM94
+661|TM95
+745|TM96
+746|TM97
+747|TM98
+748|TM99
+151|Tamato Berry
+171|Tanga Berry
+20095|Tank Top (Black)
+20096|Tank Top (Blue)
+20097|Tank Top (Green)
+20098|Tank Top (Pink)
+20099|Tank Top (Red)
+842|Tapunium Z
+40028|Tater Hat
+30089|Tea Mafia Pants (Beige)
+30090|Tea Mafia Pants (Purple)
+20100|Tea Mafia Suit (Beige)
+20101|Tea Mafia Suit (Purple)
+896|Terrain Extender
+235|Thick Club
+83|Thunder Stone
+2752|Tidal Ball
+10|Timer Ball
+2101|Tin Bar
+2002|Tin Chunk
+2703|Tonic
+249|Toxic Orb
+281|Toxic Plate
+2584|Toxic Shard
+2801|Trap Lure
+20102|Trench Coat (Beige)
+20103|Trench Coat (Black)
+20107|Trench Coat (Collar) (Beige)
+20108|Trench Coat (Collar) (Black)
+20109|Trench Coat (Collar) (Navy)
+20110|Trench Coat (Collar) (Purple)
+20111|Trench Coat (Collar) (Red)
+20104|Trench Coat (Navy)
+20105|Trench Coat (Purple)
+20106|Trench Coat (Red)
+2261|Tumblestone
+20112|Turtleneck (Beige)
+20113|Turtleneck (Black)
+20114|Turtleneck (Green)
+20115|Turtleneck (White)
+20116|Turtleneck (Wine)
+2271|Twine
+225|Twisted Spoon
+708|Tyranitarite
+2|Ultra Ball
+2201|Uncommon Bird Nest
+2241|Uncommon Clue Scroll
+2221|Uncommon Geode
+229|Upgrade
+2759|Venom Ball
+698|Venusaurite
+20117|Vest (Beige)
+20118|Vest (Black)
+20119|Vest (Blue)
+20120|Vest (Grey)
+20121|Vest (Wine)
+2480|Vivichoke
+163|Wacan Berry
+592|Water Gem
+911|Water Memory
+84|Water Stone
+819|Waterium Z
+294|Wave Incense
+682|Weakness Policy
+686|Whipped Dream
+191|White Herb
+2518|White Paint
+242|Wide Lens
+137|Wiki Berry
+2011|Wild Herb
+2012|Wildflower
+2755|Wing Ball
+244|Wise Glasses
+60|X Accuracy
+57|X Attack
+58|X Defense
+61|X Sp. Atk
+62|X Sp. Def
+59|X Speed
+165|Yache Berry
+66|Yellow Flute
+890|Yellow Nectar
+2519|Yellow Paint
+2504|Yellow Status Powder
+40029|Youngster Cap (Blue)
+40030|Youngster Cap (Yellow)
+277|Zap Plate
+2578|Zap Shard
+52|Zinc
+253|Zoom Lens

@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_viridianforest_bugcatcher_jen",
+  "display_name": "Bug Catcher Jen",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 280,
+  "payout_per_level": 15,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "ledyba",
+      "ability": "swarm",
+      "nature": "adamant",
+      "gender": "female",
+      "level_offset": -1,
+      "iv_hp": 6,
+      "iv_atk": 8,
+      "iv_def": 6,
+      "iv_spa": 6,
+      "iv_spd": 8,
+      "iv_spe": 8,
+      "moves": [
+        "tackle",
+        "supersonic",
+        "reflect",
+        "light_screen"
+      ]
+    },
+    {
+      "species": "spinarak",
+      "ability": "swarm",
+      "nature": "adamant",
+      "gender": "female",
+      "level_offset": -1,
+      "iv_hp": 6,
+      "iv_atk": 10,
+      "iv_def": 6,
+      "iv_spa": 6,
+      "iv_spd": 6,
+      "iv_spe": 8,
+      "moves": [
+        "poison_sting",
+        "string_shot",
+        "constrict"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Bugs are the cutest Pokemon! Don't you think so?",
+    "loss": "You're mean! My bugs were just trying to be friends!",
+    "post_defeat": "I'll catch a Scyther next! That'll show you!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 6
+}

@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route10_youngster_reggie",
+  "display_name": "Youngster Reggie",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 380,
+  "payout_per_level": 16,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "rattata",
+      "ability": "guts",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 17,
+      "iv_def": 14,
+      "iv_spa": 8,
+      "iv_spd": 13,
+      "iv_spe": 18,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "quick_attack",
+        "hyper_fang"
+      ]
+    },
+    {
+      "species": "elekid",
+      "ability": "static",
+      "nature": "naive",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 16,
+      "iv_def": 14,
+      "iv_spa": 16,
+      "iv_spd": 14,
+      "iv_spe": 19,
+      "moves": [
+        "quick_attack",
+        "leer",
+        "thunder_shock",
+        "swift"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I traded my Rattata for an Elekid near the power plant! Best deal ever!",
+    "loss": "Elekid's new but it's already my favorite! We'll train harder!",
+    "post_defeat": "Elekid generates electricity by spinning its arms! It's so cool to watch!"
+  },
+  "rebattle": "daily"
+}

@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route11_gambler_jasper",
+  "display_name": "Gambler Jasper",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 620,
+  "payout_per_level": 26,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "vulpix",
+      "ability": "flash_fire",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 19,
+      "iv_def": 15,
+      "iv_spa": 12,
+      "iv_spd": 16,
+      "iv_spe": 15,
+      "moves": []
+    },
+    {
+      "species": "growlithe",
+      "ability": "intimidate",
+      "nature": "jolly",
+      "gender": "male",
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 15,
+      "iv_spa": 8,
+      "iv_spd": 14,
+      "iv_spe": 19,
+      "moves": [],
+      "level_offset": 2
+    }
+  ],
+  "dialogue": {
+    "start": "Double or nothing! If you beat me, I'll admit you're the better trainer!",
+    "loss": "You called my bluff! I owe you a rematch someday!",
+    "post_defeat": "Farfetch'd carry their own leek. It's like having a built-in weapon!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 25
+}

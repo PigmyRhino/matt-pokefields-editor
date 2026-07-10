@@ -1,0 +1,274 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "viridian_indoors",
+      "display_name": "Pewter City Museum",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "viridian_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          15.0,
+          2.0
+        ],
+        [
+          15.0,
+          8.0
+        ],
+        [
+          17.0,
+          8.0
+        ],
+        [
+          17.0,
+          9.0
+        ],
+        [
+          18.0,
+          9.0
+        ],
+        [
+          18.0,
+          7.0
+        ],
+        [
+          16.0,
+          7.0
+        ],
+        [
+          16.0,
+          2.0
+        ],
+        [
+          28.0,
+          2.0
+        ],
+        [
+          28.0,
+          10.0
+        ],
+        [
+          12.0,
+          10.0
+        ],
+        [
+          12.0,
+          7.0
+        ],
+        [
+          11.0,
+          7.0
+        ],
+        [
+          11.0,
+          10.0
+        ],
+        [
+          0.0,
+          10.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 14,
+      "tile_y": 10
+    },
+    {
+      "flags": 0,
+      "tile_x": 21,
+      "tile_y": 10
+    },
+    {
+      "flags": 0,
+      "tile_x": 9,
+      "tile_y": 8
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Researchers suggest that what we know as fossil pokemon may indicate that these pokemon existed 30,000,000 years ago!"
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "How cool!"
+            },
+            "id": "n2",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_2_5",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Nerd Levi",
+        "sprite": 25,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 2,
+      "tile_y": 5
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_16_3",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "Welcome to the Pewter Musuem!"
+      },
+      "render": {
+        "direction": 1,
+        "display_name": "Receptionist",
+        "sprite": 26,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 16,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_16_5",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "Welcome to the Pewter Musuem!"
+      },
+      "render": {
+        "direction": 1,
+        "display_name": "",
+        "sprite": 25,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 16,
+      "tile_y": 5
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_15_3",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Welcome to the Pewter Musuem!"
+      },
+      "script": "simple_dialogue",
+      "tile_x": 15,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_15_5",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Welcome to the Pewter Musuem!"
+      },
+      "script": "simple_dialogue",
+      "tile_x": 15,
+      "tile_y": 5
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 1,
+      "name": "t_8_8",
+      "target_warp": "",
+      "tile_x": 8,
+      "tile_y": 8
+    },
+    {
+      "direction": 3,
+      "name": "t_14_9",
+      "target_warp": "",
+      "tile_x": 14,
+      "tile_y": 9
+    },
+    {
+      "direction": 3,
+      "name": "t_21_9",
+      "target_warp": "",
+      "tile_x": 21,
+      "tile_y": 9
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_14_9",
+      "target_map": "kanto",
+      "target_warp": "t_65_66",
+      "tile_x": 14,
+      "tile_y": 10,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_21_9",
+      "target_map": "kanto",
+      "target_warp": "t_73_64",
+      "tile_x": 21,
+      "tile_y": 10,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_8_8",
+      "target_map": "rom_6_1",
+      "target_warp": "t_11_8",
+      "tile_x": 9,
+      "tile_y": 8,
+      "warp_type": ""
+    }
+  ]
+}

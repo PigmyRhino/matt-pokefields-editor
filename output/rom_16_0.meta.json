@@ -1,0 +1,244 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pokecenter_day",
+      "display_name": "Route 3 Pokemon Center",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pokecenter_night",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          15.0,
+          2.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 7,
+      "tile_y": 9
+    },
+    {
+      "flags": 0,
+      "tile_x": 0,
+      "tile_y": 6
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_7_2",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Nurse Joy",
+        "sprite": 133,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 7,
+      "tile_y": 2
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_7_3",
+      "kind": "Facility",
+      "script": "poke_center",
+      "tile_x": 7,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "That mountain ahead is Mt. Moon! It's pitch black in there unless you have a Pokemon that knows Flash. Scary stuff... but no guts, no glory, right? I'm heading in!"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_14_6",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Hiker Norm",
+        "sprite": 131,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 14,
+      "tile_y": 6
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "I heard Team Rocket is sneaking around inside Mt. Moon! They've been hauling equipment into the caves. If you see anyone in a black uniform, watch your back. Also... where's my Creamsicle Faygo?!"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "route3_pkcn_youngster_wayne",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Youngster Wayne",
+        "sprite": 1001,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 2,
+      "tile_y": 4
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "My Clefairy gets so excited whenever we come near Mt. Moon. I think it can sense other Clefairy hiding inside! They say Clefairy came from space on shooting stars — how magical is that?"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "route3_pkcn_lass_clairy",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Lass Clairy",
+        "sprite": 7,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 4,
+      "tile_y": 7
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_11_1",
+      "kind": "Facility",
+      "script": "pc",
+      "tile_x": 11,
+      "tile_y": 1
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_1_6",
+      "target_warp": "",
+      "tile_x": 1,
+      "tile_y": 6
+    },
+    {
+      "direction": 3,
+      "name": "t_7_8",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 8
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_6_8",
+      "target_map": "kanto",
+      "target_warp": "t_168_55",
+      "tile_x": 7,
+      "tile_y": 9,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_1_6",
+      "target_map": "rom_16_1",
+      "target_warp": "t_1_6",
+      "tile_x": 0,
+      "tile_y": 6,
+      "warp_type": ""
+    }
+  ]
+}

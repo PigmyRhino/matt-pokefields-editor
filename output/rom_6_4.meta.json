@@ -1,0 +1,110 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Pewter City",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          11.0,
+          8.0
+        ],
+        [
+          0.0,
+          8.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 4,
+      "tile_y": 8
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Pewter City has changed so much since I was a kid. Used to be just a quiet mining town, you know."
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Then Brock took over the Gym and put this place on the map. Trainers come from all over Kanto now!"
+            },
+            "id": "n2",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "pewter_house_a_resident_mabel",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Elder Mabel",
+        "sprite": 34,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 4,
+      "tile_y": 5
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_4_7",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 7
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_4_7",
+      "target_map": "kanto",
+      "target_warp": "t_81_71",
+      "tile_x": 4,
+      "tile_y": 8,
+      "warp_type": ""
+    }
+  ]
+}

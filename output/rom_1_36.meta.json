@@ -1,0 +1,174 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "cave_1",
+      "display_name": "Diglett's Cave",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "cave_1",
+      "polygon": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          8.0,
+          2.0
+        ],
+        [
+          8.0,
+          7.0
+        ],
+        [
+          5.0,
+          7.0
+        ],
+        [
+          5.0,
+          6.0
+        ],
+        [
+          4.0,
+          6.0
+        ],
+        [
+          4.0,
+          7.0
+        ],
+        [
+          2.0,
+          7.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 4,
+      "tile_y": 7
+    }
+  ],
+  "encounter_zones": [
+    {
+      "encounter_group": "kanto_diglettscave_patch1",
+      "fish_encounter_group": "",
+      "name": "encounter_1",
+      "polygon": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          8.0,
+          2.0
+        ],
+        [
+          8.0,
+          7.0
+        ],
+        [
+          5.0,
+          7.0
+        ],
+        [
+          5.0,
+          6.0
+        ],
+        [
+          4.0,
+          6.0
+        ],
+        [
+          4.0,
+          7.0
+        ],
+        [
+          2.0,
+          7.0
+        ]
+      ],
+      "terrain": "cave_floor"
+    }
+  ],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Diglett's Cave runs deep. Stay on the main path and you'll pop out near Vermillion City."
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "rom1_36_Old_Caver_Ned",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Old Caver Ned",
+        "sprite": 39,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 4,
+      "tile_y": 4
+    }
+  ],
+  "properties": {
+    "is_dark": true
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_4_6",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 6
+    },
+    {
+      "direction": 0,
+      "name": "t_6_4",
+      "target_warp": "",
+      "tile_x": 6,
+      "tile_y": 4
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_6_4",
+      "target_map": "rom_1_37",
+      "target_warp": "t_3_3",
+      "tile_x": 6,
+      "tile_y": 4,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_4_6",
+      "target_map": "kanto",
+      "target_warp": "t_77_111",
+      "tile_x": 4,
+      "tile_y": 7,
+      "warp_type": ""
+    }
+  ]
+}

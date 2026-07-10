@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route9_picnicker_alicia",
+  "display_name": "Picnicker Alicia",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 480,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "nidoran_f",
+      "ability": "poison_point",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 13,
+      "iv_def": 15,
+      "iv_spa": 17,
+      "iv_spd": 15,
+      "iv_spe": 14,
+      "moves": [
+        "growl",
+        "scratch",
+        "poison_sting",
+        "double_kick"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 16,
+      "iv_def": 14,
+      "iv_spa": 13,
+      "iv_spd": 15,
+      "iv_spe": 18,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I climbed all the way up here for the view! The battle is just a bonus!",
+    "loss": "What a view AND what a battle! Totally worth the climb!",
+    "post_defeat": "You can see all the way to Cerulean City from this ridge."
+  },
+  "rebattle": "daily"
+}

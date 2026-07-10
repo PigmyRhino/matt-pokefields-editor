@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_rocktunnel_hiker_allen",
+  "display_name": "Hiker Allen",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 540,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "geodude",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 18,
+      "iv_spa": 9,
+      "iv_spd": 12,
+      "iv_spe": 10,
+      "moves": [
+        "tackle",
+        "defense_curl",
+        "rock_throw",
+        "magnitude"
+      ]
+    },
+    {
+      "species": "onix",
+      "ability": "rock_head",
+      "nature": "impish",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 16,
+      "iv_def": 20,
+      "iv_spa": 10,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "screech",
+        "bind",
+        "rock_throw"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "This tunnel was carved through solid rock! Just like the Pokemon I train!",
+    "loss": "Your Pokemon are harder than granite!",
+    "post_defeat": "You'll need Flash to light your way through here. It gets pitch black!"
+  },
+  "rebattle": "daily"
+}

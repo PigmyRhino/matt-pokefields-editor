@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route7_youngster_colton",
+  "display_name": "Youngster Colton",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 460,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "meowth",
+      "ability": "technician",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 16,
+      "iv_def": 13,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 18,
+      "moves": [
+        "scratch",
+        "growl",
+        "bite",
+        "fake_out"
+      ]
+    },
+    {
+      "species": "growlithe",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 14,
+      "iv_spa": 14,
+      "iv_spd": 13,
+      "iv_spe": 15,
+      "moves": [
+        "bite",
+        "roar",
+        "ember",
+        "flame_wheel"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The short path to Celadon is a great training spot! Show me what you've learned!",
+    "loss": "You've learned a lot since Pewter City, that's for sure!",
+    "post_defeat": "This route connects Lavender Town and Celadon City. Short and sweet!"
+  },
+  "rebattle": "daily"
+}

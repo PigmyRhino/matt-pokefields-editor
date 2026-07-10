@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_rocktunnel_hiker_oliver",
+  "display_name": "Hiker Oliver",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 360,
+  "payout_per_level": 16,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "onix",
+      "ability": "rock_head",
+      "nature": "brave",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 17,
+      "iv_def": 18,
+      "iv_spa": 8,
+      "iv_spd": 11,
+      "iv_spe": 9,
+      "moves": [
+        "tackle",
+        "screech",
+        "bind",
+        "rock_throw"
+      ]
+    },
+    {
+      "species": "geodude",
+      "ability": "sturdy",
+      "nature": "impish",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 16,
+      "iv_def": 19,
+      "iv_spa": 9,
+      "iv_spd": 12,
+      "iv_spe": 9,
+      "moves": [
+        "tackle",
+        "defense_curl",
+        "rock_throw",
+        "magnitude"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Two Geodude are better than one! That's just basic math!",
+    "loss": "Math doesn't apply to Pokemon battles, apparently...",
+    "post_defeat": "Geodude are everywhere in this cave. You literally can't miss them."
+  },
+  "rebattle": "daily"
+}

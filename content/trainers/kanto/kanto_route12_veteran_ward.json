@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_route12_veteran_ward",
+  "display_name": "Veteran Ward",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 600,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "rattata",
+      "ability": "guts",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 15,
+      "iv_spa": 10,
+      "iv_spd": 14,
+      "iv_spe": 20,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "quick_attack",
+        "hyper_fang"
+      ]
+    },
+    {
+      "species": "gloom",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 14,
+      "iv_def": 18,
+      "iv_spa": 22,
+      "iv_spd": 18,
+      "iv_spe": 15,
+      "moves": [
+        "mega_drain",
+        "acid",
+        "sleep_powder",
+        "sweet_scent"
+      ]
+    },
+    {
+      "species": "pidgeotto",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 16,
+      "iv_def": 18,
+      "iv_spa": 20,
+      "iv_spd": 20,
+      "iv_spe": 24,
+      "moves": [
+        "gust",
+        "sand_attack",
+        "quick_attack",
+        "wing_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've been battling on this bridge for thirty years! Let me show you what experience looks like!",
+    "loss": "Thirty years of experience... and you still schooled me!",
+    "post_defeat": "This bridge connects Lavender to Fuchsia. Stock up on supplies before crossing."
+  },
+  "rebattle": "daily"
+}

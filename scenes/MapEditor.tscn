@@ -1,0 +1,193 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/editor/map_editor.gd" id="1_editor"]
+[ext_resource type="Script" path="res://scripts/editor/collision_overlay.gd" id="2_collision"]
+[ext_resource type="Script" path="res://scripts/editor/object_layer.gd" id="3_objects"]
+[ext_resource type="PackedScene" path="res://scenes/Inspector.tscn" id="4_inspector"]
+[ext_resource type="PackedScene" path="res://scenes/WarpInspector.tscn" id="5_warpinsp"]
+[ext_resource type="PackedScene" path="res://scenes/ZoneInspector.tscn" id="6_zoneinsp"]
+[ext_resource type="PackedScene" path="res://scenes/MapInspector.tscn" id="7_mapinsp"]
+[ext_resource type="PackedScene" path="res://scenes/MapDataPanel.tscn" id="8_datapanel"]
+
+[node name="MapEditor" type="Node2D"]
+script = ExtResource("1_editor")
+
+[node name="Camera" type="Camera2D" parent="."]
+unique_name_in_owner = true
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="RomGround" type="TileMapLayer" parent="World"]
+unique_name_in_owner = true
+
+[node name="RomOverlay" type="TileMapLayer" parent="World"]
+unique_name_in_owner = true
+z_index = 8
+
+[node name="ObjectLayer" type="Node2D" parent="World"]
+unique_name_in_owner = true
+z_index = 500
+script = ExtResource("3_objects")
+
+[node name="CollisionOverlay" type="Node2D" parent="World"]
+unique_name_in_owner = true
+z_index = 1000
+script = ExtResource("2_collision")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="TopBar" type="PanelContainer" parent="UI"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Bar" type="HBoxContainer" parent="UI/TopBar"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ModeOption" type="OptionButton" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "What you're editing: Objects (NPCs/warps/zones), Tiles (paint art), or Collision (walkability + terrain types)."
+
+[node name="ToolLabel" type="Label" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Tool"
+
+[node name="ToolOption" type="OptionButton" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="KindLabel" type="Label" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Kind"
+
+[node name="KindPalette" type="OptionButton" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="LayerOption" type="OptionButton" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Which layer the stamp/erase writes to. Copy (Ctrl+drag) always grabs both layers; this picks where it lands — Both, just Ground (below player), or just Overlay (tree-tops / roofs)."
+
+[node name="FlagOption" type="OptionButton" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Collision type to paint. Left-click sets it, right-click clears it. Ctrl+drag fills a rectangle."
+
+[node name="UndoBtn" type="Button" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Undo"
+tooltip_text = "Undo the last map edit (Ctrl+Z)."
+
+[node name="RedoBtn" type="Button" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Redo"
+tooltip_text = "Redo (Ctrl+Y or Ctrl+Shift+Z)."
+
+[node name="SaveBtn" type="Button" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save"
+
+[node name="LoadBtn" type="Button" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reload"
+
+[node name="OpenFolderBtn" type="Button" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Open Folder"
+
+[node name="FinishPolyBtn" type="Button" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New Zone"
+
+[node name="CollisionToggle" type="CheckButton" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Collision"
+
+[node name="RegionLabel" type="Label" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "loading…"
+
+[node name="CoordLabel" type="Label" parent="UI/TopBar/Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "(0, 0)"
+
+[node name="Inspector" parent="UI" instance=ExtResource("4_inspector")]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = 44.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="WarpInspector" parent="UI" instance=ExtResource("5_warpinsp")]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = 44.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ZoneInspector" parent="UI" instance=ExtResource("6_zoneinsp")]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = 44.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MapInspector" parent="UI" instance=ExtResource("7_mapinsp")]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = 44.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MapDataPanel" parent="UI" instance=ExtResource("8_datapanel")]
+unique_name_in_owner = true
+visible = false
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -330.0
+offset_top = 44.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 2

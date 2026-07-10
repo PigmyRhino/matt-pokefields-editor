@@ -1,0 +1,65 @@
+{
+  "unique_name": "kanto_viridianforest_youngster_dave",
+  "display_name": "Youngster Dave",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 180,
+  "payout_per_level": 8,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "weedle",
+      "ability": "shield_dust",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 12,
+      "iv_atk": 14,
+      "iv_def": 11,
+      "iv_spa": 8,
+      "iv_spd": 10,
+      "iv_spe": 13,
+      "moves": []
+    },
+    {
+      "species": "caterpie",
+      "ability": "shield_dust",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 13,
+      "iv_atk": 10,
+      "iv_def": 12,
+      "iv_spa": 12,
+      "iv_spd": 12,
+      "iv_spe": 15,
+      "moves": [
+        "bug_bite"
+      ]
+    },
+    {
+      "species": "spearow",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 13,
+      "iv_atk": 13,
+      "iv_def": 11,
+      "iv_spa": 10,
+      "iv_spd": 12,
+      "iv_spe": 16,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "I've been catching bugs in this forest all morning! You're just in time to battle!",
+    "loss": "Your Pokemon are way stronger than any bug I've caught!",
+    "post_defeat": "Look for shaking trees — that's where the rare bug Pokemon hide."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 6
+}

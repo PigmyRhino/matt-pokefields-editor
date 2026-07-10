@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_route8_supernerd_lester",
+  "display_name": "Super Nerd Lester",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 560,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "meowth",
+      "ability": "technician",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 14,
+      "iv_spa": 13,
+      "iv_spd": 14,
+      "iv_spe": 18,
+      "moves": [
+        "scratch",
+        "growl",
+        "bite",
+        "fake_out"
+      ]
+    },
+    {
+      "species": "growlithe",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 15,
+      "iv_spa": 15,
+      "iv_spd": 14,
+      "iv_spe": 16,
+      "moves": [
+        "bite",
+        "roar",
+        "ember",
+        "flame_wheel"
+      ]
+    },
+    {
+      "species": "vulpix",
+      "ability": "flash_fire",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 13,
+      "iv_def": 15,
+      "iv_spa": 18,
+      "iv_spd": 16,
+      "iv_spe": 18,
+      "moves": [
+        "ember",
+        "tail_whip",
+        "quick_attack",
+        "confuse_ray"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've calculated the optimal type coverage for this route! My data is flawless!",
+    "loss": "My calculations... they were wrong! Back to the drawing board!",
+    "post_defeat": "Type matchups are fascinating. I could talk about them for hours!"
+  },
+  "rebattle": "daily"
+}

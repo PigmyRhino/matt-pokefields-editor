@@ -1,0 +1,162 @@
+// Pewter City job board. Species from kanto_route3 + pewterglade + mtmoon
+// patches; mining loot from the Mt. Moon mine (ore_copper/tin = chunks,
+// resourcemushroom = Mushroom); trainers are Route 3 / Mt. Moon daily locals,
+// Brock is the weekly gym anchor.
+{
+  "board_id": "pewter_jobs",
+  "name": "Pewter City",
+  "daily_slots": 3,
+  "weekly_slots": 2,
+  "jobs": [
+    {
+      "job_id": "pewter_zubat_swarm",
+      "title": "Zubat Swarm",
+      "description": "Miners can't get a swing in for the Zubat inside Mt. Moon. Clear them out.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "zubat",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_paras_specimen",
+      "title": "Glade Specimens",
+      "description": "The museum wants live Paras from the glade north of town. Handle the spores carefully.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "paras",
+        "count": 5
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 5000
+        },
+        {
+          "kind": "item",
+          "item": "poke_ball",
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_mushroom_forage",
+      "title": "Cave Mushrooms",
+      "description": "The diner pays for fresh cave mushrooms from Mt. Moon. Bring a basketful.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "mushroom",
+        "count": 6
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3500
+        },
+        {
+          "kind": "item",
+          "qty": 1,
+          "item": "hyper_potion"
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_prospector_dues",
+      "title": "Prospector's Dues",
+      "description": "The mining guild pays for pickaxe work. Put in a shift at the veins.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "earn_skill_xp",
+        "skill": "mining",
+        "amount": 500
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 1800
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_challenge_brock",
+      "title": "Test the Rock",
+      "description": "Show the gym you've got what it takes — defeat Brock in an official rematch.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "defeat_trainer",
+        "trainer": "kanto_pewter_gym_leader_brock"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 12000
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_shiny_proof",
+      "title": "A Rare Find",
+      "description": "Bring proof of a shiny capture — any species will do. The museum pays handsomely.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "catch_pokemon",
+        "shiny": true,
+        "count": 1
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 75000
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_moon_gauntlet",
+      "title": "Mt. Moon Gauntlet",
+      "description": "The trainers camped through Mt. Moon fancy themselves tough. Win trainer battles to prove otherwise.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "trainer_only": true,
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 25000
+        },
+        {
+          "kind": "item",
+          "item": "oran_berry",
+          "qty": 10
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_iron_farming",
+      "title": "Ferrous Wheel",
+      "description": "Pewter needs a big shipment of iron!",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "count": 10,
+        "item": "iron_chunk"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 10000
+        }
+      ]
+    }
+  ]
+}

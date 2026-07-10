@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route6_swimmer_richard",
+  "display_name": "Swimmer Richard",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 420,
+  "payout_per_level": 18,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "psyduck",
+      "ability": "damp",
+      "nature": "modest",
+      "gender": "male",
+      "iv_hp": 17,
+      "iv_atk": 12,
+      "iv_def": 14,
+      "iv_spa": 17,
+      "iv_spd": 15,
+      "iv_spe": 13,
+      "moves": [],
+      "level_offset": 2
+    },
+    {
+      "species": "marill",
+      "ability": "thick_fat",
+      "nature": "adamant",
+      "gender": "male",
+      "iv_hp": 19,
+      "iv_atk": 20,
+      "iv_def": 15,
+      "iv_spa": 9,
+      "iv_spd": 15,
+      "iv_spe": 13,
+      "moves": [],
+      "level_offset": 2
+    }
+  ],
+  "dialogue": {
+    "start": "I swim in the ponds along Route 6 every day! Water Pokemon are my specialty!",
+    "loss": "You made a splash! My Pokemon couldn't keep up!",
+    "post_defeat": "There are lots of little ponds on this route. Perfect for training Water types."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 25
+}

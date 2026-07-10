@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_route14_lass_lily",
+  "display_name": "Lass Lily",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 560,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "pidgeotto",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 25,
+      "iv_atk": 20,
+      "iv_def": 20,
+      "iv_spa": 22,
+      "iv_spd": 22,
+      "iv_spe": 26,
+      "moves": [
+        "gust",
+        "sand_attack",
+        "quick_attack",
+        "wing_attack"
+      ]
+    },
+    {
+      "species": "nidorina",
+      "ability": "poison_point",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 26,
+      "iv_atk": 16,
+      "iv_def": 22,
+      "iv_spa": 22,
+      "iv_spd": 22,
+      "iv_spe": 20,
+      "moves": [
+        "double_kick",
+        "poison_sting",
+        "bite",
+        "body_slam"
+      ]
+    },
+    {
+      "species": "weepinbell",
+      "ability": "chlorophyll",
+      "nature": "rash",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 25,
+      "iv_atk": 22,
+      "iv_def": 20,
+      "iv_spa": 24,
+      "iv_spd": 18,
+      "iv_spe": 18,
+      "moves": [
+        "razor_leaf",
+        "acid",
+        "sleep_powder",
+        "stun_spore"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The coastal flowers on this route are my favorite! My Pokemon love them too!",
+    "loss": "Your Pokemon are as vibrant as the wildflowers here!",
+    "post_defeat": "Route 14 has the prettiest sunset in all of Kanto. Stick around for it!"
+  },
+  "rebattle": "daily"
+}

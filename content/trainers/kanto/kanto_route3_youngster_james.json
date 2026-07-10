@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route3_youngster_james",
+  "display_name": "Youngster James",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 200,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 12,
+      "iv_atk": 11,
+      "iv_def": 11,
+      "iv_spa": 12,
+      "iv_spd": 12,
+      "iv_spe": 15,
+      "moves": []
+    },
+    {
+      "species": "nidoran_m",
+      "ability": "poison_point",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 15,
+      "iv_def": 13,
+      "iv_spa": 10,
+      "iv_spd": 13,
+      "iv_spe": 13,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "Route 3 is a great shortcut to Mt. Moon! But you've gotta get through me first!",
+    "loss": "You're good! Mt. Moon trainers won't stand a chance.",
+    "post_defeat": "There's a Pokemon Center at the Mt. Moon entrance. Don't miss it!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

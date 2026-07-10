@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route3_youngster_benji",
+  "display_name": "Youngster Benji",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 220,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "rattata",
+      "ability": "run_away",
+      "nature": "jolly",
+      "gender": "male",
+      "iv_hp": 13,
+      "iv_atk": 14,
+      "iv_def": 12,
+      "iv_spa": 8,
+      "iv_spd": 12,
+      "iv_spe": 16,
+      "moves": [],
+      "level_offset": 1
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 14,
+      "iv_def": 12,
+      "iv_spa": 10,
+      "iv_spd": 12,
+      "iv_spe": 14,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "Route 3 is the best place to train! Let's see if you're ready for Mt. Moon!",
+    "loss": "Ok, you're definitely ready for Mt. Moon!",
+    "post_defeat": "Mt. Moon is right ahead. You'll need Flash to see inside!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

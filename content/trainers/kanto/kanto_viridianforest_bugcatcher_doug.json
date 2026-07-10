@@ -1,0 +1,53 @@
+{
+  "unique_name": "kanto_viridianforest_bugcatcher_doug",
+  "display_name": "Bug Catcher Doug",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 15,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "kakuna",
+      "ability": "shed_skin",
+      "nature": "impish",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 6,
+      "iv_atk": 6,
+      "iv_def": 8,
+      "iv_spa": 4,
+      "iv_spd": 6,
+      "iv_spe": 6,
+      "moves": [
+        "bug_bite"
+      ]
+    },
+    {
+      "species": "metapod",
+      "ability": "shed_skin",
+      "nature": "impish",
+      "gender": "female",
+      "level_offset": -1,
+      "iv_hp": 6,
+      "iv_atk": 6,
+      "iv_def": 8,
+      "iv_spa": 4,
+      "iv_spd": 6,
+      "iv_spe": 6,
+      "moves": [
+        "bug_bite"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "You'll never get past my cocoons! They're tougher than they look!",
+    "loss": "They... they broke through? No fair!",
+    "post_defeat": "Someday I'll have Butterfree and Beedrill and then you'll see!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 6
+}

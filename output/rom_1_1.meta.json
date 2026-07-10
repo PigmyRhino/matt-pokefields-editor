@@ -1,0 +1,2856 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "ambience_cave_wind",
+      "day_track": "mt_moon",
+      "display_name": "Mt. Moon Main Floor",
+      "name": "area_1",
+      "night_ambience": "ambience_cave_wind",
+      "night_track": "mt_moon",
+      "polygon": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          11.0,
+          3.0
+        ],
+        [
+          12.0,
+          3.0
+        ],
+        [
+          12.0,
+          4.0
+        ],
+        [
+          13.0,
+          4.0
+        ],
+        [
+          13.0,
+          17.0
+        ],
+        [
+          16.0,
+          17.0
+        ],
+        [
+          16.0,
+          8.0
+        ],
+        [
+          17.0,
+          8.0
+        ],
+        [
+          17.0,
+          6.0
+        ],
+        [
+          18.0,
+          6.0
+        ],
+        [
+          18.0,
+          4.0
+        ],
+        [
+          19.0,
+          4.0
+        ],
+        [
+          19.0,
+          3.0
+        ],
+        [
+          20.0,
+          3.0
+        ],
+        [
+          20.0,
+          2.0
+        ],
+        [
+          46.0,
+          2.0
+        ],
+        [
+          46.0,
+          38.0
+        ],
+        [
+          24.0,
+          38.0
+        ],
+        [
+          24.0,
+          36.0
+        ],
+        [
+          25.0,
+          36.0
+        ],
+        [
+          25.0,
+          35.0
+        ],
+        [
+          26.0,
+          35.0
+        ],
+        [
+          26.0,
+          33.0
+        ],
+        [
+          25.0,
+          33.0
+        ],
+        [
+          25.0,
+          32.0
+        ],
+        [
+          30.0,
+          32.0
+        ],
+        [
+          30.0,
+          17.0
+        ],
+        [
+          27.0,
+          17.0
+        ],
+        [
+          27.0,
+          29.0
+        ],
+        [
+          20.0,
+          29.0
+        ],
+        [
+          20.0,
+          38.0
+        ],
+        [
+          17.0,
+          38.0
+        ],
+        [
+          17.0,
+          32.0
+        ],
+        [
+          16.0,
+          32.0
+        ],
+        [
+          16.0,
+          31.0
+        ],
+        [
+          14.0,
+          31.0
+        ],
+        [
+          14.0,
+          32.0
+        ],
+        [
+          13.0,
+          32.0
+        ],
+        [
+          13.0,
+          38.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          22.0
+        ],
+        [
+          6.0,
+          22.0
+        ],
+        [
+          6.0,
+          23.0
+        ],
+        [
+          7.0,
+          23.0
+        ],
+        [
+          7.0,
+          24.0
+        ],
+        [
+          8.0,
+          24.0
+        ],
+        [
+          8.0,
+          28.0
+        ],
+        [
+          11.0,
+          28.0
+        ],
+        [
+          11.0,
+          25.0
+        ],
+        [
+          23.0,
+          25.0
+        ],
+        [
+          23.0,
+          16.0
+        ],
+        [
+          24.0,
+          16.0
+        ],
+        [
+          24.0,
+          14.0
+        ],
+        [
+          25.0,
+          14.0
+        ],
+        [
+          25.0,
+          13.0
+        ],
+        [
+          30.0,
+          13.0
+        ],
+        [
+          30.0,
+          14.0
+        ],
+        [
+          34.0,
+          14.0
+        ],
+        [
+          34.0,
+          13.0
+        ],
+        [
+          35.0,
+          13.0
+        ],
+        [
+          35.0,
+          10.0
+        ],
+        [
+          20.0,
+          10.0
+        ],
+        [
+          20.0,
+          14.0
+        ],
+        [
+          19.0,
+          14.0
+        ],
+        [
+          19.0,
+          15.0
+        ],
+        [
+          20.0,
+          15.0
+        ],
+        [
+          20.0,
+          22.0
+        ],
+        [
+          11.0,
+          22.0
+        ],
+        [
+          11.0,
+          19.0
+        ],
+        [
+          2.0,
+          19.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 18,
+      "tile_y": 38
+    }
+  ],
+  "encounter_zones": [
+    {
+      "encounter_group": "kanto_mtmoon_patch1",
+      "fish_encounter_group": "",
+      "name": "encounter_0",
+      "polygon": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          11.0,
+          3.0
+        ],
+        [
+          12.0,
+          3.0
+        ],
+        [
+          12.0,
+          4.0
+        ],
+        [
+          13.0,
+          4.0
+        ],
+        [
+          13.0,
+          17.0
+        ],
+        [
+          16.0,
+          17.0
+        ],
+        [
+          16.0,
+          8.0
+        ],
+        [
+          17.0,
+          8.0
+        ],
+        [
+          17.0,
+          6.0
+        ],
+        [
+          18.0,
+          6.0
+        ],
+        [
+          18.0,
+          4.0
+        ],
+        [
+          19.0,
+          4.0
+        ],
+        [
+          19.0,
+          3.0
+        ],
+        [
+          20.0,
+          3.0
+        ],
+        [
+          20.0,
+          2.0
+        ],
+        [
+          46.0,
+          2.0
+        ],
+        [
+          46.0,
+          38.0
+        ],
+        [
+          24.0,
+          38.0
+        ],
+        [
+          24.0,
+          36.0
+        ],
+        [
+          25.0,
+          36.0
+        ],
+        [
+          25.0,
+          35.0
+        ],
+        [
+          26.0,
+          35.0
+        ],
+        [
+          26.0,
+          33.0
+        ],
+        [
+          25.0,
+          33.0
+        ],
+        [
+          25.0,
+          32.0
+        ],
+        [
+          30.0,
+          32.0
+        ],
+        [
+          30.0,
+          17.0
+        ],
+        [
+          27.0,
+          17.0
+        ],
+        [
+          27.0,
+          29.0
+        ],
+        [
+          20.0,
+          29.0
+        ],
+        [
+          20.0,
+          34.0
+        ],
+        [
+          17.0,
+          34.0
+        ],
+        [
+          17.0,
+          32.0
+        ],
+        [
+          16.0,
+          32.0
+        ],
+        [
+          16.0,
+          31.0
+        ],
+        [
+          14.0,
+          31.0
+        ],
+        [
+          14.0,
+          32.0
+        ],
+        [
+          13.0,
+          32.0
+        ],
+        [
+          13.0,
+          38.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          22.0
+        ],
+        [
+          6.0,
+          22.0
+        ],
+        [
+          6.0,
+          23.0
+        ],
+        [
+          7.0,
+          23.0
+        ],
+        [
+          7.0,
+          24.0
+        ],
+        [
+          8.0,
+          24.0
+        ],
+        [
+          8.0,
+          28.0
+        ],
+        [
+          11.0,
+          28.0
+        ],
+        [
+          11.0,
+          25.0
+        ],
+        [
+          23.0,
+          25.0
+        ],
+        [
+          23.0,
+          16.0
+        ],
+        [
+          24.0,
+          16.0
+        ],
+        [
+          24.0,
+          14.0
+        ],
+        [
+          25.0,
+          14.0
+        ],
+        [
+          25.0,
+          13.0
+        ],
+        [
+          30.0,
+          13.0
+        ],
+        [
+          30.0,
+          14.0
+        ],
+        [
+          34.0,
+          14.0
+        ],
+        [
+          34.0,
+          13.0
+        ],
+        [
+          35.0,
+          13.0
+        ],
+        [
+          35.0,
+          10.0
+        ],
+        [
+          20.0,
+          10.0
+        ],
+        [
+          20.0,
+          14.0
+        ],
+        [
+          19.0,
+          14.0
+        ],
+        [
+          19.0,
+          15.0
+        ],
+        [
+          20.0,
+          15.0
+        ],
+        [
+          20.0,
+          22.0
+        ],
+        [
+          11.0,
+          22.0
+        ],
+        [
+          11.0,
+          19.0
+        ],
+        [
+          2.0,
+          19.0
+        ]
+      ],
+      "terrain": "cave_floor"
+    }
+  ],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "MT. MOON -  Travelers beware — Zubat swarm in the darkness and attack without warning. Carry plenty of Poké Balls if you plan to explore the deeper tunnels."
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "sign_19_26",
+      "kind": "Sign",
+      "script": "scripted",
+      "tile_x": 19,
+      "tile_y": 26
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "check_given"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_riley_lantern_given",
+              "kind": "flag_unset"
+            },
+            "id": "check_given",
+            "if_false": "already_say",
+            "if_true": "intro_face",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "face_player"
+            },
+            "id": "intro_face",
+            "kind": "action",
+            "next": "intro_say1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Pressing deeper into the dark, are you? Not without a light you're not — these tunnels have swallowed better-prepared trainers than you."
+            },
+            "id": "intro_say1",
+            "kind": "action",
+            "next": "give_lantern"
+          },
+          {
+            "action": {
+              "item_id": 2654,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "give_lantern",
+            "kind": "action",
+            "next": "set_given"
+          },
+          {
+            "action": {
+              "key": "mtmoon_riley_lantern_given",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "set_given",
+            "kind": "action",
+            "next": "intro_say2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take my spare Lantern. Keep it in your bag and it'll light the way wherever you wander. Now you'll actually SEE those forks I keep going on about — always go east!"
+            },
+            "id": "intro_say2",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "That Lantern lighting your way? Good. Stick to the main path, mind the Zubat, and if you see a fork — always go east."
+            },
+            "id": "already_say",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "mtmoon_hiker_riley",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Hiker Riley",
+        "sprite": 35,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 17,
+      "tile_y": 34
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_mtmoon_lass_iris",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Lass Iris",
+        "sprite": 6,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 36,
+      "tile_y": 30,
+      "vision_range": 2
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "kanto_mtmoon_supernerd_miguel",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Super Nerd Miguel",
+        "sprite": 25,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 26,
+      "tile_y": 34,
+      "vision_range": 2
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "check_new"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_met",
+              "kind": "flag_unset"
+            },
+            "id": "check_new",
+            "if_false": "check_copper_flag",
+            "if_true": "intro_face",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "face_player"
+            },
+            "id": "intro_face",
+            "kind": "action",
+            "next": "intro_say1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Well hey there, fresh face! Name's Mac. Been mining these caves since before you were born. You look like you could use a pickaxe. Here, take my old one — it's got character."
+            },
+            "id": "intro_say1",
+            "kind": "action",
+            "next": "intro_give_pick"
+          },
+          {
+            "action": {
+              "item_id": 1001,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "intro_give_pick",
+            "kind": "action",
+            "next": "intro_set_met"
+          },
+          {
+            "action": {
+              "key": "mtmoon_miner_met",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "intro_set_met",
+            "kind": "action",
+            "next": "intro_set_pick"
+          },
+          {
+            "action": {
+              "key": "mtmoon_miner_pickaxe_given",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "intro_set_pick",
+            "kind": "action",
+            "next": "intro_say2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "See those sparkly rocks in the cave walls? Mine 'em with that pickaxe. Bring me what you dig up — copper, iron, silver, gold — and I'll trade you geodes in return. Fair deal, yeah?"
+            },
+            "id": "intro_say2",
+            "kind": "action",
+            "next": "check_copper_flag"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_copper_done",
+              "kind": "flag_unset"
+            },
+            "id": "check_copper_flag",
+            "if_false": "check_iron_flag",
+            "if_true": "check_copper_item",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "item_id": 2001,
+              "kind": "has_item",
+              "min_qty": 5
+            },
+            "id": "check_copper_item",
+            "if_false": "check_iron_flag",
+            "if_true": "copper_say",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Five Copper Chunks — you've been busy! Good honest work that. Here's a Common Geode and a little coin for your trouble."
+            },
+            "id": "copper_say",
+            "kind": "action",
+            "next": "copper_take"
+          },
+          {
+            "action": {
+              "item_id": 2001,
+              "kind": "take_item",
+              "qty": 5
+            },
+            "id": "copper_take",
+            "kind": "action",
+            "next": "copper_give"
+          },
+          {
+            "action": {
+              "item_id": 2220,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "copper_give",
+            "kind": "action",
+            "next": "copper_money"
+          },
+          {
+            "action": {
+              "amount": 100,
+              "kind": "give_money"
+            },
+            "id": "copper_money",
+            "kind": "action",
+            "next": "copper_flag"
+          },
+          {
+            "action": {
+              "key": "mtmoon_miner_copper_done",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "copper_flag",
+            "kind": "action",
+            "next": "copper_done_say"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Crack that geode open at a crusher — might be gems or shards inside. Come back when you've got more ore!"
+            },
+            "id": "copper_done_say",
+            "kind": "action",
+            "next": "check_iron_flag"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_iron_done",
+              "kind": "flag_unset"
+            },
+            "id": "check_iron_flag",
+            "if_false": "check_silver_flag",
+            "if_true": "check_iron_item",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "item_id": 2003,
+              "kind": "has_item",
+              "min_qty": 5
+            },
+            "id": "check_iron_item",
+            "if_false": "check_silver_flag",
+            "if_true": "iron_say",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Five Iron Chunks! Now you're getting into the good stuff. Iron's the backbone of any real miner's haul. Here's an Uncommon Geode — better odds of finding something valuable inside."
+            },
+            "id": "iron_say",
+            "kind": "action",
+            "next": "iron_take"
+          },
+          {
+            "action": {
+              "item_id": 2003,
+              "kind": "take_item",
+              "qty": 5
+            },
+            "id": "iron_take",
+            "kind": "action",
+            "next": "iron_give"
+          },
+          {
+            "action": {
+              "item_id": 2221,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "iron_give",
+            "kind": "action",
+            "next": "iron_money"
+          },
+          {
+            "action": {
+              "amount": 300,
+              "kind": "give_money"
+            },
+            "id": "iron_money",
+            "kind": "action",
+            "next": "iron_flag"
+          },
+          {
+            "action": {
+              "key": "mtmoon_miner_iron_done",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "iron_flag",
+            "kind": "action",
+            "next": "check_silver_flag"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_silver_done",
+              "kind": "flag_unset"
+            },
+            "id": "check_silver_flag",
+            "if_false": "check_gold_flag",
+            "if_true": "check_silver_item",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "item_id": 2005,
+              "kind": "has_item",
+              "min_qty": 3
+            },
+            "id": "check_silver_item",
+            "if_false": "check_gold_flag",
+            "if_true": "silver_say",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Silver! Now we're talking. Three chunks of this beautiful metal will fetch you a Rare Geode. These almost always have something valuable inside. Don't spend that coin all in one place!"
+            },
+            "id": "silver_say",
+            "kind": "action",
+            "next": "silver_take"
+          },
+          {
+            "action": {
+              "item_id": 2005,
+              "kind": "take_item",
+              "qty": 3
+            },
+            "id": "silver_take",
+            "kind": "action",
+            "next": "silver_give"
+          },
+          {
+            "action": {
+              "item_id": 2222,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "silver_give",
+            "kind": "action",
+            "next": "silver_money"
+          },
+          {
+            "action": {
+              "amount": 800,
+              "kind": "give_money"
+            },
+            "id": "silver_money",
+            "kind": "action",
+            "next": "silver_flag"
+          },
+          {
+            "action": {
+              "key": "mtmoon_miner_silver_done",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "silver_flag",
+            "kind": "action",
+            "next": "check_gold_flag"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_gold_done",
+              "kind": "flag_unset"
+            },
+            "id": "check_gold_flag",
+            "if_false": "farewell_gold_check",
+            "if_true": "check_gold_item",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "item_id": 2006,
+              "kind": "has_item",
+              "min_qty": 2
+            },
+            "id": "check_gold_item",
+            "if_false": "farewell_gold_check",
+            "if_true": "gold_say",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "GOLD! In all my thirty years down here, I never get tired of seeing that shine. Two chunks gets you an Epic Geode — these are the real deal. You've got a miner's nose, kid. I mean it."
+            },
+            "id": "gold_say",
+            "kind": "action",
+            "next": "gold_take"
+          },
+          {
+            "action": {
+              "item_id": 2006,
+              "kind": "take_item",
+              "qty": 2
+            },
+            "id": "gold_take",
+            "kind": "action",
+            "next": "gold_give"
+          },
+          {
+            "action": {
+              "item_id": 2223,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "gold_give",
+            "kind": "action",
+            "next": "gold_money"
+          },
+          {
+            "action": {
+              "amount": 1500,
+              "kind": "give_money"
+            },
+            "id": "gold_money",
+            "kind": "action",
+            "next": "gold_flag"
+          },
+          {
+            "action": {
+              "key": "mtmoon_miner_gold_done",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "gold_flag",
+            "kind": "action",
+            "next": "farewell_gold_check"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_gold_done",
+              "kind": "flag_set"
+            },
+            "id": "farewell_gold_check",
+            "if_false": "farewell_any",
+            "if_true": "farewell_all",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "key": "mtmoon_miner_copper_done",
+              "kind": "flag_set"
+            },
+            "id": "farewell_any",
+            "if_false": "farewell_none",
+            "if_true": "farewell_partial",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You've cleaned me out, kid! Every tier, every geode. You're a natural-born miner — best I've seen in decades. If you ever make it to deeper caves, look me up. I might have rarer trades then."
+            },
+            "id": "farewell_all",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Good work so far. Keep swinging that pickaxe — the deeper you go in these caves, the better the ore gets. Come back when you've collected more."
+            },
+            "id": "farewell_partial",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You still owe me some ore, rookie! Swing that pickaxe at any sparkly rock you see in the cave. Copper, iron, silver, gold — bring it all to me and I'll make it worth your while."
+            },
+            "id": "farewell_none",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "mtmoon_miner_mac",
+      "kind": "Npc",
+      "properties": {
+        "OBJECT_TYPE": "",
+        "dialogue": ""
+      },
+      "render": {
+        "direction": 1,
+        "display_name": "Miner Mac",
+        "sprite": 35,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 45,
+      "tile_y": 22
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_26_12",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 26,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_28_12",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 28,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_27_12",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 27,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_29_12",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 29,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_13_24",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 13,
+      "tile_y": 24
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_17_24",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 17,
+      "tile_y": 24
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_18_24",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 18,
+      "tile_y": 24
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_16_24",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 16,
+      "tile_y": 24
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_15_24",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 15,
+      "tile_y": 24
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_14_24",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 14,
+      "tile_y": 24
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_20_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 20,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_21_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 21,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_22_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 22,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_23_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 23,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_24_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 24,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_25_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 25,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_26_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 26,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_27_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 27,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_28_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 28,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_30_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 30,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_31_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 31,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_32_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 32,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_33_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 33,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_34_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 34,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_35_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 35,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_36_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 36,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_37_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 37,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_39_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 39,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_38_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 38,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_40_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 40,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_41_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 41,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_42_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 42,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_43_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 43,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_44_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 44,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_45_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 45,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_29_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 29,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_3_25",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 3,
+      "tile_y": 25
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_6_26",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 6,
+      "tile_y": 26
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_5_23",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 5,
+      "tile_y": 23
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_3_22",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 3,
+      "tile_y": 22
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_4_23",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 4,
+      "tile_y": 23
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_42_7",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_uncommon"
+      },
+      "script": "default",
+      "tile_x": 42,
+      "tile_y": 7
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_43_7",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_uncommon"
+      },
+      "script": "default",
+      "tile_x": 43,
+      "tile_y": 7
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "kind": "patrol_path",
+        "mode": "loop",
+        "pause_ms": 1500
+      },
+      "id": "kanto_mtmoon_lass_miriam",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Lass Miriam",
+        "sprite": 5,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 33,
+      "tile_y": 5,
+      "vision_range": 1,
+      "waypoints": [
+        {
+          "x": 33,
+          "y": 5
+        },
+        {
+          "x": 27,
+          "y": 5
+        },
+        {
+          "x": 27,
+          "y": 8
+        },
+        {
+          "x": 33,
+          "y": 8
+        },
+        {
+          "x": 33,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "directions": [
+          1,
+          2
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "kanto_mtmoon_youngster_josh",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Youngster Josh",
+        "sprite": 3,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 14,
+      "tile_y": 17,
+      "vision_range": 3
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "kind": "wander",
+        "pause_ms": 500,
+        "radius": 2
+      },
+      "id": "kanto_mtmoon_hiker_marcos",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Hiker Marcos",
+        "sprite": 35,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 7,
+      "tile_y": 9,
+      "vision_range": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_40_34",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 40,
+      "tile_y": 34
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_43_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 43,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_44_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 44,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_40_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 40,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_45_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 45,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_24_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_rare"
+      },
+      "script": "default",
+      "tile_x": 24,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_26_32",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_uncommon"
+      },
+      "script": "default",
+      "tile_x": 26,
+      "tile_y": 32
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_27_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 27,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_4_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_uncommon"
+      },
+      "script": "default",
+      "tile_x": 4,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_9_35",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 9,
+      "tile_y": 35
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_11_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 11,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_4_34",
+      "kind": "ResourceNode",
+      "properties": {
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 4,
+      "tile_y": 34
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_11_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_rare"
+      },
+      "script": "default",
+      "tile_x": 11,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_6_36",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_uncommon"
+      },
+      "script": "default",
+      "tile_x": 6,
+      "tile_y": 36
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_8_37",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 8,
+      "tile_y": 37
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_6_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 6,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_2_37",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 2,
+      "tile_y": 37
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "check_done"
+          },
+          {
+            "cond": {
+              "key": "daniella_quest_done",
+              "kind": "flag_unset"
+            },
+            "id": "check_done",
+            "if_false": "return_done",
+            "if_true": "check_started",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "key": "daniella_quest_started",
+              "kind": "flag_unset"
+            },
+            "id": "check_started",
+            "if_false": "check_kit_return",
+            "if_true": "step1_face",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "face_player"
+            },
+            "id": "step1_face",
+            "kind": "action",
+            "next": "step1_say1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Oh! A trainer! Perfect timing — I'm Daniella, Pokemon field researcher. I've been camped in this cave for two weeks studying Clefairy migration patterns. \n\n"
+            },
+            "id": "step1_say1",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "key": "daniella_quest_started",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "step1_set_flag",
+            "kind": "action",
+            "next": "step1_say2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Thank you! It's Kit 7B — the clerk will know. The Pewter PokeCenter is just south of the cave, past Route 3. I'll be here when you get back. ...Hopefully."
+            },
+            "id": "step1_say2",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "daniella_has_kit",
+              "kind": "flag_set"
+            },
+            "id": "check_kit_return",
+            "if_false": "check_step6",
+            "if_true": "check_kit_unclaimed",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "key": "daniella_needs_data",
+              "kind": "flag_unset"
+            },
+            "id": "check_kit_unclaimed",
+            "if_false": "check_step6",
+            "if_true": "step3_intro",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You're back! And you brought the kit — thank you! This has everything I need for the mineral analysis.\n\n "
+            },
+            "id": "step3_intro",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "amount": 800,
+              "kind": "give_money"
+            },
+            "id": "step3_money",
+            "kind": "action",
+            "next": "step3_flag"
+          },
+          {
+            "action": {
+              "key": "daniella_needs_data",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "step3_flag",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "daniella_analysis_done",
+              "kind": "flag_set"
+            },
+            "id": "check_step6",
+            "if_false": "farewell_progress",
+            "if_true": "step6_intro",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Daisy confirmed it — waxing crescent, just like I theorized! The migration routes are LUNAR, not mineral! This changes everything! "
+            },
+            "id": "step6_intro",
+            "kind": "action",
+            "next": "n8"
+          },
+          {
+            "action": {
+              "item_id": 81,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "step6_give_stone",
+            "kind": "action",
+            "next": "step6_give_money"
+          },
+          {
+            "action": {
+              "amount": 3000,
+              "kind": "give_money"
+            },
+            "id": "step6_give_money",
+            "kind": "action",
+            "next": "step6_flag"
+          },
+          {
+            "action": {
+              "key": "daniella_quest_done",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "step6_flag",
+            "kind": "action",
+            "next": "step6_closing"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "That Moon Stone works on Nidorina, Nidorino, Clefairy, Jigglypuff, and Skitty. It induces a permanent evolution — choose wisely! And if you're ever in Saffron City, I lecture at the university there. Come say hello."
+            },
+            "id": "step6_closing",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "daniella_needs_data",
+              "kind": "flag_set"
+            },
+            "id": "farewell_progress",
+            "if_false": "farewell_need_kit",
+            "if_true": "farewell_need_data",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Did you find the Viridian Forest Bug Catcher yet? He's got the Clefairy observation data I need. Once I have his notes, I can send them to Daisy in Pallet Town for cross-referencing."
+            },
+            "id": "farewell_need_data",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Any luck getting my kit? Head to the Pewter City PokeCenter — they have my supplies behind the counter. Just ask for Daniella's Kit 7B. I'll be here analyzing these mineral samples."
+            },
+            "id": "farewell_need_kit",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "The research continues! Thanks to you, Daisy and I are co-authoring a paper on lunar Clefairy migration. "
+            },
+            "id": "return_done",
+            "kind": "action",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "When it's published, your name will be in the acknowledgements. Twenty years I've been chasing this theory — you helped prove it in a week. "
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Come find me if you're ever in Saffron — I lecture at the university there."
+            },
+            "id": "n2",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "They're drawn to Mt. Moon's unique geology, but I can't figure out WHY. I need my cave survey kit from the Pewter City PokeCenter — they hold my research supplies behind the counter. "
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Ask for Daniella's Kit 7B.Please — I can't leave the dig site or the Zubat will scatter my markers! Will you go?"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "step1_set_flag"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Here's some coin for the trouble. But there's another problem — my data is incomplete. "
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "I need Clefairy behavioral data from a DIFFERENT location to compare with what I've gathered in this cave."
+            },
+            "id": "n6",
+            "kind": "action",
+            "next": "n7"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "There's a Bug Catcher in Viridian Forest who caught a Clefairy recently. He's been observing it for weeks. Get his notes for me and I can finish my research."
+            },
+            "id": "n7",
+            "kind": "action",
+            "next": "step3_money"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Twenty years of cave research, finally making sense.[pauses, looks at you]You traveled from Mt. Moon to Pewter to Viridian Forest to Pallet and back to this cave — all to help a researcher you just met. "
+            },
+            "id": "n8",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "That's not something I'll forget.Here — take this Moon Stone. I've collected dozens of fragments down here, but this one is whole. Use it well. And this is for your time."
+            },
+            "id": "n9",
+            "kind": "action",
+            "next": "step6_give_stone"
+          }
+        ]
+      },
+      "id": "npc_40_7",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Daniella the Great",
+        "sprite": 1057,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 40,
+      "tile_y": 7
+    }
+  ],
+  "properties": {
+    "is_dark": true
+  },
+  "resource_areas": [
+    {
+      "max_active": 2,
+      "name": "resourcearea_4",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_13_24",
+        "resourcenode_17_24",
+        "resourcenode_18_24",
+        "resourcenode_16_24",
+        "resourcenode_15_24",
+        "resourcenode_14_24"
+      ],
+      "polygon": [
+        [
+          13.0,
+          24.0
+        ],
+        [
+          19.0,
+          24.0
+        ],
+        [
+          19.0,
+          25.0
+        ],
+        [
+          13.0,
+          25.0
+        ]
+      ]
+    },
+    {
+      "max_active": 1,
+      "name": "resourcearea_5",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_26_12",
+        "resourcenode_28_12",
+        "resourcenode_27_12",
+        "resourcenode_29_12"
+      ],
+      "polygon": [
+        [
+          26.0,
+          12.0
+        ],
+        [
+          30.0,
+          12.0
+        ],
+        [
+          30.0,
+          13.0
+        ],
+        [
+          26.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "max_active": 7,
+      "name": "resourcearea_7",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_20_1",
+        "resourcenode_21_1",
+        "resourcenode_22_1",
+        "resourcenode_23_1",
+        "resourcenode_24_1",
+        "resourcenode_25_1",
+        "resourcenode_26_1",
+        "resourcenode_27_1",
+        "resourcenode_28_1",
+        "resourcenode_30_1",
+        "resourcenode_31_1",
+        "resourcenode_32_1",
+        "resourcenode_33_1",
+        "resourcenode_34_1",
+        "resourcenode_35_1",
+        "resourcenode_36_1",
+        "resourcenode_37_1",
+        "resourcenode_39_1",
+        "resourcenode_38_1",
+        "resourcenode_40_1",
+        "resourcenode_41_1",
+        "resourcenode_42_1",
+        "resourcenode_43_1",
+        "resourcenode_44_1",
+        "resourcenode_45_1",
+        "resourcenode_29_1"
+      ],
+      "polygon": [
+        [
+          20.0,
+          1.0
+        ],
+        [
+          46.0,
+          1.0
+        ],
+        [
+          46.0,
+          2.0
+        ],
+        [
+          20.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "max_active": 2,
+      "name": "resourcearea_5",
+      "object_types": [
+        "mushroom_common"
+      ],
+      "placement_ids": [
+        "resourcenode_3_25",
+        "resourcenode_6_26",
+        "resourcenode_5_23",
+        "resourcenode_3_22",
+        "resourcenode_4_23"
+      ],
+      "polygon": [
+        [
+          2.0,
+          22.0
+        ],
+        [
+          6.0,
+          22.0
+        ],
+        [
+          6.0,
+          23.0
+        ],
+        [
+          7.0,
+          23.0
+        ],
+        [
+          7.0,
+          24.0
+        ],
+        [
+          8.0,
+          24.0
+        ],
+        [
+          8.0,
+          28.0
+        ],
+        [
+          2.0,
+          28.0
+        ]
+      ]
+    },
+    {
+      "max_active": 1,
+      "name": "resourcearea_6",
+      "object_types": [
+        "mining_uncommon"
+      ],
+      "placement_ids": [
+        "resourcenode_42_7",
+        "resourcenode_43_7"
+      ],
+      "polygon": [
+        [
+          42.0,
+          7.0
+        ],
+        [
+          44.0,
+          7.0
+        ],
+        [
+          44.0,
+          8.0
+        ],
+        [
+          42.0,
+          8.0
+        ]
+      ]
+    },
+    {
+      "max_active": 3,
+      "name": "resourcearea_7",
+      "object_types": [
+        "mushroom_common"
+      ],
+      "placement_ids": [
+        "resourcenode_40_34",
+        "resourcenode_43_36",
+        "resourcenode_44_33",
+        "resourcenode_40_36",
+        "resourcenode_45_36"
+      ],
+      "polygon": [
+        [
+          42.0,
+          32.0
+        ],
+        [
+          46.0,
+          32.0
+        ],
+        [
+          46.0,
+          38.0
+        ],
+        [
+          39.0,
+          38.0
+        ],
+        [
+          39.0,
+          34.0
+        ],
+        [
+          40.0,
+          34.0
+        ],
+        [
+          40.0,
+          33.0
+        ],
+        [
+          42.0,
+          33.0
+        ]
+      ]
+    },
+    {
+      "max_active": 2,
+      "name": "resourcearea_8",
+      "object_types": [
+        "mining_common",
+        "mining_uncommon",
+        "mining_rare"
+      ],
+      "placement_ids": [
+        "resourcenode_24_36",
+        "resourcenode_26_32",
+        "resourcenode_27_36"
+      ],
+      "polygon": [
+        [
+          25.0,
+          32.0
+        ],
+        [
+          28.0,
+          32.0
+        ],
+        [
+          28.0,
+          37.0
+        ],
+        [
+          27.0,
+          37.0
+        ],
+        [
+          27.0,
+          38.0
+        ],
+        [
+          24.0,
+          38.0
+        ],
+        [
+          24.0,
+          36.0
+        ],
+        [
+          25.0,
+          36.0
+        ],
+        [
+          25.0,
+          35.0
+        ],
+        [
+          27.0,
+          35.0
+        ],
+        [
+          27.0,
+          34.0
+        ],
+        [
+          26.0,
+          34.0
+        ],
+        [
+          26.0,
+          33.0
+        ],
+        [
+          25.0,
+          33.0
+        ]
+      ]
+    },
+    {
+      "max_active": 1,
+      "name": "resourcearea_9",
+      "object_types": [
+        "mining_common",
+        "mining_rare",
+        "mining_uncommon",
+        "mushroom_common"
+      ],
+      "placement_ids": [
+        "resourcenode_4_36",
+        "resourcenode_9_35",
+        "resourcenode_11_36",
+        "resourcenode_4_34",
+        "resourcenode_11_33",
+        "resourcenode_6_36",
+        "resourcenode_8_37",
+        "resourcenode_6_33",
+        "resourcenode_2_37"
+      ],
+      "polygon": [
+        [
+          2.0,
+          33.0
+        ],
+        [
+          13.0,
+          33.0
+        ],
+        [
+          13.0,
+          38.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ]
+    }
+  ],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 0,
+      "name": "t_5_6",
+      "target_warp": "",
+      "tile_x": 5,
+      "tile_y": 6
+    },
+    {
+      "direction": 3,
+      "name": "t_18_37",
+      "target_warp": "",
+      "tile_x": 18,
+      "tile_y": 37
+    },
+    {
+      "direction": 0,
+      "name": "t_19_14",
+      "target_warp": "",
+      "tile_x": 19,
+      "tile_y": 14
+    },
+    {
+      "direction": 0,
+      "name": "t_31_16",
+      "target_warp": "",
+      "tile_x": 31,
+      "tile_y": 16
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_5_6",
+      "target_map": "rom_1_2",
+      "target_warp": "t_3_3",
+      "tile_x": 5,
+      "tile_y": 6,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_19_14",
+      "target_map": "rom_1_2",
+      "target_warp": "t_25_4",
+      "tile_x": 19,
+      "tile_y": 14,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_31_16",
+      "target_map": "rom_1_2",
+      "target_warp": "t_43_21",
+      "tile_x": 31,
+      "tile_y": 16,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_18_37",
+      "target_map": "kanto",
+      "target_warp": "t_175_55",
+      "tile_x": 18,
+      "tile_y": 38,
+      "warp_type": ""
+    }
+  ]
+}

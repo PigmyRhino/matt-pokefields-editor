@@ -1,0 +1,133 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pokemart",
+      "display_name": "Pewter City PokeMart",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pokemart",
+      "polygon": [
+        [
+          4.0,
+          2.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          11.0,
+          8.0
+        ],
+        [
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          5.0
+        ],
+        [
+          4.0,
+          5.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 4,
+      "tile_y": 8
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "pewter_mart_facility",
+      "kind": "Facility",
+      "properties": {
+        "shop_id": "pewter_mart"
+      },
+      "script": "poke_mart",
+      "tile_x": 3,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "pewter_mart_shopkeeper",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Shopkeeper",
+        "sprite": 130,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 2,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_1_3",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "TM Vendor",
+        "sprite": 23,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 1,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_1_4",
+      "kind": "Facility",
+      "properties": {
+        "shop_id": "tm_shop"
+      },
+      "script": "poke_mart",
+      "tile_x": 1,
+      "tile_y": 4
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_4_7",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 7
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_4_7",
+      "target_map": "kanto",
+      "target_warp": "t_76_78",
+      "tile_x": 4,
+      "tile_y": 8,
+      "warp_type": ""
+    }
+  ]
+}

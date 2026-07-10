@@ -1,0 +1,383 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/inspector.gd" id="1_insp"]
+[ext_resource type="PackedScene" path="res://scenes/widgets/SearchPicker.tscn" id="2_sp"]
+
+[node name="Inspector" type="PanelContainer"]
+custom_minimum_size = Vector2(300, 0)
+script = ExtResource("1_insp")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Scroll" type="ScrollContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="Fields" type="VBoxContainer" parent="Margin/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="Header" type="Label" parent="Margin/Scroll/Fields"]
+layout_mode = 2
+text = "Selected object"
+
+[node name="IdRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/IdRow"]
+layout_mode = 2
+text = "ID"
+
+[node name="IdEdit" type="LineEdit" parent="Margin/Scroll/Fields/IdRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="KindRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/KindRow"]
+layout_mode = 2
+text = "Kind"
+
+[node name="KindOption" type="OptionButton" parent="Margin/Scroll/Fields/KindRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TileLabel" type="Label" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "tile (0, 0)"
+
+[node name="ScriptRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/ScriptRow"]
+layout_mode = 2
+text = "Script"
+
+[node name="ScriptOption" parent="Margin/Scroll/Fields/ScriptRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ObjectTypeRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/ObjectTypeRow"]
+layout_mode = 2
+text = "Object Type"
+
+[node name="ObjectTypeOption" parent="Margin/Scroll/Fields/ObjectTypeRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EncounterRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/EncounterRow"]
+layout_mode = 2
+text = "Encounter"
+
+[node name="EncounterEdit" parent="Margin/Scroll/Fields/EncounterRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ShopLinkRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/ShopLinkRow"]
+layout_mode = 2
+text = "Shop"
+
+[node name="ShopLinkOption" parent="Margin/Scroll/Fields/ShopLinkRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="JobBoardLinkRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/JobBoardLinkRow"]
+layout_mode = 2
+text = "Job board"
+
+[node name="JobBoardLinkOption" parent="Margin/Scroll/Fields/JobBoardLinkRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NpcBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SpriteSourceRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/SpriteSourceRow"]
+layout_mode = 2
+text = "Sprite type"
+
+[node name="SpriteSourceOption" type="OptionButton" parent="Margin/Scroll/Fields/NpcBox/SpriteSourceRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpriteRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/SpriteRow"]
+layout_mode = 2
+text = "Sprite"
+
+[node name="SpriteSpin" parent="Margin/Scroll/Fields/NpcBox/SpriteRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PokemonRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/PokemonRow"]
+layout_mode = 2
+text = "Pokémon"
+
+[node name="PokemonSpin" parent="Margin/Scroll/Fields/NpcBox/PokemonRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DirRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/DirRow"]
+layout_mode = 2
+text = "Direction"
+
+[node name="DirectionOption" type="OptionButton" parent="Margin/Scroll/Fields/NpcBox/DirRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NameRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/NameRow"]
+layout_mode = 2
+text = "Name"
+
+[node name="DisplayNameEdit" type="LineEdit" parent="Margin/Scroll/Fields/NpcBox/NameRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TrainerLinkRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/TrainerLinkRow"]
+layout_mode = 2
+text = "Trainer"
+
+[node name="TrainerLinkOption" parent="Margin/Scroll/Fields/NpcBox/TrainerLinkRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TimeRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
+layout_mode = 2
+text = "Visible"
+
+[node name="TodMorning" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Morn"
+
+[node name="TodDay" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Day"
+
+[node name="TodDusk" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Dusk"
+
+[node name="TodNight" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Night"
+
+[node name="TrainerRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+layout_mode = 2
+
+[node name="TrainerCheck" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TrainerRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Trainer"
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/TrainerRow"]
+layout_mode = 2
+text = "Vision"
+
+[node name="VisionSpin" type="SpinBox" parent="Margin/Scroll/Fields/NpcBox/TrainerRow"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 255.0
+
+[node name="BehaviorRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/BehaviorRow"]
+layout_mode = 2
+text = "Behavior"
+
+[node name="BehaviorOption" type="OptionButton" parent="Margin/Scroll/Fields/NpcBox/BehaviorRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LookParams" type="VBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PauseRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/LookParams"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/LookParams/PauseRow"]
+layout_mode = 2
+text = "Pause ms"
+
+[node name="LookPauseSpin" type="SpinBox" parent="Margin/Scroll/Fields/NpcBox/LookParams/PauseRow"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 60000.0
+step = 100.0
+
+[node name="DirRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/LookParams"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/LookParams/DirRow"]
+layout_mode = 2
+text = "Dirs"
+
+[node name="LookDown" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/LookParams/DirRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "D"
+
+[node name="LookLeft" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/LookParams/DirRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "L"
+
+[node name="LookRight" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/LookParams/DirRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "R"
+
+[node name="LookUp" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/LookParams/DirRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "U"
+
+[node name="WanderParams" type="VBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="RadiusRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/WanderParams"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/WanderParams/RadiusRow"]
+layout_mode = 2
+text = "Radius"
+
+[node name="WanderRadiusSpin" type="SpinBox" parent="Margin/Scroll/Fields/NpcBox/WanderParams/RadiusRow"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 255.0
+
+[node name="PauseRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/WanderParams"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/WanderParams/PauseRow"]
+layout_mode = 2
+text = "Pause ms"
+
+[node name="WanderPauseSpin" type="SpinBox" parent="Margin/Scroll/Fields/NpcBox/WanderParams/PauseRow"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 60000.0
+step = 100.0
+
+[node name="PatrolParams" type="VBoxContainer" parent="Margin/Scroll/Fields/NpcBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ModeRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/PatrolParams"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/PatrolParams/ModeRow"]
+layout_mode = 2
+text = "Mode"
+
+[node name="PatrolModeOption" type="OptionButton" parent="Margin/Scroll/Fields/NpcBox/PatrolParams/ModeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PauseRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/PatrolParams"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NpcBox/PatrolParams/PauseRow"]
+layout_mode = 2
+text = "Pause ms"
+
+[node name="PatrolPauseSpin" type="SpinBox" parent="Margin/Scroll/Fields/NpcBox/PatrolParams/PauseRow"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 60000.0
+step = 100.0
+
+[node name="WaypointRow" type="HBoxContainer" parent="Margin/Scroll/Fields/NpcBox/PatrolParams"]
+layout_mode = 2
+
+[node name="WaypointEditToggle" type="CheckButton" parent="Margin/Scroll/Fields/NpcBox/PatrolParams/WaypointRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Edit waypoints"
+
+[node name="WaypointClearBtn" type="Button" parent="Margin/Scroll/Fields/NpcBox/PatrolParams/WaypointRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Clear"
+
+[node name="WaypointCountLabel" type="Label" parent="Margin/Scroll/Fields/NpcBox/PatrolParams"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0 waypoints"
+
+[node name="DeleteBtn" type="Button" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Delete object"

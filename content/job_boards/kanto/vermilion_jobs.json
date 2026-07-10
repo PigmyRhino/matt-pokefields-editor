@@ -1,0 +1,193 @@
+// Vermillion City job board. Species from kanto_route5/6/11 patches + the
+// route 11 rod/surf tables (Tentacool); trainers are Route 11 / S.S. Anne
+// daily locals, Lt. Surge is the weekly gym anchor.
+{
+  "board_id": "vermilion_jobs",
+  "name": "Vermilion City",
+  "daily_slots": 3,
+  "weekly_slots": 2,
+  "jobs": [
+    {
+      "job_id": "vermilion_drowzee_watch",
+      "title": "Drowzee Watch",
+      "description": "Dock workers keep dozing off mid-shift — Drowzee are feeding on their dreams. Drive them off Route 11.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "drowzee",
+        "count": 8
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 2600
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_magnemite_static",
+      "title": "Static Cling",
+      "description": "Magnemite keep latching onto the harbour cranes and shorting them out. Knock them loose.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "magnemite",
+        "count": 8
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 2600
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_meowth_cargo",
+      "title": "Cargo Stowaways",
+      "description": "Meowth keep raiding the warehouse. The harbourmaster wants a few caught alive.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "meowth",
+        "count": 2
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 2200
+        },
+        {
+          "kind": "item",
+          "item": "poke_ball",
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_tentacool_sweep",
+      "title": "Jellyfish Sweep",
+      "description": "Tentacool are stinging swimmers off the Route 11 shore. Fish a few out of the water.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "tentacool",
+        "count": 3
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 2000
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_flower_order",
+      "title": "Harbour Bouquets",
+      "description": "The flower stall by the docks pays for fresh wildflowers. Forage a bundle.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "wildflower",
+        "count": 5
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 1500
+        },
+        {
+          "kind": "skill_xp",
+          "skill": "foraging",
+          "amount": 300
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_psychic_hustler",
+      "title": "Roadside Hustler",
+      "description": "Psychic Edward keeps fleecing rookies on Route 11. Beat him at his own game.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_trainer",
+        "trainer": "kanto_route11_psychic_edward"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 2800
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_sparring_partners",
+      "title": "Sparring Partners Wanted",
+      "description": "Keep your team sharp — win a handful of battles, any opponent will do.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "win_battles",
+        "count": 5
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 1800
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_challenge_surge",
+      "title": "Storm the Gym",
+      "description": "Show the gym you've got what it takes — defeat Lt. Surge in an official rematch.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "defeat_trainer",
+        "trainer": "kanto_vermilion_gym_leader_surge"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 12000
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_shiny_proof",
+      "title": "A Rare Find",
+      "description": "Bring proof of a shiny capture — any species will do. A sailor pays handsomely.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "catch_pokemon",
+        "shiny": true,
+        "count": 1
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 25000
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_anne_gauntlet",
+      "title": "S.S. Anne Gauntlet",
+      "description": "The passengers aboard the S.S. Anne love a wager. Win trainer battles until word gets around.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "trainer_only": true,
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 10000
+        },
+        {
+          "kind": "item",
+          "item": "oran_berry",
+          "qty": 10
+        }
+      ]
+    }
+  ]
+}

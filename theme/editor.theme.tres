@@ -1,0 +1,82 @@
+[gd_resource type="Theme" format=3 uid="uid://drg83w851xm3p"]
+
+[sub_resource type="StyleBoxFlat" id="btn"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.22, 0.245, 0.3, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="btnh"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.3, 0.34, 0.42, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="input"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.11, 0.13, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.27, 0.3, 0.36, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="panel"]
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+bg_color = Color(0.145, 0.157, 0.188, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.27, 0.3, 0.36, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[resource]
+default_font_size = 13
+Button/colors/font_color = Color(0.87, 0.89, 0.93, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/styles/focus = SubResource("btn")
+Button/styles/hover = SubResource("btnh")
+Button/styles/normal = SubResource("btn")
+Button/styles/pressed = SubResource("btnh")
+CheckBox/colors/font_color = Color(0.87, 0.89, 0.93, 1)
+CheckBox/colors/font_hover_color = Color(1, 1, 1, 1)
+CheckButton/colors/font_color = Color(0.87, 0.89, 0.93, 1)
+CheckButton/colors/font_hover_color = Color(1, 1, 1, 1)
+Label/colors/font_color = Color(0.87, 0.89, 0.93, 1)
+LineEdit/colors/caret_color = Color(0.87, 0.89, 0.93, 1)
+LineEdit/colors/font_color = Color(0.87, 0.89, 0.93, 1)
+LineEdit/colors/font_placeholder_color = Color(0.55, 0.58, 0.63, 1)
+LineEdit/styles/focus = SubResource("input")
+LineEdit/styles/normal = SubResource("input")
+OptionButton/colors/font_color = Color(0.87, 0.89, 0.93, 1)
+OptionButton/styles/focus = SubResource("btn")
+OptionButton/styles/hover = SubResource("btnh")
+OptionButton/styles/normal = SubResource("btn")
+OptionButton/styles/pressed = SubResource("btnh")
+PanelContainer/styles/panel = SubResource("panel")
+SpinBox/colors/font_color = Color(0.87, 0.89, 0.93, 1)

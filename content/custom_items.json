@@ -1,0 +1,4367 @@
+[
+  {
+    "item_id": 1001,
+    "name": "Rusty Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A worn pickaxe. Barely holds together.",
+    "cost": 0,
+    "stackable": false,
+    "tradable": false
+  },
+  {
+    "item_id": 1002,
+    "name": "Bronze Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A basic Bronze Oak pickaxe.",
+    "cost": 1422,
+    "stackable": false
+  },
+  {
+    "item_id": 1003,
+    "name": "Iron Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A sturdy Iron Oak pickaxe.",
+    "cost": 1910,
+    "stackable": false
+  },
+  {
+    "item_id": 1004,
+    "name": "Steel Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A reliable Steel Oak pickaxe.",
+    "cost": 7806,
+    "stackable": false
+  },
+  {
+    "item_id": 1005,
+    "name": "Gold Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Oak pickaxe.",
+    "cost": 27166,
+    "stackable": false
+  },
+  {
+    "item_id": 1006,
+    "name": "Platinum Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Oak pickaxe.",
+    "cost": 53852,
+    "stackable": false
+  },
+  {
+    "item_id": 1007,
+    "name": "Mithril Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Oak pickaxe.",
+    "cost": 83740,
+    "stackable": false
+  },
+  {
+    "item_id": 1008,
+    "name": "Adamantine Oak Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Oak pickaxe.",
+    "cost": 419730,
+    "stackable": false
+  },
+  {
+    "item_id": 1012,
+    "name": "Gold Elm Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Elm pickaxe.",
+    "cost": 28136,
+    "stackable": false
+  },
+  {
+    "item_id": 1013,
+    "name": "Platinum Elm Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Elm pickaxe.",
+    "cost": 54823,
+    "stackable": false
+  },
+  {
+    "item_id": 1014,
+    "name": "Mithril Elm Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Elm pickaxe.",
+    "cost": 84711,
+    "stackable": false
+  },
+  {
+    "item_id": 1015,
+    "name": "Adamantine Elm Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Elm pickaxe.",
+    "cost": 420701,
+    "stackable": false
+  },
+  {
+    "item_id": 1017,
+    "name": "Iron Birch Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A sturdy Iron Birch pickaxe.",
+    "cost": 3462,
+    "stackable": false
+  },
+  {
+    "item_id": 1018,
+    "name": "Steel Birch Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A reliable Steel Birch pickaxe.",
+    "cost": 9453,
+    "stackable": false
+  },
+  {
+    "item_id": 1019,
+    "name": "Gold Birch Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Birch pickaxe.",
+    "cost": 28265,
+    "stackable": false
+  },
+  {
+    "item_id": 1020,
+    "name": "Platinum Birch Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Birch pickaxe.",
+    "cost": 54949,
+    "stackable": false
+  },
+  {
+    "item_id": 1021,
+    "name": "Mithril Birch Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Birch pickaxe.",
+    "cost": 84834,
+    "stackable": false
+  },
+  {
+    "item_id": 1022,
+    "name": "Adamantine Birch Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Birch pickaxe.",
+    "cost": 420823,
+    "stackable": false
+  },
+  {
+    "item_id": 1024,
+    "name": "Iron Rowan Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A sturdy Iron Rowan pickaxe.",
+    "cost": 13690,
+    "stackable": false
+  },
+  {
+    "item_id": 1025,
+    "name": "Steel Rowan Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A reliable Steel Rowan pickaxe.",
+    "cost": 19682,
+    "stackable": false
+  },
+  {
+    "item_id": 1026,
+    "name": "Gold Rowan Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Rowan pickaxe.",
+    "cost": 38493,
+    "stackable": false
+  },
+  {
+    "item_id": 1027,
+    "name": "Platinum Rowan Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Rowan pickaxe.",
+    "cost": 65177,
+    "stackable": false
+  },
+  {
+    "item_id": 1028,
+    "name": "Mithril Rowan Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Rowan pickaxe.",
+    "cost": 95065,
+    "stackable": false
+  },
+  {
+    "item_id": 1029,
+    "name": "Adamantine Rowan Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Rowan pickaxe.",
+    "cost": 431054,
+    "stackable": false
+  },
+  {
+    "item_id": 1031,
+    "name": "Iron Juniper Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A sturdy Iron Juniper pickaxe.",
+    "cost": 14523,
+    "stackable": false
+  },
+  {
+    "item_id": 1032,
+    "name": "Steel Juniper Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A reliable Steel Juniper pickaxe.",
+    "cost": 20515,
+    "stackable": false
+  },
+  {
+    "item_id": 1033,
+    "name": "Gold Juniper Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Juniper pickaxe.",
+    "cost": 39326,
+    "stackable": false
+  },
+  {
+    "item_id": 1034,
+    "name": "Platinum Juniper Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Juniper pickaxe.",
+    "cost": 66010,
+    "stackable": false
+  },
+  {
+    "item_id": 1035,
+    "name": "Mithril Juniper Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Juniper pickaxe.",
+    "cost": 95859,
+    "stackable": false
+  },
+  {
+    "item_id": 1036,
+    "name": "Adamantine Juniper Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Juniper pickaxe.",
+    "cost": 431848,
+    "stackable": false
+  },
+  {
+    "item_id": 1038,
+    "name": "Iron Sycamore Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A sturdy Iron Sycamore pickaxe.",
+    "cost": 141013,
+    "stackable": false
+  },
+  {
+    "item_id": 1039,
+    "name": "Steel Sycamore Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A reliable Steel Sycamore pickaxe.",
+    "cost": 147005,
+    "stackable": false
+  },
+  {
+    "item_id": 1040,
+    "name": "Gold Sycamore Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Sycamore pickaxe.",
+    "cost": 165816,
+    "stackable": false
+  },
+  {
+    "item_id": 1041,
+    "name": "Platinum Sycamore Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Sycamore pickaxe.",
+    "cost": 192500,
+    "stackable": false
+  },
+  {
+    "item_id": 1042,
+    "name": "Mithril Sycamore Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Sycamore pickaxe.",
+    "cost": 222388,
+    "stackable": false
+  },
+  {
+    "item_id": 1043,
+    "name": "Adamantine Sycamore Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Sycamore pickaxe.",
+    "cost": 558377,
+    "stackable": false
+  },
+  {
+    "item_id": 1045,
+    "name": "Iron Magnolia Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A sturdy Iron Magnolia pickaxe.",
+    "cost": 145381,
+    "stackable": false
+  },
+  {
+    "item_id": 1046,
+    "name": "Steel Magnolia Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A reliable Steel Magnolia pickaxe.",
+    "cost": 151373,
+    "stackable": false
+  },
+  {
+    "item_id": 1047,
+    "name": "Gold Magnolia Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A gleaming Gold Magnolia pickaxe.",
+    "cost": 170184,
+    "stackable": false
+  },
+  {
+    "item_id": 1048,
+    "name": "Platinum Magnolia Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A masterwork Platinum Magnolia pickaxe.",
+    "cost": 196868,
+    "stackable": false
+  },
+  {
+    "item_id": 1049,
+    "name": "Mithril Magnolia Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "A legendary Mithril Magnolia pickaxe.",
+    "cost": 226756,
+    "stackable": false
+  },
+  {
+    "item_id": 1050,
+    "name": "Adamantine Magnolia Pickaxe",
+    "item_type": "tool",
+    "category": "mining",
+    "description": "The ultimate Magnolia pickaxe.",
+    "cost": 562745,
+    "stackable": false
+  },
+  {
+    "item_id": 1051,
+    "name": "Rusty Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A worn axe.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1052,
+    "name": "Bronze Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Oak Axe.",
+    "cost": 1422,
+    "stackable": false
+  },
+  {
+    "item_id": 1053,
+    "name": "Iron Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Iron Oak Axe.",
+    "cost": 1910,
+    "stackable": false
+  },
+  {
+    "item_id": 1054,
+    "name": "Steel Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Oak Axe.",
+    "cost": 5904,
+    "stackable": false
+  },
+  {
+    "item_id": 1055,
+    "name": "Gold Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Oak Axe.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1056,
+    "name": "Platinum Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Oak Axe.",
+    "cost": 36228,
+    "stackable": false
+  },
+  {
+    "item_id": 1057,
+    "name": "Mithril Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Oak Axe.",
+    "cost": 56146,
+    "stackable": false
+  },
+  {
+    "item_id": 1058,
+    "name": "Adamantine Oak Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Oak Axe.",
+    "cost": 280139,
+    "stackable": false
+  },
+  {
+    "item_id": 1059,
+    "name": "Bronze Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Elm Axe.",
+    "cost": 2415,
+    "stackable": false
+  },
+  {
+    "item_id": 1060,
+    "name": "Iron Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Iron Elm Axe.",
+    "cost": 2880,
+    "stackable": false
+  },
+  {
+    "item_id": 1061,
+    "name": "Steel Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Elm Axe.",
+    "cost": 6874,
+    "stackable": false
+  },
+  {
+    "item_id": 1062,
+    "name": "Gold Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Elm Axe.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1063,
+    "name": "Platinum Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Elm Axe.",
+    "cost": 37176,
+    "stackable": false
+  },
+  {
+    "item_id": 1064,
+    "name": "Mithril Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Elm Axe.",
+    "cost": 57071,
+    "stackable": false
+  },
+  {
+    "item_id": 1065,
+    "name": "Adamantine Elm Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Elm Axe.",
+    "cost": 281065,
+    "stackable": false
+  },
+  {
+    "item_id": 1066,
+    "name": "Bronze Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Birch Axe.",
+    "cost": 2546,
+    "stackable": false
+  },
+  {
+    "item_id": 1067,
+    "name": "Iron Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Iron Birch Axe.",
+    "cost": 3009,
+    "stackable": false
+  },
+  {
+    "item_id": 1068,
+    "name": "Steel Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Birch Axe.",
+    "cost": 7003,
+    "stackable": false
+  },
+  {
+    "item_id": 1069,
+    "name": "Gold Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Birch Axe.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1070,
+    "name": "Platinum Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Birch Axe.",
+    "cost": 37302,
+    "stackable": false
+  },
+  {
+    "item_id": 1071,
+    "name": "Mithril Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Birch Axe.",
+    "cost": 57194,
+    "stackable": false
+  },
+  {
+    "item_id": 1072,
+    "name": "Adamantine Birch Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Birch Axe.",
+    "cost": 281187,
+    "stackable": false
+  },
+  {
+    "item_id": 1073,
+    "name": "Bronze Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Rowan Axe.",
+    "cost": 13012,
+    "stackable": false
+  },
+  {
+    "item_id": 1074,
+    "name": "Iron Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "a Rowan Axe.",
+    "cost": 13237,
+    "stackable": false
+  },
+  {
+    "item_id": 1075,
+    "name": "Steel Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Rowan Axe.",
+    "cost": 17231,
+    "stackable": false
+  },
+  {
+    "item_id": 1076,
+    "name": "Gold Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Rowan Axe.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1077,
+    "name": "Platinum Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Rowan Axe.",
+    "cost": 47292,
+    "stackable": false
+  },
+  {
+    "item_id": 1078,
+    "name": "Mithril Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Rowan Axe.",
+    "cost": 66947,
+    "stackable": false
+  },
+  {
+    "item_id": 1079,
+    "name": "Adamantine Rowan Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Rowan Axe.",
+    "cost": 290940,
+    "stackable": false
+  },
+  {
+    "item_id": 1080,
+    "name": "Bronze Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Juniper Axe.",
+    "cost": 13865,
+    "stackable": false
+  },
+  {
+    "item_id": 1081,
+    "name": "Iron Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Iron Juniper Axe.",
+    "cost": 14070,
+    "stackable": false
+  },
+  {
+    "item_id": 1082,
+    "name": "Steel Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Juniper Axe.",
+    "cost": 18065,
+    "stackable": false
+  },
+  {
+    "item_id": 1083,
+    "name": "Gold Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Juniper Axe.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1084,
+    "name": "Platinum Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Juniper Axe.",
+    "cost": 48106,
+    "stackable": false
+  },
+  {
+    "item_id": 1085,
+    "name": "Mithril Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Juniper Axe.",
+    "cost": 67741,
+    "stackable": false
+  },
+  {
+    "item_id": 1086,
+    "name": "Adamantine Juniper Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Juniper Axe.",
+    "cost": 291734,
+    "stackable": false
+  },
+  {
+    "item_id": 1087,
+    "name": "Bronze Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Sycamore Axe.",
+    "cost": 143297,
+    "stackable": false
+  },
+  {
+    "item_id": 1088,
+    "name": "Iron Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "a Sycamore Axe.",
+    "cost": 140560,
+    "stackable": false
+  },
+  {
+    "item_id": 1089,
+    "name": "Steel Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Sycamore Axe.",
+    "cost": 144555,
+    "stackable": false
+  },
+  {
+    "item_id": 1090,
+    "name": "Gold Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Sycamore Axe.",
+    "cost": 150000,
+    "stackable": false
+  },
+  {
+    "item_id": 1091,
+    "name": "Platinum Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Sycamore Axe.",
+    "cost": 171655,
+    "stackable": false
+  },
+  {
+    "item_id": 1092,
+    "name": "Mithril Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Sycamore Axe.",
+    "cost": 188348,
+    "stackable": false
+  },
+  {
+    "item_id": 1093,
+    "name": "Adamantine Sycamore Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Sycamore Axe.",
+    "cost": 412341,
+    "stackable": false
+  },
+  {
+    "item_id": 1094,
+    "name": "Bronze Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Bronze Magnolia Axe.",
+    "cost": 147766,
+    "stackable": false
+  },
+  {
+    "item_id": 1095,
+    "name": "Iron Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Iron Magnolia Axe.",
+    "cost": 144928,
+    "stackable": false
+  },
+  {
+    "item_id": 1096,
+    "name": "Steel Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Steel Magnolia Axe.",
+    "cost": 148923,
+    "stackable": false
+  },
+  {
+    "item_id": 1097,
+    "name": "Gold Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Gold Magnolia Axe.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1098,
+    "name": "Platinum Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Platinum Magnolia Axe.",
+    "cost": 175921,
+    "stackable": false
+  },
+  {
+    "item_id": 1099,
+    "name": "Mithril Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "A Mithril Magnolia Axe.",
+    "cost": 192513,
+    "stackable": false
+  },
+  {
+    "item_id": 1100,
+    "name": "Adamantine Magnolia Axe",
+    "item_type": "tool",
+    "category": "woodcutting",
+    "description": "An Adamantine Magnolia Axe.",
+    "cost": 416506,
+    "stackable": false
+  },
+  {
+    "item_id": 1101,
+    "name": "Rusty Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A worn hoe.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1102,
+    "name": "Bronze Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Oak Hoe.",
+    "cost": 1274,
+    "stackable": false
+  },
+  {
+    "item_id": 1103,
+    "name": "Iron Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Iron Oak Hoe.",
+    "cost": 1570,
+    "stackable": false
+  },
+  {
+    "item_id": 1104,
+    "name": "Steel Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Oak Hoe.",
+    "cost": 4067,
+    "stackable": false
+  },
+  {
+    "item_id": 1105,
+    "name": "Gold Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Oak Hoe.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1106,
+    "name": "Platinum Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Oak Hoe.",
+    "cost": 23011,
+    "stackable": false
+  },
+  {
+    "item_id": 1107,
+    "name": "Mithril Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Oak Hoe.",
+    "cost": 35451,
+    "stackable": false
+  },
+  {
+    "item_id": 1108,
+    "name": "Adamantine Oak Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Oak Hoe.",
+    "cost": 175446,
+    "stackable": false
+  },
+  {
+    "item_id": 1109,
+    "name": "Bronze Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Elm Hoe.",
+    "cost": 2267,
+    "stackable": false
+  },
+  {
+    "item_id": 1110,
+    "name": "Iron Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Iron Elm Hoe.",
+    "cost": 2541,
+    "stackable": false
+  },
+  {
+    "item_id": 1111,
+    "name": "Steel Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Elm Hoe.",
+    "cost": 5037,
+    "stackable": false
+  },
+  {
+    "item_id": 1112,
+    "name": "Gold Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Elm Hoe.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1113,
+    "name": "Platinum Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Elm Hoe.",
+    "cost": 23958,
+    "stackable": false
+  },
+  {
+    "item_id": 1114,
+    "name": "Mithril Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Elm Hoe.",
+    "cost": 36376,
+    "stackable": false
+  },
+  {
+    "item_id": 1115,
+    "name": "Adamantine Elm Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Elm Hoe.",
+    "cost": 176372,
+    "stackable": false
+  },
+  {
+    "item_id": 1116,
+    "name": "Bronze Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Birch Hoe.",
+    "cost": 2399,
+    "stackable": false
+  },
+  {
+    "item_id": 1117,
+    "name": "Iron Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Iron Birch Hoe.",
+    "cost": 2669,
+    "stackable": false
+  },
+  {
+    "item_id": 1118,
+    "name": "Steel Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Birch Hoe.",
+    "cost": 5166,
+    "stackable": false
+  },
+  {
+    "item_id": 1119,
+    "name": "Gold Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Birch Hoe.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1120,
+    "name": "Platinum Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Birch Hoe.",
+    "cost": 24084,
+    "stackable": false
+  },
+  {
+    "item_id": 1121,
+    "name": "Mithril Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Birch Hoe.",
+    "cost": 36499,
+    "stackable": false
+  },
+  {
+    "item_id": 1122,
+    "name": "Adamantine Birch Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Birch Hoe.",
+    "cost": 176494,
+    "stackable": false
+  },
+  {
+    "item_id": 1123,
+    "name": "Bronze Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Rowan Hoe.",
+    "cost": 12865,
+    "stackable": false
+  },
+  {
+    "item_id": 1124,
+    "name": "Iron Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Iron Rowan Hoe.",
+    "cost": 12898,
+    "stackable": false
+  },
+  {
+    "item_id": 1125,
+    "name": "Steel Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Rowan Hoe.",
+    "cost": 15394,
+    "stackable": false
+  },
+  {
+    "item_id": 1126,
+    "name": "Gold Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Rowan Hoe.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1127,
+    "name": "Platinum Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Rowan Hoe.",
+    "cost": 34075,
+    "stackable": false
+  },
+  {
+    "item_id": 1128,
+    "name": "Mithril Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Rowan Hoe.",
+    "cost": 46251,
+    "stackable": false
+  },
+  {
+    "item_id": 1129,
+    "name": "Adamantine Rowan Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Rowan Hoe.",
+    "cost": 186247,
+    "stackable": false
+  },
+  {
+    "item_id": 1130,
+    "name": "Bronze Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Juniper Hoe.",
+    "cost": 13717,
+    "stackable": false
+  },
+  {
+    "item_id": 1131,
+    "name": "Iron Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Iron Juniper Hoe.",
+    "cost": 13731,
+    "stackable": false
+  },
+  {
+    "item_id": 1132,
+    "name": "Steel Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Juniper Hoe.",
+    "cost": 16227,
+    "stackable": false
+  },
+  {
+    "item_id": 1133,
+    "name": "Gold Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Juniper Hoe.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1134,
+    "name": "Platinum Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Juniper Hoe.",
+    "cost": 34888,
+    "stackable": false
+  },
+  {
+    "item_id": 1135,
+    "name": "Mithril Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Juniper Hoe.",
+    "cost": 47046,
+    "stackable": false
+  },
+  {
+    "item_id": 1136,
+    "name": "Adamantine Juniper Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Juniper Hoe.",
+    "cost": 187041,
+    "stackable": false
+  },
+  {
+    "item_id": 1137,
+    "name": "Bronze Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Sycamore Hoe.",
+    "cost": 143149,
+    "stackable": false
+  },
+  {
+    "item_id": 1138,
+    "name": "Iron Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "a Sycamore Hoe.",
+    "cost": 140221,
+    "stackable": false
+  },
+  {
+    "item_id": 1139,
+    "name": "Steel Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Sycamore Hoe.",
+    "cost": 142717,
+    "stackable": false
+  },
+  {
+    "item_id": 1140,
+    "name": "Gold Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Sycamore Hoe.",
+    "cost": 150000,
+    "stackable": false
+  },
+  {
+    "item_id": 1141,
+    "name": "Platinum Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Sycamore Hoe.",
+    "cost": 158437,
+    "stackable": false
+  },
+  {
+    "item_id": 1142,
+    "name": "Mithril Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Sycamore Hoe.",
+    "cost": 167652,
+    "stackable": false
+  },
+  {
+    "item_id": 1143,
+    "name": "Adamantine Sycamore Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Sycamore Hoe.",
+    "cost": 307648,
+    "stackable": false
+  },
+  {
+    "item_id": 1144,
+    "name": "Bronze Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Bronze Magnolia Hoe.",
+    "cost": 147619,
+    "stackable": false
+  },
+  {
+    "item_id": 1145,
+    "name": "Iron Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Iron Magnolia Hoe.",
+    "cost": 144589,
+    "stackable": false
+  },
+  {
+    "item_id": 1146,
+    "name": "Steel Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Steel Magnolia Hoe.",
+    "cost": 147085,
+    "stackable": false
+  },
+  {
+    "item_id": 1147,
+    "name": "Gold Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Gold Magnolia Hoe.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1148,
+    "name": "Platinum Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Platinum Magnolia Hoe.",
+    "cost": 162703,
+    "stackable": false
+  },
+  {
+    "item_id": 1149,
+    "name": "Mithril Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "A Mithril Magnolia Hoe.",
+    "cost": 171817,
+    "stackable": false
+  },
+  {
+    "item_id": 1150,
+    "name": "Adamantine Magnolia Hoe",
+    "item_type": "tool",
+    "category": "farming",
+    "description": "An Adamantine Magnolia Hoe.",
+    "cost": 311813,
+    "stackable": false
+  },
+  {
+    "item_id": 1151,
+    "name": "Rusty Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A worn trowel.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1152,
+    "name": "Bronze Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Oak Trowel.",
+    "cost": 817,
+    "stackable": false
+  },
+  {
+    "item_id": 1153,
+    "name": "Iron Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Oak Trowel.",
+    "cost": 1124,
+    "stackable": false
+  },
+  {
+    "item_id": 1154,
+    "name": "Steel Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Oak Trowel.",
+    "cost": 3620,
+    "stackable": false
+  },
+  {
+    "item_id": 1155,
+    "name": "Gold Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Oak Trowel.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1156,
+    "name": "Platinum Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Oak Trowel.",
+    "cost": 22575,
+    "stackable": false
+  },
+  {
+    "item_id": 1157,
+    "name": "Mithril Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Oak Trowel.",
+    "cost": 35025,
+    "stackable": false
+  },
+  {
+    "item_id": 1158,
+    "name": "Adamantine Oak Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Oak Trowel.",
+    "cost": 175021,
+    "stackable": false
+  },
+  {
+    "item_id": 1159,
+    "name": "Bronze Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Elm Trowel.",
+    "cost": 1336,
+    "stackable": false
+  },
+  {
+    "item_id": 1160,
+    "name": "Iron Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Elm Trowel.",
+    "cost": 1630,
+    "stackable": false
+  },
+  {
+    "item_id": 1161,
+    "name": "Steel Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Elm Trowel.",
+    "cost": 4127,
+    "stackable": false
+  },
+  {
+    "item_id": 1162,
+    "name": "Gold Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Elm Trowel.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1163,
+    "name": "Platinum Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Elm Trowel.",
+    "cost": 23070,
+    "stackable": false
+  },
+  {
+    "item_id": 1164,
+    "name": "Mithril Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Elm Trowel.",
+    "cost": 35508,
+    "stackable": false
+  },
+  {
+    "item_id": 1165,
+    "name": "Adamantine Elm Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Elm Trowel.",
+    "cost": 175504,
+    "stackable": false
+  },
+  {
+    "item_id": 1166,
+    "name": "Bronze Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Birch Trowel.",
+    "cost": 1380,
+    "stackable": false
+  },
+  {
+    "item_id": 1167,
+    "name": "Iron Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Birch Trowel.",
+    "cost": 1673,
+    "stackable": false
+  },
+  {
+    "item_id": 1168,
+    "name": "Steel Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Birch Trowel.",
+    "cost": 4170,
+    "stackable": false
+  },
+  {
+    "item_id": 1169,
+    "name": "Gold Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Birch Trowel.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1170,
+    "name": "Platinum Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Birch Trowel.",
+    "cost": 23111,
+    "stackable": false
+  },
+  {
+    "item_id": 1171,
+    "name": "Mithril Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Birch Trowel.",
+    "cost": 35549,
+    "stackable": false
+  },
+  {
+    "item_id": 1172,
+    "name": "Adamantine Birch Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Birch Trowel.",
+    "cost": 175545,
+    "stackable": false
+  },
+  {
+    "item_id": 1173,
+    "name": "Bronze Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Rowan Trowel.",
+    "cost": 7147,
+    "stackable": false
+  },
+  {
+    "item_id": 1174,
+    "name": "Iron Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Rowan Trowel.",
+    "cost": 7310,
+    "stackable": false
+  },
+  {
+    "item_id": 1175,
+    "name": "Steel Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Rowan Trowel.",
+    "cost": 9806,
+    "stackable": false
+  },
+  {
+    "item_id": 1176,
+    "name": "Gold Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Rowan Trowel.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1177,
+    "name": "Platinum Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Rowan Trowel.",
+    "cost": 28617,
+    "stackable": false
+  },
+  {
+    "item_id": 1178,
+    "name": "Mithril Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Rowan Trowel.",
+    "cost": 40923,
+    "stackable": false
+  },
+  {
+    "item_id": 1179,
+    "name": "Adamantine Rowan Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Rowan Trowel.",
+    "cost": 180919,
+    "stackable": false
+  },
+  {
+    "item_id": 1180,
+    "name": "Bronze Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Juniper Trowel.",
+    "cost": 7431,
+    "stackable": false
+  },
+  {
+    "item_id": 1181,
+    "name": "Iron Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Juniper Trowel.",
+    "cost": 7588,
+    "stackable": false
+  },
+  {
+    "item_id": 1182,
+    "name": "Steel Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Juniper Trowel.",
+    "cost": 10084,
+    "stackable": false
+  },
+  {
+    "item_id": 1183,
+    "name": "Gold Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Juniper Trowel.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1184,
+    "name": "Platinum Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Juniper Trowel.",
+    "cost": 28888,
+    "stackable": false
+  },
+  {
+    "item_id": 1185,
+    "name": "Mithril Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Juniper Trowel.",
+    "cost": 41188,
+    "stackable": false
+  },
+  {
+    "item_id": 1186,
+    "name": "Adamantine Juniper Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Juniper Trowel.",
+    "cost": 181184,
+    "stackable": false
+  },
+  {
+    "item_id": 1187,
+    "name": "Bronze Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Sycamore Trowel.",
+    "cost": 78974,
+    "stackable": false
+  },
+  {
+    "item_id": 1188,
+    "name": "Iron Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Sycamore Trowel.",
+    "cost": 77505,
+    "stackable": false
+  },
+  {
+    "item_id": 1189,
+    "name": "Steel Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Sycamore Trowel.",
+    "cost": 80001,
+    "stackable": false
+  },
+  {
+    "item_id": 1190,
+    "name": "Gold Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Sycamore Trowel.",
+    "cost": 150000,
+    "stackable": false
+  },
+  {
+    "item_id": 1191,
+    "name": "Platinum Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Sycamore Trowel.",
+    "cost": 97179,
+    "stackable": false
+  },
+  {
+    "item_id": 1192,
+    "name": "Mithril Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Sycamore Trowel.",
+    "cost": 107853,
+    "stackable": false
+  },
+  {
+    "item_id": 1193,
+    "name": "Adamantine Sycamore Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Sycamore Trowel.",
+    "cost": 247849,
+    "stackable": false
+  },
+  {
+    "item_id": 1194,
+    "name": "Bronze Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Magnolia Trowel.",
+    "cost": 80464,
+    "stackable": false
+  },
+  {
+    "item_id": 1195,
+    "name": "Iron Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Magnolia Trowel.",
+    "cost": 78961,
+    "stackable": false
+  },
+  {
+    "item_id": 1196,
+    "name": "Steel Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Magnolia Trowel.",
+    "cost": 81457,
+    "stackable": false
+  },
+  {
+    "item_id": 1197,
+    "name": "Gold Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Magnolia Trowel.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1198,
+    "name": "Platinum Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Magnolia Trowel.",
+    "cost": 98601,
+    "stackable": false
+  },
+  {
+    "item_id": 1199,
+    "name": "Mithril Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Magnolia Trowel.",
+    "cost": 109242,
+    "stackable": false
+  },
+  {
+    "item_id": 1200,
+    "name": "Adamantine Magnolia Trowel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Magnolia Trowel.",
+    "cost": 249237,
+    "stackable": false
+  },
+  {
+    "item_id": 1201,
+    "name": "Rusty Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A worn shovel.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1202,
+    "name": "Bronze Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Oak Shovel.",
+    "cost": 1292,
+    "stackable": false
+  },
+  {
+    "item_id": 1203,
+    "name": "Iron Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Oak Shovel.",
+    "cost": 1913,
+    "stackable": false
+  },
+  {
+    "item_id": 1204,
+    "name": "Steel Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Oak Shovel.",
+    "cost": 6906,
+    "stackable": false
+  },
+  {
+    "item_id": 1205,
+    "name": "Gold Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Oak Shovel.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1206,
+    "name": "Platinum Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Oak Shovel.",
+    "cost": 44822,
+    "stackable": false
+  },
+  {
+    "item_id": 1207,
+    "name": "Mithril Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Oak Shovel.",
+    "cost": 69731,
+    "stackable": false
+  },
+  {
+    "item_id": 1208,
+    "name": "Adamantine Oak Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Oak Shovel.",
+    "cost": 349722,
+    "stackable": false
+  },
+  {
+    "item_id": 1209,
+    "name": "Bronze Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Elm Shovel.",
+    "cost": 2048,
+    "stackable": false
+  },
+  {
+    "item_id": 1210,
+    "name": "Iron Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Elm Shovel.",
+    "cost": 2651,
+    "stackable": false
+  },
+  {
+    "item_id": 1211,
+    "name": "Steel Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Elm Shovel.",
+    "cost": 7644,
+    "stackable": false
+  },
+  {
+    "item_id": 1212,
+    "name": "Gold Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Elm Shovel.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1213,
+    "name": "Platinum Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Elm Shovel.",
+    "cost": 45544,
+    "stackable": false
+  },
+  {
+    "item_id": 1214,
+    "name": "Mithril Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Elm Shovel.",
+    "cost": 70435,
+    "stackable": false
+  },
+  {
+    "item_id": 1215,
+    "name": "Adamantine Elm Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Elm Shovel.",
+    "cost": 350426,
+    "stackable": false
+  },
+  {
+    "item_id": 1216,
+    "name": "Bronze Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Birch Shovel.",
+    "cost": 2135,
+    "stackable": false
+  },
+  {
+    "item_id": 1217,
+    "name": "Iron Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Birch Shovel.",
+    "cost": 2737,
+    "stackable": false
+  },
+  {
+    "item_id": 1218,
+    "name": "Steel Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Birch Shovel.",
+    "cost": 7730,
+    "stackable": false
+  },
+  {
+    "item_id": 1219,
+    "name": "Gold Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Birch Shovel.",
+    "cost": 10000,
+    "stackable": false
+  },
+  {
+    "item_id": 1220,
+    "name": "Platinum Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Birch Shovel.",
+    "cost": 45627,
+    "stackable": false
+  },
+  {
+    "item_id": 1221,
+    "name": "Mithril Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Birch Shovel.",
+    "cost": 70517,
+    "stackable": false
+  },
+  {
+    "item_id": 1222,
+    "name": "Adamantine Birch Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Birch Shovel.",
+    "cost": 350508,
+    "stackable": false
+  },
+  {
+    "item_id": 1223,
+    "name": "Bronze Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Rowan Shovel.",
+    "cost": 10252,
+    "stackable": false
+  },
+  {
+    "item_id": 1224,
+    "name": "Iron Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Rowan Shovel.",
+    "cost": 10670,
+    "stackable": false
+  },
+  {
+    "item_id": 1225,
+    "name": "Steel Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Rowan Shovel.",
+    "cost": 15662,
+    "stackable": false
+  },
+  {
+    "item_id": 1226,
+    "name": "Gold Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Rowan Shovel.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1227,
+    "name": "Platinum Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Rowan Shovel.",
+    "cost": 53375,
+    "stackable": false
+  },
+  {
+    "item_id": 1228,
+    "name": "Mithril Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Rowan Shovel.",
+    "cost": 78080,
+    "stackable": false
+  },
+  {
+    "item_id": 1229,
+    "name": "Adamantine Rowan Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Rowan Shovel.",
+    "cost": 358071,
+    "stackable": false
+  },
+  {
+    "item_id": 1230,
+    "name": "Bronze Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Juniper Shovel.",
+    "cost": 10821,
+    "stackable": false
+  },
+  {
+    "item_id": 1231,
+    "name": "Iron Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Juniper Shovel.",
+    "cost": 11225,
+    "stackable": false
+  },
+  {
+    "item_id": 1232,
+    "name": "Steel Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Juniper Shovel.",
+    "cost": 16218,
+    "stackable": false
+  },
+  {
+    "item_id": 1233,
+    "name": "Gold Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Juniper Shovel.",
+    "cost": 20000,
+    "stackable": false
+  },
+  {
+    "item_id": 1234,
+    "name": "Platinum Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Juniper Shovel.",
+    "cost": 53918,
+    "stackable": false
+  },
+  {
+    "item_id": 1235,
+    "name": "Mithril Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Juniper Shovel.",
+    "cost": 78610,
+    "stackable": false
+  },
+  {
+    "item_id": 1236,
+    "name": "Adamantine Juniper Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Juniper Shovel.",
+    "cost": 358601,
+    "stackable": false
+  },
+  {
+    "item_id": 1237,
+    "name": "Bronze Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Sycamore Shovel.",
+    "cost": 111308,
+    "stackable": false
+  },
+  {
+    "item_id": 1238,
+    "name": "Iron Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Sycamore Shovel.",
+    "cost": 109429,
+    "stackable": false
+  },
+  {
+    "item_id": 1239,
+    "name": "Steel Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Sycamore Shovel.",
+    "cost": 114421,
+    "stackable": false
+  },
+  {
+    "item_id": 1240,
+    "name": "Gold Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Sycamore Shovel.",
+    "cost": 120000,
+    "stackable": false
+  },
+  {
+    "item_id": 1241,
+    "name": "Platinum Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Sycamore Shovel.",
+    "cost": 149838,
+    "stackable": false
+  },
+  {
+    "item_id": 1242,
+    "name": "Mithril Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Sycamore Shovel.",
+    "cost": 172246,
+    "stackable": false
+  },
+  {
+    "item_id": 1243,
+    "name": "Adamantine Sycamore Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Sycamore Shovel.",
+    "cost": 452237,
+    "stackable": false
+  },
+  {
+    "item_id": 1244,
+    "name": "Bronze Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Bronze Magnolia Shovel.",
+    "cost": 114288,
+    "stackable": false
+  },
+  {
+    "item_id": 1245,
+    "name": "Iron Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Iron Magnolia Shovel.",
+    "cost": 112341,
+    "stackable": false
+  },
+  {
+    "item_id": 1246,
+    "name": "Steel Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Steel Magnolia Shovel.",
+    "cost": 117333,
+    "stackable": false
+  },
+  {
+    "item_id": 1247,
+    "name": "Gold Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Gold Magnolia Shovel.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1248,
+    "name": "Platinum Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Platinum Magnolia Shovel.",
+    "cost": 152682,
+    "stackable": false
+  },
+  {
+    "item_id": 1249,
+    "name": "Mithril Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "A Mithril Magnolia Shovel.",
+    "cost": 175022,
+    "stackable": false
+  },
+  {
+    "item_id": 1250,
+    "name": "Adamantine Magnolia Shovel",
+    "item_type": "tool",
+    "category": "digging",
+    "description": "An Adamantine Magnolia Shovel.",
+    "cost": 455014,
+    "stackable": false
+  },
+  {
+    "item_id": 1251,
+    "name": "Bronze Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Bronze Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1252,
+    "name": "Iron Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Iron Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1253,
+    "name": "Steel Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Steel Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1254,
+    "name": "Gold Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Gold Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1255,
+    "name": "Platinum Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Platinum Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1256,
+    "name": "Mithril Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Mithril Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 1257,
+    "name": "Adamantine Shears",
+    "item_type": "tool",
+    "category": "cutting",
+    "description": "A pair of Adamantine Shears.",
+    "cost": 0,
+    "stackable": false
+  },
+  {
+    "item_id": 2001,
+    "name": "Copper Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of copper ore.",
+    "cost": 2
+  },
+  {
+    "item_id": 2002,
+    "name": "Tin Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of tin ore.",
+    "cost": 5
+  },
+  {
+    "item_id": 2003,
+    "name": "Iron Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of Iron ore.",
+    "cost": 17
+  },
+  {
+    "item_id": 2004,
+    "name": "Coal Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A lump of coal.",
+    "cost": 40
+  },
+  {
+    "item_id": 2005,
+    "name": "Silver Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of silver ore.",
+    "cost": 75
+  },
+  {
+    "item_id": 2006,
+    "name": "Gold Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of Gold ore.",
+    "cost": 165
+  },
+  {
+    "item_id": 2007,
+    "name": "Platinum Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of Platinum ore.",
+    "cost": 340
+  },
+  {
+    "item_id": 2008,
+    "name": "Mithril Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of rare Mithril ore.",
+    "cost": 600
+  },
+  {
+    "item_id": 2009,
+    "name": "Adamantine Chunk",
+    "item_type": "material",
+    "category": "ore",
+    "description": "A chunk of legendary Adamantine ore.",
+    "cost": 3200
+  },
+  {
+    "item_id": 2050,
+    "name": "Oak Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Oak log.",
+    "cost": 2
+  },
+  {
+    "item_id": 2051,
+    "name": "Elm Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Elm log.",
+    "cost": 11
+  },
+  {
+    "item_id": 2052,
+    "name": "Birch Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Birch log.",
+    "cost": 28
+  },
+  {
+    "item_id": 2053,
+    "name": "Rowan Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Rowan log.",
+    "cost": 65
+  },
+  {
+    "item_id": 2054,
+    "name": "Juniper Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Juniper log.",
+    "cost": 176
+  },
+  {
+    "item_id": 2055,
+    "name": "Sycamore Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Sycamore log.",
+    "cost": 410
+  },
+  {
+    "item_id": 2056,
+    "name": "Magnolia Log",
+    "item_type": "material",
+    "category": "wood",
+    "description": "A freshly cut Magnolia log.",
+    "cost": 1024
+  },
+  {
+    "item_id": 2057,
+    "name": "Oak Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of an Oak tree, with a wide variety of uses.",
+    "cost": 2
+  },
+  {
+    "item_id": 2058,
+    "name": "Elm Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of an Elm tree, with a wide variety of uses.",
+    "cost": 12
+  },
+  {
+    "item_id": 2059,
+    "name": "Birch Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of a Birch tree, with a wide variety of uses.",
+    "cost": 30
+  },
+  {
+    "item_id": 2060,
+    "name": "Rowan Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of a Rowan tree, with a wide variety of uses.",
+    "cost": 69
+  },
+  {
+    "item_id": 2061,
+    "name": "Juniper Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of a Juniper tree, with a wide variety of uses.",
+    "cost": 190
+  },
+  {
+    "item_id": 2062,
+    "name": "Sycamore Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of a Sycamore tree, with a wide variety of uses.",
+    "cost": 430
+  },
+  {
+    "item_id": 2063,
+    "name": "Magnolia Plank",
+    "item_type": "material",
+    "category": "plank",
+    "description": "A sturdy structural plank of a Magnolia tree, with a wide variety of uses.",
+    "cost": 1075
+  },
+  {
+    "item_id": 2100,
+    "name": "Copper Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Copper Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 12
+  },
+  {
+    "item_id": 2101,
+    "name": "Tin Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Tin Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 30
+  },
+  {
+    "item_id": 2102,
+    "name": "Bronze Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Bronze Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 36
+  },
+  {
+    "item_id": 2103,
+    "name": "Iron Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "An Iron Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 95
+  },
+  {
+    "item_id": 2104,
+    "name": "Steel Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Steel Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 526
+  },
+  {
+    "item_id": 2105,
+    "name": "Silver Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Silver Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 1239
+  },
+  {
+    "item_id": 2106,
+    "name": "Gold Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Gold Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 2156
+  },
+  {
+    "item_id": 2107,
+    "name": "Platinum Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Platinum Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 3993
+  },
+  {
+    "item_id": 2108,
+    "name": "Mithril Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Mithril Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 6563
+  },
+  {
+    "item_id": 2109,
+    "name": "Adamantine Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "An Adamantine Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 33213
+  },
+  {
+    "item_id": 2110,
+    "name": "Mythrantine Bar",
+    "item_type": "material",
+    "category": "bar",
+    "description": "A Mythrantine Bar that has been cast in the shape of a block for convenient handling.",
+    "cost": 49713
+  },
+  {
+    "item_id": 2150,
+    "name": "Sand",
+    "item_type": "material",
+    "category": "flux",
+    "description": "Sand is loose fragments of minerals or rocks. Can be used as a low-tier flux.",
+    "cost": 1
+  },
+  {
+    "item_id": 2151,
+    "name": "Bronze Dust",
+    "item_type": "material",
+    "category": "flux",
+    "description": "A ground-up Bronze Bar, used as a purifying agent in the creation of higher-tier metal bars.",
+    "cost": 40
+  },
+  {
+    "item_id": 2152,
+    "name": "Iron Dust",
+    "item_type": "material",
+    "category": "flux",
+    "description": "A ground-up Iron Bar, used as a purifying agent in the creation of higher-tier metal bars.",
+    "cost": 100
+  },
+  {
+    "item_id": 2153,
+    "name": "Gold Dust",
+    "item_type": "material",
+    "category": "flux",
+    "description": "A ground-up Gold Bar, used as a purifying agent in the creation of higher-tier metal bars.",
+    "cost": 2180
+  },
+  {
+    "item_id": 2154,
+    "name": "Platinum Dust",
+    "item_type": "material",
+    "category": "flux",
+    "description": "A ground-up Platinum Bar, used as a purifying agent in the creation of higher-tier metal bars.",
+    "cost": 4000
+  },
+  {
+    "item_id": 2155,
+    "name": "Mithril Dust",
+    "item_type": "material",
+    "category": "flux",
+    "description": "A ground-up Mithril Bar, used as a purifying agent in the creation of higher-tier metal bars.",
+    "cost": 6600
+  },
+  {
+    "item_id": 2156,
+    "name": "Adamantine Dust",
+    "item_type": "material",
+    "category": "flux",
+    "description": "A ground-up Adamantine Bar, used as a purifying agent in the creation of higher-tier metal bars.",
+    "cost": 33250
+  },
+  {
+    "item_id": 2200,
+    "name": "Common Bird Nest",
+    "item_type": "collectible",
+    "category": "nest",
+    "description": "A common, regular bird nest. Perhaps it has something inside?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2201,
+    "name": "Uncommon Bird Nest",
+    "item_type": "collectible",
+    "category": "nest",
+    "description": "An uncommon bird nest. Perhaps it has something inside?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2202,
+    "name": "Rare Bird Nest",
+    "item_type": "collectible",
+    "category": "nest",
+    "description": "A rare bird nest, potentially belonging to a bird of prey. Perhaps it has something inside?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2203,
+    "name": "Epic Bird Nest",
+    "item_type": "collectible",
+    "category": "nest",
+    "description": "An epic bird nest, potentially belonging to a large predator of the sky. Perhaps it has something inside?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2204,
+    "name": "Legendary Bird Nest",
+    "item_type": "collectible",
+    "category": "nest",
+    "description": "An extremely rare bird nest, it glows with a mysterious aura. Potentially belonging to one of the Legendary Trio of Kanto. Perhaps it has something inside?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2220,
+    "name": "Common Geode",
+    "item_type": "collectible",
+    "category": "geode",
+    "description": "An abundant, hollow rock with something inside. Perhaps you should break it open?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2221,
+    "name": "Uncommon Geode",
+    "item_type": "collectible",
+    "category": "geode",
+    "description": "An uncommon, hollow rock with something inside. Perhaps you should break it open?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2222,
+    "name": "Rare Geode",
+    "item_type": "collectible",
+    "category": "geode",
+    "description": "A rare, hollow rock with something inside. Perhaps you should break it open?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2223,
+    "name": "Epic Geode",
+    "item_type": "collectible",
+    "category": "geode",
+    "description": "An epic, hollow rock with something inside. Perhaps you should break it open?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2224,
+    "name": "Legendary Geode",
+    "item_type": "collectible",
+    "category": "geode",
+    "description": "An extremely rare, hollow rock with something inside. Perhaps you should break it open?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2240,
+    "name": "Common Clue Scroll",
+    "item_type": "collectible",
+    "category": "cluescroll",
+    "description": "A very common clue scroll. Have you tried solving it?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2241,
+    "name": "Uncommon Clue Scroll",
+    "item_type": "collectible",
+    "category": "cluescroll",
+    "description": "An uncommon clue scroll. Have you tried solving it?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2242,
+    "name": "Rare Clue Scroll",
+    "item_type": "collectible",
+    "category": "cluescroll",
+    "description": "A rare clue scroll. Have you tried solving it?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2243,
+    "name": "Epic Clue Scroll",
+    "item_type": "collectible",
+    "category": "cluescroll",
+    "description": "An epic clue scroll. Have you tried solving it?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2244,
+    "name": "Legendary Clue Scroll",
+    "item_type": "collectible",
+    "category": "cluescroll",
+    "description": "A legendary clue scroll. Have you tried solving it?",
+    "cost": 1,
+    "tradable": false
+  },
+  {
+    "item_id": 2260,
+    "name": "Stone",
+    "item_type": "material",
+    "category": "raw",
+    "description": "A common material with many uses in crafting and building.",
+    "cost": 1
+  },
+  {
+    "item_id": 2261,
+    "name": "Tumblestone",
+    "item_type": "material",
+    "category": "raw",
+    "description": "A wobbly stone often used to counterbalance Pokeballs.",
+    "cost": 3
+  },
+  {
+    "item_id": 2262,
+    "name": "Charcoal",
+    "item_type": "material",
+    "category": "fuel",
+    "description": "Charcoal is a lightweight black residue product produced by heating wooden material in a forge.",
+    "cost": 1
+  },
+  {
+    "item_id": 2263,
+    "name": "Bronze Screw",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Bronze Screw crafted from a Bronze Bar.",
+    "cost": 40
+  },
+  {
+    "item_id": 2264,
+    "name": "Iron Screw",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Iron Screw crafted from an Iron Bar.",
+    "cost": 102
+  },
+  {
+    "item_id": 2265,
+    "name": "Steel Screw",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Steel Screw crafted from a Steel Bar.",
+    "cost": 565
+  },
+  {
+    "item_id": 2266,
+    "name": "Mithril Screw",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Mithril Screw crafted from a Mithril Bar.",
+    "cost": 6727
+  },
+  {
+    "item_id": 2267,
+    "name": "Bronze Nails",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A set of Bronze Nails crafted from a Bronze Bar.",
+    "cost": 40
+  },
+  {
+    "item_id": 2268,
+    "name": "Iron Nails",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A set of Iron Nails crafted from an Iron Bar.",
+    "cost": 102
+  },
+  {
+    "item_id": 2269,
+    "name": "Steel Nails",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A set of Steel Nails crafted from a Steel Bar.",
+    "cost": 565
+  },
+  {
+    "item_id": 2270,
+    "name": "Mithril Nails",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A set of Mithril Nails crafted from a Mithril Bar.",
+    "cost": 6727
+  },
+  {
+    "item_id": 2271,
+    "name": "Twine",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A thread composed of twisted strands of cotton and wool.",
+    "cost": 11
+  },
+  {
+    "item_id": 2272,
+    "name": "Strong Twine",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "Strong thread reinforced with multiple materials.",
+    "cost": 18
+  },
+  {
+    "item_id": 2273,
+    "name": "Steel Wire",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A strong wire made of Steel.",
+    "cost": 565
+  },
+  {
+    "item_id": 2274,
+    "name": "Mithril Wire",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An incredibly durable wire made of Mithril.",
+    "cost": 6727
+  },
+  {
+    "item_id": 2275,
+    "name": "Refined Tumblestone",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A counterbalance material coated in Steel.",
+    "cost": 1000
+  },
+  {
+    "item_id": 2276,
+    "name": "Silph Chip",
+    "item_type": "collectible",
+    "category": "crafting",
+    "description": "A rare chip manufactured solely by Silph Co.",
+    "cost": 0
+  },
+  {
+    "item_id": 2300,
+    "name": "Oak Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from an Oak tree. It is used to craft Trowels.",
+    "cost": 251
+  },
+  {
+    "item_id": 2301,
+    "name": "Oak Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from an Oak tree. It is used to craft Shovels.",
+    "cost": 366
+  },
+  {
+    "item_id": 2302,
+    "name": "Oak Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from an Oak tree. It is used to craft Tools.",
+    "cost": 480
+  },
+  {
+    "item_id": 2303,
+    "name": "Elm Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from an Elm tree. It is used to craft Trowels.",
+    "cost": 590
+  },
+  {
+    "item_id": 2304,
+    "name": "Elm Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from an Elm tree. It is used to craft Shovels.",
+    "cost": 879
+  },
+  {
+    "item_id": 2305,
+    "name": "Elm Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from an Elm tree. It is used to craft Tools.",
+    "cost": 1168
+  },
+  {
+    "item_id": 2306,
+    "name": "Birch Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Birch tree. It is used to craft Trowels.",
+    "cost": 630
+  },
+  {
+    "item_id": 2307,
+    "name": "Birch Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Birch tree. It is used to craft Shovels.",
+    "cost": 959
+  },
+  {
+    "item_id": 2308,
+    "name": "Birch Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Birch tree. It is used to craft Tools.",
+    "cost": 1288
+  },
+  {
+    "item_id": 2309,
+    "name": "Rowan Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Rowan tree. It is used to craft Trowels.",
+    "cost": 6224
+  },
+  {
+    "item_id": 2310,
+    "name": "Rowan Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Rowan tree. It is used to craft Shovels.",
+    "cost": 8803
+  },
+  {
+    "item_id": 2311,
+    "name": "Rowan Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Rowan tree. It is used to craft Tools.",
+    "cost": 11382
+  },
+  {
+    "item_id": 2312,
+    "name": "Juniper Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Juniper tree. It is used to craft Trowels.",
+    "cost": 6482
+  },
+  {
+    "item_id": 2313,
+    "name": "Juniper Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Juniper tree. It is used to craft Shovels.",
+    "cost": 9320
+  },
+  {
+    "item_id": 2314,
+    "name": "Juniper Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Juniper tree. It is used to craft Tools.",
+    "cost": 12157
+  },
+  {
+    "item_id": 2315,
+    "name": "Sycamore Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Sycamore tree. It is used to craft Trowels.",
+    "cost": 71538
+  },
+  {
+    "item_id": 2316,
+    "name": "Sycamore Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Sycamore tree. It is used to craft Shovels.",
+    "cost": 100695
+  },
+  {
+    "item_id": 2317,
+    "name": "Sycamore Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Sycamore tree. It is used to craft Tools.",
+    "cost": 129852
+  },
+  {
+    "item_id": 2318,
+    "name": "Magnolia Trowel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Magnolia tree. It is used to craft Trowels.",
+    "cost": 72892
+  },
+  {
+    "item_id": 2319,
+    "name": "Magnolia Shovel Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Magnolia tree. It is used to craft Shovels.",
+    "cost": 103404
+  },
+  {
+    "item_id": 2320,
+    "name": "Magnolia Tool Handle",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A sturdy handle, made from a Magnolia tree. It is used to craft Tools.",
+    "cost": 133915
+  },
+  {
+    "item_id": 2321,
+    "name": "Bronze Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Bronze Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 200
+  },
+  {
+    "item_id": 2322,
+    "name": "Bronze Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Bronze Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 319
+  },
+  {
+    "item_id": 2323,
+    "name": "Bronze Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Bronze Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 399
+  },
+  {
+    "item_id": 2324,
+    "name": "Bronze Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Bronze Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 479
+  },
+  {
+    "item_id": 2325,
+    "name": "Bronze Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Bronze Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 200
+  },
+  {
+    "item_id": 2326,
+    "name": "Iron Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Iron Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 520
+  },
+  {
+    "item_id": 2327,
+    "name": "Iron Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Iron Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 832
+  },
+  {
+    "item_id": 2328,
+    "name": "Iron Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Iron Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 1041
+  },
+  {
+    "item_id": 2329,
+    "name": "Iron Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Iron Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 1249
+  },
+  {
+    "item_id": 2330,
+    "name": "Iron Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Iron Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 520
+  },
+  {
+    "item_id": 2331,
+    "name": "Steel Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Steel Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 2826
+  },
+  {
+    "item_id": 2332,
+    "name": "Steel Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Steel Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 4521
+  },
+  {
+    "item_id": 2333,
+    "name": "Steel Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Steel Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 5651
+  },
+  {
+    "item_id": 2334,
+    "name": "Steel Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Steel Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 6781
+  },
+  {
+    "item_id": 2335,
+    "name": "Steel Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Steel Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 2826
+  },
+  {
+    "item_id": 2336,
+    "name": "Gold Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Gold Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 11589
+  },
+  {
+    "item_id": 2337,
+    "name": "Gold Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Gold Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 18542
+  },
+  {
+    "item_id": 2338,
+    "name": "Gold Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Gold Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 23177
+  },
+  {
+    "item_id": 2339,
+    "name": "Gold Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Gold Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 27812
+  },
+  {
+    "item_id": 2340,
+    "name": "Gold Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Gold Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 11589
+  },
+  {
+    "item_id": 2341,
+    "name": "Platinum Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Platinum Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 20964
+  },
+  {
+    "item_id": 2342,
+    "name": "Platinum Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Platinum Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 33532
+  },
+  {
+    "item_id": 2343,
+    "name": "Platinum Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Platinum Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 41928
+  },
+  {
+    "item_id": 2344,
+    "name": "Platinum Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Platinum Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 50314
+  },
+  {
+    "item_id": 2345,
+    "name": "Platinum Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Platinum Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 20964
+  },
+  {
+    "item_id": 2346,
+    "name": "Mithril Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Mithril Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 33636
+  },
+  {
+    "item_id": 2347,
+    "name": "Mithril Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Mithril Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 53817
+  },
+  {
+    "item_id": 2348,
+    "name": "Mithril Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Mithril Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 67272
+  },
+  {
+    "item_id": 2349,
+    "name": "Mithril Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Mithril Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 80726
+  },
+  {
+    "item_id": 2350,
+    "name": "Mithril Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "A Mithril Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 33636
+  },
+  {
+    "item_id": 2351,
+    "name": "Adamantine Hoe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Adamantine Hoe Head, it must be fitted on a handle before it can be used.",
+    "cost": 170217
+  },
+  {
+    "item_id": 2352,
+    "name": "Adamantine Axe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Adamantine Axe Head, it must be fitted on a handle before it can be used.",
+    "cost": 272347
+  },
+  {
+    "item_id": 2353,
+    "name": "Adamantine Shovel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Adamantine Shovel Head, it must be fitted on a handle before it can be used.",
+    "cost": 340434
+  },
+  {
+    "item_id": 2354,
+    "name": "Adamantine Pickaxe Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Adamantine Pickaxe Head, it must be fitted on a handle before it can be used.",
+    "cost": 408521
+  },
+  {
+    "item_id": 2355,
+    "name": "Adamantine Trowel Head",
+    "item_type": "material",
+    "category": "crafting",
+    "description": "An Adamantine Trowel Head, it must be fitted on a handle before it can be used.",
+    "cost": 170217
+  },
+  {
+    "item_id": 2450,
+    "name": "Orange Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "A Regional hard shelled fruit used by many to craft Pokeballs.",
+    "cost": 1280
+  },
+  {
+    "item_id": 2451,
+    "name": "Brown Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "A Regional hard shelled fruit used by many to craft Pokeballs.",
+    "cost": 2560
+  },
+  {
+    "item_id": 2452,
+    "name": "Purple Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "A Regional hard shelled fruit used by many to craft Pokeballs.",
+    "cost": 5120
+  },
+  {
+    "item_id": 2453,
+    "name": "Silver Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "A Regional hard shelled fruit used by many to craft Pokeballs.",
+    "cost": 10240
+  },
+  {
+    "item_id": 2454,
+    "name": "Gold Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "A Regional hard shelled fruit used by many to craft Pokeballs.",
+    "cost": 20480
+  },
+  {
+    "item_id": 2455,
+    "name": "Master Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "A Regional hard shelled fruit used by many to craft Pokeballs.",
+    "cost": 40960
+  },
+  {
+    "item_id": 2456,
+    "name": "Soiled Apricorn",
+    "item_type": "material",
+    "category": "apricorn",
+    "description": "An Apricorn that's had its insides eaten.",
+    "cost": 2560
+  },
+  {
+    "item_id": 2475,
+    "name": "Caster Fern",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A fern used for crafting items made to be thrown. When these curled leaves are unfurled, they can serve as nature's wrapping paper.",
+    "cost": 20
+  },
+  {
+    "item_id": 2476,
+    "name": "Medicinal Leek",
+    "item_type": "material",
+    "category": "herb",
+    "description": "Required for crafting medicinal compounds. This plant is found growing across many regions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2477,
+    "name": "Bugwort",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A wildflower that has medicinal properties, but it is so bitter that no wild Pokemon will eat it.",
+    "cost": 20
+  },
+  {
+    "item_id": 2478,
+    "name": "Pep-Up Plant",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A wildflower that has invigorating properties.",
+    "cost": 10
+  },
+  {
+    "item_id": 2479,
+    "name": "King's Leaf",
+    "item_type": "material",
+    "category": "herb",
+    "description": "The king of herbs, glittering and brilliant. Combining this herb with other materials needed to make medicines will boost their efficacy.",
+    "cost": 320
+  },
+  {
+    "item_id": 2480,
+    "name": "Vivichoke",
+    "item_type": "material",
+    "category": "herb",
+    "description": "Also called a morning-dew bud. It is used as a material for crafting items that can restore vitality to a Pokemon that has fainted.",
+    "cost": 640
+  },
+  {
+    "item_id": 2481,
+    "name": "Swordcap",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A mushroom with strength boosting qualities.",
+    "cost": 80
+  },
+  {
+    "item_id": 2482,
+    "name": "Doppel Bonnet",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A mushroom with agility boosting qualities.",
+    "cost": 80
+  },
+  {
+    "item_id": 2483,
+    "name": "Direshroom",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A mushroom with focus boosting qualities. ",
+    "cost": 160
+  },
+  {
+    "item_id": 2484,
+    "name": "Iron Barktongue",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A mushroom with endurance boosting qualities. ",
+    "cost": 320
+  },
+  {
+    "item_id": 2485,
+    "name": "Hearty Grains",
+    "item_type": "material",
+    "category": "herb",
+    "description": "Beautiful stalks of wheat bursting with life.",
+    "cost": 20
+  },
+  {
+    "item_id": 2486,
+    "name": "Sootfoot Root",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A tuber used in cooking, it can also be dried and ground to produce a fine powder.",
+    "cost": 40
+  },
+  {
+    "item_id": 2487,
+    "name": "Plant Fibre",
+    "item_type": "material",
+    "category": "herb",
+    "description": "A winding slender stem found on rock walls.",
+    "cost": 10
+  },
+  {
+    "item_id": 2500,
+    "name": "Silk",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A fine, strong, soft lustrous fibre.",
+    "cost": 2
+  },
+  {
+    "item_id": 2501,
+    "name": "Mareep Wool",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "An insulating hair-like fibre, that came from a Mareep.",
+    "cost": 2
+  },
+  {
+    "item_id": 2502,
+    "name": "Flaafy Wool",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "An insulating hair-like fibre, that came from a Flaafy.",
+    "cost": 20
+  },
+  {
+    "item_id": 2503,
+    "name": "Sweet Slime",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A sticky gel-like substance with a pungent aroma attractive to Pokemon.",
+    "cost": 2
+  },
+  {
+    "item_id": 2504,
+    "name": "Yellow Status Powder",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A paralytic fine powder.",
+    "cost": 2
+  },
+  {
+    "item_id": 2505,
+    "name": "Blue Status Powder",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A somniferous fine powder.",
+    "cost": 2
+  },
+  {
+    "item_id": 2506,
+    "name": "Silver Status Powder",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A somniferous fine powder.",
+    "cost": 2
+  },
+  {
+    "item_id": 2507,
+    "name": "Purple Status Powder",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A toxic fine powder.",
+    "cost": 2
+  },
+  {
+    "item_id": 2508,
+    "name": "Cotton",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A soft, white fibrous substance.",
+    "cost": 2
+  },
+  {
+    "item_id": 2509,
+    "name": "Milk",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A white fluid secreted from the glands of domesticated cattle Pokemon.",
+    "cost": 2
+  },
+  {
+    "item_id": 2510,
+    "name": "Mushrooms",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A stem, fleshy rounded cap, and gills underneath the cap.",
+    "cost": 2
+  },
+  {
+    "item_id": 2511,
+    "name": "Egg",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A hard-shelled item, containing nutritive fluids.",
+    "cost": 2
+  },
+  {
+    "item_id": 2512,
+    "name": "Honey",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A sweet fluid produced by specific Bug-types made using the nectar of flowering plants.",
+    "cost": 2
+  },
+  {
+    "item_id": 2513,
+    "name": "Red Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 2
+  },
+  {
+    "item_id": 2514,
+    "name": "Green Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 4
+  },
+  {
+    "item_id": 2515,
+    "name": "Blue Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2516,
+    "name": "Pink Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2517,
+    "name": "Black Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2518,
+    "name": "White Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2519,
+    "name": "Yellow Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2520,
+    "name": "Orange Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2521,
+    "name": "Brown Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2522,
+    "name": "Purple Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2523,
+    "name": "Silver Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2524,
+    "name": "Gold Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 10
+  },
+  {
+    "item_id": 2525,
+    "name": "Rainbow Paint",
+    "item_type": "material",
+    "category": "byproduct",
+    "description": "A viscous liquid made of dried Apricorn powders and Smeargle secretions.",
+    "cost": 20
+  },
+  {
+    "item_id": 2550,
+    "name": "Glass",
+    "item_type": "material",
+    "category": "glassware",
+    "description": "Translucent, but solid substance used for making items.",
+    "cost": 100
+  },
+  {
+    "item_id": 2551,
+    "name": "Glass Vial",
+    "item_type": "material",
+    "category": "glassware",
+    "description": "A small glass vial, used for storing liquids.",
+    "cost": 200
+  },
+  {
+    "item_id": 2552,
+    "name": "Poison Vial",
+    "item_type": "material",
+    "category": "glassware",
+    "description": "A small throwable vial that is used to inflict Poison.",
+    "cost": 200
+  },
+  {
+    "item_id": 2553,
+    "name": "Stun Vial",
+    "item_type": "material",
+    "category": "glassware",
+    "description": "A small throwable vial that is used to inflict Paralysis.",
+    "cost": 200
+  },
+  {
+    "item_id": 2554,
+    "name": "Sleep Vial",
+    "item_type": "material",
+    "category": "glassware",
+    "description": "A small throwable vial that is used to inflict Sleep.",
+    "cost": 200
+  },
+  {
+    "item_id": 2555,
+    "name": "Freeze Vial",
+    "item_type": "material",
+    "category": "glassware",
+    "description": "A small throwable vial that is used to inflict Freeze.",
+    "cost": 200
+  },
+  {
+    "item_id": 2575,
+    "name": "Frost Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A cold shard, filled with Ice-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2576,
+    "name": "Ember Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A red shard, filled with Fire-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2577,
+    "name": "Aqua Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A blue shard, filled with Water-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2578,
+    "name": "Zap Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A sparking shard, filled with Electric-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2579,
+    "name": "Carapace Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A shell-like shard, filled with Bug-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2580,
+    "name": "Sky Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A light blue shard, filled with the Flying-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2581,
+    "name": "Dread Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A dark shard, filled with Dark-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2582,
+    "name": "Draco Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A rough shard, filled with Dragon-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2583,
+    "name": "Mind Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A whsipering shard, filled with Pyshcic-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2584,
+    "name": "Toxic Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A poisonous shard, filled with Poison-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2585,
+    "name": "Stone Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A hard shard, filled with Rock-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2586,
+    "name": "Earth Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "An earthy shard, filled with Ground-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2587,
+    "name": "Leaf Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A green shard, filled with Grass-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2588,
+    "name": "Power Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A focused shard, filled with Fighting-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2589,
+    "name": "Blank Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A shard filled with Normal-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2590,
+    "name": "Spirit Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "An ethereal shard, filled with Ghost-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2591,
+    "name": "Solid Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A refined material shard, filled with Steel-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2592,
+    "name": "Pixie Shard",
+    "item_type": "collectible",
+    "category": "mineral",
+    "description": "A joyful shard, filled with Fairy-type aura. Who knows what secrets it holds?",
+    "cost": 1000
+  },
+  {
+    "item_id": 2600,
+    "name": "PokePoppet",
+    "item_type": "collectible",
+    "category": "gift",
+    "description": "A simple doll that somewhat looks like a Pokemon. Raises a small amount of friendship.",
+    "cost": 0
+  },
+  {
+    "item_id": 2601,
+    "name": "Stun Battery v1",
+    "item_type": "material",
+    "category": "fuel",
+    "description": "A small copper cell used to power the Stun Baton. Provides 2 Charges.",
+    "cost": 0
+  },
+  {
+    "item_id": 2602,
+    "name": "Stun Battery v2",
+    "item_type": "material",
+    "category": "fuel",
+    "description": "A silver cell used to power the Stun Baton. Provides 3 Charges.",
+    "cost": 0
+  },
+  {
+    "item_id": 2603,
+    "name": "Stun Battery v3",
+    "item_type": "material",
+    "category": "fuel",
+    "description": "An adamantium cell used to power the Stun Baton. Provides 5 Charges.",
+    "cost": 0
+  },
+  {
+    "item_id": 2650,
+    "name": "Heavy Boots",
+    "item_type": "equipment",
+    "category": "footwear",
+    "description": "TBC",
+    "cost": 0
+  },
+  {
+    "item_id": 2651,
+    "name": "Hiking Boots",
+    "item_type": "equipment",
+    "category": "footwear",
+    "description": "Leather boots that keep you light on your feet, allowing you to traverse rough terrain easier.",
+    "cost": 0
+  },
+  {
+    "item_id": 2652,
+    "name": "Jump Boots",
+    "item_type": "equipment",
+    "category": "footwear",
+    "description": "Tight fitting galoshes that allow normal movement through thick mud and other viscous terrains.",
+    "cost": 0
+  },
+  {
+    "item_id": 2653,
+    "name": "Rubber Boots",
+    "item_type": "equipment",
+    "category": "footwear",
+    "description": "Tight fitting galoshes that allow normal movement through thick mud and other viscous terrains.",
+    "cost": 0
+  },
+  {
+    "item_id": 2654,
+    "name": "Lantern",
+    "item_type": "key",
+    "category": "handheld",
+    "description": "Used for lighting up dark places.",
+    "cost": 0,
+    "stackable": false,
+    "tradable": false,
+    "sellable": false
+  },
+  {
+    "item_id": 2655,
+    "name": "Raft",
+    "item_type": "equipment",
+    "category": "transport",
+    "description": "Sturdy! Might be useful for crossing fresh water.",
+    "cost": 0
+  },
+  {
+    "item_id": 2656,
+    "name": "Stun Baton v1",
+    "item_type": "equipment",
+    "category": "handheld",
+    "description": "TBC",
+    "cost": 0
+  },
+  {
+    "item_id": 2657,
+    "name": "Stun Baton v2",
+    "item_type": "equipment",
+    "category": "handheld",
+    "description": "TBC",
+    "cost": 0
+  },
+  {
+    "item_id": 2658,
+    "name": "Stun Baton v3",
+    "item_type": "equipment",
+    "category": "handheld",
+    "description": "TBC",
+    "cost": 0
+  },
+  {
+    "item_id": 2700,
+    "name": "Remedy",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A bitter remedy that heals 30HP, but slightly lowers friendship.",
+    "cost": 0
+  },
+  {
+    "item_id": 2701,
+    "name": "Fine Remedy",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A bitter remedy that heals 50HP, but slightly lowers friendship.",
+    "cost": 0
+  },
+  {
+    "item_id": 2702,
+    "name": "Superb Remedy",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A bitter remedy that heals 75HP, but slightly lowers friendship.",
+    "cost": 0
+  },
+  {
+    "item_id": 2703,
+    "name": "Tonic",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A topical medicine meant to be applied to Pokemon. It can be used to restore 60 HP to a single Pokemon.",
+    "cost": 0
+  },
+  {
+    "item_id": 2704,
+    "name": "Super Tonic",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A topical medicine meant to be applied to Pokemon. It can be used to restore 100 HP to a single Pokemon.",
+    "cost": 0
+  },
+  {
+    "item_id": 2705,
+    "name": "Hyper Tonic",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A topical medicine meant to be applied to Pokemon. It can be used to restore 150 HP to a single Pokemon.",
+    "cost": 0
+  },
+  {
+    "item_id": 2706,
+    "name": "Max Tonic",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A topical medicine meant to be applied to Pokemon. It can be used to completely restore the max HP of a single Pokemon.",
+    "cost": 0
+  },
+  {
+    "item_id": 2707,
+    "name": "Restore Tonic",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A topical medicine meant to be applied to Pokemon. It can be used to fully restore the max HP of a single Pokemon and cure any status conditions it has.",
+    "cost": 0
+  },
+  {
+    "item_id": 2708,
+    "name": "Healing Tincture",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A topical medicine meant to be applied to Pokemon. It can be used to heal any status condition a Pokemon may have.",
+    "cost": 0
+  },
+  {
+    "item_id": 2709,
+    "name": "Pep-Up Powder",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A coarse powder made of ground Pep-Up Plant. Restores 5PP to a single move.",
+    "cost": 0
+  },
+  {
+    "item_id": 2710,
+    "name": "Medical Salve",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "Medicinal Leeks crushed into a viscous paste. Heals 20HP, often used as a base for other medicines.",
+    "cost": 0
+  },
+  {
+    "item_id": 2711,
+    "name": "Pep-Up Ointment",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A medicinal salve that fully restores a single moves PP.",
+    "cost": 0
+  },
+  {
+    "item_id": 2712,
+    "name": "Energy Ointment",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A medicinal salve that fully restores a pokemons PP.",
+    "cost": 0
+  },
+  {
+    "item_id": 2713,
+    "name": "Pecha Ointment",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A medicinal salve that heals 20HP and cures Poison Status.",
+    "cost": 0
+  },
+  {
+    "item_id": 2714,
+    "name": "Cheri Ointment",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A medicinal salve that heals 20HP and cures Paralyze Status.",
+    "cost": 0
+  },
+  {
+    "item_id": 2715,
+    "name": "Rawst Ointment",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A medicinal salve that heals 20HP and cures Burn Status.",
+    "cost": 0
+  },
+  {
+    "item_id": 2716,
+    "name": "Aspear Ointment",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A medicinal salve that heals 20HP and cures Frostbite and Frozen Status.",
+    "cost": 0
+  },
+  {
+    "item_id": 2717,
+    "name": "Ice Pack",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A small pouch of Ice used to cure Burn.",
+    "cost": 0
+  },
+  {
+    "item_id": 2718,
+    "name": "Heat Pack",
+    "item_type": "material",
+    "category": "medicine",
+    "description": "A small pouch thats hot to the touch used to cure Frostbite and Frozen.",
+    "cost": 0
+  },
+  {
+    "item_id": 2750,
+    "name": "Freeze Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Ice-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2751,
+    "name": "Flare Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Fire-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2752,
+    "name": "Tidal Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Water-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2753,
+    "name": "Bolt Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Electric-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2754,
+    "name": "Swarm Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Bug-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2755,
+    "name": "Wing Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Flying-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2756,
+    "name": "Shade Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Dark-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2757,
+    "name": "Scale Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Dragon-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2758,
+    "name": "Mystic Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Psychic-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2759,
+    "name": "Venom Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Poison-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2760,
+    "name": "Stone Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Rock-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2761,
+    "name": "Earth Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Ground-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2762,
+    "name": "Garden Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Grass-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2763,
+    "name": "Power Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Fighting-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2764,
+    "name": "Blank Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Normal-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2765,
+    "name": "Grave Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Ghost-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2766,
+    "name": "Ferro Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Steel-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2767,
+    "name": "Pixie Ball",
+    "item_type": "material",
+    "category": "pokeball",
+    "description": "A unique type of PokeBall. Being more likely to succeed against Fairy-type Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2800,
+    "name": "Dressed Lure",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "Fishing tackle wrapped in silk. Increases bite-rate.",
+    "cost": 500
+  },
+  {
+    "item_id": 2801,
+    "name": "Trap Lure",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "Fishing tackle that slows a Pokemons escape when not reeling.",
+    "cost": 500
+  },
+  {
+    "item_id": 2802,
+    "name": "Finder's Lure",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "Fishing tackle that raises the chances of pulling items up.",
+    "cost": 500
+  },
+  {
+    "item_id": 2803,
+    "name": "Magnet Lure",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "Fishing tackle that raises the chances of fishing up trash.",
+    "cost": 500
+  },
+  {
+    "item_id": 2804,
+    "name": "Barbed Hook",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "Fishing tackle that makes the 'fishing bar' cling to low level Pokemon.",
+    "cost": 500
+  },
+  {
+    "item_id": 2805,
+    "name": "Spicy Bait",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "A wrapped crushed berry. Increases bite rate of Pokemon that enjoy spicy things.",
+    "cost": 500
+  },
+  {
+    "item_id": 2806,
+    "name": "Dry Bait",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "A wrapped crushed berry. Increases bite rate of Pokemon that enjoy dry things.",
+    "cost": 500
+  },
+  {
+    "item_id": 2807,
+    "name": "Bitter Bait",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "A wrapped crushed berry. Increases bite rate of Pokemon that enjoy bitter things.",
+    "cost": 500
+  },
+  {
+    "item_id": 2808,
+    "name": "Sweet Bait",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "A wrapped crushed berry. Increases bite rate of Pokemon that enjoy sweet things.",
+    "cost": 500
+  },
+  {
+    "item_id": 2809,
+    "name": "Sour Bait",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "A wrapped crushed berry. Increases bite rate of Pokemon that enjoy sour things.",
+    "cost": 500
+  },
+  {
+    "item_id": 2810,
+    "name": "Hearty Bait",
+    "item_type": "tool",
+    "category": "lure",
+    "description": "A thick portion large enough for multiple Pokemon. Increases the chance of a double catch.",
+    "cost": 500
+  },
+  {
+    "item_id": 2010,
+    "name": "Mushroom",
+    "item_type": "material",
+    "category": "foragable",
+    "description": "An edible woodland mushroom.",
+    "cost": 8,
+    "rom_item_id": 87
+  },
+  {
+    "item_id": 2011,
+    "name": "Wild Herb",
+    "item_type": "material",
+    "category": "foragable",
+    "description": "A fragrant medicinal herb.",
+    "cost": 8
+  },
+  {
+    "item_id": 2012,
+    "name": "Wildflower",
+    "item_type": "material",
+    "category": "foragable",
+    "description": "A colorful wildflower.",
+    "cost": 6
+  }
+]

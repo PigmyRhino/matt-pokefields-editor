@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route24_camper_ethan",
+  "display_name": "Camper Ethan",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 320,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "rattata",
+      "ability": "guts",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 16,
+      "iv_atk": 15,
+      "iv_def": 14,
+      "iv_spa": 8,
+      "iv_spd": 13,
+      "iv_spe": 17,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "quick_attack",
+        "hyper_fang"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 15,
+      "iv_atk": 13,
+      "iv_def": 13,
+      "iv_spa": 13,
+      "iv_spd": 14,
+      "iv_spe": 17,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Route 24 is gorgeous! Great for camping and even better for battling!",
+    "loss": "Alright, alright, you win. Can I go back to my campfire now?",
+    "post_defeat": "If you keep going north, you'll hit Cerulean Cape. Beautiful spot."
+  },
+  "rebattle": "daily"
+}

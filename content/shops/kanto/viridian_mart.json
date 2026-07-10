@@ -1,0 +1,33 @@
+{
+  "shop_id": "viridian_mart",
+  "entries": [
+    {
+      "item": "poke_ball",
+      "min_badges": 0
+    },
+    {
+      "item": "potion",
+      "min_badges": 0
+    },
+    {
+      "item": "antidote",
+      "min_badges": 0
+    },
+    {
+      "item": "great_ball",
+      "min_badges": 1
+    },
+    {
+      "item": "super_potion",
+      "min_badges": 1
+    },
+    {
+      "item": "repel",
+      "min_badges": 0
+    },
+    {
+      "item": "ether",
+      "min_badges": 0
+    }
+  ]
+}

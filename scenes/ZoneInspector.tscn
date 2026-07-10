@@ -1,0 +1,256 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/zone_inspector.gd" id="1_zone"]
+[ext_resource type="PackedScene" path="res://scenes/widgets/SearchPicker.tscn" id="2_sp"]
+[ext_resource type="PackedScene" path="res://scenes/widgets/ChipSelect.tscn" id="3_cs"]
+[ext_resource type="PackedScene" path="res://scenes/widgets/ItemReqList.tscn" id="4_irl"]
+
+[node name="ZoneInspector" type="PanelContainer"]
+custom_minimum_size = Vector2(300, 0)
+script = ExtResource("1_zone")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Scroll" type="ScrollContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="Fields" type="VBoxContainer" parent="Margin/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="ZCategory" type="Label" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Zone"
+
+[node name="NameRow" type="HBoxContainer" parent="Margin/Scroll/Fields"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/NameRow"]
+layout_mode = 2
+text = "Name"
+
+[node name="ZName" type="LineEdit" parent="Margin/Scroll/Fields/NameRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ZVerts" type="Label" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0 vertices"
+
+[node name="AreaBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="DisplayRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/DisplayRow"]
+layout_mode = 2
+text = "Display"
+
+[node name="ZDisplayName" type="LineEdit" parent="Margin/Scroll/Fields/AreaBox/DisplayRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DayTrackRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/DayTrackRow"]
+layout_mode = 2
+text = "Day Track"
+
+[node name="DayTrack" parent="Margin/Scroll/Fields/AreaBox/DayTrackRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NightTrackRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/NightTrackRow"]
+layout_mode = 2
+text = "Night Track"
+
+[node name="NightTrack" parent="Margin/Scroll/Fields/AreaBox/NightTrackRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DayAmbRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/DayAmbRow"]
+layout_mode = 2
+text = "Day Amb"
+
+[node name="DayAmbience" parent="Margin/Scroll/Fields/AreaBox/DayAmbRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NightAmbRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/NightAmbRow"]
+layout_mode = 2
+text = "Night Amb"
+
+[node name="NightAmbience" parent="Margin/Scroll/Fields/AreaBox/NightAmbRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ClimateRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/ClimateRow"]
+layout_mode = 2
+text = "Climate"
+
+[node name="ClimateOpt" type="OptionButton" parent="Margin/Scroll/Fields/AreaBox/ClimateRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EncBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TerrainRow" type="HBoxContainer" parent="Margin/Scroll/Fields/EncBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/EncBox/TerrainRow"]
+layout_mode = 2
+text = "Terrain"
+
+[node name="TerrainOpt" type="OptionButton" parent="Margin/Scroll/Fields/EncBox/TerrainRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EncRow" type="HBoxContainer" parent="Margin/Scroll/Fields/EncBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/EncBox/EncRow"]
+layout_mode = 2
+text = "Encounter"
+
+[node name="EncGroup" parent="Margin/Scroll/Fields/EncBox/EncRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FishRow" type="HBoxContainer" parent="Margin/Scroll/Fields/EncBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/EncBox/FishRow"]
+layout_mode = 2
+text = "Fish"
+
+[node name="FishGroup" parent="Margin/Scroll/Fields/EncBox/FishRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GateBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ReqFlagsLabel" type="Label" parent="Margin/Scroll/Fields/GateBox"]
+layout_mode = 2
+text = "Requires flags"
+
+[node name="ReqFlags" parent="Margin/Scroll/Fields/GateBox" instance=ExtResource("3_cs")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ForbidFlagsLabel" type="Label" parent="Margin/Scroll/Fields/GateBox"]
+layout_mode = 2
+text = "Forbids flags"
+
+[node name="ForbidFlags" parent="Margin/Scroll/Fields/GateBox" instance=ExtResource("3_cs")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BadgeRow" type="HBoxContainer" parent="Margin/Scroll/Fields/GateBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/GateBox/BadgeRow"]
+layout_mode = 2
+text = "Badges"
+
+[node name="ReqBadges" parent="Margin/Scroll/Fields/GateBox/BadgeRow" instance=ExtResource("3_cs")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ReqItemsLabel" type="Label" parent="Margin/Scroll/Fields/GateBox"]
+layout_mode = 2
+text = "Items"
+
+[node name="ReqItems" parent="Margin/Scroll/Fields/GateBox" instance=ExtResource("4_irl")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PartyRow" type="HBoxContainer" parent="Margin/Scroll/Fields/GateBox"]
+layout_mode = 2
+
+[node name="PartyCheck" type="CheckBox" parent="Margin/Scroll/Fields/GateBox/PartyRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Party min"
+
+[node name="PartySpin" type="SpinBox" parent="Margin/Scroll/Fields/GateBox/PartyRow"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 6.0
+
+[node name="ResBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ObjTypeRow" type="HBoxContainer" parent="Margin/Scroll/Fields/ResBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/ResBox/ObjTypeRow"]
+layout_mode = 2
+text = "Types"
+
+[node name="ObjectTypes" parent="Margin/Scroll/Fields/ResBox/ObjTypeRow" instance=ExtResource("3_cs")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MaxRow" type="HBoxContainer" parent="Margin/Scroll/Fields/ResBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/ResBox/MaxRow"]
+layout_mode = 2
+text = "Max Active"
+
+[node name="MaxActive" type="SpinBox" parent="Margin/Scroll/Fields/ResBox/MaxRow"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 1.0
+max_value = 255.0
+value = 1.0
+
+[node name="ZDelete" type="Button" parent="Margin/Scroll/Fields"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Delete zone"

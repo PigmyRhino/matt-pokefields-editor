@@ -1,0 +1,1148 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Prof. Oak's Lab",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          13.0,
+          2.0
+        ],
+        [
+          13.0,
+          13.0
+        ],
+        [
+          0.0,
+          13.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 6,
+      "tile_y": 13
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "face_player"
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "cond": {
+              "key": "starter_chosen",
+              "kind": "flag_set"
+            },
+            "id": "n2",
+            "if_false": "n3",
+            "if_true": "n10",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Ah, a new face! Welcome to my Pokémon lab."
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "I'm Professor Oak. I study how people and Pokémon grow together."
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "And you've come at just the right time."
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "On that table are three Pokémon: BULBASAUR, CHARMANDER, and SQUIRTLE."
+            },
+            "id": "n6",
+            "kind": "action",
+            "next": "n7"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "One of them can be your very first partner. Go on—choose the one that feels right!"
+            },
+            "id": "n7",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "So—you've chosen your partner! A fine choice, if I do say so."
+            },
+            "id": "n10",
+            "kind": "action",
+            "next": "n11"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Raise it with kindness, and it will grow strong right alongside you."
+            },
+            "id": "n11",
+            "kind": "action",
+            "next": "n12"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Your very own adventure starts now. I can't wait to see how far you two will go!"
+            },
+            "id": "n12",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_5_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Prof. Oak",
+        "sprite": 160,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 5,
+      "tile_y": 4
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "count": 1,
+              "kind": "party_size_at_least"
+            },
+            "id": "n1",
+            "if_false": "n4",
+            "if_true": "n2",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "BULBASAUR is here, waiting for a new Trainer."
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "(You've already chosen your partner.)"
+            },
+            "id": "n3",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "BULBASAUR notices you and perks up!"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Will you take BULBASAUR?"
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "id": "n6",
+            "kind": "choice",
+            "options": [
+              {
+                "label": "Yes",
+                "next": "n7"
+              },
+              {
+                "label": "No",
+                "next": "n11"
+              }
+            ]
+          },
+          {
+            "action": {
+              "kind": "give_pokemon",
+              "level": 5,
+              "species_id": 1
+            },
+            "id": "n7",
+            "kind": "action",
+            "next": "n100"
+          },
+          {
+            "action": {
+              "key": "starter_chosen",
+              "kind": "set_flag"
+            },
+            "id": "n8",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You received BULBASAUR!"
+            },
+            "id": "n9",
+            "kind": "action",
+            "next": "n10"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take good care of it."
+            },
+            "id": "n10",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You leave BULBASAUR for now."
+            },
+            "id": "n11",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "play_sound",
+              "sound_id": "pokeball_out"
+            },
+            "id": "n100",
+            "kind": "action",
+            "next": "n8"
+          }
+        ]
+      },
+      "id": "npc_8_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Bulbasaur",
+        "sprite": 297,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 8,
+      "tile_y": 4
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "count": 1,
+              "kind": "party_size_at_least"
+            },
+            "id": "n1",
+            "if_false": "n4",
+            "if_true": "n2",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "SQUIRTLE is here, waiting for a new Trainer."
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "(You've already chosen your partner.)"
+            },
+            "id": "n3",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "SQUIRTLE notices you and perks up!"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Will you take SQUIRTLE?"
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "id": "n6",
+            "kind": "choice",
+            "options": [
+              {
+                "label": "Yes",
+                "next": "n7"
+              },
+              {
+                "label": "No",
+                "next": "n11"
+              }
+            ]
+          },
+          {
+            "action": {
+              "kind": "give_pokemon",
+              "level": 5,
+              "species_id": 7
+            },
+            "id": "n7",
+            "kind": "action",
+            "next": "n100"
+          },
+          {
+            "action": {
+              "key": "starter_chosen",
+              "kind": "set_flag"
+            },
+            "id": "n8",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You received SQUIRTLE!"
+            },
+            "id": "n9",
+            "kind": "action",
+            "next": "n10"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take good care of it."
+            },
+            "id": "n10",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You leave SQUIRTLE for now."
+            },
+            "id": "n11",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "play_sound",
+              "sound_id": "pokeball_out"
+            },
+            "id": "n100",
+            "kind": "action",
+            "next": "n8"
+          }
+        ]
+      },
+      "id": "npc_9_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Squrtle",
+        "sprite": 304,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 9,
+      "tile_y": 4
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "count": 1,
+              "kind": "party_size_at_least"
+            },
+            "id": "n1",
+            "if_false": "n4",
+            "if_true": "n2",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "CHARMANDER is here, waiting for a new Trainer."
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "(You've already chosen your partner.)"
+            },
+            "id": "n3",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "CHARMANDER notices you and perks up!"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Will you take CHARMANDER?"
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "id": "n6",
+            "kind": "choice",
+            "options": [
+              {
+                "label": "Yes",
+                "next": "n7"
+              },
+              {
+                "label": "No",
+                "next": "n11"
+              }
+            ]
+          },
+          {
+            "action": {
+              "kind": "give_pokemon",
+              "level": 5,
+              "species_id": 4
+            },
+            "id": "n7",
+            "kind": "action",
+            "next": "n100"
+          },
+          {
+            "action": {
+              "key": "starter_chosen",
+              "kind": "set_flag"
+            },
+            "id": "n8",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You received CHARMANDER!"
+            },
+            "id": "n9",
+            "kind": "action",
+            "next": "n10"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take good care of it."
+            },
+            "id": "n10",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You leave CHARMANDER for now."
+            },
+            "id": "n11",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "play_sound",
+              "sound_id": "pokeball_out"
+            },
+            "id": "n100",
+            "kind": "action",
+            "next": "n8"
+          }
+        ]
+      },
+      "id": "npc_10_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Charmander",
+        "sprite": 301,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 10,
+      "tile_y": 4
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_10_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 10,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_9_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 9,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "It's crammed full of Pokemon books."
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "There's a book poking out here..."
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "id": "n3",
+            "kind": "choice",
+            "options": [
+              {
+                "label": "Take it?",
+                "next": "n5"
+              },
+              {
+                "label": "Leave it?",
+                "next": "n7"
+              }
+            ]
+          },
+          {
+            "action": {
+              "item_id": 17,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "There was a potion shoved inside."
+            },
+            "id": "n6",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You back away from the bookshelf without touching the book."
+            },
+            "id": "n7",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_11_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "scripted",
+      "tile_x": 11,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_12_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 12,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_8_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 8,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_9_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 9,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_10_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 10,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_11_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 11,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_12_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 12,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_0_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 0,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_1_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 1,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_2_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 2,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_3_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 3,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_4_8",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "It's crammed full of Pokemon books."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 4,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_6_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "This poster details the Professor when he was younger\nHe appears to have been a famed battler."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 6,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_7_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "This poster details the Professor when he was younger\nHe appears to have been a famed battler."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 7,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You back away from the Computer."
+            },
+            "id": "n1",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "There's an email message here...."
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "id": "n3",
+            "kind": "choice",
+            "options": [
+              {
+                "label": "Read further?",
+                "next": "n4"
+              },
+              {
+                "label": "Respect Prof Oak's privacy.",
+                "next": "n1"
+              }
+            ]
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Finally! The ultimate trainers of the Pokemon Leagueare ready to take on all comers!"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Bring your best Pokemon and see how you rate as a trainer!...POKEMON LEAGUE HQINDIGO PLATEAU"
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Prof. Oak, please visit us! We could use your expert guidance on the recent Pokemon migrational patterns!"
+            },
+            "id": "n6",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_2_1",
+      "kind": "Sign",
+      "script": "scripted",
+      "tile_x": 2,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_1_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Lights in different colors are\nflashing on and off."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 1,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_0_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Lights in different colors are\nflashing on and off."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 0,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "What could this machine be?"
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Better not mess around with it!"
+            },
+            "id": "n2",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_2_5",
+      "kind": "Sign",
+      "script": "scripted",
+      "tile_x": 2,
+      "tile_y": 5
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "kind": "wander",
+        "pause_ms": 600,
+        "radius": 2
+      },
+      "id": "npc_11_10",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "I study Pokemon as Prof. Oak's aide."
+      },
+      "render": {
+        "direction": 1,
+        "display_name": "Aide",
+        "sprite": 136,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 11,
+      "tile_y": 10
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 1300
+      },
+      "id": "npc_3_11",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "I study Pokemon as Prof. Oak's aide."
+      },
+      "render": {
+        "direction": 3,
+        "display_name": "Aide",
+        "sprite": 136,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 3,
+      "tile_y": 11
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "kind": "wander",
+        "pause_ms": 1300,
+        "radius": 3
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Prof. Oak may not look like much, but he's the authority on Pokemon."
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Many Pokemon Trainers hold him in high regard."
+            },
+            "id": "n2",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_2_9",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Female Aide",
+        "sprite": 123,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 2,
+      "tile_y": 9
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "What could this machine be?"
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Better not mess around with it!"
+            },
+            "id": "n2",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_1_5",
+      "kind": "Sign",
+      "script": "scripted",
+      "tile_x": 1,
+      "tile_y": 5
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_6_12",
+      "target_warp": "",
+      "tile_x": 6,
+      "tile_y": 12
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_6_12",
+      "target_map": "kanto",
+      "target_warp": "t_76_273",
+      "tile_x": 6,
+      "tile_y": 13,
+      "warp_type": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "unique_name": "kanto_route3_lass_janice",
+  "display_name": "Lass Janice",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 220,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "jigglypuff",
+      "ability": "cute_charm",
+      "nature": "modest",
+      "gender": "female",
+      "iv_hp": 16,
+      "iv_atk": 10,
+      "iv_def": 12,
+      "iv_spa": 15,
+      "iv_spd": 14,
+      "iv_spe": 11,
+      "moves": [
+        "sing"
+      ],
+      "level_offset": 1
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 13,
+      "iv_atk": 12,
+      "iv_def": 12,
+      "iv_spa": 13,
+      "iv_spd": 13,
+      "iv_spe": 16,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "My Jigglypuff can sing anyone to sleep! Let's see if you can stay awake!",
+    "loss": "You stayed awake through Jigglypuff's song? Impressive!",
+    "post_defeat": "Jigglypuff's voice is so soothing. Perfect for bedtime!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

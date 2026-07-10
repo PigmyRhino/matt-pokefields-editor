@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_fuchsia_gym_tamer_edgar",
+  "display_name": "Tamer Edgar",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 800,
+  "payout_per_level": 30,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "arbok",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 24,
+      "iv_atk": 24,
+      "iv_def": 20,
+      "iv_spa": 14,
+      "iv_spd": 20,
+      "iv_spe": 20,
+      "moves": [
+        "acid",
+        "glare",
+        "bite",
+        "screech"
+      ]
+    },
+    {
+      "species": "weezing",
+      "ability": "levitate",
+      "nature": "bold",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 24,
+      "iv_atk": 18,
+      "iv_def": 24,
+      "iv_spa": 18,
+      "iv_spd": 18,
+      "iv_spe": 16,
+      "moves": [
+        "sludge",
+        "smokescreen",
+        "toxic",
+        "self_destruct"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    },
+    {
+      "species": "weepinbell",
+      "ability": "chlorophyll",
+      "nature": "rash",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "vine_whip",
+        "acid",
+        "sleep_powder",
+        "wrap"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Arbok and Weezing — the deadliest duo in Kanto! You won't leave unscathed!",
+    "loss": "Even my deadliest Pokemon couldn't stop you! I tip my hat!",
+    "post_defeat": "Arbok's hood pattern changes depending on the region. Kanto Arbok are the fiercest!"
+  },
+  "rebattle": "daily"
+}

@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route11_engineer_braxton",
+  "display_name": "Engineer Braxton",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 580,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "magnemite",
+      "ability": "magnet_pull",
+      "nature": "modest",
+      "gender": "genderless",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 10,
+      "iv_def": 18,
+      "iv_spa": 20,
+      "iv_spd": 16,
+      "iv_spe": 14,
+      "moves": []
+    },
+    {
+      "species": "drowzee",
+      "ability": "insomnia",
+      "nature": "calm",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 19,
+      "iv_atk": 11,
+      "iv_def": 15,
+      "iv_spa": 17,
+      "iv_spd": 18,
+      "iv_spe": 14,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "My electric Pokemon are precision-engineered for combat! Let me demonstrate!",
+    "loss": "Your team short-circuited my strategy. Impressive!",
+    "post_defeat": "Magnemite generate their own magnetic fields. Absolutely fascinating technology."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 25
+}

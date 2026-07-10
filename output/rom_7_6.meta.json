@@ -1,0 +1,158 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "viridian_indoors",
+      "display_name": "Cerulean City Bike Shop",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "viridian_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          11.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 1,
+      "tile_x": 4,
+      "tile_y": 9
+    },
+    {
+      "flags": 1,
+      "tile_x": 6,
+      "tile_y": 9
+    },
+    {
+      "flags": 0,
+      "tile_x": 5,
+      "tile_y": 9
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_9_3",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Biker Ronald",
+        "sprite": 36,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 9,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "check"
+          },
+          {
+            "cond": {
+              "item_id": 427,
+              "kind": "has_item"
+            },
+            "id": "check",
+            "if_false": "offer",
+            "if_true": "already",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "How's the Bicycle treating you? Nothing beats the wind in your hair!"
+            },
+            "id": "already",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Welcome to the Cerulean Bike Shop! You look like you'd put one to good use. Here, take this Bicycle, on the house!"
+            },
+            "id": "offer",
+            "kind": "action",
+            "next": "give"
+          },
+          {
+            "action": {
+              "item_id": 427,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "give",
+            "kind": "action",
+            "next": "outro"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You got the Bicycle! Press B to hop on and ride. It's much faster than going on foot!"
+            },
+            "id": "outro",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "facility_8_3",
+      "kind": "Facility",
+      "script": "scripted",
+      "tile_x": 8,
+      "tile_y": 3
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_5_8",
+      "target_warp": "",
+      "tile_x": 5,
+      "tile_y": 8
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_5_8",
+      "target_map": "kanto",
+      "target_warp": "t_277_68",
+      "tile_x": 5,
+      "tile_y": 9,
+      "warp_type": ""
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "viridian_indoors",
+      "display_name": "Pewter City Gate",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "viridian_indoors",
+      "polygon": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          14.0,
+          2.0
+        ],
+        [
+          14.0,
+          11.0
+        ],
+        [
+          1.0,
+          11.0
+        ]
+      ]
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 7,
+      "tile_y": 11
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Route 2 was much quieter before the cave opened up. Now we get travelers from all over Kanto!"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "rom15_3_Traveler",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Traveler",
+        "sprite": 4,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 10,
+      "tile_y": 5
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 0,
+      "name": "t_7_1",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 2
+    },
+    {
+      "direction": 3,
+      "name": "t_7_10",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 10
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_7_1",
+      "target_map": "kanto",
+      "target_warp": "t_65_113",
+      "tile_x": 7,
+      "tile_y": 1,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_7_11",
+      "target_map": "rom_1_0",
+      "target_warp": "t_5_9",
+      "tile_x": 7,
+      "tile_y": 11,
+      "warp_type": ""
+    }
+  ]
+}

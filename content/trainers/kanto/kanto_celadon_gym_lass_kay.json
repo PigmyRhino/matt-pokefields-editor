@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_celadon_gym_lass_kay",
+  "display_name": "Lass Kay",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 580,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 16,
+      "iv_def": 17,
+      "iv_spa": 20,
+      "iv_spd": 17,
+      "iv_spe": 16,
+      "moves": [
+        "vine_whip",
+        "acid",
+        "sleep_powder",
+        "razor_leaf"
+      ]
+    },
+    {
+      "species": "gloom",
+      "ability": "chlorophyll",
+      "nature": "calm",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 14,
+      "iv_def": 19,
+      "iv_spa": 20,
+      "iv_spd": 20,
+      "iv_spe": 15,
+      "moves": [
+        "mega_drain",
+        "acid",
+        "sleep_powder",
+        "sweet_scent"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The Celadon Gym is so beautiful! The flowers match our Pokemon perfectly.",
+    "loss": "Your battle style is as beautiful as this garden!",
+    "post_defeat": "Erika is so elegant. She arranges flowers between battles."
+  },
+  "rebattle": "daily"
+}

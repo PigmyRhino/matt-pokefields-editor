@@ -1,0 +1,64 @@
+{
+  "unique_name": "kanto_route24_hiker_thomas",
+  "display_name": "Hiker Thomas",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 200,
+  "payout_per_level": 5,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "geodude",
+      "ability": "rock_head",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17
+    },
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17
+    },
+    {
+      "species": "geodude",
+      "ability": "sturdy",
+      "nature": "hardy",
+      "moves": [],
+      "level_offset": 2,
+      "gender": "male",
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "I love hiking up here. The air is so much more crisp!",
+    "loss": "Now, THAT was fun! Hahaha!",
+    "win": "Hike back up here when you're ready!",
+    "post_defeat": "There's something about the mountain air that speaks to me."
+  },
+  "scaling_min_level": 18
+}

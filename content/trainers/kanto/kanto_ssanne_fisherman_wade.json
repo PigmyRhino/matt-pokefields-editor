@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_fisherman_wade",
+  "display_name": "Fisherman Wade",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 350,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "poliwag",
+      "ability": "damp",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 13,
+      "iv_def": 14,
+      "iv_spa": 15,
+      "iv_spd": 14,
+      "iv_spe": 17,
+      "moves": [
+        "water_gun",
+        "hypnosis",
+        "bubble",
+        "double_slap"
+      ]
+    },
+    {
+      "species": "tentacool",
+      "ability": "clear_body",
+      "nature": "calm",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 12,
+      "iv_def": 15,
+      "iv_spa": 15,
+      "iv_spd": 18,
+      "iv_spe": 15,
+      "moves": [
+        "poison_sting",
+        "supersonic",
+        "constrict",
+        "acid"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I fish from the deck every morning! The Pokemon I catch are my battle crew!",
+    "loss": "Reeled in a big one — your team!",
+    "post_defeat": "Tentacool drift near the ship hull. You can spot them from the railing."
+  },
+  "rebattle": "daily"
+}

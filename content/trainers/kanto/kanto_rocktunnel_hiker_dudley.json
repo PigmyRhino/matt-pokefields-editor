@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_rocktunnel_hiker_dudley",
+  "display_name": "Hiker Dudley",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 500,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "geodude",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 18,
+      "iv_spa": 9,
+      "iv_spd": 12,
+      "iv_spe": 10,
+      "moves": [
+        "tackle",
+        "defense_curl",
+        "rock_throw",
+        "magnitude"
+      ]
+    },
+    {
+      "species": "machop",
+      "ability": "no_guard",
+      "nature": "brave",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 19,
+      "iv_def": 15,
+      "iv_spa": 10,
+      "iv_spd": 14,
+      "iv_spe": 11,
+      "moves": [
+        "low_kick",
+        "leer",
+        "focus_energy",
+        "karate_chop"
+      ]
+    },
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 14,
+      "iv_def": 14,
+      "iv_spa": 14,
+      "iv_spd": 14,
+      "iv_spe": 19,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "astonish",
+        "bite"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Three Pokemon, three times the fun! All of them caught right here in this cave!",
+    "loss": "Three wasn't enough! Maybe I need six!",
+    "post_defeat": "If you spend enough time in Rock Tunnel, the Pokemon practically become family."
+  },
+  "rebattle": "daily"
+}

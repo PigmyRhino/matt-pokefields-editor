@@ -1,0 +1,80 @@
+{
+  "unique_name": "kanto_nuggetbridge_bugcatcher_bill",
+  "display_name": "Bug Catcher Bill",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "metapod",
+      "ability": "shed_skin",
+      "nature": "hardy",
+      "moves": [
+        "bug_bite"
+      ],
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 13,
+      "iv_atk": 13,
+      "iv_def": 14,
+      "iv_spa": 15,
+      "iv_spd": 13,
+      "iv_spe": 14
+    },
+    {
+      "species": "kakuna",
+      "ability": "shed_skin",
+      "nature": "lonely",
+      "moves": [
+        "bug_bite"
+      ],
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 13,
+      "iv_atk": 13,
+      "iv_def": 14,
+      "iv_spa": 15,
+      "iv_spd": 13,
+      "iv_spe": 14
+    },
+    {
+      "species": "butterfree",
+      "ability": "compound_eyes",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 13,
+      "iv_atk": 13,
+      "iv_def": 14,
+      "iv_spa": 15,
+      "iv_spd": 14,
+      "iv_spe": 15
+    },
+    {
+      "species": "beedrill",
+      "ability": "swarm",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 13,
+      "iv_atk": 13,
+      "iv_def": 14,
+      "iv_spa": 15,
+      "iv_spd": 14
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "Number 4! Prepare yourself for my swarm!",
+    "loss": "You're too good!",
+    "post_defeat": "I did my best. I have no regrets."
+  },
+  "scaling_min_level": 17
+}

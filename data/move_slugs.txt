@@ -1,0 +1,742 @@
+10_000_000_volt_thunderbolt|10 000 000 Volt Thunderbolt
+absorb|Absorb
+accelerock|Accelerock
+acid|Acid
+acid_armor|Acid Armor
+acid_downpour_physical|Acid Downpour  Physical
+acid_downpour_special|Acid Downpour  Special
+acid_spray|Acid Spray
+acrobatics|Acrobatics
+acupressure|Acupressure
+aerial_ace|Aerial Ace
+aeroblast|Aeroblast
+after_you|After You
+agility|Agility
+air_cutter|Air Cutter
+air_slash|Air Slash
+all_out_pummeling_physical|All Out Pummeling  Physical
+all_out_pummeling_special|All Out Pummeling  Special
+ally_switch|Ally Switch
+amnesia|Amnesia
+anchor_shot|Anchor Shot
+ancient_power|Ancient Power
+aqua_jet|Aqua Jet
+aqua_ring|Aqua Ring
+aqua_tail|Aqua Tail
+arm_thrust|Arm Thrust
+aromatherapy|Aromatherapy
+aromatic_mist|Aromatic Mist
+assist|Assist
+assurance|Assurance
+astonish|Astonish
+attack_order|Attack Order
+attract|Attract
+aura_sphere|Aura Sphere
+aurora_beam|Aurora Beam
+aurora_veil|Aurora Veil
+autotomize|Autotomize
+avalanche|Avalanche
+baby_doll_eyes|Baby-Doll Eyes
+baddy_bad|Baddy Bad
+baneful_bunker|Baneful Bunker
+barrage|Barrage
+barrier|Barrier
+baton_pass|Baton Pass
+beak_blast|Beak Blast
+beat_up|Beat Up
+belch|Belch
+belly_drum|Belly Drum
+bestow|Bestow
+bide|Bide
+bind|Bind
+bite|Bite
+black_hole_eclipse_physical|Black Hole Eclipse  Physical
+black_hole_eclipse_special|Black Hole Eclipse  Special
+blast_burn|Blast Burn
+blaze_kick|Blaze Kick
+blizzard|Blizzard
+block|Block
+bloom_doom_physical|Bloom Doom  Physical
+bloom_doom_special|Bloom Doom  Special
+blue_flare|Blue Flare
+body_slam|Body Slam
+bolt_strike|Bolt Strike
+bone_club|Bone Club
+bone_rush|Bone Rush
+bonemerang|Bonemerang
+boomburst|Boomburst
+bounce|Bounce
+bouncy_bubble|Bouncy Bubble
+brave_bird|Brave Bird
+breakneck_blitz_physical|Breakneck Blitz  Physical
+breakneck_blitz_special|Breakneck Blitz  Special
+brick_break|Brick Break
+brine|Brine
+brutal_swing|Brutal Swing
+bubble|Bubble
+bubble_beam|Bubble Beam
+bug_bite|Bug Bite
+bug_buzz|Bug Buzz
+bulk_up|Bulk Up
+bulldoze|Bulldoze
+bullet_punch|Bullet Punch
+bullet_seed|Bullet Seed
+burn_up|Burn Up
+buzzy_buzz|Buzzy Buzz
+calm_mind|Calm Mind
+camouflage|Camouflage
+captivate|Captivate
+catastropika|Catastropika
+celebrate|Celebrate
+charge|Charge
+charge_beam|Charge Beam
+charm|Charm
+chatter|Chatter
+chip_away|Chip Away
+circle_throw|Circle Throw
+clamp|Clamp
+clanging_scales|Clanging Scales
+clangorous_soulblaze|Clangorous Soulblaze
+clear_smog|Clear Smog
+close_combat|Close Combat
+coil|Coil
+comet_punch|Comet Punch
+confide|Confide
+confuse_ray|Confuse Ray
+confusion|Confusion
+constrict|Constrict
+continental_crush_physical|Continental Crush  Physical
+continental_crush_special|Continental Crush  Special
+conversion|Conversion
+conversion_2|Conversion 2
+copycat|Copycat
+core_enforcer|Core Enforcer
+corkscrew_crash_physical|Corkscrew Crash  Physical
+corkscrew_crash_special|Corkscrew Crash  Special
+cosmic_power|Cosmic Power
+cotton_guard|Cotton Guard
+cotton_spore|Cotton Spore
+counter|Counter
+covet|Covet
+crabhammer|Crabhammer
+crafty_shield|Crafty Shield
+cross_chop|Cross Chop
+cross_poison|Cross Poison
+crunch|Crunch
+crush_claw|Crush Claw
+crush_grip|Crush Grip
+curse|Curse
+cut|Cut
+dark_pulse|Dark Pulse
+dark_void|Dark Void
+darkest_lariat|Darkest Lariat
+dazzling_gleam|Dazzling Gleam
+defend_order|Defend Order
+defense_curl|Defense Curl
+defog|Defog
+destiny_bond|Destiny Bond
+detect|Detect
+devastating_drake_physical|Devastating Drake  Physical
+devastating_drake_special|Devastating Drake  Special
+diamond_storm|Diamond Storm
+dig|Dig
+disable|Disable
+disarming_voice|Disarming Voice
+discharge|Discharge
+dive|Dive
+dizzy_punch|Dizzy Punch
+doom_desire|Doom Desire
+double_hit|Double Hit
+double_iron_bash|Double Iron Bash
+double_kick|Double Kick
+double_slap|Double Slap
+double_team|Double Team
+double_edge|Double-Edge
+draco_meteor|Draco Meteor
+dragon_ascent|Dragon Ascent
+dragon_breath|Dragon Breath
+dragon_claw|Dragon Claw
+dragon_dance|Dragon Dance
+dragon_hammer|Dragon Hammer
+dragon_pulse|Dragon Pulse
+dragon_rage|Dragon Rage
+dragon_rush|Dragon Rush
+dragon_tail|Dragon Tail
+drain_punch|Drain Punch
+draining_kiss|Draining Kiss
+dream_eater|Dream Eater
+drill_peck|Drill Peck
+drill_run|Drill Run
+dual_chop|Dual Chop
+dynamic_punch|Dynamic Punch
+earth_power|Earth Power
+earthquake|Earthquake
+echoed_voice|Echoed Voice
+eerie_impulse|Eerie Impulse
+egg_bomb|Egg Bomb
+electric_terrain|Electric Terrain
+electrify|Electrify
+electro_ball|Electro Ball
+electroweb|Electroweb
+embargo|Embargo
+ember|Ember
+encore|Encore
+endeavor|Endeavor
+endure|Endure
+energy_ball|Energy Ball
+entrainment|Entrainment
+eruption|Eruption
+explosion|Explosion
+extrasensory|Extrasensory
+extreme_evoboost|Extreme Evoboost
+extreme_speed|Extreme Speed
+facade|Facade
+fairy_lock|Fairy Lock
+fairy_wind|Fairy Wind
+fake_out|Fake Out
+fake_tears|Fake Tears
+false_swipe|False Swipe
+feather_dance|Feather Dance
+feint|Feint
+feint_attack|Feint Attack
+fell_stinger|Fell Stinger
+fiery_dance|Fiery Dance
+final_gambit|Final Gambit
+fire_blast|Fire Blast
+fire_fang|Fire Fang
+fire_lash|Fire Lash
+fire_pledge|Fire Pledge
+fire_punch|Fire Punch
+fire_spin|Fire Spin
+first_impression|First Impression
+fissure|Fissure
+flail|Flail
+flame_burst|Flame Burst
+flame_charge|Flame Charge
+flame_wheel|Flame Wheel
+flamethrower|Flamethrower
+flare_blitz|Flare Blitz
+flash|Flash
+flash_cannon|Flash Cannon
+flatter|Flatter
+fleur_cannon|Fleur Cannon
+fling|Fling
+floaty_fall|Floaty Fall
+floral_healing|Floral Healing
+flower_shield|Flower Shield
+fly|Fly
+flying_press|Flying Press
+focus_blast|Focus Blast
+focus_energy|Focus Energy
+focus_punch|Focus Punch
+follow_me|Follow Me
+force_palm|Force Palm
+foresight|Foresight
+forests_curse|Forests Curse
+foul_play|Foul Play
+freeze_dry|Freeze Dry
+freeze_shock|Freeze Shock
+freezy_frost|Freezy Frost
+frenzy_plant|Frenzy Plant
+frost_breath|Frost Breath
+frustration|Frustration
+fury_attack|Fury Attack
+fury_cutter|Fury Cutter
+fury_swipes|Fury Swipes
+fusion_bolt|Fusion Bolt
+fusion_flare|Fusion Flare
+future_sight|Future Sight
+gastro_acid|Gastro Acid
+gear_grind|Gear Grind
+gear_up|Gear Up
+genesis_supernova|Genesis Supernova
+geomancy|Geomancy
+giga_drain|Giga Drain
+giga_impact|Giga Impact
+gigavolt_havoc_physical|Gigavolt Havoc  Physical
+gigavolt_havoc_special|Gigavolt Havoc  Special
+glaciate|Glaciate
+glare|Glare
+glitzy_glow|Glitzy Glow
+grass_knot|Grass Knot
+grass_pledge|Grass Pledge
+grass_whistle|Grass Whistle
+grassy_terrain|Grassy Terrain
+gravity|Gravity
+growl|Growl
+growth|Growth
+grudge|Grudge
+guard_split|Guard Split
+guard_swap|Guard Swap
+guardian_of_alola|Guardian Of Alola
+guillotine|Guillotine
+gunk_shot|Gunk Shot
+gust|Gust
+gyro_ball|Gyro Ball
+hail|Hail
+hammer_arm|Hammer Arm
+happy_hour|Happy Hour
+harden|Harden
+haze|Haze
+head_charge|Head Charge
+head_smash|Head Smash
+headbutt|Headbutt
+heal_bell|Heal Bell
+heal_block|Heal Block
+heal_order|Heal Order
+heal_pulse|Heal Pulse
+healing_wish|Healing Wish
+heart_stamp|Heart Stamp
+heart_swap|Heart Swap
+heat_crash|Heat Crash
+heat_wave|Heat Wave
+heavy_slam|Heavy Slam
+helping_hand|Helping Hand
+hex|Hex
+hidden_power|Hidden Power
+high_horsepower|High Horsepower
+high_jump_kick|High Jump Kick
+hold_back|Hold Back
+hold_hands|Hold Hands
+hone_claws|Hone Claws
+horn_attack|Horn Attack
+horn_drill|Horn Drill
+horn_leech|Horn Leech
+howl|Howl
+hurricane|Hurricane
+hydro_cannon|Hydro Cannon
+hydro_pump|Hydro Pump
+hydro_vortex_physical|Hydro Vortex  Physical
+hydro_vortex_special|Hydro Vortex  Special
+hyper_beam|Hyper Beam
+hyper_fang|Hyper Fang
+hyper_voice|Hyper Voice
+hyperspace_fury|Hyperspace Fury
+hyperspace_hole|Hyperspace Hole
+hypnosis|Hypnosis
+ice_ball|Ice Ball
+ice_beam|Ice Beam
+ice_burn|Ice Burn
+ice_fang|Ice Fang
+ice_hammer|Ice Hammer
+ice_punch|Ice Punch
+ice_shard|Ice Shard
+icicle_crash|Icicle Crash
+icicle_spear|Icicle Spear
+icy_wind|Icy Wind
+imprison|Imprison
+incinerate|Incinerate
+inferno|Inferno
+inferno_overdrive_physical|Inferno Overdrive  Physical
+inferno_overdrive_special|Inferno Overdrive  Special
+infestation|Infestation
+ingrain|Ingrain
+instruct|Instruct
+ion_deluge|Ion Deluge
+iron_defense|Iron Defense
+iron_head|Iron Head
+iron_tail|Iron Tail
+judgment|Judgment
+jump_kick|Jump Kick
+karate_chop|Karate Chop
+kinesis|Kinesis
+king_s_shield|King's Shield
+knock_off|Knock Off
+lands_wrath|Lands Wrath
+laser_focus|Laser Focus
+last_resort|Last Resort
+lava_plume|Lava Plume
+leaf_blade|Leaf Blade
+leaf_storm|Leaf Storm
+leaf_tornado|Leaf Tornado
+leafage|Leafage
+leech_life|Leech Life
+leech_seed|Leech Seed
+leer|Leer
+lets_snuggle_forever|Lets Snuggle Forever
+lick|Lick
+light_of_ruin|Light Of Ruin
+light_screen|Light Screen
+light_that_burns_the_sky|Light That Burns The Sky
+liquidation|Liquidation
+lock_on|Lock-On
+lovely_kiss|Lovely Kiss
+low_kick|Low Kick
+low_sweep|Low Sweep
+lucky_chant|Lucky Chant
+lunar_dance|Lunar Dance
+lunge|Lunge
+luster_purge|Luster Purge
+mach_punch|Mach Punch
+magic_coat|Magic Coat
+magic_room|Magic Room
+magical_leaf|Magical Leaf
+magma_storm|Magma Storm
+magnet_bomb|Magnet Bomb
+magnet_rise|Magnet Rise
+magnetic_flux|Magnetic Flux
+magnitude|Magnitude
+malicious_moonsault|Malicious Moonsault
+mat_block|Mat Block
+me_first|Me First
+mean_look|Mean Look
+meditate|Meditate
+mega_drain|Mega Drain
+mega_kick|Mega Kick
+mega_punch|Mega Punch
+megahorn|Megahorn
+memento|Memento
+menacing_moonraze_maelstrom|Menacing Moonraze Maelstrom
+metal_burst|Metal Burst
+metal_claw|Metal Claw
+metal_sound|Metal Sound
+meteor_mash|Meteor Mash
+metronome|Metronome
+milk_drink|Milk Drink
+mimic|Mimic
+mind_blown|Mind Blown
+mind_reader|Mind Reader
+minimize|Minimize
+miracle_eye|Miracle Eye
+mirror_coat|Mirror Coat
+mirror_move|Mirror Move
+mirror_shot|Mirror Shot
+mist|Mist
+mist_ball|Mist Ball
+misty_terrain|Misty Terrain
+moonblast|Moonblast
+moongeist_beam|Moongeist Beam
+moonlight|Moonlight
+morning_sun|Morning Sun
+mud_bomb|Mud Bomb
+mud_shot|Mud Shot
+mud_slap|Mud Slap
+mud_sport|Mud Sport
+muddy_water|Muddy Water
+multi_attack|Multi-Attack
+mystical_fire|Mystical Fire
+nasty_plot|Nasty Plot
+natural_gift|Natural Gift
+nature_power|Nature Power
+natures_madness|Natures Madness
+needle_arm|Needle Arm
+never_ending_nightmare_physical|Never Ending Nightmare  Physical
+never_ending_nightmare_special|Never Ending Nightmare  Special
+night_daze|Night Daze
+night_shade|Night Shade
+night_slash|Night Slash
+nightmare|Nightmare
+noble_roar|Noble Roar
+nuzzle|Nuzzle
+oblivion_wing|Oblivion Wing
+oceanic_operetta|Oceanic Operetta
+octazooka|Octazooka
+odor_sleuth|Odor Sleuth
+ominous_wind|Ominous Wind
+origin_pulse|Origin Pulse
+outrage|Outrage
+overheat|Overheat
+pain_split|Pain Split
+parabolic_charge|Parabolic Charge
+parting_shot|Parting Shot
+pay_day|Pay Day
+payback|Payback
+peck|Peck
+perish_song|Perish Song
+petal_blizzard|Petal Blizzard
+petal_dance|Petal Dance
+phantom_force|Phantom Force
+photon_geyser|Photon Geyser
+pika_papow|Pika Papow
+pin_missile|Pin Missile
+plasma_fists|Plasma Fists
+play_nice|Play Nice
+play_rough|Play Rough
+pluck|Pluck
+poison_fang|Poison Fang
+poison_gas|Poison Gas
+poison_jab|Poison Jab
+poison_powder|Poison Powder
+poison_sting|Poison Sting
+poison_tail|Poison Tail
+pollen_puff|Pollen Puff
+pound|Pound
+powder|Powder
+powder_snow|Powder Snow
+power_gem|Power Gem
+power_split|Power Split
+power_swap|Power Swap
+power_trick|Power Trick
+power_trip|Power Trip
+power_whip|Power Whip
+power_up_punch|Power-Up Punch
+precipice_blades|Precipice Blades
+present|Present
+prismatic_laser|Prismatic Laser
+protect|Protect
+psybeam|Psybeam
+psych_up|Psych Up
+psychic|Psychic
+psychic_fangs|Psychic Fangs
+psychic_terrain|Psychic Terrain
+psycho_boost|Psycho Boost
+psycho_cut|Psycho Cut
+psycho_shift|Psycho Shift
+psyshock|Psyshock
+psystrike|Psystrike
+psywave|Psywave
+pulverizing_pancake|Pulverizing Pancake
+punishment|Punishment
+purify|Purify
+pursuit|Pursuit
+quash|Quash
+quick_attack|Quick Attack
+quick_guard|Quick Guard
+quiver_dance|Quiver Dance
+rage|Rage
+rage_powder|Rage Powder
+rain_dance|Rain Dance
+rapid_spin|Rapid Spin
+razor_leaf|Razor Leaf
+razor_shell|Razor Shell
+razor_wind|Razor Wind
+recover|Recover
+recycle|Recycle
+reflect|Reflect
+reflect_type|Reflect Type
+refresh|Refresh
+relic_song|Relic Song
+rest|Rest
+retaliate|Retaliate
+return|Return
+revelation_dance|Revelation Dance
+revenge|Revenge
+reversal|Reversal
+roar|Roar
+roar_of_time|Roar Of Time
+rock_blast|Rock Blast
+rock_climb|Rock Climb
+rock_polish|Rock Polish
+rock_slide|Rock Slide
+rock_smash|Rock Smash
+rock_throw|Rock Throw
+rock_tomb|Rock Tomb
+rock_wrecker|Rock Wrecker
+role_play|Role Play
+rolling_kick|Rolling Kick
+rollout|Rollout
+roost|Roost
+rototiller|Rototiller
+round|Round
+sacred_fire|Sacred Fire
+sacred_sword|Sacred Sword
+safeguard|Safeguard
+sand_attack|Sand Attack
+sand_tomb|Sand Tomb
+sandstorm|Sandstorm
+sappy_seed|Sappy Seed
+savage_spin_out_physical|Savage Spin Out  Physical
+savage_spin_out_special|Savage Spin Out  Special
+scald|Scald
+scary_face|Scary Face
+scratch|Scratch
+screech|Screech
+searing_shot|Searing Shot
+searing_sunraze_smash|Searing Sunraze Smash
+secret_power|Secret Power
+secret_sword|Secret Sword
+seed_bomb|Seed Bomb
+seed_flare|Seed Flare
+seismic_toss|Seismic Toss
+self_destruct|Self-Destruct
+shadow_ball|Shadow Ball
+shadow_bone|Shadow Bone
+shadow_claw|Shadow Claw
+shadow_force|Shadow Force
+shadow_punch|Shadow Punch
+shadow_sneak|Shadow Sneak
+sharpen|Sharpen
+shattered_psyche_physical|Shattered Psyche  Physical
+shattered_psyche_special|Shattered Psyche  Special
+sheer_cold|Sheer Cold
+shell_smash|Shell Smash
+shell_trap|Shell Trap
+shift_gear|Shift Gear
+shock_wave|Shock Wave
+shore_up|Shore Up
+signal_beam|Signal Beam
+silver_wind|Silver Wind
+simple_beam|Simple Beam
+sing|Sing
+sinister_arrow_raid|Sinister Arrow Raid
+sizzly_slide|Sizzly Slide
+sketch|Sketch
+skill_swap|Skill Swap
+skull_bash|Skull Bash
+sky_attack|Sky Attack
+sky_drop|Sky Drop
+sky_uppercut|Sky Uppercut
+slack_off|Slack Off
+slam|Slam
+slash|Slash
+sleep_powder|Sleep Powder
+sleep_talk|Sleep Talk
+sludge|Sludge
+sludge_bomb|Sludge Bomb
+sludge_wave|Sludge Wave
+smack_down|Smack Down
+smart_strike|Smart Strike
+smelling_salts|Smelling Salts
+smog|Smog
+smokescreen|Smokescreen
+snarl|Snarl
+snatch|Snatch
+snore|Snore
+soak|Soak
+soft_boiled|Soft Boiled
+solar_beam|Solar Beam
+solar_blade|Solar Blade
+sonic_boom|Sonic Boom
+soul_stealing_7_star_strike|Soul Stealing 7 Star Strike
+spacial_rend|Spacial Rend
+spark|Spark
+sparkling_aria|Sparkling Aria
+sparkly_swirl|Sparkly Swirl
+spectral_thief|Spectral Thief
+speed_swap|Speed Swap
+spider_web|Spider Web
+spike_cannon|Spike Cannon
+spikes|Spikes
+spiky_shield|Spiky Shield
+spirit_shackle|Spirit Shackle
+spit_up|Spit Up
+spite|Spite
+splash|Splash
+splintered_stormshards|Splintered Stormshards
+splishy_splash|Splishy Splash
+spore|Spore
+spotlight|Spotlight
+stealth_rock|Stealth Rock
+steam_eruption|Steam Eruption
+steamroller|Steamroller
+steel_wing|Steel Wing
+sticky_web|Sticky Web
+stockpile|Stockpile
+stoked_sparksurfer|Stoked Sparksurfer
+stomp|Stomp
+stomping_tantrum|Stomping Tantrum
+stone_edge|Stone Edge
+stored_power|Stored Power
+storm_throw|Storm Throw
+strength|Strength
+strength_sap|Strength Sap
+string_shot|String Shot
+struggle|Struggle
+struggle_bug|Struggle Bug
+stun_spore|Stun Spore
+submission|Submission
+substitute|Substitute
+subzero_slammer_physical|Subzero Slammer  Physical
+subzero_slammer_special|Subzero Slammer  Special
+sucker_punch|Sucker Punch
+sunny_day|Sunny Day
+sunsteel_strike|Sunsteel Strike
+super_fang|Super Fang
+superpower|Superpower
+supersonic|Supersonic
+supersonic_skystrike_physical|Supersonic Skystrike  Physical
+supersonic_skystrike_special|Supersonic Skystrike  Special
+surf|Surf
+swagger|Swagger
+swallow|Swallow
+sweet_kiss|Sweet Kiss
+sweet_scent|Sweet Scent
+swift|Swift
+switcheroo|Switcheroo
+swords_dance|Swords Dance
+synchronoise|Synchronoise
+synthesis|Synthesis
+tackle|Tackle
+tail_glow|Tail Glow
+tail_slap|Tail Slap
+tail_whip|Tail Whip
+tailwind|Tailwind
+take_down|Take Down
+taunt|Taunt
+tearful_look|Tearful Look
+techno_blast|Techno Blast
+tectonic_rage_physical|Tectonic Rage  Physical
+tectonic_rage_special|Tectonic Rage  Special
+teeter_dance|Teeter Dance
+telekinesis|Telekinesis
+teleport|Teleport
+thief|Thief
+thousand_arrows|Thousand Arrows
+thousand_waves|Thousand Waves
+thrash|Thrash
+throat_chop|Throat Chop
+thunder|Thunder
+thunder_fang|Thunder Fang
+thunder_punch|Thunder Punch
+thunder_shock|Thunder Shock
+thunder_wave|Thunder Wave
+thunderbolt|Thunderbolt
+tickle|Tickle
+topsy_turvy|Topsy-Turvy
+torment|Torment
+toxic|Toxic
+toxic_spikes|Toxic Spikes
+toxic_thread|Toxic Thread
+transform|Transform
+tri_attack|Tri Attack
+trick|Trick
+trick_room|Trick Room
+trick_or_treat|Trick-or-Treat
+triple_kick|Triple Kick
+trop_kick|Trop Kick
+trump_card|Trump Card
+twineedle|Twineedle
+twinkle_tackle_physical|Twinkle Tackle  Physical
+twinkle_tackle_special|Twinkle Tackle  Special
+twister|Twister
+u_turn|U-turn
+uproar|Uproar
+v_create|V-create
+vacuum_wave|Vacuum Wave
+veevee_volley|Veevee Volley
+venom_drench|Venom Drench
+venoshock|Venoshock
+vice_grip|Vice Grip
+vine_whip|Vine Whip
+vital_throw|Vital Throw
+volt_switch|Volt Switch
+volt_tackle|Volt Tackle
+wake_up_slap|Wake Up Slap
+water_gun|Water Gun
+water_pledge|Water Pledge
+water_pulse|Water Pulse
+water_shuriken|Water Shuriken
+water_sport|Water Sport
+water_spout|Water Spout
+waterfall|Waterfall
+weather_ball|Weather Ball
+whirlpool|Whirlpool
+whirlwind|Whirlwind
+wide_guard|Wide Guard
+wild_charge|Wild Charge
+will_o_wisp|Will-O-Wisp
+wing_attack|Wing Attack
+wish|Wish
+withdraw|Withdraw
+wonder_room|Wonder Room
+wood_hammer|Wood Hammer
+work_up|Work Up
+worry_seed|Worry Seed
+wrap|Wrap
+wring_out|Wring Out
+x_scissor|X-Scissor
+yawn|Yawn
+zap_cannon|Zap Cannon
+zen_headbutt|Zen Headbutt
+zing_zap|Zing Zap
+zippy_zap|Zippy Zap
