@@ -65,6 +65,7 @@ const COLLISION_BRUSHES := [
 @onready var _tool_label: Label = %ToolLabel
 @onready var _kind_label: Label = %KindLabel
 @onready var _data_panel: MapDataPanel = %MapDataPanel
+@onready var _tile_library: TileLibrary = %TileLibrary
 
 var _data_btn: Button
 var _reader: GbaMapReader
@@ -83,6 +84,8 @@ var _source_id := -1                ## tileset source id of the ROM atlas (for p
 var _rom_cells: Dictionary = {}     ## "layer:x:y" -> original ROM atlas coords, for reverting tile edits
 var _clipboard: Array = []          ## copied tile region: rows of atlas coords (Vector2i; (-1,-1) = empty)
 var _clip_size := Vector2i.ZERO
+var _library_ground := Vector2i(-1, -1)  ## library brush for ground layer
+var _library_overlay := Vector2i(-1, -1)  ## library brush for overlay layer
 ## Undo/redo: each entry is a full MapDoc snapshot (to_dict). One snapshot per discrete edit / stroke.
 const _MAX_UNDO := 40
 var _undo_stack: Array = []
@@ -148,6 +151,12 @@ func _ready() -> void:
 	_zone_inspector.changed.connect(_object_layer.refresh)
 	_zone_inspector.changed.connect(_revalidate)
 	_zone_inspector.deleted.connect(_delete_selected)
+	_tile_library.tile_selected.connect(_on_library_tile_selected)
+	_make_draggable(_inspector, "Inspector")
+	_make_draggable(_warp_inspector, "Warp Inspector")
+	_make_draggable(_zone_inspector, "Zone Inspector")
+	_make_draggable(_map_inspector, "Map Info")
+	_make_draggable(_data_panel, "Encounters")
 	_build_problems_panel()
 	_trainer_names = _scan_trainer_names()
 	_shop_ids = ContentScan.shop_id_set()
@@ -202,6 +211,7 @@ func _goto_warp_target(map_id: String, warp_name: String) -> void:
 		if t.name == warp_name:
 			_select(t)
 			_camera.position = Vector2(t.tile) * _tile + Vector2(_tile, _tile) * 0.5
+			_collision_overlay.notify_camera_changed()
 			return
 	_region_label.text = "%s   ✕ no warp-target named '%s' on this map" % [_map_id, warp_name]
 
@@ -222,12 +232,14 @@ func reveal(map_id: String, object_id: String, object_kind: String) -> void:
 				_select(z)
 				if not z.polygon.is_empty():
 					_camera.position = Vector2(z.polygon[0]) * _tile + Vector2(_tile, _tile) * 0.5
+					_collision_overlay.notify_camera_changed()
 				return
 	else:
 		for it in _doc.interactables:
 			if it.id == object_id:
 				_select(it)
 				_camera.position = Vector2(it.tile) * _tile + Vector2(_tile, _tile) * 0.5
+				_collision_overlay.notify_camera_changed()
 				return
 	_region_label.text = "%s   ✕ couldn't find %s '%s'" % [_map_id, object_kind, object_id]
 
@@ -291,8 +303,10 @@ func _render_map(group: int, num: int) -> void:
 
 	_size = _reader.stitched_size()
 	_collision_overlay.setup(_reader, _size, _camera)
+	_tile_library.setup(atlas, grid, source_id)
 	_region_label.text = "%s   %d×%d" % [_map_id, _size.x, _size.y]
 	_camera.position = Vector2(_size.x, _size.y) * _tile * 0.5
+	_collision_overlay.notify_camera_changed()
 
 
 ## Load this map's authored overlay (or an empty doc for a never-authored map), then seed-heal the ROM
@@ -486,6 +500,15 @@ func _on_waypoint_edit_toggled(on: bool) -> void:
 	_waypoint_mode = on
 
 
+func _on_library_tile_selected(atlas_coords: Vector2i, layer: int) -> void:
+	if layer == 0:
+		_library_ground = atlas_coords
+	else:
+		_library_overlay = atlas_coords
+	if atlas_coords != Vector2i(-1, -1):
+		_clipboard = []  # library and clipboard are mutually exclusive
+
+
 func _on_click(screen_pos: Vector2) -> void:
 	var tile := _tile_at(screen_pos)
 	if _waypoint_mode and _selected is Interactable:
@@ -570,6 +593,9 @@ func _on_mode_changed(m: int) -> void:
 	_mode = m
 	_apply_mode_visibility()
 	_clipboard = []
+	_library_ground = Vector2i(-1, -1)
+	_library_overlay = Vector2i(-1, -1)
+	_tile_library.clear_all()
 	_object_layer.set_paint_box(Rect2i())  # drop any stamp/box preview
 	if _mode == Mode.COLLISION:
 		_collision_toggle.button_pressed = true
@@ -583,6 +609,7 @@ func _apply_mode_visibility() -> void:
 	_kind_label.visible = objects
 	_kind_palette.visible = objects
 	_finish_poly_btn.visible = objects
+	_tile_library.visible = _mode == Mode.TILES
 	_layer_option.visible = _mode == Mode.TILES
 	_flag_option.visible = _mode == Mode.COLLISION
 
@@ -655,8 +682,19 @@ func _paint_grid_at(screen_pos: Vector2) -> void:
 		_collision_overlay.set_overrides(_doc.collision_override_map())
 	elif _paint_erase:
 		_erase_tile(tile)
+	elif _library_ground != Vector2i(-1, -1) or _library_overlay != Vector2i(-1, -1):
+		_paint_library_tile(tile)
 	else:
 		_stamp(tile)
+
+
+## Paint the library-selected tiles at `tile`. Ground tile goes to layer 0, overlay to layer 1.
+## Each layer paints independently — only if a tile was picked for that layer.
+func _paint_library_tile(tile: Vector2i) -> void:
+	if _library_ground != Vector2i(-1, -1):
+		_set_tile_override(tile, 0, _library_ground)
+	if _library_overlay != Vector2i(-1, -1):
+		_set_tile_override(tile, 1, _library_overlay)
 
 
 ## Apply the selected collision brush at `tile`. Left-click (erase=false) sets the flag bit, building on
@@ -684,6 +722,9 @@ func _paint_collision(tile: Vector2i, erase: bool) -> void:
 func _copy_region(rect: Rect2i) -> void:
 	_clip_size = rect.size
 	_clipboard = []
+	_library_ground = Vector2i(-1, -1)
+	_library_overlay = Vector2i(-1, -1)
+	_tile_library.clear_all()
 	for y in rect.size.y:
 		var row: Array = []
 		for x in rect.size.x:
@@ -821,12 +862,16 @@ func _unhandled_input(event: InputEvent) -> void:
 		var mm := event as InputEventMouseMotion
 		if _panning:
 			_camera.position -= mm.relative / _camera.zoom
+			_collision_overlay.notify_camera_changed()
 		elif _box_paint:
 			_update_box_preview(mm.position)
 		elif _painting:
 			_paint_at(mm.position)
-		elif _mode == Mode.TILES and not _clipboard.is_empty():
-			_object_layer.set_paint_box(Rect2i(_tile_at(mm.position), _clip_size))  # stamp placement preview
+		elif _mode == Mode.TILES:
+			if _library_ground != Vector2i(-1, -1) or _library_overlay != Vector2i(-1, -1):
+				_object_layer.set_paint_box(Rect2i(_tile_at(mm.position), Vector2i.ONE))
+			elif not _clipboard.is_empty():
+				_object_layer.set_paint_box(Rect2i(_tile_at(mm.position), _clip_size))  # stamp placement preview
 		_update_coord_label(mm.position)
 	elif event is InputEventKey:
 		var k := event as InputEventKey
@@ -842,6 +887,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			_redo()
 			return
 		match k.keycode:
+			KEY_T:
+				_mode_option.selected = Mode.TILES if _mode != Mode.TILES else Mode.OBJECTS
+				_on_mode_changed(_mode_option.selected)
 			KEY_DELETE: _delete_selected()
 			KEY_ESCAPE: _select(null)
 			KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN:
@@ -856,6 +904,7 @@ func _zoom_at(screen_pos: Vector2, factor: float) -> void:
 	_camera.zoom = Vector2(z, z)
 	var after := _screen_to_world(screen_pos)
 	_camera.position += before - after
+	_collision_overlay.notify_camera_changed()
 
 
 func _screen_to_world(screen_pos: Vector2) -> Vector2:
@@ -930,6 +979,7 @@ func _on_problem_activated(p: Problem) -> void:
 	_select(p.locator)
 	if p.locator is Interactable or p.locator is Warp or p.locator is WarpTarget:
 		_camera.position = Vector2(p.locator.tile) * _tile + Vector2(_tile, _tile) * 0.5
+		_collision_overlay.notify_camera_changed()
 
 
 func _tile_blocked(t: Vector2i) -> bool:
@@ -959,3 +1009,78 @@ func _scan_trainers_dir(dir: String, out: Dictionary) -> void:
 				out[str(t["unique_name"])] = true
 		n = d.get_next()
 	d.list_dir_end()
+
+
+func _make_draggable(panel: PanelContainer, title: String) -> void:
+	# Title bar and resize grip are separate floating Controls in the CanvasLayer,
+	# NOT children of the panel (which would break its Container layout).
+	var bar := PanelContainer.new()
+	var lbl := Label.new()
+	lbl.text = "  " + title
+	lbl.add_theme_font_size_override("font_size", 13)
+	bar.add_child(lbl)
+	panel.get_parent().add_child(bar)
+	# Resize grip: small Control at the bottom-right
+	var grip := Control.new()
+	grip.custom_minimum_size = Vector2(16, 16)
+	grip.mouse_filter = Control.MOUSE_FILTER_STOP
+	panel.get_parent().add_child(grip)
+	grip.draw.connect(func() -> void:
+		for i in range(4):
+			var x := grip.size.x - 2.0 - i * 3.0
+			var y := grip.size.y - 2.0 - i * 3.0
+			grip.draw_line(Vector2(x, grip.size.y), Vector2(grip.size.x, y), Color(0.5, 0.5, 0.5, 0.6), 1.0)
+	)
+	# --- Position helpers ---
+	var _layout: Callable = func() -> void:
+		bar.offset_left = panel.offset_left
+		bar.offset_top = panel.offset_top - 24
+		bar.offset_right = panel.offset_right
+		bar.offset_bottom = panel.offset_top
+		grip.offset_left = panel.offset_right - 16
+		grip.offset_top = panel.offset_bottom - 16
+		grip.offset_right = panel.offset_right
+		grip.offset_bottom = panel.offset_bottom
+	_layout.call()
+	panel.resized.connect(_layout)
+	panel.visibility_changed.connect(func() -> void:
+		bar.visible = panel.visible
+		grip.visible = panel.visible
+	)
+	# --- Drag (title bar) ---
+	var dragging := false
+	var drag_offset := Vector2.ZERO
+	bar.gui_input.connect(func(event: InputEvent) -> void:
+		if event is InputEventMouseButton:
+			var mb := event as InputEventMouseButton
+			if mb.button_index == MOUSE_BUTTON_LEFT:
+				dragging = mb.pressed
+				if dragging:
+					drag_offset = mb.position
+		elif event is InputEventMouseMotion and dragging:
+			var mm := event as InputEventMouseMotion
+			panel.offset_left += mm.position.x - drag_offset.x
+			panel.offset_top += mm.position.y - drag_offset.y
+			panel.offset_right += mm.position.x - drag_offset.x
+			panel.offset_bottom += mm.position.y - drag_offset.y
+			_layout.call()
+	)
+	# --- Resize (grip) ---
+	var resizing := false
+	var resize_start := Vector2.ZERO
+	var resize_orig := Vector4.ZERO
+	grip.gui_input.connect(func(event: InputEvent) -> void:
+		if event is InputEventMouseButton:
+			var mb := event as InputEventMouseButton
+			if mb.button_index == MOUSE_BUTTON_LEFT:
+				resizing = mb.pressed
+				if resizing:
+					resize_start = mb.global_position
+					resize_orig = Vector4(panel.offset_left, panel.offset_top, panel.offset_right, panel.offset_bottom)
+		elif event is InputEventMouseMotion and resizing:
+			var mm := event as InputEventMouseMotion
+			var delta := mm.global_position - resize_start
+			panel.offset_right = maxf(resize_orig.z + delta.x, panel.offset_left + panel.custom_minimum_size.x)
+			panel.offset_bottom = maxf(resize_orig.w + delta.y, panel.offset_top + 40)
+			_layout.call()
+	)

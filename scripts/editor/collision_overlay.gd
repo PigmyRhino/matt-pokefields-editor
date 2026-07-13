@@ -2,7 +2,8 @@ class_name CollisionOverlay
 extends Node2D
 ## Optional reference overlay: tints tiles by collision category (wall / water / ledge / grass) so the
 ## designer can see what they've painted, and outlines edited tiles. Draws only the camera's visible
-## tile range (the stitched region is huge), redrawing each frame while enabled.
+## tile range (the stitched region is huge). Redraws on camera movement, override changes, or
+## enable/disable — not every frame.
 
 const BLOCKED := 0x07              # COLLISION | SWIM | OCEAN
 const COLLISION := 1 << 0          # wall
@@ -27,7 +28,6 @@ var _font: Font
 
 func _ready() -> void:
 	_font = ThemeDB.fallback_font
-	set_process(false)
 
 
 func setup(reader: GbaMapReader, size: Vector2i, camera: Camera2D) -> void:
@@ -46,12 +46,13 @@ func set_overrides(overrides: Dictionary) -> void:
 
 func set_enabled(on: bool) -> void:
 	_enabled = on
-	set_process(on)
 	queue_redraw()
 
 
-func _process(_delta: float) -> void:
-	queue_redraw()
+## Call whenever the camera moves or zooms so the overlay redraws the new visible region.
+func notify_camera_changed() -> void:
+	if _enabled:
+		queue_redraw()
 
 
 func _draw() -> void:

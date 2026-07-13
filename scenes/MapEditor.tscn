@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/editor/map_editor.gd" id="1_editor"]
 [ext_resource type="Script" path="res://scripts/editor/collision_overlay.gd" id="2_collision"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" path="res://scenes/ZoneInspector.tscn" id="6_zoneinsp"]
 [ext_resource type="PackedScene" path="res://scenes/MapInspector.tscn" id="7_mapinsp"]
 [ext_resource type="PackedScene" path="res://scenes/MapDataPanel.tscn" id="8_datapanel"]
+[ext_resource type="PackedScene" path="res://scenes/TileLibrary.tscn" id="9_tilelibrary"]
 
 [node name="MapEditor" type="Node2D"]
 script = ExtResource("1_editor")
@@ -191,3 +192,7 @@ offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 0
 grow_vertical = 2
+
+[node name="TileLibrary" parent="UI" instance=ExtResource("9_tilelibrary")]
+unique_name_in_owner = true
+visible = false
