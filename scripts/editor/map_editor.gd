@@ -100,6 +100,8 @@ var _job_board_ids: Dictionary = {}      ## { board_id: true } from content/job_
 var _place_menu: PopupMenu
 var _place_menu_tile: Vector2i
 var _tool_mode_label: Label
+var _overlays_hidden := false
+var _grid_was_enabled := false
 ## The map currently being authored (Kanto overworld or a ROM interior). `_map_id` is the overlay
 ## filename + server id; `_group`/`_num` seed the ROM stitch.
 var _map_id := "kanto"
@@ -1012,6 +1014,16 @@ func _unhandled_input(event: InputEvent) -> void:
 				_on_mode_changed(_mode_option.selected)
 			KEY_F5:
 				_grid_overlay.toggle()
+			KEY_H:
+				_overlays_hidden = not _overlays_hidden
+				_object_layer.set_overlays_hidden(_overlays_hidden)
+				if _overlays_hidden:
+					_grid_was_enabled = _grid_overlay._enabled
+					_collision_overlay.set_enabled(false)
+					_grid_overlay.set_enabled(false)
+				else:
+					_collision_overlay.set_enabled(_collision_toggle.button_pressed)
+					_grid_overlay.set_enabled(_grid_was_enabled)
 			KEY_DELETE: _delete_selected()
 			KEY_ESCAPE:
 				_painting = false

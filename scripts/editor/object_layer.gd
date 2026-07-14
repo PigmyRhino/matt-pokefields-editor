@@ -37,6 +37,12 @@ var _incoming: Dictionary = {}
 var _paint_box: Rect2i = Rect2i()
 ## model object (Interactable/Warp/WarpTarget/Zone) -> true if it has an ERROR (else a warning).
 var _problem_objs: Dictionary = {}
+var _overlays_hidden := false
+
+
+func set_overlays_hidden(hidden: bool) -> void:
+	_overlays_hidden = hidden
+	queue_redraw()
 
 
 func _ready() -> void:
@@ -113,44 +119,49 @@ func zones_at(tile: Vector2i) -> Array:
 func _draw() -> void:
 	if _doc != null:
 		for z in _doc.zones:
-			_draw_zone(z)
+			if not _overlays_hidden:
+				_draw_zone(z)
 		for it in _doc.interactables:
 			var col: Color = KIND_COLORS.get(it.kind, Color.WHITE)
-			# NPCs draw their actual overworld sprite (idle frame, facing direction); others use a marker.
 			if it.kind == "Npc" and _draw_npc_sprite(it):
-				_label(it.tile, it.id, col)
+				if not _overlays_hidden:
+					_label(it.tile, it.id, col)
 			else:
-				_marker(it.tile, col, it.id)
-			if it.waypoints.size() >= 2:
-				var pts: PackedVector2Array = []
-				for w in it.waypoints:
-					pts.append(_center(w))
-				draw_polyline(pts, Color(KIND_COLORS.get(it.kind, Color.WHITE), 0.85), 1.0)
-			if _problem_objs.has(it):
-				_ring(it.tile, _problem_objs[it])
-		for w in _doc.warps:
-			_marker(w.tile, WARP_COLOR, _warp_label(w))
-			if _problem_objs.has(w):
-				_ring(w.tile, _problem_objs[w])
-		for t in _doc.warp_targets:
-			_marker(t.tile, TARGET_COLOR, _target_label(t))
-			if _problem_objs.has(t):
-				_ring(t.tile, _problem_objs[t])
+				if not _overlays_hidden:
+					_marker(it.tile, col, it.id)
+			if not _overlays_hidden:
+				if it.waypoints.size() >= 2:
+					var pts: PackedVector2Array = []
+					for w in it.waypoints:
+						pts.append(_center(w))
+					draw_polyline(pts, Color(KIND_COLORS.get(it.kind, Color.WHITE), 0.85), 1.0)
+				if _problem_objs.has(it):
+					_ring(it.tile, _problem_objs[it])
+		if not _overlays_hidden:
+			for w in _doc.warps:
+				_marker(w.tile, WARP_COLOR, _warp_label(w))
+				if _problem_objs.has(w):
+					_ring(w.tile, _problem_objs[w])
+			for t in _doc.warp_targets:
+				_marker(t.tile, TARGET_COLOR, _target_label(t))
+				if _problem_objs.has(t):
+					_ring(t.tile, _problem_objs[t])
 
-	if _selected is Zone:
-		var z := _selected as Zone
-		for c: Vector2i in z.cells:  # painted tiles of the active zone
-			draw_rect(Rect2(Vector2(c.x * _tile, c.y * _tile), Vector2(_tile, _tile)), Color(1, 1, 1, 0.2))
-		_draw_poly_outline(z.polygon, Color.WHITE, 2.0)
-	elif _selected != null:
-		var sp := Vector2(_selected.tile.x * _tile, _selected.tile.y * _tile)
-		draw_rect(Rect2(sp, Vector2(_tile, _tile)), Color.WHITE, false, 2.0)
+	if not _overlays_hidden:
+		if _selected is Zone:
+			var z := _selected as Zone
+			for c: Vector2i in z.cells:
+				draw_rect(Rect2(Vector2(c.x * _tile, c.y * _tile), Vector2(_tile, _tile)), Color(1, 1, 1, 0.2))
+			_draw_poly_outline(z.polygon, Color.WHITE, 2.0)
+		elif _selected != null:
+			var sp := Vector2(_selected.tile.x * _tile, _selected.tile.y * _tile)
+			draw_rect(Rect2(sp, Vector2(_tile, _tile)), Color.WHITE, false, 2.0)
 
-	if _paint_box.size.x > 0 and _paint_box.size.y > 0:  # Ctrl-drag box-fill preview
-		var bp := Vector2(_paint_box.position) * _tile
-		var bs := Vector2(_paint_box.size) * _tile
-		draw_rect(Rect2(bp, bs), Color(0.3, 0.9, 1.0, 0.18))
-		draw_rect(Rect2(bp, bs), Color(0.3, 0.9, 1.0, 0.9), false, 1.0)
+		if _paint_box.size.x > 0 and _paint_box.size.y > 0:
+			var bp := Vector2(_paint_box.position) * _tile
+			var bs := Vector2(_paint_box.size) * _tile
+			draw_rect(Rect2(bp, bs), Color(0.3, 0.9, 1.0, 0.18))
+			draw_rect(Rect2(bp, bs), Color(0.3, 0.9, 1.0, 0.9), false, 1.0)
 
 
 func _draw_zone(z: Zone) -> void:
