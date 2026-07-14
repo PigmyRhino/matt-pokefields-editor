@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://scripts/editor/map_editor.gd" id="1_editor"]
 [ext_resource type="Script" path="res://scripts/editor/collision_overlay.gd" id="2_collision"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" path="res://scenes/MapInspector.tscn" id="7_mapinsp"]
 [ext_resource type="PackedScene" path="res://scenes/MapDataPanel.tscn" id="8_datapanel"]
 [ext_resource type="PackedScene" path="res://scenes/TileLibrary.tscn" id="9_tilelibrary"]
+[ext_resource type="Script" path="res://scripts/editor/grid_overlay.gd" id="10_grid"]
 
 [node name="MapEditor" type="Node2D"]
 script = ExtResource("1_editor")
@@ -34,6 +35,11 @@ script = ExtResource("3_objects")
 unique_name_in_owner = true
 z_index = 1000
 script = ExtResource("2_collision")
+
+[node name="GridOverlay" type="Node2D" parent="World"]
+unique_name_in_owner = true
+z_index = 1001
+script = ExtResource("10_grid")
 
 [node name="UI" type="CanvasLayer" parent="."]
 

@@ -43,6 +43,7 @@ const COLLISION_BRUSHES := [
 @onready var _ground: TileMapLayer = %RomGround
 @onready var _overlay: TileMapLayer = %RomOverlay
 @onready var _collision_overlay: CollisionOverlay = %CollisionOverlay
+@onready var _grid_overlay: GridOverlay = %GridOverlay
 @onready var _object_layer: ObjectLayer = %ObjectLayer
 @onready var _coord_label: Label = %CoordLabel
 @onready var _region_label: Label = %RegionLabel
@@ -96,6 +97,9 @@ var _shop_ids: Dictionary = {}   ## { shop_id: true } from content/shops — sca
 var _encounter_groups: Dictionary = {}  ## { group: true } from content/encounter_data.json (validation)
 var _object_types: Dictionary = {}       ## { type: true } from content/resource_nodes.json (validation)
 var _job_board_ids: Dictionary = {}      ## { board_id: true } from content/job_boards (validation)
+var _place_menu: PopupMenu
+var _place_menu_tile: Vector2i
+var _tool_mode_label: Label
 ## The map currently being authored (Kanto overworld or a ROM interior). `_map_id` is the overlay
 ## filename + server id; `_group`/`_num` seed the ROM stitch.
 var _map_id := "kanto"
@@ -110,6 +114,12 @@ func _ready() -> void:
 	for t in ["Select", "Place"]:
 		_tool_option.add_item(t)
 	_tool_option.selected = Tool.SELECT
+	_tool_option.item_selected.connect(_on_tool_changed)
+	_tool_mode_label = Label.new()
+	_tool_mode_label.text = "Mode: Select"
+	_tool_mode_label.add_theme_font_size_override("font_size", 13)
+	_tool_mode_label.add_theme_color_override("font_color", Color(0.9, 0.9, 0.6))
+	_tool_option.get_parent().add_child(_tool_mode_label)
 	for k in Interactable.KINDS:
 		_kind_palette.add_item(k)
 	_kind_palette.add_item("Warp")
@@ -164,6 +174,7 @@ func _ready() -> void:
 	_object_types = ValCheck.value_set(ContentScan.object_types())
 	_job_board_ids = ContentScan.job_board_id_set()
 	_build_map_selector()
+	_build_place_menu()
 
 
 ## Top-bar dropdown of every authorable map (Kanto overworld + ROM interiors), from the baked map
@@ -212,6 +223,7 @@ func _goto_warp_target(map_id: String, warp_name: String) -> void:
 			_select(t)
 			_camera.position = Vector2(t.tile) * _tile + Vector2(_tile, _tile) * 0.5
 			_collision_overlay.notify_camera_changed()
+			_grid_overlay.notify_camera_changed()
 			return
 	_region_label.text = "%s   ✕ no warp-target named '%s' on this map" % [_map_id, warp_name]
 
@@ -233,6 +245,7 @@ func reveal(map_id: String, object_id: String, object_kind: String) -> void:
 				if not z.polygon.is_empty():
 					_camera.position = Vector2(z.polygon[0]) * _tile + Vector2(_tile, _tile) * 0.5
 					_collision_overlay.notify_camera_changed()
+					_grid_overlay.notify_camera_changed()
 				return
 	else:
 		for it in _doc.interactables:
@@ -240,6 +253,7 @@ func reveal(map_id: String, object_id: String, object_kind: String) -> void:
 				_select(it)
 				_camera.position = Vector2(it.tile) * _tile + Vector2(_tile, _tile) * 0.5
 				_collision_overlay.notify_camera_changed()
+				_grid_overlay.notify_camera_changed()
 				return
 	_region_label.text = "%s   ✕ couldn't find %s '%s'" % [_map_id, object_kind, object_id]
 
@@ -303,10 +317,12 @@ func _render_map(group: int, num: int) -> void:
 
 	_size = _reader.stitched_size()
 	_collision_overlay.setup(_reader, _size, _camera)
+	_grid_overlay.setup(_size, _camera)
 	_tile_library.setup(atlas, grid, source_id)
 	_region_label.text = "%s   %d×%d" % [_map_id, _size.x, _size.y]
 	_camera.position = Vector2(_size.x, _size.y) * _tile * 0.5
 	_collision_overlay.notify_camera_changed()
+	_grid_overlay.notify_camera_changed()
 
 
 ## Load this map's authored overlay (or an empty doc for a never-authored map), then seed-heal the ROM
@@ -579,6 +595,17 @@ func _zone_base() -> int:
 	return Interactable.KINDS.size() + 2
 
 
+func _on_tool_changed(_index: int) -> void:
+	_update_tool_label()
+
+
+func _update_tool_label() -> void:
+	if _tool_mode_label == null:
+		return
+	var names := ["Select", "Place"]
+	_tool_mode_label.text = "Mode: %s" % names[_tool_option.selected]
+
+
 func _palette_is_zone() -> bool:
 	return _kind_palette.selected >= _zone_base()
 
@@ -587,11 +614,85 @@ func _zone_paint_mode() -> bool:
 	return _mode == Mode.OBJECTS and _tool_option.selected == Tool.PLACE and _palette_is_zone()
 
 
+func _build_place_menu() -> void:
+	_place_menu = PopupMenu.new()
+	_place_menu.id_pressed.connect(_on_place_menu_item_selected)
+	_inspector.get_parent().add_child(_place_menu)
+
+
+func _show_place_menu(screen_pos: Vector2) -> void:
+	_place_menu.clear()
+	_place_menu_tile = _tile_at(screen_pos)
+	var idx := 0
+	for k in Interactable.KINDS:
+		_place_menu.add_item(k, idx)
+		idx += 1
+	_place_menu.add_separator()
+	_place_menu.add_item("Warp", idx)
+	idx += 1
+	_place_menu.add_item("WarpTarget", idx)
+	idx += 1
+	_place_menu.add_separator()
+	for c in Zone.CATEGORIES:
+		_place_menu.add_item(c, idx)
+		idx += 1
+	_place_menu.position = Vector2i(screen_pos)
+	_place_menu.popup()
+
+
+func _on_place_menu_item_selected(id: int) -> void:
+	_snapshot()
+	var tile := _place_menu_tile
+	if id < Interactable.KINDS.size():
+		var it := Interactable.new()
+		it.kind = Interactable.KINDS[id]
+		it.tile = tile
+		it.id = "%s_%d_%d" % [it.kind.to_lower(), tile.x, tile.y]
+		_doc.interactables.append(it)
+		_object_layer.set_doc(_doc)
+		_select(it)
+		_kind_palette.selected = id
+	elif id == Interactable.KINDS.size():
+		var w := Warp.new()
+		w.tile = tile
+		w.name = "warp_%d_%d" % [tile.x, tile.y]
+		w.target_map = _map_id
+		_doc.warps.append(w)
+		_object_layer.set_doc(_doc)
+		_select(w)
+		_kind_palette.selected = id
+	elif id == Interactable.KINDS.size() + 1:
+		var t := WarpTarget.new()
+		t.tile = tile
+		t.name = "t_%d_%d" % [tile.x, tile.y]
+		_doc.warp_targets.append(t)
+		_object_layer.set_doc(_doc)
+		_select(t)
+		_kind_palette.selected = id
+	else:
+		var zone_idx := id - Interactable.KINDS.size() - 2
+		if zone_idx >= 0 and zone_idx < Zone.CATEGORIES.size():
+			var z := Zone.new()
+			z.category = Zone.CATEGORIES[zone_idx]
+			z.name = "%s_%d" % [z.category.to_lower(), _doc.zones.size()]
+			z.paint(tile)
+			_doc.zones.append(z)
+			_object_layer.set_doc(_doc)
+			_select(z)
+			_kind_palette.selected = _zone_base() + zone_idx
+			_kind_palette.set_item_disabled(_zone_base() + zone_idx, false)
+			_tool_option.selected = Tool.PLACE
+			_update_tool_label()
+	_revalidate()
+
+
 ## Switch top-level editing mode: toggle which toolbar controls show, auto-reveal the collision overlay
 ## for Collision mode, and clear any selection / copied tiles.
 func _on_mode_changed(m: int) -> void:
 	_mode = m
 	_apply_mode_visibility()
+	_tool_option.selected = Tool.SELECT
+	_update_tool_label()
 	_clipboard = []
 	_library_ground = Vector2i(-1, -1)
 	_library_overlay = Vector2i(-1, -1)
@@ -599,6 +700,8 @@ func _on_mode_changed(m: int) -> void:
 	_object_layer.set_paint_box(Rect2i())  # drop any stamp/box preview
 	if _mode == Mode.COLLISION:
 		_collision_toggle.button_pressed = true
+	else:
+		_collision_toggle.button_pressed = false
 	_select(null)
 
 
@@ -843,8 +946,11 @@ func _unhandled_input(event: InputEvent) -> void:
 					if mb.pressed:
 						_snapshot()
 						_paint_at(mb.position)
-				elif mb.button_index == MOUSE_BUTTON_LEFT and mb.pressed:
-					_on_click(mb.position)
+				elif mb.pressed:
+					if is_right:
+						_show_place_menu(mb.position)
+					else:
+						_on_click(mb.position)
 			elif mb.pressed and mb.ctrl_pressed:
 				if _mode == Mode.COLLISION:
 					_snapshot()   # collision box-fill mutates; the Tiles copy doesn't
@@ -863,6 +969,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		if _panning:
 			_camera.position -= mm.relative / _camera.zoom
 			_collision_overlay.notify_camera_changed()
+			_grid_overlay.notify_camera_changed()
 		elif _box_paint:
 			_update_box_preview(mm.position)
 		elif _painting:
@@ -888,10 +995,31 @@ func _unhandled_input(event: InputEvent) -> void:
 			return
 		match k.keycode:
 			KEY_T:
-				_mode_option.selected = Mode.TILES if _mode != Mode.TILES else Mode.OBJECTS
+				_mode_option.selected = Mode.TILES
 				_on_mode_changed(_mode_option.selected)
+			KEY_1:
+				_mode_option.selected = Mode.OBJECTS
+				_on_mode_changed(_mode_option.selected)
+				_tool_option.selected = Tool.SELECT
+				_update_tool_label()
+			KEY_2:
+				_mode_option.selected = Mode.OBJECTS
+				_on_mode_changed(_mode_option.selected)
+				_tool_option.selected = Tool.PLACE
+				_update_tool_label()
+			KEY_3:
+				_mode_option.selected = Mode.COLLISION
+				_on_mode_changed(_mode_option.selected)
+			KEY_F5:
+				_grid_overlay.toggle()
 			KEY_DELETE: _delete_selected()
-			KEY_ESCAPE: _select(null)
+			KEY_ESCAPE:
+				_painting = false
+				_mode_option.selected = Mode.OBJECTS
+				_on_mode_changed(_mode_option.selected)
+				_tool_option.selected = Tool.SELECT
+				_update_tool_label()
+				_select(null)
 			KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN:
 				if not k.echo:
 					_snapshot()
@@ -905,6 +1033,7 @@ func _zoom_at(screen_pos: Vector2, factor: float) -> void:
 	var after := _screen_to_world(screen_pos)
 	_camera.position += before - after
 	_collision_overlay.notify_camera_changed()
+	_grid_overlay.notify_camera_changed()
 
 
 func _screen_to_world(screen_pos: Vector2) -> Vector2:
@@ -980,6 +1109,7 @@ func _on_problem_activated(p: Problem) -> void:
 	if p.locator is Interactable or p.locator is Warp or p.locator is WarpTarget:
 		_camera.position = Vector2(p.locator.tile) * _tile + Vector2(_tile, _tile) * 0.5
 		_collision_overlay.notify_camera_changed()
+		_grid_overlay.notify_camera_changed()
 
 
 func _tile_blocked(t: Vector2i) -> bool:
