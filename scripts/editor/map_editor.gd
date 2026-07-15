@@ -487,10 +487,15 @@ func _select(obj: Variant) -> void:
 		_zone_inspector.bind(obj)
 		# Show encounter quick-edit popup when clicking an Encounter zone.
 		if obj.category == "Encounter":
-			var world_pos := Vector2(obj.polygon[0]) * _tile if obj.polygon.size() > 0 else Vector2(obj.cells.keys()[0]) * _tile if not obj.cells.is_empty() else Vector2.ZERO
-			var viewport_center := get_viewport_rect().size * 0.5
-			var screen_pos := viewport_center + (world_pos - _camera.position) * _camera.zoom
-			_show_enc_popup(obj, screen_pos)
+			# Toggle: clicking the same zone closes the popup.
+			if _enc_popup != null and _enc_popup.visible and _enc_popup_zone == obj:
+				_enc_popup.hide()
+				return
+			_show_enc_popup(obj, Vector2.ZERO)
+			return
+	# Clicking anything else closes the encounter popup.
+	if _enc_popup != null and _enc_popup.visible:
+		_enc_popup.hide()
 	else:  # nothing selected — fall back to the general map-data panel
 		_map_inspector.bind(_doc, _map_id, "%d × %d tiles   ·   ROM %d:%d" % [_size.x, _size.y, _group, _num])
 
@@ -651,6 +656,7 @@ func _build_enc_popup() -> void:
 	_enc_popup = PopupPanel.new()
 	_enc_popup.title = "Encounter Zone"
 	_enc_popup.add_theme_stylebox_override("panel", _make_popup_style())
+	_enc_popup.set_flag(Window.FLAG_NO_FOCUS, true)
 	var vb := VBoxContainer.new()
 	vb.add_theme_constant_override("separation", 4)
 	vb.add_theme_constant_override("margin", 8)
@@ -722,6 +728,8 @@ func _show_enc_popup(zone: Zone, screen_pos: Vector2) -> void:
 	_enc_popup_rod.selected = zone.fish_rod_tier
 	_rebuild_enc_popup_list()
 	_enc_popup_loading = false
+	if _enc_popup != null and _enc_popup.visible:
+		return
 	_enc_popup.position = Vector2i(8, 80)
 	_enc_popup.popup()
 
