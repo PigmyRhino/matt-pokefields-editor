@@ -37,7 +37,84 @@
   ],
   "encounter_zones": [],
   "gate_zones": [],
-  "interactables": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_6_4",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "Rapidash is still my favorite! No one can tell me otherwise!"
+      },
+      "render": {
+        "direction": 0,
+        "display_name": "Fan Club President",
+        "sprite": 39,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 6,
+      "tile_y": 4
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_7_6",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "I love Pikachu!"
+      },
+      "render": {
+        "direction": 1,
+        "display_name": "Pokemon Fan",
+        "sprite": 49,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 7,
+      "tile_y": 6
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_7_5",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "Pikachu: Pika!"
+      },
+      "render": {
+        "direction": 1,
+        "display_name": "",
+        "sprite": 322,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 7,
+      "tile_y": 5
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_4_6",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "I don't think i can narrow down my favorite to one!"
+      },
+      "render": {
+        "direction": 2,
+        "display_name": "Pokemon Fan",
+        "sprite": 185,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 4,
+      "tile_y": 6
+    }
+  ],
   "properties": {
     "is_dark": false
   },

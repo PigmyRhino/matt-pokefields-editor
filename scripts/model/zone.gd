@@ -27,6 +27,7 @@ var climate := "none"
 var terrain := "grass_patch"
 var encounter_group := ""
 var fish_encounter_group := ""
+var fish_rod_tier := 0
 # Gate
 var requires_flag: Array[String] = []
 var forbids_flag: Array[String] = []
@@ -65,6 +66,7 @@ func to_dict(placement_ids: Array = []) -> Dictionary:
 			d["terrain"] = terrain
 			d["encounter_group"] = encounter_group
 			d["fish_encounter_group"] = fish_encounter_group
+			d["fish_rod_tier"] = fish_rod_tier
 		"Gate":
 			d["gate"] = _gate_dict()
 		"ResourceArea":
@@ -92,6 +94,7 @@ static func from_dict(cat: String, d: Dictionary) -> Zone:
 			z.terrain = str(d.get("terrain", "grass_patch"))
 			z.encounter_group = str(d.get("encounter_group", ""))
 			z.fish_encounter_group = str(d.get("fish_encounter_group", ""))
+			z.fish_rod_tier = int(d.get("fish_rod_tier", 0))
 		"Gate":
 			var g: Dictionary = d.get("gate", {})
 			for f in g.get("requires_flag", []):

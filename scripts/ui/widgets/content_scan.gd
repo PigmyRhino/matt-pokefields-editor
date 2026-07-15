@@ -7,6 +7,7 @@ const SHOPS_DIR := "res://content/shops"
 const JOB_BOARDS_DIR := "res://content/job_boards"
 const ENCOUNTERS_FILE := "res://content/encounter_data.json"
 const RESOURCE_NODES_FILE := "res://content/resource_nodes.json"
+const CUSTOM_ITEMS_FILE := "res://content/custom_items.json"
 
 
 ## Distinct encounter group names from content/encounter_data.json — the LIVE source the designer edits
@@ -34,6 +35,20 @@ static func object_types() -> Array:
 		for g in (d.get("groups", {}) as Dictionary):
 			out.append({ "value": str(g), "label": str(g) })
 	out.sort_custom(func(a: Dictionary, b: Dictionary) -> bool: return str(a["value"]) < str(b["value"]))
+	return out
+
+
+static func fishing_rods() -> Array:
+	var rods: Array = []
+	var d: Variant = JsonIO.load_file(CUSTOM_ITEMS_FILE)
+	if typeof(d) == TYPE_ARRAY:
+		for e in d:
+			if typeof(e) == TYPE_DICTIONARY and str((e as Dictionary).get("category", "")) == "fishing":
+				rods.append(e)
+	rods.sort_custom(func(a: Dictionary, b: Dictionary) -> bool: return int(a.get("item_id", 0)) < int(b.get("item_id", 0)))
+	var out: Array = []
+	for r in rods:
+		out.append(str((r as Dictionary).get("name", "")))
 	return out
 
 

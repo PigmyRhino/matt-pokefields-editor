@@ -1,6 +1,94 @@
 {
   "entries": [
     {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "magikarp",
+      "min_level": 5,
+      "max_level": 15,
+      "slots": 40,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "poliwag",
+      "min_level": 5,
+      "max_level": 15,
+      "slots": 25,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "krabby",
+      "min_level": 10,
+      "max_level": 20,
+      "slots": 20,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "goldeen",
+      "min_level": 10,
+      "max_level": 20,
+      "slots": 25,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "tentacool",
+      "min_level": 10,
+      "max_level": 20,
+      "slots": 20,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": true,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "psyduck",
+      "min_level": 15,
+      "max_level": 25,
+      "slots": 15,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "slowpoke",
+      "min_level": 15,
+      "max_level": 25,
+      "slots": 20,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": false,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_viridian_fishing",
+      "pokemon": "dratini",
+      "min_level": 15,
+      "max_level": 20,
+      "slots": 1,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": false,
+      "night_allowed": true
+    },
+    {
       "encounter": "lilypad_water",
       "pokemon": "wooper",
       "min_level": 5,
@@ -13707,7 +13795,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_viridiancity_patch1",
+      "encounter": "kanto_viridian_patch1",
       "pokemon": "hoppip",
       "min_level": 3,
       "max_level": 4,
@@ -13718,7 +13806,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_viridiancity_patch1",
+      "encounter": "kanto_viridian_patch1",
       "pokemon": "mareep",
       "min_level": 2,
       "max_level": 3,
@@ -13729,7 +13817,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_viridiancity_patch1",
+      "encounter": "kanto_viridian_patch1",
       "pokemon": "sunkern",
       "min_level": 3,
       "max_level": 4,
@@ -13740,7 +13828,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_viridiancity_patch1",
+      "encounter": "kanto_viridian_patch1",
       "pokemon": "gastly",
       "min_level": 2,
       "max_level": 5,
@@ -13938,7 +14026,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_viridiancity_patch1",
+      "encounter": "kanto_viridian_patch1",
       "pokemon": "aipom",
       "min_level": 2,
       "max_level": 5,
@@ -13949,7 +14037,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_viridiancity_patch1",
+      "encounter": "kanto_viridian_patch1",
       "pokemon": "slowpoke",
       "min_level": 3,
       "max_level": 4,
@@ -14045,6 +14133,138 @@
       "held_item_groups": "",
       "morning_allowed": true,
       "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_static_Snorlax",
+      "pokemon": "snorlax",
+      "min_level": 30,
+      "max_level": 30,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_route11_nodes",
+      "pokemon": "ariados",
+      "min_level": 15,
+      "max_level": 20,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_route11_nodes",
+      "pokemon": "ledian",
+      "min_level": 15,
+      "max_level": 20,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_route6_patch2",
+      "pokemon": "skiploom",
+      "min_level": 13,
+      "max_level": 15,
+      "slots": 25,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_route6_patch2",
+      "pokemon": "furret",
+      "min_level": 13,
+      "max_level": 15,
+      "slots": 25,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "shuckle",
+      "min_level": 11,
+      "max_level": 14,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "mareep",
+      "min_level": 11,
+      "max_level": 14,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "magby",
+      "min_level": 11,
+      "max_level": 11,
+      "slots": 1,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": true,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "elekid",
+      "min_level": 11,
+      "max_level": 11,
+      "slots": 1,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": false,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "eevee",
+      "min_level": 11,
+      "max_level": 11,
+      "slots": 5,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": false,
+      "night_allowed": false
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "voltorb",
+      "min_level": 11,
+      "max_level": 14,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_evergreengrove_Patch1",
+      "pokemon": "sneasel",
+      "min_level": 11,
+      "max_level": 14,
+      "slots": 1,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": false,
       "night_allowed": true
     }
   ],

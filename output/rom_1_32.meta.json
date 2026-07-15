@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "pallet_day",
+      "day_track": "pallet_indoors",
       "display_name": "Underground Path",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "pallet_night",
+      "night_track": "pallet_indoors",
       "polygon": [
         [
           0.0,

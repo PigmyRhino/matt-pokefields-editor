@@ -7,7 +7,7 @@
       "display_name": "Route 3 Pokemon Center",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "pokecenter_night",
+      "night_track": "pokecenter_day",
       "polygon": [
         [
           0.0,

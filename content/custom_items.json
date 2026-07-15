@@ -2242,6 +2242,79 @@
     "stackable": false
   },
   {
+    "item_id": 1301,
+    "name": "Rusty Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A worn fishing rod. Barely holds together, but it casts.",
+    "cost": 0,
+    "stackable": false,
+    "tradable": false
+  },
+  {
+    "item_id": 1302,
+    "name": "Bronze Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A basic Bronze fishing rod.",
+    "cost": 1422,
+    "stackable": false
+  },
+  {
+    "item_id": 1303,
+    "name": "Iron Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A sturdy Iron fishing rod.",
+    "cost": 1910,
+    "stackable": false
+  },
+  {
+    "item_id": 1304,
+    "name": "Steel Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A reliable Steel fishing rod.",
+    "cost": 7806,
+    "stackable": false
+  },
+  {
+    "item_id": 1305,
+    "name": "Gold Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A gleaming Gold fishing rod.",
+    "cost": 27166,
+    "stackable": false
+  },
+  {
+    "item_id": 1306,
+    "name": "Platinum Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A masterwork Platinum fishing rod.",
+    "cost": 53852,
+    "stackable": false
+  },
+  {
+    "item_id": 1307,
+    "name": "Mithril Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "A legendary Mithril fishing rod.",
+    "cost": 83740,
+    "stackable": false
+  },
+  {
+    "item_id": 1308,
+    "name": "Adamantine Rod",
+    "item_type": "tool",
+    "category": "fishing",
+    "description": "The ultimate fishing rod.",
+    "cost": 419730,
+    "stackable": false
+  },
+  {
     "item_id": 2001,
     "name": "Copper Chunk",
     "item_type": "material",

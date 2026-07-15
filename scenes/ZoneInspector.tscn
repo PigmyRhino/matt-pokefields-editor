@@ -165,6 +165,18 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="RodTierRow" type="HBoxContainer" parent="Margin/Scroll/Fields/EncBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/EncBox/RodTierRow"]
+layout_mode = 2
+text = "Min Rod"
+
+[node name="FishRodTier" type="OptionButton" parent="Margin/Scroll/Fields/EncBox/RodTierRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="GateBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
 unique_name_in_owner = true
 layout_mode = 2

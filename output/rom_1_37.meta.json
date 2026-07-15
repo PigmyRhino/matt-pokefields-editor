@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "ambience_cave_wind",
-      "day_track": "cave_1",
+      "day_track": "mt_moon",
       "display_name": "Diglett's Cave",
       "name": "area_0",
       "night_ambience": "ambience_cave_wind",
-      "night_track": "cave_1",
+      "night_track": "mt_moon",
       "polygon": [
         [
           2.0,

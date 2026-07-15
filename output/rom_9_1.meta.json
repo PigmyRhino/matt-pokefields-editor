@@ -7,10 +7,26 @@
       "display_name": "Vermilion City Pokemon Center",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "pokecenter_night",
+      "night_track": "pokecenter_day",
       "polygon": [
         [
           0.0,
+          2.0
+        ],
+        [
+          4.0,
+          2.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          11.0,
+          4.0
+        ],
+        [
+          11.0,
           2.0
         ],
         [

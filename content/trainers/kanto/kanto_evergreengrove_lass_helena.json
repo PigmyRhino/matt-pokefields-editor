@@ -1,0 +1,57 @@
+{
+  "unique_name": "kanto_evergreengrove_lass_helena",
+  "display_name": "Lass Helena",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 50,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "kadabra",
+      "ability": "synchronize",
+      "nature": "hardy",
+      "moves": [
+        "confusion",
+        "disable",
+        "kinesis",
+        "flash"
+      ],
+      "level_offset": 2,
+      "iv_hp": 15,
+      "iv_atk": 15,
+      "iv_def": 15,
+      "iv_spa": 15,
+      "iv_spd": 15,
+      "iv_spe": 15,
+      "held_item": "oran_berry"
+    },
+    {
+      "species": "girafarig",
+      "ability": "inner_focus",
+      "nature": "hardy",
+      "moves": [
+        "stomp",
+        "confusion"
+      ],
+      "level_offset": 2,
+      "held_item": "oran_berry",
+      "iv_hp": 15,
+      "iv_atk": 15,
+      "iv_def": 15,
+      "iv_spa": 15,
+      "iv_spd": 15,
+      "iv_spe": 15
+    }
+  ],
+  "rebattle": "daily",
+  "scaling_min_level": 20,
+  "dialogue": {
+    "start": "I come to this place when I'm sad. It always makes me happy.",
+    "loss": "I need a new happy place.",
+    "post_defeat": "Winning battles makes me happy, too!"
+  }
+}

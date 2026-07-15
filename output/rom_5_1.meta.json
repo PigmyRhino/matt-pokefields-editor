@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "azalea_gym",
+      "day_track": "viridian_indoors",
       "display_name": "Virdian City Gym",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "azalea_gym",
+      "night_track": "viridian_indoors",
       "polygon": [
         [
           0.0,

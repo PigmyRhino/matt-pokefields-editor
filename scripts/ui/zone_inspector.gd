@@ -22,6 +22,7 @@ signal deleted
 @onready var _terrain: OptionButton = %TerrainOpt
 @onready var _enc_group: SearchPicker = %EncGroup
 @onready var _fish_group: SearchPicker = %FishGroup
+@onready var _fish_rod_tier: OptionButton = %FishRodTier
 # Gate
 @onready var _gate_box: Control = %GateBox
 @onready var _req_flags: ChipSelect = %ReqFlags
@@ -55,6 +56,8 @@ func _ready() -> void:
 	# cards); the bundled Catalog snapshot drifts and misses freshly-added groups.
 	_enc_group.set_entries(ContentScan.encounter_groups())
 	_fish_group.set_entries(ContentScan.encounter_groups())
+	for rod_name: String in ContentScan.fishing_rods():
+		_fish_rod_tier.add_item(rod_name)
 	# Suggest flags already used anywhere (set/read in scripts, or gating another zone), but allow typing
 	# a brand-new one — gate flags share the one registry with the node editor's flag picker.
 	_req_flags.allow_custom = true
@@ -75,6 +78,7 @@ func _ready() -> void:
 	_terrain.item_selected.connect(_on_terrain)
 	_enc_group.value_changed.connect(_on_enc_group)
 	_fish_group.value_changed.connect(_on_fish_group)
+	_fish_rod_tier.item_selected.connect(_on_fish_rod_tier)
 	_req_flags.changed.connect(_on_req_flags)
 	_forbid_flags.changed.connect(_on_forbid_flags)
 	_req_badges.changed.connect(_on_req_badges)
@@ -114,6 +118,7 @@ func bind(z: Zone) -> void:
 			_terrain.selected = maxi(0, Zone.ENCOUNTER_TERRAINS.find(z.terrain))
 			_enc_group.set_value(z.encounter_group)
 			_fish_group.set_value(z.fish_encounter_group)
+			_fish_rod_tier.selected = z.fish_rod_tier
 		"Gate":
 			_req_flags.set_values(z.requires_flag.duplicate())
 			_forbid_flags.set_values(z.forbids_flag.duplicate())
@@ -199,6 +204,12 @@ func _on_enc_group(v: String) -> void:
 func _on_fish_group(v: String) -> void:
 	if _guarded(): return
 	_z.fish_encounter_group = v
+	changed.emit()
+
+
+func _on_fish_rod_tier(index: int) -> void:
+	if _guarded(): return
+	_z.fish_rod_tier = index
 	changed.emit()
 
 
