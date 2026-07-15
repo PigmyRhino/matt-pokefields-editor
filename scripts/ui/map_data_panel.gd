@@ -24,6 +24,7 @@ const DATASETS := [
 @onready var _content: ScrollContainer = %Content
 @onready var _status: Label = %Status
 @onready var _save: Button = %SaveBtn
+@onready var _check_all: Button = %CheckAllBtn
 
 var _editor: DatasetEditor = null
 var _active_name := ""
@@ -36,6 +37,7 @@ func _ready() -> void:
 	_list.item_selected.connect(_on_select)
 	_save.pressed.connect(_on_save)
 	_save.disabled = true
+	_check_all.pressed.connect(_on_check_all)
 	if not DATASETS.is_empty():
 		_list.select(0)
 		_on_select(0)
@@ -87,6 +89,15 @@ func _on_save() -> void:
 		_status.text = "saved ✓"
 	else:
 		_status.text = "save FAILED"
+
+
+func _on_check_all() -> void:
+	for d in DATASETS:
+		var nm := str(d["name"])
+		var override: Variant = _editor.current_data() if nm == _active_name else null
+		var probs := DataValidator.validate(nm, CONTENT_DIR, override)
+		_badge(nm, Problem.error_count(probs), probs.size() - Problem.error_count(probs))
+	_status.text = "all datasets checked"
 
 
 func _badge(name: String, errs: int, warns: int) -> void:
