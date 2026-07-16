@@ -493,11 +493,11 @@ func _select(obj: Variant) -> void:
 				return
 			_show_enc_popup(obj, Vector2.ZERO)
 			return
-	# Clicking anything else closes the encounter popup.
-	if _enc_popup != null and _enc_popup.visible:
-		_enc_popup.hide()
-	else:  # nothing selected — fall back to the general map-data panel
+	elif obj == null:
 		_map_inspector.bind(_doc, _map_id, "%d × %d tiles   ·   ROM %d:%d" % [_size.x, _size.y, _group, _num])
+	# Close the encounter popup when clicking anything other than an encounter zone.
+	if not (obj is Zone and obj.category == "Encounter") and _enc_popup != null and _enc_popup.visible:
+		_enc_popup.hide()
 
 
 func _delete_selected() -> void:
