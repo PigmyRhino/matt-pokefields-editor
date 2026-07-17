@@ -22,7 +22,7 @@ static var _icons: Dictionary = {}
 
 var _entries: Array = []
 var _value := ""
-var _popup: PopupPanel
+var _dropdown: PanelContainer
 var _filter: LineEdit
 var _list: ItemList
 
@@ -32,7 +32,7 @@ func _ready() -> void:
 	alignment = HORIZONTAL_ALIGNMENT_LEFT
 	custom_minimum_size.x = 150
 	pressed.connect(_open)
-	_build_popup()
+	_build_dropdown()
 	_refresh_text()
 
 
@@ -50,12 +50,38 @@ func get_value() -> String:
 	return _value
 
 
-func _build_popup() -> void:
-	_popup = PopupPanel.new()
-	add_child(_popup)
+func _build_dropdown() -> void:
+	_dropdown = PanelContainer.new()
+	_dropdown.visible = false
+	_dropdown.mouse_filter = Control.MOUSE_FILTER_STOP
+	var style := StyleBoxFlat.new()
+	style.bg_color = Color(0.16, 0.16, 0.2)
+	style.border_color = Color(0.4, 0.4, 0.45)
+	style.border_width_left = 1
+	style.border_width_right = 1
+	style.border_width_top = 1
+	style.border_width_bottom = 1
+	style.content_margin_left = 4
+	style.content_margin_right = 4
+	style.content_margin_top = 4
+	style.content_margin_bottom = 4
+	_dropdown.add_theme_stylebox_override("panel", style)
 	var vb := VBoxContainer.new()
 	vb.custom_minimum_size = Vector2(220, 300)
-	_popup.add_child(vb)
+	vb.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	vb.add_theme_constant_override("separation", 2)
+	_dropdown.add_child(vb)
+	var hdr := HBoxContainer.new()
+	var title := Label.new()
+	title.text = "Select…"
+	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	hdr.add_child(title)
+	var close_btn := Button.new()
+	close_btn.text = "✕"
+	close_btn.custom_minimum_size = Vector2(24, 24)
+	close_btn.pressed.connect(_close)
+	hdr.add_child(close_btn)
+	vb.add_child(hdr)
 	_filter = LineEdit.new()
 	_filter.placeholder_text = "search…"
 	_filter.text_changed.connect(func(_t: String) -> void: _populate())
@@ -85,10 +111,37 @@ func _icon_for(value: String) -> Texture2D:
 
 
 func _open() -> void:
+	if _dropdown.visible:
+		_close()
+		return
+	# Add to the same Window (viewport) this button lives in so coordinates match.
+	var win: Window = get_window()
+	if _dropdown.get_parent() != win:
+		if _dropdown.get_parent():
+			_dropdown.get_parent().remove_child(_dropdown)
+		win.add_child(_dropdown)
 	_filter.text = ""
 	_populate()
-	_popup.popup(Rect2i(get_screen_position() + Vector2(0, size.y), Vector2i(int(maxf(size.x, 220)), 320)))
+	_dropdown.position = position + Vector2(0, size.y)
+	_dropdown.custom_minimum_size = Vector2(int(maxf(size.x, 220)), 320)
+	_dropdown.visible = true
 	_filter.grab_focus()
+
+
+func _close() -> void:
+	_dropdown.visible = false
+
+
+func _input(event: InputEvent) -> void:
+	if not _dropdown.visible:
+		return
+	if event is InputEventKey and event.pressed and event.keycode == KEY_ESCAPE:
+		_close()
+		get_viewport().set_input_as_handled()
+	elif event is InputEventMouseButton and event.pressed:
+		var rect := Rect2(_dropdown.global_position, _dropdown.size)
+		if not rect.has_point(Vector2(event.position)):
+			_close()
 
 
 func _populate() -> void:
@@ -119,5 +172,5 @@ func _populate() -> void:
 func _on_selected(index: int) -> void:
 	_value = str(_list.get_item_metadata(index))
 	_refresh_text()
-	_popup.hide()
+	_close()
 	value_changed.emit(_value)
