@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_nuggetbridge_camper_alan",
+  "display_name": "Camper Alan",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "ekans",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "moves": [],
+      "gender": "male",
+      "iv_hp": 12,
+      "iv_atk": 12,
+      "iv_def": 10,
+      "iv_spa": 11,
+      "iv_spd": 11,
+      "iv_spe": 12,
+      "level_offset": 1
+    },
+    {
+      "species": "pikachu",
+      "ability": "static",
+      "nature": "modest",
+      "moves": [],
+      "gender": "male",
+      "iv_hp": 12,
+      "iv_atk": 11,
+      "iv_def": 12,
+      "iv_spa": 13,
+      "iv_spd": 12,
+      "iv_spe": 13,
+      "level_offset": 1
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "We're the Nugget Bridge 5! How far can you survive?",
+    "loss": "You're the real deal!",
+    "post_defeat": "I did my best. I have no regrets"
+  },
+  "scaling_min_level": 17
+}

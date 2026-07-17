@@ -1,0 +1,30 @@
+{
+  "_comment": "Intrinsic per-resource economy, keyed by stable def name. One row per real resource (iron is ONE def no matter how many groups/sprites surface it). Referenced by `ref` from resource_nodes.json group variants. Each def owns skill (which skill it trains), level_required (min skill level), tool (min tier item_id; null = bare-hand), xp (granted per gather), hp_max (swings-to-deplete), respawn_ms (per-player depletion timer), loot (drop table). See docs/game-server/SKILLS.md and docs/game-server/RESOURCE_NODES.md §4.2 / §4.3.",
+  "defs": {
+    "forage_tree":      { "skill": "foraging", "level_required": 1, "tool": 1051, "xp": 8, "hp_max": 10, "respawn_ms": 60000, "loot": "forage_common" },
+    "forage_smalltree": { "skill": "foraging", "level_required": 1, "tool": 1051, "xp": 5, "hp_max": 6,  "respawn_ms": 60000, "loot": "forage_common" },
+
+    "iron":       { "skill": "mining", "level_required":  1, "tool": 1001, "xp":  12, "hp_max":  8, "respawn_ms":  90000, "loot": "ore_iron" },
+    "coal":       { "skill": "mining", "level_required":  1, "tool": 1001, "xp":   8, "hp_max":  8, "respawn_ms":  90000, "loot": "ore_coal" },
+    "copper":     { "skill": "mining", "level_required":  1, "tool": 1001, "xp":   9, "hp_max":  8, "respawn_ms":  90000, "loot": "ore_copper" },
+    "tin":        { "skill": "mining", "level_required":  1, "tool": 1001, "xp":   8, "hp_max":  8, "respawn_ms":  90000, "loot": "ore_tin" },
+    "silver":     { "skill": "mining", "level_required": 10, "tool": 1003, "xp":  20, "hp_max": 10, "respawn_ms": 120000, "loot": "ore_silver" },
+    "gold":       { "skill": "mining", "level_required": 30, "tool": 1005, "xp":  60, "hp_max": 16, "respawn_ms": 180000, "loot": "ore_gold" },
+    "platinum":   { "skill": "mining", "level_required": 35, "tool": 1005, "xp":  70, "hp_max": 16, "respawn_ms": 180000, "loot": "ore_platinum" },
+    "mithril":    { "skill": "mining", "level_required": 45, "tool": 1006, "xp":  95, "hp_max": 20, "respawn_ms": 180000, "loot": "ore_mithril" },
+    "adamantine": { "skill": "mining", "level_required": 55, "tool": 1007, "xp": 130, "hp_max": 24, "respawn_ms": 180000, "loot": "ore_adamantine" },
+
+    "mushroom": { "skill": "foraging", "level_required": 1, "tool": null, "xp": 4, "hp_max": 1, "respawn_ms": 120000, "loot": "ground_mushroom" },
+    "herb":     { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 150000, "loot": "wild_herb" },
+    "flower":   { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 180000, "loot": "wild_flower" },
+
+    "berrytree_oran":   { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_oran" },
+    "berrytree_cheri":  { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_cheri" },
+    "berrytree_pecha":  { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_pecha" },
+    "berrytree_rawst":  { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_rawst" },
+    "berrytree_aspear": { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_aspear" },
+    "berrytree_sitrus": { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_sitrus" },
+    "berrytree_leppa":  { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_leppa" },
+    "berrytree_lum":    { "skill": "foraging", "level_required": 1, "tool": null, "xp": 5, "hp_max": 1, "respawn_ms": 21600000, "loot": "berry_lum" }
+  }
+}

@@ -1,0 +1,84 @@
+// Viridian City job board. Species from kanto_route1/2/22 + viridianforest
+// patches; forage loot from route 1 resource trees (forage_common = Oak Log,
+// berry_oran); trainers are daily-rebattle locals.
+{
+  "board_id": "viridian_jobs",
+  "name": "Viridian City",
+  "daily_slots": 3,
+  "weekly_slots": 1,
+  "jobs": [
+    {
+      "job_id": "viridian_lumberjack",
+      "title": "Lumberjack",
+      "description": "It's time to put that axe to use. Chop down trees in the area",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "count": 10,
+        "item": "oak_log"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_catch_bulbasaur",
+      "title": "Creature Catcher",
+      "description": "Catch a Bulbasaur",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "count": 1,
+        "species": "bulbasaur"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 10000
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_bug_problem",
+      "title": "Bug Problem",
+      "description": "We have a huge bug problem here. Get rid of them!",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "caterpie",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 650
+        },
+        {
+          "kind": "item",
+          "qty": 10,
+          "item": "oran_berry"
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_shiny_hunter",
+      "title": "Shiny Hunter",
+      "description": "Catch a Shiny Pokemon!",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "catch_pokemon",
+        "count": 1,
+        "shiny": true
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 75000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_victoryroad_ace_shannon",
+  "display_name": "Ace Shannon",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 950,
+  "payout_per_level": 36,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "golbat",
+      "ability": "inner_focus",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 28,
+      "iv_atk": 26,
+      "iv_def": 24,
+      "iv_spa": 18,
+      "iv_spd": 25,
+      "iv_spe": 28,
+      "moves": [
+        "wing_attack",
+        "bite",
+        "confuse_ray",
+        "toxic"
+      ]
+    },
+    {
+      "species": "graveler",
+      "ability": "sturdy",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 26,
+      "iv_atk": 28,
+      "iv_def": 26,
+      "iv_spa": 14,
+      "iv_spd": 22,
+      "iv_spe": 20,
+      "moves": [
+        "rock_slide",
+        "magnitude",
+        "defense_curl",
+        "self_destruct"
+      ]
+    },
+    {
+      "species": "machoke",
+      "ability": "guts",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 28,
+      "iv_atk": 28,
+      "iv_def": 24,
+      "iv_spa": 14,
+      "iv_spd": 22,
+      "iv_spe": 20,
+      "moves": [
+        "cross_chop",
+        "rock_slide",
+        "foresight",
+        "scary_face"
+      ]
+    },
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "wing_attack",
+        "supersonic",
+        "bite",
+        "confuse_ray"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Victory Road separates the champions from the chumps! Show me which one you are!",
+    "loss": "You're no chump — you're the real deal! The Elite Four are in for a fight!",
+    "post_defeat": "Only the strongest trainers make it through this cave. You're almost there."
+  },
+  "rebattle": "daily"
+}

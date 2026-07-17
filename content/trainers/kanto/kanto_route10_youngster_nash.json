@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route10_youngster_nash",
+  "display_name": "Youngster Nash",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 480,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "magnemite",
+      "ability": "magnet_pull",
+      "nature": "modest",
+      "gender": "genderless",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 10,
+      "iv_def": 17,
+      "iv_spa": 19,
+      "iv_spd": 15,
+      "iv_spe": 13,
+      "moves": [
+        "thunder_shock",
+        "supersonic",
+        "sonic_boom",
+        "thunder_wave"
+      ]
+    },
+    {
+      "species": "voltorb",
+      "ability": "static",
+      "nature": "timid",
+      "gender": "genderless",
+      "level_offset": 1,
+      "iv_hp": 15,
+      "iv_atk": 11,
+      "iv_def": 14,
+      "iv_spa": 16,
+      "iv_spd": 14,
+      "iv_spe": 19,
+      "moves": [
+        "tackle",
+        "screech",
+        "sonic_boom",
+        "spark"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The power plant nearby gives my electric types a real charge! Feel the voltage!",
+    "loss": "You grounded my electricity! That was shocking!",
+    "post_defeat": "There's a power plant north of here. That's where all the electric Pokemon come from."
+  },
+  "rebattle": "daily"
+}

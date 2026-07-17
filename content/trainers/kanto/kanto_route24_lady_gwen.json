@@ -1,0 +1,36 @@
+{
+  "unique_name": "kanto_route24_lady_gwen",
+  "display_name": "Lady Gwen",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 500,
+  "payout_per_level": 5,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "clefairy",
+      "ability": "cute_charm",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "female",
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 17,
+      "iv_spa": 17,
+      "iv_spd": 17,
+      "iv_spe": 17,
+      "level_offset": 3
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "Oh my. A battle? If I must.",
+    "loss": "You are truly the better of us in battling.",
+    "win": "Come back if you'd like a rematch.",
+    "post_defeat": "I walk here in hopes of finding a man, someday."
+  },
+  "scaling_min_level": 18
+}

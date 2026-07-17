@@ -1,0 +1,63 @@
+{
+  "unique_name": "kanto_route2_bugcatcher_winx",
+  "display_name": "Bug Catcher Winx",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 200,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "weedle",
+      "ability": "shield_dust",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 12,
+      "iv_atk": 13,
+      "iv_def": 11,
+      "iv_spa": 8,
+      "iv_spd": 10,
+      "iv_spe": 14,
+      "moves": []
+    },
+    {
+      "species": "caterpie",
+      "ability": "shield_dust",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 13,
+      "iv_atk": 10,
+      "iv_def": 12,
+      "iv_spa": 12,
+      "iv_spd": 12,
+      "iv_spe": 15,
+      "moves": []
+    },
+    {
+      "species": "spinarak",
+      "ability": "swarm",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 12,
+      "iv_atk": 13,
+      "iv_def": 12,
+      "iv_spa": 10,
+      "iv_spd": 12,
+      "iv_spe": 12,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "Spinarak are the coolest! They spin webs between the trees along this entire route!",
+    "loss": "My web of bugs got torn apart!",
+    "post_defeat": "Look for Spinarak webs in the trees. They're easiest to spot in the morning dew."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 7
+}

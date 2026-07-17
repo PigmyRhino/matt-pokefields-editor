@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_route25_bugcatcher_larry",
+  "display_name": "Bug Catcher Larry",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 280,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 16,
+      "iv_atk": 12,
+      "iv_def": 14,
+      "iv_spa": 16,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "vine_whip",
+        "growth",
+        "wrap",
+        "sleep_powder"
+      ]
+    },
+    {
+      "species": "venonat",
+      "ability": "tinted_lens",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 16,
+      "iv_atk": 12,
+      "iv_def": 14,
+      "iv_spa": 16,
+      "iv_spd": 14,
+      "iv_spe": 17,
+      "moves": [
+        "tackle",
+        "confusion",
+        "stun_spore",
+        "poison_powder"
+      ]
+    },
+    {
+      "species": "hoppip",
+      "ability": "chlorophyll",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 15,
+      "iv_atk": 12,
+      "iv_def": 14,
+      "iv_spa": 14,
+      "iv_spd": 16,
+      "iv_spe": 17,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "synthesis",
+        "bullet_seed"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "This cape has so many cool bugs! Let me show you my collection!",
+    "loss": "Your Pokemon totally outclassed my bugs!",
+    "post_defeat": "Venonat are great at using status moves. Stun Spore slows everything down."
+  },
+  "rebattle": "daily"
+}

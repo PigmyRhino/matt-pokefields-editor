@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_youngster_dylan",
+  "display_name": "Youngster Dylan",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 360,
+  "payout_per_level": 16,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "spearow",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 16,
+      "iv_def": 13,
+      "iv_spa": 11,
+      "iv_spd": 13,
+      "iv_spe": 18,
+      "moves": [
+        "peck",
+        "growl",
+        "leer",
+        "fury_attack"
+      ]
+    },
+    {
+      "species": "sandshrew",
+      "ability": "sand_veil",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 17,
+      "iv_def": 16,
+      "iv_spa": 9,
+      "iv_spd": 12,
+      "iv_spe": 13,
+      "moves": [
+        "scratch",
+        "defense_curl",
+        "sand_attack",
+        "poison_sting"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've been hiding in the cargo hold battling anyone who walks by!",
+    "loss": "You found me! And you beat me! Double fail...",
+    "post_defeat": "I heard there's a really rare Pokemon on this ship somewhere."
+  },
+  "rebattle": "daily"
+}

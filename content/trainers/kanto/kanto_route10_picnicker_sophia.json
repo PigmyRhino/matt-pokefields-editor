@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route10_picnicker_sophia",
+  "display_name": "Picnicker Sophia",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 460,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "nidoran_f",
+      "ability": "poison_point",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 13,
+      "iv_def": 15,
+      "iv_spa": 17,
+      "iv_spd": 15,
+      "iv_spe": 14,
+      "moves": [
+        "growl",
+        "scratch",
+        "poison_sting",
+        "double_kick"
+      ]
+    },
+    {
+      "species": "magnemite",
+      "ability": "sturdy",
+      "nature": "modest",
+      "gender": "genderless",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 11,
+      "iv_def": 18,
+      "iv_spa": 20,
+      "iv_spd": 16,
+      "iv_spe": 14,
+      "moves": [
+        "thunder_shock",
+        "supersonic",
+        "sonic_boom",
+        "thunder_wave"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The river here is perfect for a picnic! And the Pokemon are active today!",
+    "loss": "What a lovely day for a picnic — and a great battle too!",
+    "post_defeat": "You can hear the power plant humming from here. It's kind of soothing."
+  },
+  "rebattle": "daily"
+}

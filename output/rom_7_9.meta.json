@@ -1,0 +1,67 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Cerulean City",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          11.0,
+          8.0
+        ],
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 4,
+      "tile_y": 8
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_4_7",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 7
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_4_7",
+      "target_map": "kanto",
+      "target_warp": "t_281_51",
+      "tile_x": 4,
+      "tile_y": 8,
+      "warp_type": ""
+    }
+  ]
+}

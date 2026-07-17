@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route22_guard_delorean",
+  "display_name": "Guard Delorean",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "spearow",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "iv_hp": 14,
+      "iv_atk": 15,
+      "iv_def": 12,
+      "iv_spa": 10,
+      "iv_spd": 12,
+      "iv_spe": 17,
+      "moves": [],
+      "level_offset": -3
+    },
+    {
+      "species": "rattata",
+      "ability": "run_away",
+      "nature": "adamant",
+      "gender": "male",
+      "iv_hp": 14,
+      "iv_atk": 15,
+      "iv_def": 12,
+      "iv_spa": 9,
+      "iv_spd": 12,
+      "iv_spe": 15,
+      "moves": [],
+      "level_offset": -2
+    }
+  ],
+  "dialogue": {
+    "start": "Halt! I guard this stretch of Route 22. Show me your Trainer Card — and your skills!",
+    "loss": "You're cleared to pass! Stay safe out there.",
+    "post_defeat": "The Pokemon League is at the end of this route. Only the best make it inside."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

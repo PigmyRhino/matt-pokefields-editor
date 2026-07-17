@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route11_youngster_dave",
+  "display_name": "Youngster Dave",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 380,
+  "payout_per_level": 16,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "spearow",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 16,
+      "iv_def": 13,
+      "iv_spa": 11,
+      "iv_spd": 13,
+      "iv_spe": 18,
+      "moves": [
+        "peck",
+        "growl",
+        "leer",
+        "fury_attack"
+      ]
+    },
+    {
+      "species": "rattata",
+      "ability": "guts",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 15,
+      "iv_spa": 8,
+      "iv_spd": 14,
+      "iv_spe": 16,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "quick_attack",
+        "hyper_fang"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've been training on this route since dawn! Let's see if it was worth it!",
+    "loss": "All that training and I still lost! You're incredible!",
+    "post_defeat": "The grass on this route is super tall. Perfect for ambush training!"
+  },
+  "rebattle": "daily"
+}

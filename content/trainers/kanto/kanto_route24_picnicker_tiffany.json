@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route24_picnicker_tiffany",
+  "display_name": "Picnicker Tiffany",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 280,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "oddish",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 10,
+      "iv_def": 13,
+      "iv_spa": 16,
+      "iv_spd": 14,
+      "iv_spe": 11,
+      "moves": [
+        "absorb",
+        "sweet_scent",
+        "acid",
+        "sleep_powder"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 13,
+      "iv_atk": 11,
+      "iv_def": 11,
+      "iv_spa": 12,
+      "iv_spd": 12,
+      "iv_spe": 16,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I'm on a picnic with my Pokemon! Care to join us for a battle?",
+    "loss": "That was fun! Here, have a snack before you go.",
+    "post_defeat": "The grass by the river is perfect for Oddish to soak up the sun."
+  },
+  "rebattle": "daily"
+}

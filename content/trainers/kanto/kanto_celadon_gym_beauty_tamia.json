@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_celadon_gym_beauty_tamia",
+  "display_name": "Beauty Tamia",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 620,
+  "payout_per_level": 26,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "oddish",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 14,
+      "iv_def": 17,
+      "iv_spa": 20,
+      "iv_spd": 18,
+      "iv_spe": 15,
+      "moves": [
+        "mega_drain",
+        "acid",
+        "sleep_powder",
+        "sweet_scent"
+      ]
+    },
+    {
+      "species": "weepinbell",
+      "ability": "chlorophyll",
+      "nature": "rash",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 18,
+      "iv_def": 17,
+      "iv_spa": 20,
+      "iv_spd": 16,
+      "iv_spe": 17,
+      "moves": [
+        "razor_leaf",
+        "acid",
+        "sleep_powder",
+        "stun_spore"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I only battle with Pokemon as lovely as this garden! Grass types are simply elegant.",
+    "loss": "Your Pokemon have a rugged beauty all their own.",
+    "post_defeat": "A well-tended garden reflects a well-trained team. Erika taught me that."
+  },
+  "rebattle": "daily"
+}

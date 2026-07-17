@@ -1,0 +1,217 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "viridian_indoors",
+      "display_name": "Pewter City Gym",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "viridian_indoors",
+      "polygon": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          12.0,
+          0.0
+        ],
+        [
+          12.0,
+          15.0
+        ],
+        [
+          1.0,
+          15.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 6,
+      "tile_y": 15
+    },
+    {
+      "flags": 1,
+      "tile_x": 5,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 4,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 3,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 3,
+      "tile_y": 10
+    },
+    {
+      "flags": 1,
+      "tile_x": 5,
+      "tile_y": 9
+    },
+    {
+      "flags": 1,
+      "tile_x": 7,
+      "tile_y": 9
+    },
+    {
+      "flags": 1,
+      "tile_x": 7,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 8,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 9,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 9,
+      "tile_y": 10
+    },
+    {
+      "flags": 1,
+      "tile_x": 9,
+      "tile_y": 9
+    },
+    {
+      "flags": 1,
+      "tile_x": 3,
+      "tile_y": 9
+    },
+    {
+      "flags": 1,
+      "tile_x": 4,
+      "tile_y": 7
+    },
+    {
+      "flags": 1,
+      "tile_x": 8,
+      "tile_y": 7
+    },
+    {
+      "flags": 1,
+      "tile_x": 9,
+      "tile_y": 6
+    },
+    {
+      "flags": 1,
+      "tile_x": 3,
+      "tile_y": 6
+    },
+    {
+      "flags": 1,
+      "tile_x": 7,
+      "tile_y": 4
+    },
+    {
+      "flags": 1,
+      "tile_x": 5,
+      "tile_y": 4
+    },
+    {
+      "flags": 1,
+      "tile_x": 6,
+      "tile_y": 3
+    },
+    {
+      "flags": 1,
+      "tile_x": 2,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 1,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 10,
+      "tile_y": 11
+    },
+    {
+      "flags": 1,
+      "tile_x": 11,
+      "tile_y": 11
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_pewter_gym_leader_brock",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Gym Leader Brock",
+        "sprite": 167,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 6,
+      "tile_y": 5
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_pewter_gym_trainer_liam",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Gym Trainer Liam",
+        "sprite": 141,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 3,
+      "tile_y": 8,
+      "vision_range": 3
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_6_14",
+      "target_warp": "",
+      "tile_x": 6,
+      "tile_y": 14
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_6_14",
+      "target_map": "kanto",
+      "target_warp": "t_63_76",
+      "tile_x": 6,
+      "tile_y": 15,
+      "warp_type": ""
+    }
+  ]
+}

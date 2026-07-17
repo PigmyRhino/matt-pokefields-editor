@@ -1,0 +1,91 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Mom's House 2F",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          8.0,
+          2.0
+        ],
+        [
+          8.0,
+          4.0
+        ],
+        [
+          10.0,
+          4.0
+        ],
+        [
+          10.0,
+          3.0
+        ],
+        [
+          9.0,
+          3.0
+        ],
+        [
+          9.0,
+          2.0
+        ],
+        [
+          12.0,
+          2.0
+        ],
+        [
+          12.0,
+          9.0
+        ],
+        [
+          1.0,
+          9.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 9,
+      "tile_y": 2
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_10_2",
+      "target_warp": "",
+      "tile_x": 10,
+      "tile_y": 2
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_10_2",
+      "target_map": "rom_4_0",
+      "target_warp": "t_10_2",
+      "tile_x": 9,
+      "tile_y": 2,
+      "warp_type": ""
+    }
+  ]
+}

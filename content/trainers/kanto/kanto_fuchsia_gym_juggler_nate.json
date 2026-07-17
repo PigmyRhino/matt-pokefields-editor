@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_fuchsia_gym_juggler_nate",
+  "display_name": "Juggler Nate",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 760,
+  "payout_per_level": 28,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "ekans",
+      "ability": "shed_skin",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 21,
+      "iv_def": 18,
+      "iv_spa": 14,
+      "iv_spd": 17,
+      "iv_spe": 18,
+      "moves": [
+        "bite",
+        "glare",
+        "acid",
+        "screech"
+      ]
+    },
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 19,
+      "iv_def": 17,
+      "iv_spa": 14,
+      "iv_spd": 18,
+      "iv_spe": 22,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "bite",
+        "wing_attack"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    },
+    {
+      "species": "nidorino",
+      "ability": "poison_point",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "double_kick",
+        "poison_sting",
+        "bite",
+        "body_slam"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Round and round my Pokemon go — where they strike, nobody knows!",
+    "loss": "My juggling couldn't keep you confused! Well played!",
+    "post_defeat": "Koga's gym is full of invisible walls. Watch your step!"
+  },
+  "rebattle": "daily"
+}

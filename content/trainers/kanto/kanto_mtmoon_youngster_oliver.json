@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_mtmoon_youngster_oliver",
+  "display_name": "Youngster Oliver",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 240,
+  "payout_per_level": 12,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 12,
+      "iv_atk": 11,
+      "iv_def": 11,
+      "iv_spa": 12,
+      "iv_spd": 12,
+      "iv_spe": 17,
+      "moves": []
+    },
+    {
+      "species": "geodude",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 15,
+      "iv_def": 16,
+      "iv_spa": 8,
+      "iv_spd": 10,
+      "iv_spe": 9,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "I got separated from my hiking group! Wanna battle while I wait for them?",
+    "loss": "At least battling you was fun! Hope my group finds me soon...",
+    "post_defeat": "If you see a group of hikers with orange hats, tell them I'm down this tunnel!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

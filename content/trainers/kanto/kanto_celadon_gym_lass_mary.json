@@ -1,0 +1,77 @@
+{
+  "unique_name": "kanto_celadon_gym_lass_mary",
+  "display_name": "Lass Mary",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 560,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "hoppip",
+      "ability": "chlorophyll",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 19,
+      "iv_atk": 15,
+      "iv_def": 16,
+      "iv_spa": 16,
+      "iv_spd": 18,
+      "iv_spe": 19,
+      "moves": [
+        "bullet_seed",
+        "synthesis",
+        "sleep_powder",
+        "poison_powder"
+      ]
+    },
+    {
+      "species": "sunkern",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 14,
+      "iv_def": 17,
+      "iv_spa": 20,
+      "iv_spd": 18,
+      "iv_spe": 15,
+      "moves": [
+        "mega_drain",
+        "growth",
+        "sunny_day",
+        "synthesis"
+      ]
+    },
+    {
+      "species": "gloom",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 15,
+      "iv_def": 18,
+      "iv_spa": 21,
+      "iv_spd": 19,
+      "iv_spe": 15,
+      "moves": [
+        "mega_drain",
+        "acid",
+        "sleep_powder",
+        "sweet_scent"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Three lovely Grass types for a lovely day! How many can you handle?",
+    "loss": "All three fell like autumn leaves... but what a beautiful battle!",
+    "post_defeat": "Hoppip are so light they float on the breeze. Perfect for this gym!"
+  },
+  "rebattle": "daily"
+}

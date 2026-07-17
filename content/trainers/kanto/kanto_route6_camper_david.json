@@ -1,0 +1,35 @@
+{
+  "unique_name": "kanto_route6_camper_david",
+  "display_name": "Camper David",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 500,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "magnemite",
+      "ability": "",
+      "nature": "hardy",
+      "moves": [],
+      "gender": "genderless",
+      "level_offset": 2,
+      "iv_hp": 20,
+      "iv_atk": 20,
+      "iv_def": 20,
+      "iv_spa": 20,
+      "iv_spd": 20,
+      "iv_spe": 20
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "Lt. Surge runs the gym in Vermilion City. I'll be the judge of your skill!",
+    "loss": "Ok, you're good.",
+    "post_defeat": "Lt. Surge is gonna smoke you."
+  },
+  "scaling_min_level": 25
+}

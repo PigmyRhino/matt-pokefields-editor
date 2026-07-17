@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route11_psychic_yuri",
+  "display_name": "Psychic Yuri",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 580,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "drowzee",
+      "ability": "forewarn",
+      "nature": "calm",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 10,
+      "iv_def": 15,
+      "iv_spa": 17,
+      "iv_spd": 18,
+      "iv_spe": 13,
+      "moves": [
+        "confusion",
+        "hypnosis",
+        "disable",
+        "headbutt"
+      ]
+    },
+    {
+      "species": "mr_mime",
+      "ability": "filter",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 10,
+      "iv_def": 16,
+      "iv_spa": 18,
+      "iv_spd": 18,
+      "iv_spe": 17,
+      "moves": [
+        "confusion",
+        "barrier",
+        "light_screen",
+        "double_slap"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I can read your mind... You're hoping your Pokemon are strong enough. They might be!",
+    "loss": "You blocked my psychic probes! Your mind is remarkably strong.",
+    "post_defeat": "Mr. Mime create invisible walls with their minds. They're fascinating Pokemon."
+  },
+  "rebattle": "daily"
+}

@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route6_youngster_rickey",
+  "display_name": "Youngster Rickey",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "growlithe",
+      "ability": "intimidate",
+      "nature": "jolly",
+      "gender": "male",
+      "iv_hp": 15,
+      "iv_atk": 15,
+      "iv_def": 13,
+      "iv_spa": 13,
+      "iv_spd": 12,
+      "iv_spe": 16,
+      "moves": [],
+      "level_offset": 2
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "iv_hp": 14,
+      "iv_atk": 12,
+      "iv_def": 12,
+      "iv_spa": 13,
+      "iv_spd": 13,
+      "iv_spe": 17,
+      "moves": [],
+      "level_offset": 2
+    }
+  ],
+  "dialogue": {
+    "start": "I got this Growlithe from a breeder in Cerulean! It's super rare around here!",
+    "loss": "Even my special Growlithe couldn't win! You're really good!",
+    "post_defeat": "Growlithe love to run. We jog all the way down this route every morning."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 25
+}

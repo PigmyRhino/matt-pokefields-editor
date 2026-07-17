@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route25_picnicker_heidi",
+  "display_name": "Picnicker Heidi",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 320,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 16,
+      "iv_atk": 12,
+      "iv_def": 14,
+      "iv_spa": 17,
+      "iv_spd": 14,
+      "iv_spe": 13,
+      "moves": [
+        "vine_whip",
+        "growth",
+        "wrap",
+        "sleep_powder"
+      ]
+    },
+    {
+      "species": "hoppip",
+      "ability": "leaf_guard",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 15,
+      "iv_atk": 12,
+      "iv_def": 14,
+      "iv_spa": 14,
+      "iv_spd": 16,
+      "iv_spe": 17,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "synthesis",
+        "bullet_seed"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "The wildflowers up here are beautiful! And so are my Pokemon! Want to see them battle?",
+    "loss": "Your Pokemon are as lovely as a spring meadow!",
+    "post_defeat": "Bill's cottage has the best flower garden. Go see it!"
+  },
+  "rebattle": "daily"
+}

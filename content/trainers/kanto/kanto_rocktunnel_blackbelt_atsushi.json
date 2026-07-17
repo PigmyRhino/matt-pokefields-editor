@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_rocktunnel_blackbelt_atsushi",
+  "display_name": "Blackbelt Atsushi",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 540,
+  "payout_per_level": 24,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "machop",
+      "ability": "guts",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 19,
+      "iv_atk": 19,
+      "iv_def": 15,
+      "iv_spa": 9,
+      "iv_spd": 14,
+      "iv_spe": 13,
+      "moves": [
+        "low_kick",
+        "leer",
+        "focus_energy",
+        "karate_chop"
+      ]
+    },
+    {
+      "species": "geodude",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 18,
+      "iv_spa": 9,
+      "iv_spd": 13,
+      "iv_spe": 11,
+      "moves": [
+        "tackle",
+        "defense_curl",
+        "rock_throw",
+        "magnitude"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I train by punching the cave walls! My fists are as hard as my Pokemon!",
+    "loss": "Your spirit is stronger than these cave walls!",
+    "post_defeat": "Training in total darkness sharpens your other senses. Try it!"
+  },
+  "rebattle": "daily"
+}

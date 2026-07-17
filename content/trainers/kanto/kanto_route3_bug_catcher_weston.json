@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_route3_bug_catcher_weston",
+  "display_name": "Bug Catcher Weston",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 260,
+  "payout_per_level": 12,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "hoothoot",
+      "ability": "insomnia",
+      "nature": "modest",
+      "gender": "male",
+      "iv_hp": 15,
+      "iv_atk": 10,
+      "iv_def": 13,
+      "iv_spa": 14,
+      "iv_spd": 15,
+      "iv_spe": 13,
+      "moves": [],
+      "level_offset": 1
+    },
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "male",
+      "iv_hp": 14,
+      "iv_atk": 12,
+      "iv_def": 12,
+      "iv_spa": 12,
+      "iv_spd": 13,
+      "iv_spe": 17,
+      "moves": [],
+      "level_offset": 1
+    }
+  ],
+  "dialogue": {
+    "start": "There aren't many bugs on this mountain path, but I find cool Pokemon anyway!",
+    "loss": "The mountain Pokemon are wild but you tamed them in battle!",
+    "post_defeat": "Hoothoot and Zubat are everywhere on this route once the sun goes down."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

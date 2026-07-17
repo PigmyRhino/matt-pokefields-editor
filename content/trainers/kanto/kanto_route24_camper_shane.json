@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route24_camper_shane",
+  "display_name": "Camper Shane",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 15,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "rattata",
+      "ability": "run_away",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 14,
+      "iv_def": 12,
+      "iv_spa": 8,
+      "iv_spd": 12,
+      "iv_spe": 16,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "quick_attack",
+        "hyper_fang"
+      ]
+    },
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 12,
+      "iv_def": 12,
+      "iv_spa": 16,
+      "iv_spd": 12,
+      "iv_spe": 12,
+      "moves": [
+        "vine_whip",
+        "growth",
+        "wrap",
+        "sleep_powder"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "You're on the path to Nugget Bridge! But first, let's see what you've got!",
+    "loss": "Alright, you're tough enough for the bridge. Good luck!",
+    "post_defeat": "The trainers on Nugget Bridge are really strong. Don't go in unprepared!"
+  },
+  "rebattle": "daily"
+}

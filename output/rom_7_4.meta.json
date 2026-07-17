@@ -1,0 +1,79 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pokecenter_day",
+      "display_name": "Cerulean City Pokemon Center",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pokecenter_day",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          15.0,
+          2.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_1_6",
+      "target_warp": "",
+      "tile_x": 1,
+      "tile_y": 6
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_1_6",
+      "target_map": "rom_7_3",
+      "target_warp": "t_1_6",
+      "tile_x": 0,
+      "tile_y": 6,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_5_1",
+      "target_map": "rom_0_4",
+      "target_warp": "t_7_11",
+      "tile_x": 5,
+      "tile_y": 1,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_9_1",
+      "target_map": "rom_0_1",
+      "target_warp": "t_5_8",
+      "tile_x": 9,
+      "tile_y": 1,
+      "warp_type": ""
+    }
+  ]
+}

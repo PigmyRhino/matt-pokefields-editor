@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_rocktunnel_lass_michelle",
+  "display_name": "Lass Michelle",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 480,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 15,
+      "iv_atk": 12,
+      "iv_def": 13,
+      "iv_spa": 15,
+      "iv_spd": 14,
+      "iv_spe": 19,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "astonish",
+        "bite"
+      ]
+    },
+    {
+      "species": "golbat",
+      "ability": "inner_focus",
+      "nature": "jolly",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 16,
+      "iv_def": 15,
+      "iv_spa": 14,
+      "iv_spd": 15,
+      "iv_spe": 18,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "bite",
+        "wing_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've gotten so used to the cave's Pokemon that I actually like Zubat now!",
+    "loss": "Ok, maybe I still have a lot to learn about dark places...",
+    "post_defeat": "The echo in this cave makes Zubat's Supersonic way more effective!"
+  },
+  "rebattle": "daily"
+}

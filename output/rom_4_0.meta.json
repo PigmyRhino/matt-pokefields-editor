@@ -1,0 +1,268 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Mom's House F1",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          12.0,
+          2.0
+        ],
+        [
+          12.0,
+          3.0
+        ],
+        [
+          13.0,
+          3.0
+        ],
+        [
+          13.0,
+          9.0
+        ],
+        [
+          1.0,
+          9.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 1,
+      "tile_x": 3,
+      "tile_y": 9
+    },
+    {
+      "flags": 0,
+      "tile_x": 4,
+      "tile_y": 9
+    },
+    {
+      "flags": 0,
+      "tile_x": 11,
+      "tile_y": 2
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [
+    {
+      "gate": {
+        "messages": {
+          "flag:mom_starter": "You're gonna leave without saying goodbye to your mother!?"
+        },
+        "requires_flag": [
+          "mom_starter"
+        ]
+      },
+      "name": "gate_1",
+      "polygon": [
+        [
+          3.0,
+          8.0
+        ],
+        [
+          6.0,
+          8.0
+        ],
+        [
+          6.0,
+          9.0
+        ],
+        [
+          3.0,
+          9.0
+        ]
+      ]
+    }
+  ],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "key": "mom_starter",
+              "kind": "flag_set"
+            },
+            "id": "n1",
+            "if_false": "n5",
+            "if_true": "n3",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "heal_party"
+            },
+            "id": "n2",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Welcome back! I will take care of you now..."
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "ms": 2000
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n2"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "So you wanna be a trainer..?"
+            },
+            "id": "n5",
+            "kind": "action",
+            "next": "n6"
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "ms": 200
+            },
+            "id": "n6",
+            "kind": "action",
+            "next": "n7"
+          },
+          {
+            "action": {
+              "key": "mom_starter",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "n7",
+            "kind": "action",
+            "next": "n10"
+          },
+          {
+            "action": {
+              "amount": 500,
+              "kind": "give_money"
+            },
+            "id": "n8",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "item_id": 1051,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n9",
+            "kind": "action",
+            "next": "n11"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take some starter supplies then!"
+            },
+            "id": "n10",
+            "kind": "action",
+            "next": "n8"
+          },
+          {
+            "action": {
+              "item_id": 1001,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n11",
+            "kind": "action",
+            "next": "n12"
+          },
+          {
+            "action": {
+              "item_id": 4,
+              "kind": "give_item",
+              "qty": 30
+            },
+            "id": "n12",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_8_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Mom",
+        "sprite": 17,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 3,
+      "tile_y": 3
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 3,
+      "name": "t_4_8",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 8
+    },
+    {
+      "direction": 1,
+      "name": "t_10_2",
+      "target_warp": "",
+      "tile_x": 10,
+      "tile_y": 2
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_4_8",
+      "target_map": "kanto",
+      "target_warp": "t_66_267",
+      "tile_x": 4,
+      "tile_y": 9,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_10_2",
+      "target_map": "rom_4_1",
+      "target_warp": "t_10_2",
+      "tile_x": 11,
+      "tile_y": 2,
+      "warp_type": ""
+    }
+  ]
+}

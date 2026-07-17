@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_route12_ace_carter",
+  "display_name": "Ace Carter",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 680,
+  "payout_per_level": 26,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "pidgeotto",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 20,
+      "iv_def": 18,
+      "iv_spa": 16,
+      "iv_spd": 18,
+      "iv_spe": 24,
+      "moves": [
+        "gust",
+        "sand_attack",
+        "quick_attack",
+        "wing_attack"
+      ]
+    },
+    {
+      "species": "gloom",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 23,
+      "iv_atk": 15,
+      "iv_def": 19,
+      "iv_spa": 22,
+      "iv_spd": 19,
+      "iv_spe": 16,
+      "moves": [
+        "mega_drain",
+        "acid",
+        "sleep_powder",
+        "sweet_scent"
+      ]
+    },
+    {
+      "species": "weepinbell",
+      "ability": "chlorophyll",
+      "nature": "rash",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 20,
+      "iv_def": 17,
+      "iv_spa": 22,
+      "iv_spd": 17,
+      "iv_spe": 17,
+      "moves": [
+        "razor_leaf",
+        "acid",
+        "sleep_powder",
+        "stun_spore"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Silence Bridge is my training ground! Think you can handle the mist?",
+    "loss": "You cut through the fog like a lighthouse beam!",
+    "post_defeat": "The fishing on this bridge is legendary. Cast a line sometime."
+  },
+  "rebattle": "daily"
+}

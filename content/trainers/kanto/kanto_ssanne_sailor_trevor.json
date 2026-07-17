@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_sailor_trevor",
+  "display_name": "Sailor Trevor",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 500,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "machop",
+      "ability": "guts",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 14,
+      "iv_spa": 9,
+      "iv_spd": 13,
+      "iv_spe": 12,
+      "moves": [
+        "low_kick",
+        "leer",
+        "focus_energy",
+        "karate_chop"
+      ]
+    },
+    {
+      "species": "marill",
+      "ability": "huge_power",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 19,
+      "iv_def": 15,
+      "iv_spa": 9,
+      "iv_spd": 14,
+      "iv_spe": 13,
+      "moves": [
+        "tackle",
+        "defense_curl",
+        "water_gun",
+        "rollout"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Arr, I've sailed the seven seas with these Pokemon by my side! Show me what a landlubber can do!",
+    "loss": "Blimey! You fight like a veteran sailor!",
+    "post_defeat": "Every port has new trainers to battle. That's the sailor's life!"
+  },
+  "rebattle": "daily"
+}

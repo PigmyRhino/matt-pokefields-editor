@@ -1,0 +1,240 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pokecenter_day",
+      "display_name": "Pewter City Pokemon Center",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pokecenter_day",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          4.0,
+          2.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          11.0,
+          4.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          15.0,
+          2.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 7,
+      "tile_y": 9
+    },
+    {
+      "flags": 0,
+      "tile_x": 0,
+      "tile_y": 6
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_7_3",
+      "kind": "Facility",
+      "script": "poke_center",
+      "tile_x": 7,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_7_2",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Nurse Joy",
+        "sprite": 133,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 7,
+      "tile_y": 2
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_11_1",
+      "kind": "Facility",
+      "script": "pc",
+      "tile_x": 11,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "check_quest"
+          },
+          {
+            "cond": {
+              "key": "daniella_quest_started",
+              "kind": "flag_set"
+            },
+            "id": "check_quest",
+            "if_false": "no_quest",
+            "if_true": "check_kit",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "key": "daniella_has_kit",
+              "kind": "flag_unset"
+            },
+            "id": "check_kit",
+            "if_false": "already_gave",
+            "if_true": "give_kit",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Kit 7B for Daniella? She's STILL in Mt. Moon? That woman... here. She asked me to include these extra supplies. "
+            },
+            "id": "give_kit",
+            "kind": "action",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "key": "daniella_has_kit",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "set_kit",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "I already gave you Daniella's kit. Tell her the museum wants those mineral samples!"
+            },
+            "id": "already_gave",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Welcome to the Pewter City Pokemon Center! Need a heal? Nurse Joy's right over there."
+            },
+            "id": "no_quest",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Said 'the traveler who delivers this will need them on the return trip.' She thinks of everything.Take this back to her. And tell her the Pewter Museum is asking about those mineral samples she promised them."
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "set_kit"
+          }
+        ]
+      },
+      "id": "npc_pewter_clerk",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Supply Clerk",
+        "sprite": 33,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 4,
+      "tile_y": 4
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_1_6",
+      "target_warp": "",
+      "tile_x": 1,
+      "tile_y": 6
+    },
+    {
+      "direction": 3,
+      "name": "t_7_8",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 8
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_7_8",
+      "target_map": "kanto",
+      "target_warp": "t_65_85",
+      "tile_x": 7,
+      "tile_y": 9,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_1_6",
+      "target_map": "rom_6_6",
+      "target_warp": "t_1_6",
+      "tile_x": 0,
+      "tile_y": 6,
+      "warp_type": ""
+    }
+  ]
+}

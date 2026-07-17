@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_gentleman_brooks",
+  "display_name": "Gentleman Brooks",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 700,
+  "payout_per_level": 28,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "growlithe",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 14,
+      "iv_spa": 14,
+      "iv_spd": 13,
+      "iv_spe": 15,
+      "moves": [
+        "bite",
+        "roar",
+        "ember",
+        "flame_wheel"
+      ]
+    },
+    {
+      "species": "vulpix",
+      "ability": "flash_fire",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 11,
+      "iv_def": 14,
+      "iv_spa": 17,
+      "iv_spd": 15,
+      "iv_spe": 18,
+      "moves": [
+        "ember",
+        "tail_whip",
+        "quick_attack",
+        "confuse_ray"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Traveling first class means traveling with first-class Pokemon. Prepare yourself!",
+    "loss": "I see your Pokemon are every bit as refined as my own. Well fought!",
+    "post_defeat": "I breed fire types at my estate. Perhaps you'd like to visit sometime."
+  },
+  "rebattle": "daily"
+}

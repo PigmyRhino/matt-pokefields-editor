@@ -1,0 +1,63 @@
+{
+  "unique_name": "kanto_nuggetbridge_picknicker_liz",
+  "display_name": "Picknicker Liz",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "pidgey",
+      "ability": "tangled_feet",
+      "nature": "bashful",
+      "moves": [],
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 12,
+      "iv_atk": 13,
+      "iv_def": 13,
+      "iv_spa": 13,
+      "iv_spd": 12,
+      "iv_spe": 12
+    },
+    {
+      "species": "clefairy",
+      "ability": "cute_charm",
+      "nature": "lonely",
+      "moves": [],
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 12,
+      "iv_atk": 13,
+      "iv_def": 14,
+      "iv_spa": 12,
+      "iv_spd": 13,
+      "iv_spe": 14
+    },
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "brave",
+      "moves": [],
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 14,
+      "iv_atk": 13,
+      "iv_def": 13,
+      "iv_spa": 14,
+      "iv_spd": 13,
+      "iv_spe": 13
+    }
+  ],
+  "rebattle": "daily",
+  "dialogue": {
+    "start": "I'm Number 3. It won't be easy!",
+    "loss": "I can't believe you've done this!",
+    "post_defeat": "I did my best. I have no regrets."
+  },
+  "scaling_min_level": 17
+}

@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route11_youngster_dillon",
+  "display_name": "Youngster Dillon",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 420,
+  "payout_per_level": 18,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "rattata",
+      "ability": "guts",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 16,
+      "iv_atk": 18,
+      "iv_def": 14,
+      "iv_spa": 8,
+      "iv_spd": 13,
+      "iv_spe": 16,
+      "moves": [
+        "tackle",
+        "tail_whip",
+        "quick_attack",
+        "hyper_fang"
+      ]
+    },
+    {
+      "species": "spearow",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 15,
+      "iv_atk": 15,
+      "iv_def": 12,
+      "iv_spa": 10,
+      "iv_spd": 13,
+      "iv_spe": 18,
+      "moves": [
+        "peck",
+        "growl",
+        "leer",
+        "fury_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "This grassland has the best training spots! You're on my turf now!",
+    "loss": "Guess my turf isn't so exclusive after all...",
+    "post_defeat": "Watch out for the tall grass by the gate — Drowzee like to hang out there."
+  },
+  "rebattle": "daily"
+}

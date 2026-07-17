@@ -1,0 +1,51 @@
+{
+  "unique_name": "kanto_route6_camper_ricky",
+  "display_name": "Camper Ricky",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 480,
+  "payout_per_level": 20,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "girafarig",
+      "ability": "early_bird",
+      "nature": "modest",
+      "gender": "male",
+      "iv_hp": 16,
+      "iv_atk": 11,
+      "iv_def": 13,
+      "iv_spa": 17,
+      "iv_spd": 14,
+      "iv_spe": 12,
+      "moves": [
+        "rest"
+      ],
+      "level_offset": 2
+    },
+    {
+      "species": "furret",
+      "ability": "keen_eye",
+      "nature": "adamant",
+      "gender": "male",
+      "iv_hp": 17,
+      "iv_atk": 18,
+      "iv_def": 14,
+      "iv_spa": 9,
+      "iv_spd": 14,
+      "iv_spe": 13,
+      "moves": [],
+      "level_offset": 2
+    }
+  ],
+  "dialogue": {
+    "start": "I'm a Water Pokemon specialist! Think you can handle the splash zone?",
+    "loss": "You parted my waves like they were nothing!",
+    "post_defeat": "Psyduck seem dopey but their Confusion attack is no joke!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 25
+}

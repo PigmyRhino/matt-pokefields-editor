@@ -1,0 +1,5 @@
+battle_pewter_gym_trainer
+battle_trainer
+battle_wild_pokemon_fishing
+battle_wild_pokemon_grass
+battle_wild_pokemon_surf

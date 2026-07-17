@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_beauty_violet",
+  "display_name": "Beauty Violet",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 600,
+  "payout_per_level": 26,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "vulpix",
+      "ability": "flash_fire",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 12,
+      "iv_def": 15,
+      "iv_spa": 18,
+      "iv_spd": 16,
+      "iv_spe": 19,
+      "moves": [
+        "ember",
+        "tail_whip",
+        "quick_attack",
+        "confuse_ray"
+      ]
+    },
+    {
+      "species": "bellsprout",
+      "ability": "chlorophyll",
+      "nature": "modest",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 14,
+      "iv_def": 15,
+      "iv_spa": 18,
+      "iv_spd": 15,
+      "iv_spe": 14,
+      "moves": [
+        "vine_whip",
+        "growth",
+        "wrap",
+        "sleep_powder"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Traveling first class means surrounding yourself with beautiful Pokemon!",
+    "loss": "Your Pokemon have their own kind of beauty — the powerful kind!",
+    "post_defeat": "A well-groomed Vulpix's tails glow in the dark. Simply gorgeous."
+  },
+  "rebattle": "daily"
+}

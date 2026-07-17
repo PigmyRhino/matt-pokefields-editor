@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_fuchsia_gym_juggler_shawn",
+  "display_name": "Juggler Shawn",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 740,
+  "payout_per_level": 28,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "golbat",
+      "ability": "inner_focus",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 20,
+      "iv_def": 18,
+      "iv_spa": 15,
+      "iv_spd": 19,
+      "iv_spe": 22,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "bite",
+        "wing_attack"
+      ]
+    },
+    {
+      "species": "golbat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 18,
+      "iv_def": 18,
+      "iv_spa": 18,
+      "iv_spd": 19,
+      "iv_spe": 24,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "confuse_ray",
+        "wing_attack"
+      ]
+    },
+    {
+      "species": "drowzee",
+      "ability": "forewarn",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 23,
+      "iv_atk": 14,
+      "iv_def": 19,
+      "iv_spa": 22,
+      "iv_spd": 22,
+      "iv_spe": 16,
+      "moves": [
+        "confusion",
+        "hypnosis",
+        "disable",
+        "poison_gas"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Golbat are the ninjas of the sky! Silent, swift, and deadly!",
+    "loss": "You're faster than my Golbat! That's saying something!",
+    "post_defeat": "Golbat's Supersonic bounces off the gym walls. Disorienting and effective!"
+  },
+  "rebattle": "daily"
+}

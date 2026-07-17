@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_route5_picnicker_cindy",
+  "display_name": "Picnicker Cindy",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 14,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "meowth",
+      "ability": "pickup",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 12,
+      "iv_def": 12,
+      "iv_spa": 13,
+      "iv_spd": 13,
+      "iv_spe": 17,
+      "moves": [
+        "scratch",
+        "growl",
+        "bite",
+        "fake_out"
+      ]
+    },
+    {
+      "species": "snubbull",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "female",
+      "level_offset": 0,
+      "iv_hp": 16,
+      "iv_atk": 16,
+      "iv_def": 14,
+      "iv_spa": 9,
+      "iv_spd": 13,
+      "iv_spe": 11,
+      "moves": [
+        "tackle",
+        "scary_face",
+        "tail_whip",
+        "bite"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "My Snubbull looks scary but it's really a big sweetheart! Right, Snubbull?",
+    "loss": "Oh no, Snubbull don't be sad! You fought really well!",
+    "post_defeat": "The Pokemon around here are all so friendly. Even the wild ones!"
+  },
+  "rebattle": "daily"
+}

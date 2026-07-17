@@ -1,0 +1,63 @@
+{
+  "unique_name": "kanto_mtmoon_hiker_marcos",
+  "display_name": "Hiker Marcos",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 300,
+  "payout_per_level": 15,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "sandshrew",
+      "ability": "sand_veil",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 14,
+      "iv_def": 17,
+      "iv_spa": 8,
+      "iv_spd": 11,
+      "iv_spe": 8,
+      "moves": []
+    },
+    {
+      "species": "sandshrew",
+      "ability": "sand_veil",
+      "nature": "adamant",
+      "gender": "male",
+      "iv_hp": 15,
+      "iv_atk": 16,
+      "iv_def": 15,
+      "iv_spa": 9,
+      "iv_spd": 11,
+      "iv_spe": 13,
+      "moves": [],
+      "level_offset": 1
+    },
+    {
+      "species": "geodude",
+      "ability": "rock_head",
+      "nature": "brave",
+      "gender": "male",
+      "iv_hp": 14,
+      "iv_atk": 15,
+      "iv_def": 16,
+      "iv_spa": 9,
+      "iv_spd": 11,
+      "iv_spe": 7,
+      "moves": [],
+      "level_offset": 1
+    }
+  ],
+  "dialogue": {
+    "start": "I've been digging for fossils in this cave! My Pokemon are as tough as the rocks here!",
+    "loss": "You broke through my rock-hard defense! That's impressive!",
+    "post_defeat": "They say rare fossils are hidden in the deepest parts of Mt. Moon."
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

@@ -1,0 +1,65 @@
+{
+  "shop_id": "tm_shop",
+  "entries": [
+    {
+      "item": "tm01",
+      "min_badges": 0
+    },
+    {
+      "item": "tm12",
+      "min_badges": 0
+    },
+    {
+      "item": "tm18",
+      "min_badges": 1
+    },
+    {
+      "item": "tm11",
+      "min_badges": 1
+    },
+    {
+      "item": "tm07",
+      "min_badges": 1
+    },
+    {
+      "item": "tm37",
+      "min_badges": 1
+    },
+    {
+      "item": "tm44",
+      "min_badges": 2
+    },
+    {
+      "item": "tm88",
+      "min_badges": 2
+    },
+    {
+      "item": "tm61",
+      "min_badges": 2
+    },
+    {
+      "item": "tm24",
+      "min_badges": 2
+    },
+    {
+      "item": "tm89",
+      "min_badges": 1
+    },
+    {
+      "item": "tm36",
+      "min_badges": 2
+    },
+    {
+      "item": "tm73",
+      "min_badges": 2
+    },
+    {
+      "item": "tm55",
+      "min_badges": 2
+    },
+    {
+      "item": "tm75",
+      "min_badges": 2
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_mtmoon_bugcatcher_robby",
+  "display_name": "Bug Catcher Robby",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 220,
+  "payout_per_level": 10,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "sandshrew",
+      "ability": "sand_veil",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 13,
+      "iv_atk": 13,
+      "iv_def": 13,
+      "iv_spa": 10,
+      "iv_spd": 15,
+      "iv_spe": 8,
+      "moves": []
+    },
+    {
+      "species": "paras",
+      "ability": "dry_skin",
+      "nature": "careful",
+      "gender": "male",
+      "level_offset": 0,
+      "iv_hp": 14,
+      "iv_atk": 14,
+      "iv_def": 13,
+      "iv_spa": 10,
+      "iv_spd": 15,
+      "iv_spe": 9,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "Paras are the kings of Mt. Moon! Their mushrooms are so cool!",
+    "loss": "Your Pokemon are immune to spores or something!",
+    "post_defeat": "Paras love damp, dark places. This cave is their paradise!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 15
+}

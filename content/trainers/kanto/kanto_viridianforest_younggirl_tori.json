@@ -1,0 +1,49 @@
+{
+  "unique_name": "kanto_viridianforest_younggirl_tori",
+  "display_name": "Young Girl Tori",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 260,
+  "payout_per_level": 15,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "pikachu",
+      "ability": "static",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": -1,
+      "iv_hp": 6,
+      "iv_atk": 6,
+      "iv_def": 6,
+      "iv_spa": 8,
+      "iv_spd": 6,
+      "iv_spe": 10,
+      "moves": []
+    },
+    {
+      "species": "pichu",
+      "ability": "static",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": -1,
+      "iv_hp": 6,
+      "iv_atk": 4,
+      "iv_def": 6,
+      "iv_spa": 8,
+      "iv_spd": 6,
+      "iv_spe": 10,
+      "moves": []
+    }
+  ],
+  "dialogue": {
+    "start": "Fight my electric rodent team!",
+    "loss": "No, not my Pikachu!",
+    "post_defeat": "I'll train my Pikachu and Pichu hard and we'll rematch again!"
+  },
+  "rebattle": "daily",
+  "scaling_min_level": 6
+}

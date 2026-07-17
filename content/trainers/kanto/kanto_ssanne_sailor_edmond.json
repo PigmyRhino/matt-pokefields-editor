@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_ssanne_sailor_edmond",
+  "display_name": "Sailor Edmond",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 480,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "slowpoke",
+      "ability": "oblivious",
+      "nature": "calm",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 22,
+      "iv_atk": 13,
+      "iv_def": 17,
+      "iv_spa": 16,
+      "iv_spd": 18,
+      "iv_spe": 10,
+      "moves": [
+        "water_gun",
+        "confusion",
+        "disable",
+        "yawn"
+      ]
+    },
+    {
+      "species": "machop",
+      "ability": "guts",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 19,
+      "iv_atk": 19,
+      "iv_def": 15,
+      "iv_spa": 9,
+      "iv_spd": 14,
+      "iv_spe": 13,
+      "moves": [
+        "low_kick",
+        "leer",
+        "focus_energy",
+        "karate_chop"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Slow and steady wins the race at sea! My Pokemon embody that philosophy!",
+    "loss": "You move faster than the current! Color me impressed.",
+    "post_defeat": "Slowpoke are so relaxed. They just dangle their tails in the water all day."
+  },
+  "rebattle": "daily"
+}

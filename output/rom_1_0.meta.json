@@ -1,0 +1,1061 @@
+{
+  "area_zones": [
+    {
+      "climate": "temperate",
+      "day_ambience": "ambience_night_woods",
+      "day_track": "viridian_forest",
+      "display_name": "Viridian Forest",
+      "name": "area_7",
+      "night_ambience": "ambience_night_woods",
+      "night_track": "viridian_forest",
+      "polygon": [
+        [
+          10.0,
+          3.0
+        ],
+        [
+          52.0,
+          3.0
+        ],
+        [
+          52.0,
+          63.0
+        ],
+        [
+          2.0,
+          63.0
+        ],
+        [
+          2.0,
+          10.0
+        ],
+        [
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          7.0
+        ],
+        [
+          10.0,
+          7.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 30,
+      "tile_y": 63
+    },
+    {
+      "flags": 0,
+      "tile_x": 29,
+      "tile_y": 63
+    },
+    {
+      "flags": 0,
+      "tile_x": 28,
+      "tile_y": 63
+    }
+  ],
+  "encounter_zones": [
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_0",
+      "polygon": [
+        [
+          3.0,
+          55.0
+        ],
+        [
+          12.0,
+          55.0
+        ],
+        [
+          12.0,
+          59.0
+        ],
+        [
+          11.0,
+          59.0
+        ],
+        [
+          11.0,
+          62.0
+        ],
+        [
+          3.0,
+          62.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    },
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_1",
+      "polygon": [
+        [
+          39.0,
+          29.0
+        ],
+        [
+          43.0,
+          29.0
+        ],
+        [
+          43.0,
+          30.0
+        ],
+        [
+          44.0,
+          30.0
+        ],
+        [
+          44.0,
+          43.0
+        ],
+        [
+          43.0,
+          43.0
+        ],
+        [
+          43.0,
+          44.0
+        ],
+        [
+          42.0,
+          44.0
+        ],
+        [
+          42.0,
+          57.0
+        ],
+        [
+          41.0,
+          57.0
+        ],
+        [
+          41.0,
+          58.0
+        ],
+        [
+          40.0,
+          58.0
+        ],
+        [
+          40.0,
+          59.0
+        ],
+        [
+          33.0,
+          59.0
+        ],
+        [
+          33.0,
+          58.0
+        ],
+        [
+          32.0,
+          58.0
+        ],
+        [
+          32.0,
+          57.0
+        ],
+        [
+          31.0,
+          57.0
+        ],
+        [
+          31.0,
+          44.0
+        ],
+        [
+          28.0,
+          44.0
+        ],
+        [
+          28.0,
+          57.0
+        ],
+        [
+          27.0,
+          57.0
+        ],
+        [
+          27.0,
+          58.0
+        ],
+        [
+          26.0,
+          58.0
+        ],
+        [
+          26.0,
+          59.0
+        ],
+        [
+          16.0,
+          59.0
+        ],
+        [
+          16.0,
+          58.0
+        ],
+        [
+          15.0,
+          58.0
+        ],
+        [
+          15.0,
+          57.0
+        ],
+        [
+          14.0,
+          57.0
+        ],
+        [
+          14.0,
+          46.0
+        ],
+        [
+          12.0,
+          46.0
+        ],
+        [
+          12.0,
+          44.0
+        ],
+        [
+          3.0,
+          44.0
+        ],
+        [
+          3.0,
+          39.0
+        ],
+        [
+          18.0,
+          39.0
+        ],
+        [
+          18.0,
+          43.0
+        ],
+        [
+          33.0,
+          43.0
+        ],
+        [
+          33.0,
+          55.0
+        ],
+        [
+          39.0,
+          55.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    },
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_2",
+      "polygon": [
+        [
+          45.0,
+          55.0
+        ],
+        [
+          51.0,
+          55.0
+        ],
+        [
+          51.0,
+          62.0
+        ],
+        [
+          43.0,
+          62.0
+        ],
+        [
+          43.0,
+          60.0
+        ],
+        [
+          44.0,
+          60.0
+        ],
+        [
+          44.0,
+          57.0
+        ],
+        [
+          45.0,
+          57.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    },
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_3",
+      "polygon": [
+        [
+          27.0,
+          12.0
+        ],
+        [
+          32.0,
+          12.0
+        ],
+        [
+          32.0,
+          15.0
+        ],
+        [
+          38.0,
+          15.0
+        ],
+        [
+          38.0,
+          19.0
+        ],
+        [
+          37.0,
+          19.0
+        ],
+        [
+          37.0,
+          20.0
+        ],
+        [
+          33.0,
+          20.0
+        ],
+        [
+          33.0,
+          22.0
+        ],
+        [
+          30.0,
+          22.0
+        ],
+        [
+          30.0,
+          21.0
+        ],
+        [
+          27.0,
+          21.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    },
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_4",
+      "polygon": [
+        [
+          19.0,
+          12.0
+        ],
+        [
+          24.0,
+          12.0
+        ],
+        [
+          24.0,
+          22.0
+        ],
+        [
+          19.0,
+          22.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    },
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_5",
+      "polygon": [
+        [
+          11.0,
+          12.0
+        ],
+        [
+          16.0,
+          12.0
+        ],
+        [
+          16.0,
+          26.0
+        ],
+        [
+          18.0,
+          26.0
+        ],
+        [
+          18.0,
+          28.0
+        ],
+        [
+          11.0,
+          28.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    },
+    {
+      "encounter_group": "kanto_viridianforest_land",
+      "fish_encounter_group": "",
+      "fish_rod_tier": 0,
+      "name": "encounter_6",
+      "polygon": [
+        [
+          3.0,
+          13.0
+        ],
+        [
+          8.0,
+          13.0
+        ],
+        [
+          8.0,
+          28.0
+        ],
+        [
+          3.0,
+          28.0
+        ]
+      ],
+      "terrain": "grass_patch"
+    }
+  ],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "sign_viridian_1",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Viridian Forest — Bug-type Paradise. Be prepared before entering the tall grass!"
+      },
+      "script": "simple_dialogue",
+      "tile_x": 31,
+      "tile_y": 60
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "viridian_old_man_cedric",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "40 years walking this forest. Yep. Love it."
+      },
+      "render": {
+        "direction": 2,
+        "display_name": "Old Man Cedric",
+        "sprite": 128,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 13,
+      "tile_y": 6
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          2
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "kanto_viridianforest_bug_catcher_master_ricky",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Bug Catcher Master Ricky",
+        "sprite": 4,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 3,
+      "tile_y": 15,
+      "vision_range": 5
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_viridianforest_bugcatcher_doug",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Bug Catcher Doug",
+        "sprite": 3,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 23,
+      "tile_y": 20,
+      "vision_range": 3
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "kind": "patrol_path",
+        "mode": "loop",
+        "pause_ms": 1500
+      },
+      "id": "kanto_viridianforest_youngster_dave",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Youngster Dave",
+        "sprite": 3,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 16,
+      "tile_y": 31,
+      "vision_range": 0,
+      "waypoints": [
+        {
+          "x": 16,
+          "y": 31
+        },
+        {
+          "x": 6,
+          "y": 31
+        },
+        {
+          "x": 16,
+          "y": 31
+        }
+      ]
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Trainer Tip: Bug-types evolve quickly! Caterpie evolves at level 7 into Metapod, then Metapod into Butterfree at level 10."
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "sign_viridian_2",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Repels will prevent wild encounters from Pokemon that are under your lead pokemon's level."
+      },
+      "script": "scripted",
+      "tile_x": 43,
+      "tile_y": 26
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 1500
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "I heard someone caught a Pikachu here! I've been looking ever since..."
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "viridian_camper_brody",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Camper Brody",
+        "sprite": 2,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 29,
+      "tile_y": 14
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_viridianforest_lass_mia",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Lass Mia",
+        "sprite": 5,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 3,
+      "tile_y": 58,
+      "vision_range": 6
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Mom said if I catch six Weedle she'll make me stew... Is that weird?"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "viridian_youngster_toby",
+      "kind": "Npc",
+      "render": {
+        "direction": 3,
+        "display_name": "Youngster Toby",
+        "sprite": 3,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 40,
+      "tile_y": 38
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "kanto_viridianforest_younggirl_tori",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Young Girl Tori",
+        "sprite": 5,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 31,
+      "tile_y": 45,
+      "vision_range": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Viridian Forest as it is so aptly named connects Viridian to Pewter. Stay on the main path unless you want a String Shot to the face!"
+            },
+            "id": "n1",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "viridian_hiker_gus",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Hiker Gus",
+        "sprite": 35,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 48,
+      "tile_y": 57
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_viridianforest_bugcatcher_jen",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Bug Catcher Jen",
+        "sprite": 5,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 50,
+      "tile_y": 37,
+      "vision_range": 3
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "behavior": {
+        "directions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "look_around",
+        "pause_ms": 2000
+      },
+      "id": "kanto_viridianforest_forest_ace_skyler",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Forest Ace Skyler",
+        "sprite": 4,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 5,
+      "tile_y": 40,
+      "vision_range": 0
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "sign_viridian_3",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Route 2 North and Pewter City ahead. Mt. Moon beyond — stock up on supplies!"
+      },
+      "script": "simple_dialogue",
+      "tile_x": 6,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "sign_28_44",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Antidotes prevent the Poison Status!"
+      },
+      "script": "simple_dialogue",
+      "tile_x": 28,
+      "tile_y": 44
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "sign_39_59",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "Beware wild Spearow packs..."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 39,
+      "tile_y": 59
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "behavior": {
+        "kind": "wander",
+        "pause_ms": 0,
+        "radius": 2
+      },
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "check_quest"
+          },
+          {
+            "cond": {
+              "key": "daniella_needs_data",
+              "kind": "flag_set"
+            },
+            "id": "check_quest",
+            "if_false": "no_quest",
+            "if_true": "check_notes",
+            "kind": "condition"
+          },
+          {
+            "cond": {
+              "key": "daniella_has_data",
+              "kind": "flag_unset"
+            },
+            "id": "check_notes",
+            "if_false": "already_gave",
+            "if_true": "give_notes",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Daniella sent you all the way here for my notes? She's persistent, I'll give her that. Here — take my journal. I've logged every Clefairy behavior for three weeks."
+            },
+            "id": "give_notes",
+            "kind": "action",
+            "next": "set_notes"
+          },
+          {
+            "action": {
+              "key": "daniella_has_data",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "set_notes",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "I already gave you my research notes. Take them to Daniella — she's been waiting on that data for weeks."
+            },
+            "id": "already_gave",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "My Clefairy loves this forest. The trees filter the moonlight just right"
+            },
+            "id": "no_quest",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "viridian_bugcatcher_notes",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Bug Catcher",
+        "sprite": 4,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 37,
+      "tile_y": 6
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "sign_9_29",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "All Pokemon League participants are to head to the Pewter Gym to earn the Boulder Badge."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 9,
+      "tile_y": 29
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 0,
+      "name": "t_5_9",
+      "target_warp": "",
+      "tile_x": 5,
+      "tile_y": 10
+    },
+    {
+      "direction": 3,
+      "name": "t_29_62",
+      "target_warp": "",
+      "tile_x": 29,
+      "tile_y": 62
+    },
+    {
+      "direction": 0,
+      "name": "t_4_9",
+      "target_warp": "",
+      "tile_x": 4,
+      "tile_y": 10
+    },
+    {
+      "direction": 0,
+      "name": "t_6_9",
+      "target_warp": "",
+      "tile_x": 6,
+      "tile_y": 10
+    },
+    {
+      "direction": 3,
+      "name": "t_28_62",
+      "target_warp": "",
+      "tile_x": 28,
+      "tile_y": 62
+    },
+    {
+      "direction": 3,
+      "name": "t_30_62",
+      "target_warp": "",
+      "tile_x": 30,
+      "tile_y": 62
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_29_62",
+      "target_map": "rom_15_0",
+      "target_warp": "t_7_1",
+      "tile_x": 29,
+      "tile_y": 63,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_28_62",
+      "target_map": "rom_15_0",
+      "target_warp": "t_7_1",
+      "tile_x": 28,
+      "tile_y": 63,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_5_9",
+      "target_map": "rom_15_3",
+      "target_warp": "t_7_10",
+      "tile_x": 5,
+      "tile_y": 9,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_6_9",
+      "target_map": "rom_15_3",
+      "target_warp": "t_7_10",
+      "tile_x": 6,
+      "tile_y": 9,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_30_62",
+      "target_map": "rom_15_0",
+      "target_warp": "t_7_1",
+      "tile_x": 30,
+      "tile_y": 63,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_4_9",
+      "target_map": "rom_15_3",
+      "target_warp": "t_7_10",
+      "tile_x": 4,
+      "tile_y": 9,
+      "warp_type": ""
+    }
+  ]
+}

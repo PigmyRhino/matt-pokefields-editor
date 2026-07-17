@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_route16_biker_jared",
+  "display_name": "Biker Jared",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 820,
+  "payout_per_level": 28,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "miltank",
+      "ability": "thick_fat",
+      "nature": "impish",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 28,
+      "iv_atk": 20,
+      "iv_def": 26,
+      "iv_spa": 10,
+      "iv_spd": 24,
+      "iv_spe": 20,
+      "moves": [
+        "tackle",
+        "milk_drink",
+        "rollout",
+        "body_slam"
+      ]
+    },
+    {
+      "species": "sudowoodo",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 24,
+      "iv_atk": 26,
+      "iv_def": 22,
+      "iv_spa": 10,
+      "iv_spd": 20,
+      "iv_spe": 16,
+      "moves": [
+        "rock_throw",
+        "mimic",
+        "low_kick",
+        "feint_attack"
+      ]
+    },
+    {
+      "species": "pidgeotto",
+      "ability": "keen_eye",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "gust",
+        "sand_attack",
+        "quick_attack",
+        "wing_attack"
+      ]
+    },
+    {
+      "species": "snubbull",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "scary_face",
+        "tail_whip",
+        "bite"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I traded my old Pokemon for a Miltank from a rancher. It's the tankiest thing I own!",
+    "loss": "Your team's grit outlasted my Miltank's stamina!",
+    "post_defeat": "Miltank's milk is super nutritious. It heals you right up after a tough battle!"
+  },
+  "rebattle": "daily"
+}

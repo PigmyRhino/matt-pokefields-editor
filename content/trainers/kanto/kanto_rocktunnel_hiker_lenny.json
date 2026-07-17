@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_rocktunnel_hiker_lenny",
+  "display_name": "Hiker Lenny",
+  "sprite": null,
+  "rank": "Amateur",
+  "music_key": null,
+  "payout_base": 500,
+  "payout_per_level": 22,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "onix",
+      "ability": "sturdy",
+      "nature": "impish",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 19,
+      "iv_atk": 17,
+      "iv_def": 22,
+      "iv_spa": 10,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "screech",
+        "bind",
+        "rock_throw"
+      ]
+    },
+    {
+      "species": "golbat",
+      "ability": "inner_focus",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 14,
+      "iv_spd": 16,
+      "iv_spe": 19,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "bite",
+        "wing_attack"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I've been lost in this tunnel for three days! But my Pokemon have never been stronger!",
+    "loss": "Now if you could just show me the way out...",
+    "post_defeat": "Golbat are terrifying in the dark. Their screech echoes off every wall!"
+  },
+  "rebattle": "daily"
+}

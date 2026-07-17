@@ -1,0 +1,58 @@
+{
+  "unique_name": "kanto_rocktunnel_lass_erika",
+  "display_name": "Lass Erika",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 380,
+  "payout_per_level": 16,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "zubat",
+      "ability": "inner_focus",
+      "nature": "timid",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 17,
+      "iv_atk": 14,
+      "iv_def": 15,
+      "iv_spa": 15,
+      "iv_spd": 15,
+      "iv_spe": 20,
+      "moves": [
+        "leech_life",
+        "supersonic",
+        "astonish",
+        "bite"
+      ]
+    },
+    {
+      "species": "cubone",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "female",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 18,
+      "iv_spa": 10,
+      "iv_spd": 14,
+      "iv_spe": 13,
+      "moves": [
+        "bone_club",
+        "growl",
+        "tail_whip",
+        "headbutt"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "I came in here looking for rare Pokemon and found a Cubone! Want to see it fight?",
+    "loss": "My Cubone isn't quite ready for battles like this yet!",
+    "post_defeat": "Cubone are rare in Rock Tunnel. I got really lucky finding this one."
+  },
+  "rebattle": "daily"
+}

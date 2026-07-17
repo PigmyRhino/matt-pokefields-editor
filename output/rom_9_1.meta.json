@@ -1,0 +1,157 @@
+{
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pokecenter_day",
+      "display_name": "Vermilion City Pokemon Center",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pokecenter_day",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          4.0,
+          2.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          11.0,
+          4.0
+        ],
+        [
+          11.0,
+          2.0
+        ],
+        [
+          15.0,
+          2.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          7.0
+        ],
+        [
+          1.0,
+          7.0
+        ],
+        [
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          6.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
+  "collision_overrides": [
+    {
+      "flags": 0,
+      "tile_x": 7,
+      "tile_y": 9
+    },
+    {
+      "flags": 0,
+      "tile_x": 0,
+      "tile_y": 6
+    }
+  ],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_7_2",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Nurse Joy",
+        "sprite": 133,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 7,
+      "tile_y": 2
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_7_3",
+      "kind": "Facility",
+      "script": "poke_center",
+      "tile_x": 7,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_11_1",
+      "kind": "Facility",
+      "script": "pc",
+      "tile_x": 11,
+      "tile_y": 1
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 2,
+      "name": "t_1_6",
+      "target_warp": "",
+      "tile_x": 1,
+      "tile_y": 6
+    },
+    {
+      "direction": 3,
+      "name": "t_7_8",
+      "target_warp": "",
+      "tile_x": 7,
+      "tile_y": 8
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_7_8",
+      "target_map": "kanto",
+      "target_warp": "t_279_206",
+      "tile_x": 7,
+      "tile_y": 9,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_1_6",
+      "target_map": "rom_9_2",
+      "target_warp": "t_1_6",
+      "tile_x": 0,
+      "tile_y": 6,
+      "warp_type": ""
+    }
+  ]
+}

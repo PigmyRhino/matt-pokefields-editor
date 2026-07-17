@@ -1,0 +1,5 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+data/flags_reference.txt
+addons/pkmn_client/bin/~*.dll

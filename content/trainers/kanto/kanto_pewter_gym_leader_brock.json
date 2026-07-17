@@ -1,0 +1,122 @@
+{
+  "unique_name": "kanto_pewter_gym_leader_brock",
+  "display_name": "Gym Leader Brock",
+  "sprite": null,
+  "rank": "Pro",
+  "music_key": "battle_pewter_gym_trainer",
+  "payout_base": 1800,
+  "payout_per_level": 50,
+  "badge_award": 0,
+  "items": [],
+  "initial_field": {
+    "weather": "Sandstorm",
+    "terrain": null,
+    "field_effects": {
+      "trainer": [],
+      "player": []
+    },
+    "global_effects": {}
+  },
+  "team": [
+    {
+      "species": "geodude",
+      "ability": "sturdy",
+      "nature": "adamant",
+      "gender": "male",
+      "held_item": "oran_berry",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 0,
+      "ev_atk": 252,
+      "ev_def": 252,
+      "ev_spa": 0,
+      "ev_spd": 0,
+      "ev_spe": 6,
+      "moves": [
+        "rock_tomb"
+      ],
+      "level_offset": 0
+    },
+    {
+      "species": "sudowoodo",
+      "ability": "sturdy",
+      "nature": "adamant",
+      "gender": "male",
+      "held_item": "oran_berry",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 0,
+      "ev_atk": 252,
+      "ev_def": 0,
+      "ev_spa": 0,
+      "ev_spd": 252,
+      "ev_spe": 6,
+      "moves": [
+        "rock_tomb"
+      ],
+      "level_offset": 1
+    },
+    {
+      "species": "omanyte",
+      "ability": "swift_swim",
+      "nature": "modest",
+      "gender": "female",
+      "held_item": null,
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 252,
+      "ev_atk": 0,
+      "ev_def": 0,
+      "ev_spa": 252,
+      "ev_spd": 0,
+      "ev_spe": 6,
+      "moves": [
+        "rock_tomb"
+      ],
+      "level_offset": 1
+    },
+    {
+      "species": "onix",
+      "ability": "rock_head",
+      "nature": "adamant",
+      "gender": "male",
+      "held_item": "oran_berry",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_hp": 252,
+      "ev_atk": 252,
+      "ev_def": 0,
+      "ev_spa": 0,
+      "ev_spd": 0,
+      "ev_spe": 6,
+      "moves": [
+        "rock_tomb"
+      ],
+      "is_shiny": true,
+      "level_offset": 3
+    }
+  ],
+  "dialogue": {
+    "start": "I'm Brock, the Pewter City Gym Leader. My rock-hard willpower is embodied in my Rock-type Pokemon! Are you ready to take me on?",
+    "loss": "Incredible! You've shattered my defenses. I acknowledge your strength — you've earned the Boulder Badge!",
+    "post_defeat": "Your skills are impressive. Keep challenging Gyms and you'll go far."
+  },
+  "rebattle": "weekly",
+  "scaling_min_level": 15
+}

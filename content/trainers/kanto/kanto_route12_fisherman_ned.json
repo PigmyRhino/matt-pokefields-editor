@@ -1,0 +1,96 @@
+{
+  "unique_name": "kanto_route12_fisherman_ned",
+  "display_name": "Fisherman Ned",
+  "sprite": null,
+  "rank": "Ace",
+  "music_key": null,
+  "payout_base": 680,
+  "payout_per_level": 26,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "poliwag",
+      "ability": "water_absorb",
+      "nature": "modest",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 20,
+      "iv_atk": 14,
+      "iv_def": 16,
+      "iv_spa": 18,
+      "iv_spd": 16,
+      "iv_spe": 18,
+      "moves": [
+        "water_gun",
+        "hypnosis",
+        "bubble_beam",
+        "double_slap"
+      ]
+    },
+    {
+      "species": "gyarados",
+      "ability": "intimidate",
+      "nature": "adamant",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 24,
+      "iv_atk": 26,
+      "iv_def": 22,
+      "iv_spa": 14,
+      "iv_spd": 22,
+      "iv_spe": 18,
+      "moves": [
+        "bite",
+        "dragon_rage",
+        "thrash",
+        "leer"
+      ]
+    },
+    {
+      "species": "pidgey",
+      "ability": "keen_eye",
+      "nature": "timid",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "tackle",
+        "sand_attack",
+        "gust",
+        "quick_attack"
+      ]
+    },
+    {
+      "species": "raticate",
+      "ability": "guts",
+      "nature": "jolly",
+      "gender": "male",
+      "level_offset": 1,
+      "iv_hp": 18,
+      "iv_atk": 18,
+      "iv_def": 16,
+      "iv_spa": 12,
+      "iv_spd": 14,
+      "iv_spe": 14,
+      "moves": [
+        "hyper_fang",
+        "quick_attack",
+        "pursuit",
+        "bite"
+      ]
+    }
+  ],
+  "dialogue": {
+    "start": "Fishing on Silence Bridge is the best! The Pokemon here are huge!",
+    "loss": "You reeled in a bigger catch than me today!",
+    "post_defeat": "I once hooked a Gyarados on this bridge. Took me four hours to reel in!"
+  },
+  "rebattle": "daily"
+}
