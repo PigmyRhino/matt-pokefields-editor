@@ -243,7 +243,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "spearow",
       "min_level": 4,
       "max_level": 7,
@@ -254,7 +254,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "mankey",
       "min_level": 5,
       "max_level": 7,
@@ -265,7 +265,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "rattata",
       "min_level": 4,
       "max_level": 6,
@@ -276,7 +276,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "teddiursa",
       "min_level": 5,
       "max_level": 6,
@@ -287,7 +287,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "aipom",
       "min_level": 5,
       "max_level": 6,
@@ -298,7 +298,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "ekans",
       "min_level": 5,
       "max_level": 7,
@@ -309,7 +309,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "murkrow",
       "min_level": 6,
       "max_level": 7,
@@ -320,7 +320,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route22_land1",
+      "encounter": "kanto_route22_land",
       "pokemon": "pidgey",
       "min_level": 4,
       "max_level": 6,
@@ -595,105 +595,6 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "spearow",
-      "min_level": 4,
-      "max_level": 7,
-      "slots": 90,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": true,
-      "night_allowed": false
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "mankey",
-      "min_level": 5,
-      "max_level": 7,
-      "slots": 75,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": true,
-      "night_allowed": false
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "rattata",
-      "min_level": 4,
-      "max_level": 6,
-      "slots": 85,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": true,
-      "night_allowed": true
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "teddiursa",
-      "min_level": 5,
-      "max_level": 6,
-      "slots": 5,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": false,
-      "night_allowed": false
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "aipom",
-      "min_level": 5,
-      "max_level": 6,
-      "slots": 4,
-      "held_item_groups": "",
-      "morning_allowed": false,
-      "day_allowed": true,
-      "night_allowed": false
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "ekans",
-      "min_level": 5,
-      "max_level": 7,
-      "slots": 45,
-      "held_item_groups": "",
-      "morning_allowed": false,
-      "day_allowed": false,
-      "night_allowed": true
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "phanpy",
-      "min_level": 5,
-      "max_level": 6,
-      "slots": 3,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": false,
-      "night_allowed": false
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "zubat",
-      "min_level": 5,
-      "max_level": 6,
-      "slots": 20,
-      "held_item_groups": "",
-      "morning_allowed": false,
-      "day_allowed": false,
-      "night_allowed": true
-    },
-    {
-      "encounter": "kanto_route22_land2",
-      "pokemon": "pidgey",
-      "min_level": 4,
-      "max_level": 6,
-      "slots": 40,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": true,
-      "night_allowed": false
-    },
-    {
       "encounter": "kanto_viridianforest_land",
       "pokemon": "caterpie",
       "min_level": 4,
@@ -882,28 +783,6 @@
     },
     {
       "encounter": "kanto_route24_land",
-      "pokemon": "sunkern",
-      "min_level": 8,
-      "max_level": 12,
-      "slots": 10,
-      "held_item_groups": "",
-      "morning_allowed": false,
-      "day_allowed": true,
-      "night_allowed": false
-    },
-    {
-      "encounter": "kanto_route24_land",
-      "pokemon": "abra",
-      "min_level": 8,
-      "max_level": 12,
-      "slots": 4,
-      "held_item_groups": "",
-      "morning_allowed": true,
-      "day_allowed": true,
-      "night_allowed": true
-    },
-    {
-      "encounter": "kanto_route24_land",
       "pokemon": "pichu",
       "min_level": 9,
       "max_level": 12,
@@ -914,7 +793,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "pidgey",
       "min_level": 11,
       "max_level": 14,
@@ -925,7 +804,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "rattata",
       "min_level": 11,
       "max_level": 14,
@@ -936,7 +815,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "meowth",
       "min_level": 11,
       "max_level": 14,
@@ -947,7 +826,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "bellsprout",
       "min_level": 11,
       "max_level": 14,
@@ -958,7 +837,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "oddish",
       "min_level": 11,
       "max_level": 14,
@@ -969,7 +848,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "psyduck",
       "min_level": 11,
       "max_level": 14,
@@ -980,7 +859,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "vulpix",
       "min_level": 11,
       "max_level": 14,
@@ -991,7 +870,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "marill",
       "min_level": 12,
       "max_level": 14,
@@ -1783,7 +1662,7 @@
       "night_allowed": false
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "growlithe",
       "min_level": 11,
       "max_level": 14,
@@ -1877,7 +1756,7 @@
       "max_level": 12,
       "slots": 5,
       "held_item_groups": "",
-      "morning_allowed": true,
+      "morning_allowed": false,
       "day_allowed": true,
       "night_allowed": true
     },
@@ -2234,7 +2113,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "skiploom",
       "min_level": 13,
       "max_level": 15,
@@ -2245,7 +2124,7 @@
       "night_allowed": true
     },
     {
-      "encounter": "kanto_route6_land2",
+      "encounter": "kanto_route6_land",
       "pokemon": "furret",
       "min_level": 13,
       "max_level": 15,
@@ -2331,6 +2210,28 @@
       "morning_allowed": false,
       "day_allowed": false,
       "night_allowed": true
+    },
+    {
+      "encounter": "kanto_route24_land",
+      "pokemon": "abra",
+      "min_level": 8,
+      "max_level": 12,
+      "slots": 4,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
+    },
+    {
+      "encounter": "kanto_route24_land",
+      "pokemon": "sunkern",
+      "min_level": 8,
+      "max_level": 12,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": false,
+      "day_allowed": true,
+      "night_allowed": false
     }
   ],
   "total_slots_combined": 38673

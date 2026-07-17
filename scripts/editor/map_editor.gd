@@ -113,7 +113,8 @@ var _enc_popup_pokemon_box: VBoxContainer
 var _enc_popup_loading := false
 var _enc_popup_data: Array = []  ## raw encounter_data.json entries
 var _enc_popup_collapsed: Dictionary = {}  ## group name -> bool (collapsed state)
-var _enc_add_popup: PopupPanel
+var _enc_add_form: PanelContainer
+var _enc_popup_list_box: VBoxContainer  ## wrapper hiding list when form is open
 var _enc_add_group := ""
 var _enc_add_species: SearchPicker
 var _enc_add_min_lvl: SpinBox
@@ -125,6 +126,9 @@ var _enc_add_night: CheckBox
 var _enc_add_pct: Label
 var _enc_add_group_row: HBoxContainer
 var _enc_add_group_name: LineEdit
+var _enc_edit_entry: Dictionary = {}  ## non-empty = editing an existing entry (not adding)
+var _enc_add_btn: Button
+var _enc_add_hdr_lbl: Label
 ## The map currently being authored (Kanto overworld or a ROM interior). `_map_id` is the overlay
 ## filename + server id; `_group`/`_num` seed the ROM stitch.
 var _map_id := "kanto"
@@ -132,7 +136,6 @@ var _group := 3
 var _num := 0
 var _map_entry: Dictionary = {}  ## the Catalog.maps entry for _map_id (ROM coords + seed warps)
 var _map_option: OptionButton
-
 
 func _ready() -> void:
 	_collision_toggle.toggled.connect(_collision_overlay.set_enabled)
@@ -202,7 +205,6 @@ func _ready() -> void:
 	_build_map_selector()
 	_build_place_menu()
 	_build_enc_popup()
-	_build_enc_add_popup()
 	_load_enc_popup_data()
 
 
@@ -710,13 +712,130 @@ func _build_enc_popup() -> void:
 	_enc_popup_rod.item_selected.connect(_on_enc_popup_rod)
 	rod_hb.add_child(_enc_popup_rod)
 	vb.add_child(rod_hb)
-	# Pokemon list
+	# Pokemon list (wrapped so we can hide it when the add/edit form is open).
+	_enc_popup_list_box = VBoxContainer.new()
+	_enc_popup_list_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var list_sep := HSeparator.new()
-	vb.add_child(list_sep)
+	_enc_popup_list_box.add_child(list_sep)
 	_enc_popup_pokemon_box = VBoxContainer.new()
 	_enc_popup_pokemon_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_enc_popup_pokemon_box.add_theme_constant_override("separation", 2)
-	vb.add_child(_enc_popup_pokemon_box)
+	_enc_popup_list_box.add_child(_enc_popup_pokemon_box)
+	vb.add_child(_enc_popup_list_box)
+	# Add/Edit pokemon form (hidden by default, shown inline).
+	_enc_add_form = PanelContainer.new()
+	_enc_add_form.add_theme_stylebox_override("panel", _make_popup_style())
+	_enc_add_form.visible = false
+	var form_vb := VBoxContainer.new()
+	form_vb.add_theme_constant_override("separation", 4)
+	form_vb.add_theme_constant_override("margin", 8)
+	# Header row with title + close button
+	var hdr := HBoxContainer.new()
+	var hdr_lbl := Label.new()
+	hdr_lbl.text = "Add Pokemon"
+	hdr_lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	hdr.add_child(hdr_lbl)
+	_enc_add_hdr_lbl = hdr_lbl
+	var close_btn := Button.new()
+	close_btn.text = "✕"
+	close_btn.custom_minimum_size = Vector2(24, 24)
+	close_btn.pressed.connect(func() -> void: _close_enc_add_form())
+	hdr.add_child(close_btn)
+	form_vb.add_child(hdr)
+	# Group name row (hidden when group already exists).
+	_enc_add_group_row = HBoxContainer.new()
+	var grp_lbl := Label.new()
+	grp_lbl.text = "Group"
+	grp_lbl.custom_minimum_size.x = 70
+	_enc_add_group_row.add_child(grp_lbl)
+	_enc_add_group_name = LineEdit.new()
+	_enc_add_group_name.custom_minimum_size = Vector2(160, 0)
+	_enc_add_group_name.placeholder_text = "encounter_group_id"
+	_enc_add_group_row.add_child(_enc_add_group_name)
+	form_vb.add_child(_enc_add_group_row)
+	# Species row
+	var species_hb := HBoxContainer.new()
+	var species_lbl := Label.new()
+	species_lbl.text = "Species"
+	species_lbl.custom_minimum_size.x = 70
+	species_hb.add_child(species_lbl)
+	_enc_add_species = SearchPicker.new()
+	_enc_add_species.custom_minimum_size = Vector2(160, 0)
+	_enc_add_species.set_entries(Catalog.species_slugs)
+	species_hb.add_child(_enc_add_species)
+	form_vb.add_child(species_hb)
+	# Min Level row
+	var min_hb := HBoxContainer.new()
+	var min_lbl := Label.new()
+	min_lbl.text = "Min Lv"
+	min_lbl.custom_minimum_size.x = 70
+	min_hb.add_child(min_lbl)
+	_enc_add_min_lvl = SpinBox.new()
+	_enc_add_min_lvl.min_value = 1
+	_enc_add_min_lvl.max_value = 100
+	_enc_add_min_lvl.value = 5
+	min_hb.add_child(_enc_add_min_lvl)
+	form_vb.add_child(min_hb)
+	# Max Level row
+	var max_hb := HBoxContainer.new()
+	var max_lbl := Label.new()
+	max_lbl.text = "Max Lv"
+	max_lbl.custom_minimum_size.x = 70
+	max_hb.add_child(max_lbl)
+	_enc_add_max_lvl = SpinBox.new()
+	_enc_add_max_lvl.min_value = 1
+	_enc_add_max_lvl.max_value = 100
+	_enc_add_max_lvl.value = 10
+	max_hb.add_child(_enc_add_max_lvl)
+	form_vb.add_child(max_hb)
+	# Weight row
+	var wt_hb := HBoxContainer.new()
+	var wt_lbl := Label.new()
+	wt_lbl.text = "Weight"
+	wt_lbl.custom_minimum_size.x = 70
+	wt_hb.add_child(wt_lbl)
+	_enc_add_weight = SpinBox.new()
+	_enc_add_weight.min_value = 1
+	_enc_add_weight.max_value = 1000
+	_enc_add_weight.value = 10
+	wt_hb.add_child(_enc_add_weight)
+	form_vb.add_child(wt_hb)
+	# Percentage preview.
+	_enc_add_pct = Label.new()
+	_enc_add_pct.add_theme_font_size_override("font_size", 12)
+	_enc_add_pct.add_theme_color_override("font_color", Color(0.7, 0.7, 0.7))
+	form_vb.add_child(_enc_add_pct)
+	_enc_add_weight.value_changed.connect(func(_v: float) -> void: _update_enc_add_pct())
+	# Time of day row
+	var tod_hb := HBoxContainer.new()
+	var tod_lbl := Label.new()
+	tod_lbl.text = "Time"
+	tod_lbl.custom_minimum_size.x = 70
+	tod_hb.add_child(tod_lbl)
+	_enc_add_morning = CheckBox.new()
+	_enc_add_morning.text = "Morning"
+	_enc_add_morning.button_pressed = true
+	_enc_add_morning.toggled.connect(func(_b: bool) -> void: _update_enc_add_pct())
+	tod_hb.add_child(_enc_add_morning)
+	_enc_add_day = CheckBox.new()
+	_enc_add_day.text = "Day"
+	_enc_add_day.button_pressed = true
+	_enc_add_day.toggled.connect(func(_b: bool) -> void: _update_enc_add_pct())
+	tod_hb.add_child(_enc_add_day)
+	_enc_add_night = CheckBox.new()
+	_enc_add_night.text = "Night"
+	_enc_add_night.button_pressed = true
+	_enc_add_night.toggled.connect(func(_b: bool) -> void: _update_enc_add_pct())
+	tod_hb.add_child(_enc_add_night)
+	form_vb.add_child(tod_hb)
+	# Add/Update button
+	var add_btn := Button.new()
+	add_btn.text = "Add"
+	add_btn.pressed.connect(_on_enc_add_confirm)
+	form_vb.add_child(add_btn)
+	_enc_add_btn = add_btn
+	_enc_add_form.add_child(form_vb)
+	vb.add_child(_enc_add_form)
 	_enc_popup.add_child(vb)
 	add_child(_enc_popup)
 
@@ -742,109 +861,10 @@ func _load_enc_popup_data() -> void:
 		_enc_popup_data = loaded["entries"]
 
 
-func _build_enc_add_popup() -> void:
-	_enc_add_popup = PopupPanel.new()
-	_enc_add_popup.title = "Add Pokemon"
-	_enc_add_popup.add_theme_stylebox_override("panel", _make_popup_style())
-	var vb := VBoxContainer.new()
-	vb.add_theme_constant_override("separation", 4)
-	vb.add_theme_constant_override("margin", 8)
-	# Group name row (hidden when group already exists).
-	_enc_add_group_row = HBoxContainer.new()
-	var grp_lbl := Label.new()
-	grp_lbl.text = "Group"
-	grp_lbl.custom_minimum_size.x = 70
-	_enc_add_group_row.add_child(grp_lbl)
-	_enc_add_group_name = LineEdit.new()
-	_enc_add_group_name.custom_minimum_size = Vector2(160, 0)
-	_enc_add_group_name.placeholder_text = "encounter_group_id"
-	_enc_add_group_row.add_child(_enc_add_group_name)
-	vb.add_child(_enc_add_group_row)
-	# Species row
-	var species_hb := HBoxContainer.new()
-	var species_lbl := Label.new()
-	species_lbl.text = "Species"
-	species_lbl.custom_minimum_size.x = 70
-	species_hb.add_child(species_lbl)
-	_enc_add_species = SearchPicker.new()
-	_enc_add_species.custom_minimum_size = Vector2(160, 0)
-	_enc_add_species.set_entries(Catalog.species_slugs)
-	species_hb.add_child(_enc_add_species)
-	vb.add_child(species_hb)
-	# Min Level row
-	var min_hb := HBoxContainer.new()
-	var min_lbl := Label.new()
-	min_lbl.text = "Min Lv"
-	min_lbl.custom_minimum_size.x = 70
-	min_hb.add_child(min_lbl)
-	_enc_add_min_lvl = SpinBox.new()
-	_enc_add_min_lvl.min_value = 1
-	_enc_add_min_lvl.max_value = 100
-	_enc_add_min_lvl.value = 5
-	min_hb.add_child(_enc_add_min_lvl)
-	vb.add_child(min_hb)
-	# Max Level row
-	var max_hb := HBoxContainer.new()
-	var max_lbl := Label.new()
-	max_lbl.text = "Max Lv"
-	max_lbl.custom_minimum_size.x = 70
-	max_hb.add_child(max_lbl)
-	_enc_add_max_lvl = SpinBox.new()
-	_enc_add_max_lvl.min_value = 1
-	_enc_add_max_lvl.max_value = 100
-	_enc_add_max_lvl.value = 10
-	max_hb.add_child(_enc_add_max_lvl)
-	vb.add_child(max_hb)
-	# Weight row
-	var wt_hb := HBoxContainer.new()
-	var wt_lbl := Label.new()
-	wt_lbl.text = "Weight"
-	wt_lbl.custom_minimum_size.x = 70
-	wt_hb.add_child(wt_lbl)
-	_enc_add_weight = SpinBox.new()
-	_enc_add_weight.min_value = 1
-	_enc_add_weight.max_value = 1000
-	_enc_add_weight.value = 10
-	wt_hb.add_child(_enc_add_weight)
-	vb.add_child(wt_hb)
-	# Percentage preview.
-	_enc_add_pct = Label.new()
-	_enc_add_pct.add_theme_font_size_override("font_size", 12)
-	_enc_add_pct.add_theme_color_override("font_color", Color(0.7, 0.7, 0.7))
-	vb.add_child(_enc_add_pct)
-	_enc_add_weight.value_changed.connect(func(_v: float) -> void: _update_enc_add_pct())
-	# Time of day row
-	var tod_hb := HBoxContainer.new()
-	var tod_lbl := Label.new()
-	tod_lbl.text = "Time"
-	tod_lbl.custom_minimum_size.x = 70
-	tod_hb.add_child(tod_lbl)
-	_enc_add_morning = CheckBox.new()
-	_enc_add_morning.text = "Morning"
-	_enc_add_morning.button_pressed = true
-	_enc_add_morning.toggled.connect(func(_b: bool) -> void: _update_enc_add_pct())
-	tod_hb.add_child(_enc_add_morning)
-	_enc_add_day = CheckBox.new()
-	_enc_add_day.text = "Day"
-	_enc_add_day.button_pressed = true
-	_enc_add_day.toggled.connect(func(_b: bool) -> void: _update_enc_add_pct())
-	tod_hb.add_child(_enc_add_day)
-	_enc_add_night = CheckBox.new()
-	_enc_add_night.text = "Night"
-	_enc_add_night.button_pressed = true
-	_enc_add_night.toggled.connect(func(_b: bool) -> void: _update_enc_add_pct())
-	tod_hb.add_child(_enc_add_night)
-	vb.add_child(tod_hb)
-	# Add button
-	var add_btn := Button.new()
-	add_btn.text = "Add"
-	add_btn.pressed.connect(_on_enc_add_confirm)
-	vb.add_child(add_btn)
-	_enc_add_popup.add_child(vb)
-	add_child(_enc_add_popup)
-
-
 func _show_enc_add_popup(group: String) -> void:
+	_enc_edit_entry = {}
+	_enc_add_btn.text = "Add"
+	_enc_add_hdr_lbl.text = "Add Pokemon"
 	_enc_add_group = group
 	_enc_add_species.set_value("")
 	_enc_add_min_lvl.value = 5
@@ -861,10 +881,33 @@ func _show_enc_add_popup(group: String) -> void:
 	else:
 		_enc_add_group_row.visible = false
 	_update_enc_add_pct()
-	# Position to the right of the encounter popup.
-	var enc_end := _enc_popup.position + Vector2i(_enc_popup.size)
-	_enc_add_popup.position = Vector2i(enc_end.x + 4, _enc_popup.position.y)
-	_enc_add_popup.popup()
+	_enc_popup_list_box.visible = false
+	_enc_add_form.visible = true
+
+
+func _show_enc_edit_popup(group: String, entry: Dictionary) -> void:
+	_enc_edit_entry = entry
+	_enc_add_btn.text = "Update"
+	_enc_add_hdr_lbl.text = "Edit Pokemon"
+	_enc_add_group = group
+	_enc_add_species.set_value(str(entry.get("pokemon", "")))
+	_enc_add_min_lvl.value = int(entry.get("min_level", 1))
+	_enc_add_max_lvl.value = int(entry.get("max_level", 1))
+	_enc_add_weight.value = int(entry.get("slots", 10))
+	_enc_add_morning.button_pressed = bool(entry.get("morning_allowed", true))
+	_enc_add_day.button_pressed = bool(entry.get("day_allowed", true))
+	_enc_add_night.button_pressed = bool(entry.get("night_allowed", true))
+	_enc_add_group_row.visible = false
+	_update_enc_add_pct()
+	_enc_popup_list_box.visible = false
+	_enc_add_form.visible = true
+
+
+func _close_enc_add_form() -> void:
+	_enc_add_form.visible = false
+	_enc_popup_list_box.visible = true
+	_enc_edit_entry = {}
+	_rebuild_enc_popup_list()
 
 
 func _update_enc_add_pct() -> void:
@@ -905,27 +948,45 @@ func _on_enc_add_confirm() -> void:
 		_enc_popup_zone.encounter_group = _enc_add_group
 		_object_layer.refresh()
 		_revalidate()
-	var entry := {
-		"encounter": _enc_add_group,
-		"pokemon": species,
-		"min_level": int(_enc_add_min_lvl.value),
-		"max_level": int(_enc_add_max_lvl.value),
-		"slots": int(_enc_add_weight.value),
-		"held_item_groups": "",
-		"morning_allowed": _enc_add_morning.button_pressed,
-		"day_allowed": _enc_add_day.button_pressed,
-		"night_allowed": _enc_add_night.button_pressed,
-	}
-	_enc_popup_data.append(entry)
-	# Persist to file.
+	if not _enc_edit_entry.is_empty():
+		# UPDATE existing entry.
+		_enc_edit_entry["pokemon"] = species
+		_enc_edit_entry["min_level"] = int(_enc_add_min_lvl.value)
+		_enc_edit_entry["max_level"] = int(_enc_add_max_lvl.value)
+		_enc_edit_entry["slots"] = int(_enc_add_weight.value)
+		_enc_edit_entry["morning_allowed"] = _enc_add_morning.button_pressed
+		_enc_edit_entry["day_allowed"] = _enc_add_day.button_pressed
+		_enc_edit_entry["night_allowed"] = _enc_add_night.button_pressed
+		_save_enc_data()
+		_close_enc_add_form()
+	else:
+		# ADD new entry (reject duplicates in same group).
+		for e in _enc_popup_data:
+			if str(e.get("pokemon", "")) == species and str(e.get("encounter", "")) == _enc_add_group:
+				return
+		var entry := {
+			"encounter": _enc_add_group,
+			"pokemon": species,
+			"min_level": int(_enc_add_min_lvl.value),
+			"max_level": int(_enc_add_max_lvl.value),
+			"slots": int(_enc_add_weight.value),
+			"held_item_groups": "",
+			"morning_allowed": _enc_add_morning.button_pressed,
+			"day_allowed": _enc_add_day.button_pressed,
+			"night_allowed": _enc_add_night.button_pressed,
+		}
+		_enc_popup_data.append(entry)
+		_save_enc_data()
+		_close_enc_add_form()
+
+
+func _save_enc_data() -> void:
 	var raw: Variant = JsonIO.load_file("res://content/encounter_data.json")
 	if typeof(raw) == TYPE_DICTIONARY:
 		if not raw.has("entries"):
 			raw["entries"] = []
-		(raw["entries"] as Array).append(entry)
+		raw["entries"] = _enc_popup_data
 		JsonIO.save_file("res://content/encounter_data.json", raw)
-	_enc_add_popup.hide()
-	_rebuild_enc_popup_list()
 
 
 func _rebuild_enc_popup_list() -> void:
@@ -995,6 +1056,7 @@ func _rebuild_enc_popup_list() -> void:
 				var wt: int = int(e.get("slots", 0))
 				var row := HBoxContainer.new()
 				row.add_theme_constant_override("separation", 4)
+				row.mouse_filter = Control.MOUSE_FILTER_STOP
 				# Icon.
 				var icon_tex := GameData.get_pokemon_icon(GameData.species_id_for_slug(pokemon))
 				if icon_tex != null:
@@ -1002,11 +1064,13 @@ func _rebuild_enc_popup_list() -> void:
 					icon_rect.texture = icon_tex
 					icon_rect.custom_minimum_size = Vector2(24, 24)
 					icon_rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+					icon_rect.mouse_filter = Control.MOUSE_FILTER_PASS
 					row.add_child(icon_rect)
 				# Label.
 				var lbl := Label.new()
 				lbl.text = "%s  Lv%d-%d  (wt %d)" % [pokemon, min_lvl, max_lvl, wt]
 				lbl.add_theme_font_size_override("font_size", 13)
+				lbl.mouse_filter = Control.MOUSE_FILTER_PASS
 				row.add_child(lbl)
 				# Per-phase percentages.
 				var pct_parts: Array = []
@@ -1018,15 +1082,19 @@ func _rebuild_enc_popup_list() -> void:
 					pct_lbl.text = "  ".join(pct_parts)
 					pct_lbl.add_theme_font_size_override("font_size", 11)
 					pct_lbl.add_theme_color_override("font_color", Color(0.7, 0.7, 0.7))
+					pct_lbl.mouse_filter = Control.MOUSE_FILTER_PASS
 					row.add_child(pct_lbl)
-				# Right-click to delete.
+				# Click to edit, right-click to delete.
 				var entry_ref: Dictionary = e
 				var grp_ref: String = g
 				var poke_name: String = pokemon
 				row.gui_input.connect(func(event: InputEvent) -> void:
-					if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
-						_confirm_delete_enc_entry(grp_ref, entry_ref, poke_name))
-				row.tooltip_text = "Right-click to delete"
+					if event is InputEventMouseButton and event.pressed:
+						if event.button_index == MOUSE_BUTTON_LEFT:
+							_show_enc_edit_popup(grp_ref, entry_ref)
+						elif event.button_index == MOUSE_BUTTON_RIGHT:
+							_confirm_delete_enc_entry(grp_ref, entry_ref, poke_name))
+				row.tooltip_text = "Left-click to edit · Right-click to delete"
 				entries_box.add_child(row)
 			_enc_popup_pokemon_box.add_child(entries_box)
 
@@ -1053,16 +1121,8 @@ func _confirm_delete_enc_entry(grp: String, entry: Dictionary, poke_name: String
 func _delete_enc_entry(grp: String, entry: Dictionary) -> void:
 	# Remove from in-memory data.
 	_enc_popup_data.erase(entry)
-	# Remove from file.
-	var raw: Variant = JsonIO.load_file("res://content/encounter_data.json")
-	if typeof(raw) == TYPE_DICTIONARY and raw.has("entries"):
-		var entries: Array = raw["entries"]
-		for i in entries.size():
-			var e: Dictionary = entries[i]
-			if e.get("encounter") == entry.get("encounter") and e.get("pokemon") == entry.get("pokemon") and int(e.get("min_level", 0)) == int(entry.get("min_level", 0)):
-				entries.remove_at(i)
-				break
-		JsonIO.save_file("res://content/encounter_data.json", raw)
+	# Persist to file.
+	_save_enc_data()
 	# If the group is now empty, clear it from the zone.
 	var has_entries := false
 	for e in _enc_popup_data:
