@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "ambience_night_route1",
-      "day_track": "cave_1",
+      "day_track": "mt_moon",
       "display_name": "Underground Path",
       "name": "area_0",
       "night_ambience": "ambience_night_route1",
-      "night_track": "cave_1",
+      "night_track": "mt_moon",
       "polygon": [
         [
           1.0,
@@ -73,7 +73,8 @@
           1.0,
           59.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [

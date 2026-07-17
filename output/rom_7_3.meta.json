@@ -7,7 +7,7 @@
       "display_name": "Cerulean City Pokemon Center",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "pokecenter_night",
+      "night_track": "pokecenter_day",
       "polygon": [
         [
           0.0,
@@ -25,7 +25,8 @@
           0.0,
           9.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [

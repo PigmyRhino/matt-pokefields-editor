@@ -17,11 +17,13 @@ signal deleted
 @onready var _day_amb: SearchPicker = %DayAmbience
 @onready var _night_amb: SearchPicker = %NightAmbience
 @onready var _climate: OptionButton = %ClimateOpt
+@onready var _region: OptionButton = %RegionOpt
 # Encounter
 @onready var _enc_box: Control = %EncBox
 @onready var _terrain: OptionButton = %TerrainOpt
 @onready var _enc_group: SearchPicker = %EncGroup
 @onready var _fish_group: SearchPicker = %FishGroup
+@onready var _fish_rod_tier: OptionButton = %FishRodTier
 # Gate
 @onready var _gate_box: Control = %GateBox
 @onready var _req_flags: ChipSelect = %ReqFlags
@@ -45,6 +47,8 @@ var _gate_msgs: VBoxContainer
 func _ready() -> void:
 	for c in Zone.CLIMATES:
 		_climate.add_item(c)
+	for r in Zone.REGIONS:
+		_region.add_item(r)
 	for t in Zone.ENCOUNTER_TERRAINS:
 		_terrain.add_item(t)
 	_day_track.set_entries(Catalog.bgm)
@@ -55,6 +59,8 @@ func _ready() -> void:
 	# cards); the bundled Catalog snapshot drifts and misses freshly-added groups.
 	_enc_group.set_entries(ContentScan.encounter_groups())
 	_fish_group.set_entries(ContentScan.encounter_groups())
+	for rod_name: String in ContentScan.fishing_rods():
+		_fish_rod_tier.add_item(rod_name)
 	# Suggest flags already used anywhere (set/read in scripts, or gating another zone), but allow typing
 	# a brand-new one — gate flags share the one registry with the node editor's flag picker.
 	_req_flags.allow_custom = true
@@ -72,9 +78,11 @@ func _ready() -> void:
 	_day_amb.value_changed.connect(_on_day_amb)
 	_night_amb.value_changed.connect(_on_night_amb)
 	_climate.item_selected.connect(_on_climate)
+	_region.item_selected.connect(_on_region)
 	_terrain.item_selected.connect(_on_terrain)
 	_enc_group.value_changed.connect(_on_enc_group)
 	_fish_group.value_changed.connect(_on_fish_group)
+	_fish_rod_tier.item_selected.connect(_on_fish_rod_tier)
 	_req_flags.changed.connect(_on_req_flags)
 	_forbid_flags.changed.connect(_on_forbid_flags)
 	_req_badges.changed.connect(_on_req_badges)
@@ -110,10 +118,12 @@ func bind(z: Zone) -> void:
 			_day_amb.set_value(z.day_ambience)
 			_night_amb.set_value(z.night_ambience)
 			_climate.selected = maxi(0, Zone.CLIMATES.find(z.climate))
+			_region.selected = maxi(0, Zone.REGIONS.find(z.region))
 		"Encounter":
 			_terrain.selected = maxi(0, Zone.ENCOUNTER_TERRAINS.find(z.terrain))
 			_enc_group.set_value(z.encounter_group)
 			_fish_group.set_value(z.fish_encounter_group)
+			_fish_rod_tier.selected = z.fish_rod_tier
 		"Gate":
 			_req_flags.set_values(z.requires_flag.duplicate())
 			_forbid_flags.set_values(z.forbids_flag.duplicate())
@@ -182,6 +192,12 @@ func _on_climate(index: int) -> void:
 	changed.emit()
 
 
+func _on_region(index: int) -> void:
+	if _guarded(): return
+	_z.region = _region.get_item_text(index)
+	changed.emit()
+
+
 # -- encounter --
 
 func _on_terrain(index: int) -> void:
@@ -199,6 +215,12 @@ func _on_enc_group(v: String) -> void:
 func _on_fish_group(v: String) -> void:
 	if _guarded(): return
 	_z.fish_encounter_group = v
+	changed.emit()
+
+
+func _on_fish_rod_tier(index: int) -> void:
+	if _guarded(): return
+	_z.fish_rod_tier = index
 	changed.emit()
 
 

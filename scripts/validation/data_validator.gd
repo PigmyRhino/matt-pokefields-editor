@@ -17,7 +17,7 @@ static func validate(name: String, content_dir: String, override: Variant = null
 		"Resource nodes": return DataRules.resource_nodes(data, content_dir)
 		"Shops": return DataRules.shops(data, content_dir)
 		"Clothing": return DataRules.clothing(data)
-		"Items": return DataRules.custom_items(data)
+		"Items": return DataRules.items(data)
 		"Encounters": return DataRules.encounters(data, content_dir)
 		"Trainers": return DataRules.trainers(data, content_dir)
 		"Job boards": return DataRules.job_boards(data, content_dir)
@@ -41,7 +41,7 @@ static func _load(name: String, content_dir: String) -> Variant:
 			var r: Variant = JsonIO.load_file(content_dir + "/clothing_data.json")
 			return r if typeof(r) == TYPE_DICTIONARY else {}
 		"Items":
-			var r: Variant = JsonIO.load_file(content_dir + "/custom_items.json")
+			var r: Variant = JsonIO.load_file(content_dir + "/items.json")
 			return r if typeof(r) == TYPE_ARRAY else []
 		"Encounters":
 			var r: Variant = JsonIO.load_file(content_dir + "/encounter_data.json")

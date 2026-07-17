@@ -33,6 +33,7 @@ adamantine_oak_pickaxe|Adamantine Oak Pickaxe
 adamantine_oak_shovel|Adamantine Oak Shovel
 adamantine_oak_trowel|Adamantine Oak Trowel
 adamantine_pickaxe_head|Adamantine Pickaxe Head
+adamantine_rod|Adamantine Rod
 adamantine_rowan_axe|Adamantine Rowan Axe
 adamantine_rowan_hoe|Adamantine Rowan Hoe
 adamantine_rowan_pickaxe|Adamantine Rowan Pickaxe
@@ -105,6 +106,7 @@ blue_paint|Blue Paint
 blue_status_powder|Blue Status Powder
 bolt_ball|Bolt Ball
 bonnet|Bonnet
+boss_hat|Boss Hat
 bright_powder|Bright Powder
 bronze_axe_head|Bronze Axe Head
 bronze_bar|Bronze Bar
@@ -133,6 +135,7 @@ bronze_oak_pickaxe|Bronze Oak Pickaxe
 bronze_oak_shovel|Bronze Oak Shovel
 bronze_oak_trowel|Bronze Oak Trowel
 bronze_pickaxe_head|Bronze Pickaxe Head
+bronze_rod|Bronze Rod
 bronze_rowan_axe|Bronze Rowan Axe
 bronze_rowan_hoe|Bronze Rowan Hoe
 bronze_rowan_shovel|Bronze Rowan Shovel
@@ -375,6 +378,7 @@ gold_oak_shovel|Gold Oak Shovel
 gold_oak_trowel|Gold Oak Trowel
 gold_paint|Gold Paint
 gold_pickaxe_head|Gold Pickaxe Head
+gold_rod|Gold Rod
 gold_rowan_axe|Gold Rowan Axe
 gold_rowan_hoe|Gold Rowan Hoe
 gold_rowan_pickaxe|Gold Rowan Pickaxe
@@ -531,6 +535,7 @@ iron_oak_shovel|Iron Oak Shovel
 iron_oak_trowel|Iron Oak Trowel
 iron_pickaxe_head|Iron Pickaxe Head
 iron_plate|Iron Plate
+iron_rod|Iron Rod
 iron_rowan_axe|Iron Rowan Axe
 iron_rowan_hoe|Iron Rowan Hoe
 iron_rowan_pickaxe|Iron Rowan Pickaxe
@@ -701,6 +706,7 @@ mithril_oak_pickaxe|Mithril Oak Pickaxe
 mithril_oak_shovel|Mithril Oak Shovel
 mithril_oak_trowel|Mithril Oak Trowel
 mithril_pickaxe_head|Mithril Pickaxe Head
+mithril_rod|Mithril Rod
 mithril_rowan_axe|Mithril Rowan Axe
 mithril_rowan_hoe|Mithril Rowan Hoe
 mithril_rowan_pickaxe|Mithril Rowan Pickaxe
@@ -811,6 +817,7 @@ platinum_oak_pickaxe|Platinum Oak Pickaxe
 platinum_oak_shovel|Platinum Oak Shovel
 platinum_oak_trowel|Platinum Oak Trowel
 platinum_pickaxe_head|Platinum Pickaxe Head
+platinum_rod|Platinum Rod
 platinum_rowan_axe|Platinum Rowan Axe
 platinum_rowan_hoe|Platinum Rowan Hoe
 platinum_rowan_pickaxe|Platinum Rowan Pickaxe
@@ -906,6 +913,7 @@ rubber_boots|Rubber Boots
 rusty_axe|Rusty Axe
 rusty_hoe|Rusty Hoe
 rusty_pickaxe|Rusty Pickaxe
+rusty_rod|Rusty Rod
 rusty_shovel|Rusty Shovel
 rusty_trowel|Rusty Trowel
 sablenite|Sablenite
@@ -1029,6 +1037,7 @@ steel_oak_pickaxe|Steel Oak Pickaxe
 steel_oak_shovel|Steel Oak Shovel
 steel_oak_trowel|Steel Oak Trowel
 steel_pickaxe_head|Steel Pickaxe Head
+steel_rod|Steel Rod
 steel_rowan_axe|Steel Rowan Axe
 steel_rowan_hoe|Steel Rowan Hoe
 steel_rowan_pickaxe|Steel Rowan Pickaxe
@@ -1203,7 +1212,6 @@ tank_top_green|Tank Top (Green)
 tank_top_pink|Tank Top (Pink)
 tank_top_red|Tank Top (Red)
 tapunium_z|Tapunium Z
-tater_hat|Tater Hat
 tea_mafia_pants_beige|Tea Mafia Pants (Beige)
 tea_mafia_pants_purple|Tea Mafia Pants (Purple)
 tea_mafia_suit_beige|Tea Mafia Suit (Beige)

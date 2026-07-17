@@ -6,6 +6,7 @@ extends RefCounted
 const CATEGORIES := ["Area", "Encounter", "Gate", "ResourceArea"]
 const CLIMATES := ["none", "temperate"]
 const ENCOUNTER_TERRAINS := ["grass_patch", "cave_floor", "water"]
+const REGIONS := ["kanto"]
 
 var category := "Area"
 var name := ""
@@ -23,10 +24,12 @@ var night_track := ""
 var day_ambience := ""
 var night_ambience := ""
 var climate := "none"
+var region := "kanto"
 # Encounter
 var terrain := "grass_patch"
 var encounter_group := ""
 var fish_encounter_group := ""
+var fish_rod_tier := 0
 # Gate
 var requires_flag: Array[String] = []
 var forbids_flag: Array[String] = []
@@ -61,10 +64,12 @@ func to_dict(placement_ids: Array = []) -> Dictionary:
 			d["day_ambience"] = day_ambience
 			d["night_ambience"] = night_ambience
 			d["climate"] = climate
+			d["region"] = region
 		"Encounter":
 			d["terrain"] = terrain
 			d["encounter_group"] = encounter_group
 			d["fish_encounter_group"] = fish_encounter_group
+			d["fish_rod_tier"] = fish_rod_tier
 		"Gate":
 			d["gate"] = _gate_dict()
 		"ResourceArea":
@@ -88,10 +93,12 @@ static func from_dict(cat: String, d: Dictionary) -> Zone:
 			z.day_ambience = str(d.get("day_ambience", ""))
 			z.night_ambience = str(d.get("night_ambience", ""))
 			z.climate = str(d.get("climate", "none"))
+			z.region = str(d.get("region", "kanto"))
 		"Encounter":
 			z.terrain = str(d.get("terrain", "grass_patch"))
 			z.encounter_group = str(d.get("encounter_group", ""))
 			z.fish_encounter_group = str(d.get("fish_encounter_group", ""))
+			z.fish_rod_tier = int(d.get("fish_rod_tier", 0))
 		"Gate":
 			var g: Dictionary = d.get("gate", {})
 			for f in g.get("requires_flag", []):

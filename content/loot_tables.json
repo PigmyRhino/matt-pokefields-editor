@@ -1,5 +1,5 @@
 {
-  "_comment": "Generic weighted drop pools. Referenced by name from resource_nodes.json (and future NPC gift / quest reward / treasure tile definitions). Hand-authored. Item ids align with the unified custom_items catalog: ore chunks 2001-2009, Oak Log 2050, generic forageables 2010-2012, berries are PokeAPI ids. See docs/game-server/RESOURCE_NODES.md §4.1.",
+  "_comment": "Generic weighted drop pools. Referenced by name from resource_nodes.json (and future NPC gift / quest reward / treasure tile definitions). Hand-authored. Item ids align with the unified items catalog: ore chunks 2001-2009, Oak Log 2050, generic forageables 2010-2012, berries are PokeAPI ids. See docs/game-server/RESOURCE_NODES.md §4.1.",
   "tables": {
     "forage_common": [
       { "item_id": 2050, "weight": 100, "qty_min": 1, "qty_max": 3 }

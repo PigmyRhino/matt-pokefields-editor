@@ -10,7 +10,9 @@ const NATURES := ["hardy", "lonely", "brave", "adamant", "naughty", "bold", "doc
 	"bashful", "rash", "calm", "gentle", "sassy", "careful", "quirky"]
 const GENDERS := ["male", "female", "genderless"]
 const STATS := ["hp", "atk", "def", "spa", "spd", "spe"]
-const CUSTOM_ITEM_TYPES := ["tool", "material", "equipment", "collectible", "key"]
+## Valid item_type values for the flat items in items.json (the ItemType enum minus Clothing).
+const ITEM_TYPES := ["pokeball", "medicine", "battle_item", "battle_misc", "held_item", "tm",
+	"evolution", "tool", "material", "equipment", "collectible", "key", "hm", "field_item"]
 
 const MAX_TEAM := 6
 const MAX_MOVES := 4
@@ -512,18 +514,24 @@ static func tool_categories(cats: Dictionary, content_dir: String) -> Array:
 
 # -- items / clothing / encounters / tips ----------------------------------------------------------
 
-static func custom_items(arr: Array) -> Array:
+## items.json — [ { item_id, name, item_type, category, description, cost, sell_price, stackable,
+## tradable, sellable, rom_item_id?, move_id? }, ... ]. Flat items are 1..9999 (clothing is 10000+);
+## item_type must be a known flat type; prices are non-negative; ids are unique.
+static func items(arr: Array) -> Array:
 	var out: Array = []
 	var seen := {}
 	for it in arr:
-		var iid := int((it as Dictionary).get("item_id", 0))
-		var nm := str((it as Dictionary).get("name", ""))
+		var d: Dictionary = it
+		var iid := int(d.get("item_id", 0))
+		var nm := str(d.get("name", ""))
 		var loc := { "section": "Items", "item_id": iid }
-		if iid < 1000 or iid > 9999:
-			out.append(Problem.err("item_id %d (%s): custom ids must be in 1000..9999" % [iid, nm], nm, loc))
-		var itype := str((it as Dictionary).get("item_type", ""))
-		if not (itype in CUSTOM_ITEM_TYPES):
-			out.append(Problem.err("%s: invalid item_type %s (must be one of %s)" % [nm, itype, ", ".join(CUSTOM_ITEM_TYPES)], nm, loc))
+		if iid < 1 or iid >= 10000:
+			out.append(Problem.err("item_id %d (%s): flat items are 1..9999 (clothing lives in clothing_data.json, 10000+)" % [iid, nm], nm, loc))
+		if not (str(d.get("item_type", "")) in ITEM_TYPES):
+			out.append(Problem.err("%s: invalid item_type '%s' (one of %s)" % [nm, str(d.get("item_type", "")), ", ".join(ITEM_TYPES)], nm, loc))
+		for f in ["cost", "sell_price"]:
+			if int(d.get(f, 0)) < 0:
+				out.append(Problem.err("%s: %s must be >= 0" % [nm, f], nm, loc))
 		if seen.has(iid):
 			out.append(Problem.err("duplicate item_id %d (%s collides with %s)" % [iid, nm, seen[iid]], nm, loc))
 		seen[iid] = nm

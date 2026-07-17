@@ -1,7 +1,8 @@
 extends DatasetEditor
-## clothing_data.json — { <slot>: [ { id_start, style, name, description, price, is_starter?, colors[],
-## male?, female?, tradable?, sellable? }, ... ] }. One section per slot; colors edited as chips drawn
-## from the union of colors already used. Optional bool keys are only shown when present (fidelity).
+## clothing_data.json — { <slot>: [ { id_start, style, name, description, price, sell_price?, is_starter?,
+## colors[], male?, female?, tradable?, sellable? }, ... ] }. One section per slot; colors edited as chips
+## drawn from the union of colors already used. tradable/sellable are always editable; the other optional
+## bool keys are only shown when present (fidelity).
 
 const _BOOL_TIPS := {
 	"is_starter": "Available at character creation.",
@@ -70,10 +71,13 @@ func _build_slot(slot: String, record: Variant, into: VBoxContainer) -> void:
 		into.add_child(_row("style", _str_field(v, "style"), "Internal style id (sprite folder name)."))
 		into.add_child(_row("name", _str_field(v, "name"), "Display name."))
 		into.add_child(_row("description", _str_field(v, "description"), "Shop/inventory description."))
-		into.add_child(_row("price", _int_field(v, "price", 0, 0, 1000000), "Purchase price."))
-		for key in ["is_starter", "male", "female", "tradable", "sellable"]:
+		into.add_child(_row("price", _int_field(v, "price", 0, 0, 1000000), "Buy price (what a shop charges)."))
+		into.add_child(_row("sell_price", _optional_int_field(v, "sell_price", -1, -1, 1000000), "Sell price (what a shop pays). -1 = default (half of price)."))
+		for key in ["is_starter", "male", "female"]:
 			if v.has(key):
 				into.add_child(_row(key, _bool_field(v, key, false), _BOOL_TIPS.get(key, "")))
+		into.add_child(_row("tradable", _bool_field(v, "tradable", true), _BOOL_TIPS.get("tradable", "")))
+		into.add_child(_row("sellable", _bool_field(v, "sellable", true), _BOOL_TIPS.get("sellable", "")))
 		var chips := ChipSelect.new()
 		chips.set_entries(_colors)
 		chips.set_values((v.get("colors", []) as Array).duplicate())

@@ -33,6 +33,7 @@
 1208|Adamantine Oak Shovel
 1158|Adamantine Oak Trowel
 2354|Adamantine Pickaxe Head
+1308|Adamantine Rod
 1079|Adamantine Rowan Axe
 1129|Adamantine Rowan Hoe
 1029|Adamantine Rowan Pickaxe
@@ -105,6 +106,7 @@
 2505|Blue Status Powder
 2753|Bolt Ball
 40004|Bonnet
+40028|Boss Hat
 190|Bright Powder
 2322|Bronze Axe Head
 2102|Bronze Bar
@@ -133,6 +135,7 @@
 1202|Bronze Oak Shovel
 1152|Bronze Oak Trowel
 2324|Bronze Pickaxe Head
+1302|Bronze Rod
 1073|Bronze Rowan Axe
 1123|Bronze Rowan Hoe
 1223|Bronze Rowan Shovel
@@ -380,6 +383,7 @@
 1155|Gold Oak Trowel
 2524|Gold Paint
 2339|Gold Pickaxe Head
+1305|Gold Rod
 1076|Gold Rowan Axe
 1126|Gold Rowan Hoe
 1026|Gold Rowan Pickaxe
@@ -536,6 +540,7 @@
 1153|Iron Oak Trowel
 2329|Iron Pickaxe Head
 290|Iron Plate
+1303|Iron Rod
 1074|Iron Rowan Axe
 1124|Iron Rowan Hoe
 1024|Iron Rowan Pickaxe
@@ -706,6 +711,7 @@
 1207|Mithril Oak Shovel
 1157|Mithril Oak Trowel
 2349|Mithril Pickaxe Head
+1307|Mithril Rod
 1078|Mithril Rowan Axe
 1128|Mithril Rowan Hoe
 1028|Mithril Rowan Pickaxe
@@ -816,6 +822,7 @@
 1206|Platinum Oak Shovel
 1156|Platinum Oak Trowel
 2344|Platinum Pickaxe Head
+1306|Platinum Rod
 1077|Platinum Rowan Axe
 1127|Platinum Rowan Hoe
 1027|Platinum Rowan Pickaxe
@@ -911,6 +918,7 @@
 1051|Rusty Axe
 1101|Rusty Hoe
 1001|Rusty Pickaxe
+1301|Rusty Rod
 1201|Rusty Shovel
 1151|Rusty Trowel
 795|Sablenite
@@ -1034,6 +1042,7 @@
 1204|Steel Oak Shovel
 1154|Steel Oak Trowel
 2334|Steel Pickaxe Head
+1304|Steel Rod
 1075|Steel Rowan Axe
 1125|Steel Rowan Hoe
 1025|Steel Rowan Pickaxe
@@ -1216,7 +1225,6 @@
 20098|Tank Top (Pink)
 20099|Tank Top (Red)
 842|Tapunium Z
-40028|Tater Hat
 30089|Tea Mafia Pants (Beige)
 30090|Tea Mafia Pants (Purple)
 20100|Tea Mafia Suit (Beige)

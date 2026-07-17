@@ -118,6 +118,5 @@
     "post_defeat": "Your skills are impressive. Keep challenging Gyms and you'll go far."
   },
   "rebattle": "weekly",
-  "scaling_min_level": 15,
-  "scaling_max_level": 20
+  "scaling_min_level": 15
 }

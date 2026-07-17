@@ -17,7 +17,7 @@ const DATASETS := [
 	{ "name": "Resource nodes", "script": preload("res://scripts/data/resource_nodes_editor.gd") },
 	{ "name": "Shops", "script": preload("res://scripts/data/shops_editor.gd") },
 	{ "name": "Clothing", "script": preload("res://scripts/data/clothing_editor.gd") },
-	{ "name": "Items", "script": preload("res://scripts/data/custom_items_editor.gd") },
+	{ "name": "Items", "script": preload("res://scripts/data/items_editor.gd") },
 	{ "name": "Encounters", "script": preload("res://scripts/data/encounter_data_editor.gd") },
 	{ "name": "Trainers", "script": preload("res://scripts/data/trainers_editor.gd") },
 	{ "name": "Job boards", "script": preload("res://scripts/data/job_boards_editor.gd") },

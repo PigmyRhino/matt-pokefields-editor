@@ -3,7 +3,7 @@
   "display_name": "Gym Leader Misty",
   "sprite": null,
   "rank": "Pro",
-  "music_key": null,
+  "music_key": "battle_pewter_gym_trainer",
   "payout_base": 1400,
   "payout_per_level": 40,
   "badge_award": 1,

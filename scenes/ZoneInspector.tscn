@@ -124,6 +124,18 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="RegionRow" type="HBoxContainer" parent="Margin/Scroll/Fields/AreaBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/AreaBox/RegionRow"]
+layout_mode = 2
+text = "Region"
+
+[node name="RegionOpt" type="OptionButton" parent="Margin/Scroll/Fields/AreaBox/RegionRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="EncBox" type="VBoxContainer" parent="Margin/Scroll/Fields"]
 unique_name_in_owner = true
 layout_mode = 2
@@ -161,6 +173,18 @@ layout_mode = 2
 text = "Fish"
 
 [node name="FishGroup" parent="Margin/Scroll/Fields/EncBox/FishRow" instance=ExtResource("2_sp")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RodTierRow" type="HBoxContainer" parent="Margin/Scroll/Fields/EncBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Scroll/Fields/EncBox/RodTierRow"]
+layout_mode = 2
+text = "Min Rod"
+
+[node name="FishRodTier" type="OptionButton" parent="Margin/Scroll/Fields/EncBox/RodTierRow"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

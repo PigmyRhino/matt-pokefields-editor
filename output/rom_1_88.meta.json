@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "alph_interior",
+      "day_track": "viridian_indoors",
       "display_name": "Lavender Tower 1F",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "alph_interior",
+      "night_track": "viridian_indoors",
       "polygon": [
         [
           9.0,
@@ -193,7 +193,8 @@
           9.0,
           3.0
         ]
-      ]
+      ],
+      "region": "kanto"
     },
     {
       "climate": "none",
@@ -220,7 +221,8 @@
           19.0,
           10.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [],

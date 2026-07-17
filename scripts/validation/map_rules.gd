@@ -9,16 +9,17 @@ class_name MapRules
 ## trainer_names: { unique_name: true } from content/trainers (a "trainer" NPC's id must match one).
 ## region: this map's id (used to tell same-map warps from cross-map ones).
 ## is_blocked: optional Callable(Vector2i) -> bool for patrol-waypoint collision checks ({} skips it).
-## shop_ids / encounter_groups / object_types: { value: true } reference sets the caller scans ONCE
-## from the LIVE content/ datasets (not the bundled Catalog snapshot, which drifts) — passed in rather
-## than re-read here, since validate runs on every edit.
+## shop_ids / encounter_groups / object_types / item_ids: reference sets the caller scans ONCE from the
+## LIVE content/ datasets (not the bundled Catalog snapshot, which drifts) — passed in rather than
+## re-read here, since validate runs on every edit. item_ids is { int item_id: true } from
+## ValCheck.item_id_set (DB snapshot ∪ working-copy items.json), so a freshly-authored item —
+## e.g. a new fishing rod — resolves in map validation before the DB is regenerated.
 static func validate(doc: MapDoc, trainer_names: Dictionary, region: String,
 		is_blocked: Callable = Callable(), shop_ids: Dictionary = {},
 		encounter_groups: Dictionary = {}, object_types: Dictionary = {},
-		job_board_ids: Dictionary = {}) -> Array:
+		job_board_ids: Dictionary = {}, item_ids: Dictionary = {}) -> Array:
 	var out: Array = []
 	var encounters := encounter_groups
-	var item_ids := ValCheck.value_set(Catalog.items)
 
 	# Interactables: ids must be present and unique (the server keys a HashMap on id — dups drop).
 	var seen_ids := {}
@@ -177,7 +178,7 @@ static func _graph_node(it: Interactable, ctx: String, node: Dictionary, ids: Di
 			var ck := str(cond.get("kind", ""))
 			if (ck == "flag_set" or ck == "flag_unset") and str(cond.get("key", "")).strip_edges() == "":
 				out.append(Problem.err("%s: condition flag key is required" % tag, ctx, it))
-			if ck == "has_item" and not item_ids.has(str(int(cond.get("item_id", -1)))):
+			if ck == "has_item" and not item_ids.has(int(cond.get("item_id", -1))):
 				out.append(Problem.err("%s: condition item does not resolve" % tag, ctx, it))
 		"choice":
 			var opts: Array = node.get("options", [])
@@ -203,7 +204,7 @@ static func _action_refs(it: Interactable, tag: String, a: Dictionary,
 	var ctx := it.id if it.id != "" else it.kind
 	match str(a.get("kind", "")):
 		"give_item", "take_item":
-			if not item_ids.has(str(int(a.get("item_id", -1)))):
+			if not item_ids.has(int(a.get("item_id", -1))):
 				out.append(Problem.err("%s: item does not resolve to a known item" % tag, ctx, it))
 			if int(a.get("qty", 0)) < 1:
 				out.append(Problem.err("%s: qty must be >= 1" % tag, ctx, it))
@@ -268,6 +269,13 @@ static func _zone(z: Zone, object_types: Dictionary, encounters: Dictionary, out
 	if z.polygon.size() < 3:
 		out.append(Problem.warn("%s zone %s has fewer than 3 vertices (it never matches a tile)" % [z.category, ctx], ctx, z))
 	match z.category:
+		"Area":
+			if not Zone.REGIONS.has(z.region):
+				out.append(Problem.err("area zone %s has unknown region %s (expected one of %s)" \
+					% [ctx, z.region, ", ".join(Zone.REGIONS)], ctx, z))
+			if z.display_name.strip_edges() == "":
+				out.append(Problem.warn("area zone %s has no display name (encounters placed in it " \
+					% ctx + "cannot be attributed to a place)", ctx, z))
 		"ResourceArea":
 			if z.object_types.is_empty():
 				out.append(Problem.err("resource area %s names no object types" % ctx, ctx, z))

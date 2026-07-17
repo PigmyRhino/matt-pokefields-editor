@@ -313,7 +313,8 @@
           3.0,
           3.0
         ]
-      ]
+      ],
+      "region": "kanto"
     },
     {
       "climate": "none",
@@ -708,13 +709,14 @@
           34.0,
           3.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_rocktunnel_patch2",
+      "encounter_group": "kanto_rocktunnel_cave2",
       "fish_encounter_group": "",
       "name": "encounter_2",
       "polygon": [
@@ -822,10 +824,11 @@
           34.0,
           3.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_rocktunnel_patch1",
+      "encounter_group": "kanto_rocktunnel_cave1",
       "fish_encounter_group": "",
       "name": "encounter_3",
       "polygon": [
@@ -901,10 +904,11 @@
           38.0,
           19.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_rocktunnel_patch2",
+      "encounter_group": "kanto_rocktunnel_cave2",
       "fish_encounter_group": "",
       "name": "encounter_4",
       "polygon": [
@@ -1028,10 +1032,11 @@
           17.0,
           30.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_rocktunnel_patch2",
+      "encounter_group": "kanto_rocktunnel_cave2",
       "fish_encounter_group": "",
       "name": "encounter_5",
       "polygon": [
@@ -1051,10 +1056,11 @@
           15.0,
           25.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_rocktunnel_patch2",
+      "encounter_group": "kanto_rocktunnel_cave2",
       "fish_encounter_group": "",
       "name": "encounter_6",
       "polygon": [
@@ -1130,10 +1136,11 @@
           20.0,
           6.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_rocktunnel_patch1",
+      "encounter_group": "kanto_rocktunnel_cave1",
       "fish_encounter_group": "",
       "name": "encounter_7",
       "polygon": [
@@ -1241,10 +1248,11 @@
           35.0,
           26.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_rocktunnel_patch1",
+      "encounter_group": "kanto_rocktunnel_cave1",
       "fish_encounter_group": "",
       "name": "encounter_8",
       "polygon": [
@@ -1480,7 +1488,8 @@
           3.0,
           3.0
         ]
-      ]
+      ],
+      "terrain": "cave_floor"
     }
   ],
   "gate_zones": [],

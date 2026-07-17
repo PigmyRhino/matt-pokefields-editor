@@ -313,7 +313,8 @@
           7.0,
           4.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [],

@@ -41,7 +41,8 @@
           10.0,
           7.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [
@@ -63,8 +64,9 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_viridianforest_patch2",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_0",
       "polygon": [
         [
@@ -95,8 +97,9 @@
       "terrain": "grass_patch"
     },
     {
-      "encounter_group": "kanto_viridianforest_patch1",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_1",
       "polygon": [
         [
@@ -263,8 +266,9 @@
       "terrain": "grass_patch"
     },
     {
-      "encounter_group": "kanto_viridianforest_patch2",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_2",
       "polygon": [
         [
@@ -303,8 +307,9 @@
       "terrain": "grass_patch"
     },
     {
-      "encounter_group": "kanto_viridianforest_patch1",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_3",
       "polygon": [
         [
@@ -359,8 +364,9 @@
       "terrain": "grass_patch"
     },
     {
-      "encounter_group": "kanto_viridianforest_patch2",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_4",
       "polygon": [
         [
@@ -383,8 +389,9 @@
       "terrain": "grass_patch"
     },
     {
-      "encounter_group": "kanto_viridianforest_patch1",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_5",
       "polygon": [
         [
@@ -415,8 +422,9 @@
       "terrain": "grass_patch"
     },
     {
-      "encounter_group": "kanto_viridianforest_patch2",
+      "encounter_group": "kanto_viridianforest_land",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_6",
       "polygon": [
         [
@@ -588,6 +596,9 @@
       },
       "id": "sign_viridian_2",
       "kind": "Sign",
+      "properties": {
+        "dialogue": "Repels will prevent wild encounters from Pokemon that are under your lead pokemon's level."
+      },
       "script": "scripted",
       "tile_x": 43,
       "tile_y": 26
@@ -927,6 +938,19 @@
       "script": "scripted",
       "tile_x": 37,
       "tile_y": 6
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "sign_9_29",
+      "kind": "Sign",
+      "properties": {
+        "dialogue": "All Pokemon League participants are to head to the Pewter Gym to earn the Boulder Badge."
+      },
+      "script": "simple_dialogue",
+      "tile_x": 9,
+      "tile_y": 29
     }
   ],
   "properties": {

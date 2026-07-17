@@ -2,282 +2,495 @@
   "_comment": "Resource-node group + variant catalog (the *where*). Server loads this at boot; cache-builder projects the client subset into pokemon_data.bin. Two group shapes: DEF-BACKED skill groups whose variants carry `ref` (a resource_defs.json def name) + `id` + `sprite` + `weight` — their economy (tool/hp_max/respawn_ms/loot/xp/level) lives on the def — and INLINE OBSTACLE groups (HM gates, Strength) whose variants carry only `id` + `sprite` and whose single-swing economy stays on the group (group-level respawn_ms). area_pool groups bind into Resource_Areas polygons whose MAX_ACTIVE caps how many of the pool's nodes are live at once; which ones are live is mining-driven (depleting an active node promotes a dormant sibling). Depletion is always per-player; the PerPlayerRespawn ticker refreshes a depleted node in-session for that one player. Collision is always the single anchor tile; the sprite renders bottom-flush. Artists ship sprites at final on-screen size. Action / depleted strips are 4-frame horizontal sheets (ACTION_FRAMES = 4). See docs/game-server/RESOURCE_NODES.md §4.2 / §4.3.",
   "groups": {
     "forage_tree": {
-      "anim":              "Axe",
+      "anim": "Axe",
       "swing_duration_ms": 1000,
-      "break_sound":       "woodbreak",
+      "encounter_method": "chop",
+      "break_sound": "woodbreak",
       "variants": [
-        { "id": 6001, "ref": "forage_tree", "sprite": "forage_tree" }
+        {
+          "id": 6001,
+          "ref": "forage_tree",
+          "sprite": "forage_tree"
+        }
       ]
     },
-
     "forage_smalltree": {
-      "anim":              "Axe",
+      "anim": "Axe",
       "swing_duration_ms": 1000,
-      "break_sound":       "woodbreak",
+      "encounter_method": "chop",
+      "break_sound": "woodbreak",
       "variants": [
-        { "id": 6002, "ref": "forage_smalltree", "sprite": "forage_smalltree" }
+        {
+          "id": 6002,
+          "ref": "forage_smalltree",
+          "sprite": "forage_smalltree"
+        }
       ]
     },
-
     "mining_common": {
-      "anim":                "Mining",
-      "swing_duration_ms":   1000,
-      "area_pool":           true,
-      "break_sound":         "orenode_break",
+      "anim": "Mining",
+      "swing_duration_ms": 1000,
+      "encounter_method": "mine",
+      "area_pool": true,
+      "break_sound": "orenode_break",
       "variants": [
-        { "id": 6100, "ref": "iron",   "sprite": "node_iron",   "weight": 40 },
-        { "id": 6101, "ref": "coal",   "sprite": "node_coal",   "weight": 30 },
-        { "id": 6102, "ref": "copper", "sprite": "node_copper", "weight": 20 },
-        { "id": 6103, "ref": "tin",    "sprite": "node_tin",    "weight": 10 }
+        {
+          "id": 6100,
+          "ref": "iron",
+          "sprite": "node_iron",
+          "weight": 40
+        },
+        {
+          "id": 6101,
+          "ref": "coal",
+          "sprite": "node_coal",
+          "weight": 30
+        },
+        {
+          "id": 6102,
+          "ref": "copper",
+          "sprite": "node_copper",
+          "weight": 20
+        },
+        {
+          "id": 6103,
+          "ref": "tin",
+          "sprite": "node_tin",
+          "weight": 10
+        }
       ]
     },
-
     "mining_uncommon": {
-      "anim":                "Mining",
-      "swing_duration_ms":   1000,
-      "area_pool":           true,
-      "break_sound":         "orenode_break",
+      "anim": "Mining",
+      "swing_duration_ms": 1000,
+      "encounter_method": "mine",
+      "area_pool": true,
+      "break_sound": "orenode_break",
       "variants": [
-        { "id": 6104, "ref": "silver", "sprite": "node_silver", "weight": 50 },
-        { "id": 6105, "ref": "iron",   "sprite": "node_iron",   "weight": 30 },
-        { "id": 6106, "ref": "coal",   "sprite": "node_coal",   "weight": 20 }
+        {
+          "id": 6104,
+          "ref": "silver",
+          "sprite": "node_silver",
+          "weight": 50
+        },
+        {
+          "id": 6105,
+          "ref": "iron",
+          "sprite": "node_iron",
+          "weight": 30
+        },
+        {
+          "id": 6106,
+          "ref": "coal",
+          "sprite": "node_coal",
+          "weight": 20
+        }
       ]
     },
-
     "mining_rare": {
-      "anim":                "Mining",
-      "swing_duration_ms":   1000,
-      "area_pool":           true,
-      "break_sound":         "orenode_break",
+      "anim": "Mining",
+      "swing_duration_ms": 1000,
+      "encounter_method": "mine",
+      "area_pool": true,
+      "break_sound": "orenode_break",
       "variants": [
-        { "id": 6107, "ref": "gold",       "sprite": "node_gold",       "weight": 50 },
-        { "id": 6108, "ref": "platinum",   "sprite": "node_platinum",   "weight": 30 },
-        { "id": 6109, "ref": "mithril",    "sprite": "node_mithril",    "weight": 15 },
-        { "id": 6110, "ref": "adamantine", "sprite": "node_adamantine", "weight":  5 }
+        {
+          "id": 6107,
+          "ref": "gold",
+          "sprite": "node_gold",
+          "weight": 50
+        },
+        {
+          "id": 6108,
+          "ref": "platinum",
+          "sprite": "node_platinum",
+          "weight": 30
+        },
+        {
+          "id": 6109,
+          "ref": "mithril",
+          "sprite": "node_mithril",
+          "weight": 15
+        },
+        {
+          "id": 6110,
+          "ref": "adamantine",
+          "sprite": "node_adamantine",
+          "weight": 5
+        }
       ]
     },
-
     "mining_wall_common": {
-      "anim":                "Mining",
-      "swing_duration_ms":   1000,
-      "area_pool":           true,
-      "break_sound":         "orenode_break",
+      "anim": "Mining",
+      "swing_duration_ms": 1000,
+      "encounter_method": "mine",
+      "area_pool": true,
+      "break_sound": "orenode_break",
       "variants": [
-        { "id": 6111, "ref": "iron",   "sprite": "wallnode_iron",   "weight": 40 },
-        { "id": 6112, "ref": "coal",   "sprite": "wallnode_coal",   "weight": 30 },
-        { "id": 6113, "ref": "copper", "sprite": "wallnode_copper", "weight": 20 },
-        { "id": 6114, "ref": "tin",    "sprite": "wallnode_tin",    "weight": 10 }
+        {
+          "id": 6111,
+          "ref": "iron",
+          "sprite": "wallnode_iron",
+          "weight": 40
+        },
+        {
+          "id": 6112,
+          "ref": "coal",
+          "sprite": "wallnode_coal",
+          "weight": 30
+        },
+        {
+          "id": 6113,
+          "ref": "copper",
+          "sprite": "wallnode_copper",
+          "weight": 20
+        },
+        {
+          "id": 6114,
+          "ref": "tin",
+          "sprite": "wallnode_tin",
+          "weight": 10
+        }
       ]
     },
-
     "cuttree": {
-      "activation":        { "kind": "field_move", "move_id": 15 },
-      "script":            "HmGate",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 15
+      },
+      "script": "HmGate",
       "swing_duration_ms": 800,
-      "respawn_ms":        60000,
-      "break_sound":       "woodbreak",
+      "respawn_ms": 60000,
+      "break_sound": "woodbreak",
       "variants": [
-        { "id": 6200, "sprite": "cuttree" }
+        {
+          "id": 6200,
+          "sprite": "cuttree"
+        }
       ]
     },
-
     "cutlilypad1": {
-      "activation":              { "kind": "field_move", "move_id": 15 },
-      "script":                  "HmGate",
-      "swing_duration_ms":       800,
-      "respawn_ms":              60000,
-      "default_encounter_group": "lilypad_water",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 15
+      },
+      "script": "HmGate",
+      "swing_duration_ms": 800,
+      "respawn_ms": 60000,
+      "default_encounter_group": "shared_lilypad",
+      "encounter_method": "surf",
       "variants": [
-        { "id": 6201, "sprite": "cutlilypad1" }
+        {
+          "id": 6201,
+          "sprite": "cutlilypad1"
+        }
       ]
     },
-
     "cutlilypad2": {
-      "activation":              { "kind": "field_move", "move_id": 15 },
-      "script":                  "HmGate",
-      "swing_duration_ms":       800,
-      "respawn_ms":              60000,
-      "default_encounter_group": "lilypad_water",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 15
+      },
+      "script": "HmGate",
+      "swing_duration_ms": 800,
+      "respawn_ms": 60000,
+      "default_encounter_group": "shared_lilypad",
+      "encounter_method": "surf",
       "variants": [
-        { "id": 6202, "sprite": "cutlilypad2" }
+        {
+          "id": 6202,
+          "sprite": "cutlilypad2"
+        }
       ]
     },
-
     "rocksmash": {
-      "activation":              { "kind": "field_move", "move_id": 249 },
-      "script":                  "HmGate",
-      "swing_duration_ms":       800,
-      "respawn_ms":              60000,
-      "default_encounter_group": "rocksmash_common",
-      "break_sound":             "rocksmash",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 249
+      },
+      "script": "HmGate",
+      "swing_duration_ms": 800,
+      "respawn_ms": 60000,
+      "default_encounter_group": "shared_rocksmash",
+      "encounter_method": "rock_smash",
+      "break_sound": "rocksmash",
       "variants": [
-        { "id": 6203, "sprite": "rocksmash" }
+        {
+          "id": 6203,
+          "sprite": "rocksmash"
+        }
       ]
     },
-
     "rocksmash_tier2": {
-      "activation":              { "kind": "field_move", "move_id": 249 },
-      "script":                  "HmGate",
-      "swing_duration_ms":       800,
-      "respawn_ms":              60000,
-      "default_encounter_group": "rocksmash_common",
-      "break_sound":             "rocksmash",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 249
+      },
+      "script": "HmGate",
+      "swing_duration_ms": 800,
+      "respawn_ms": 60000,
+      "default_encounter_group": "shared_rocksmash",
+      "encounter_method": "rock_smash",
+      "break_sound": "rocksmash",
       "variants": [
-        { "id": 6204, "sprite": "rocksmash_tier2" }
+        {
+          "id": 6204,
+          "sprite": "rocksmash_tier2"
+        }
       ]
     },
-
     "rocksmash_tier3": {
-      "activation":              { "kind": "field_move", "move_id": 249 },
-      "script":                  "HmGate",
-      "swing_duration_ms":       800,
-      "respawn_ms":              60000,
-      "default_encounter_group": "rocksmash_common",
-      "break_sound":             "rocksmash",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 249
+      },
+      "script": "HmGate",
+      "swing_duration_ms": 800,
+      "respawn_ms": 60000,
+      "default_encounter_group": "shared_rocksmash",
+      "encounter_method": "rock_smash",
+      "break_sound": "rocksmash",
       "variants": [
-        { "id": 6205, "sprite": "rocksmash_tier3" }
+        {
+          "id": 6205,
+          "sprite": "rocksmash_tier3"
+        }
       ]
     },
-
     "rocksmash_tier4": {
-      "activation":              { "kind": "field_move", "move_id": 249 },
-      "script":                  "HmGate",
-      "swing_duration_ms":       800,
-      "respawn_ms":              60000,
-      "default_encounter_group": "rocksmash_common",
-      "break_sound":             "rocksmash",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 249
+      },
+      "script": "HmGate",
+      "swing_duration_ms": 800,
+      "respawn_ms": 60000,
+      "default_encounter_group": "shared_rocksmash",
+      "encounter_method": "rock_smash",
+      "break_sound": "rocksmash",
       "variants": [
-        { "id": 6206, "sprite": "rocksmash_tier4" }
+        {
+          "id": 6206,
+          "sprite": "rocksmash_tier4"
+        }
       ]
     },
-
     "boulder": {
-      "activation":        { "kind": "field_move", "move_id": 70 },
-      "script":            "Strength",
+      "activation": {
+        "kind": "field_move",
+        "move_id": 70
+      },
+      "script": "Strength",
       "swing_duration_ms": 600,
-      "respawn_ms":        60000,
+      "respawn_ms": 60000,
       "variants": [
-        { "id": 6210, "sprite": "boulder" }
+        {
+          "id": 6210,
+          "sprite": "boulder"
+        }
       ]
     },
-
     "forage_node": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 800,
-      "presence_based":    true,
+      "encounter_method": "forage",
+      "presence_based": true,
       "variants": [
-        { "id": 6310, "ref": "mushroom", "sprite": "mushroom1",     "weight": 18 },
-        { "id": 6311, "ref": "mushroom", "sprite": "mushroom2",     "weight": 14 },
-        { "id": 6312, "ref": "mushroom", "sprite": "mushroom_big",  "weight": 10 },
-        { "id": 6313, "ref": "mushroom", "sprite": "mushroom_tiny", "weight": 12 },
-        { "id": 6314, "ref": "mushroom", "sprite": "whiteshroom1",  "weight": 10 },
-        { "id": 6315, "ref": "mushroom", "sprite": "cutshroom",     "weight":  8 },
-        { "id": 6316, "ref": "mushroom", "sprite": "direshroom",    "weight":  4 },
-        { "id": 6317, "ref": "mushroom", "sprite": "swordcap",      "weight":  4 },
-        { "id": 6318, "ref": "herb",     "sprite": "caster_fern",   "weight":  8 },
-        { "id": 6319, "ref": "herb",     "sprite": "energy_root",   "weight":  6 },
-        { "id": 6320, "ref": "herb",     "sprite": "vine",          "weight":  6 },
-        { "id": 6321, "ref": "herb",     "sprite": "sootfootroot",  "weight":  6 }
+        {
+          "id": 6310,
+          "ref": "mushroom",
+          "sprite": "mushroom1",
+          "weight": 18
+        },
+        {
+          "id": 6311,
+          "ref": "mushroom",
+          "sprite": "mushroom2",
+          "weight": 14
+        },
+        {
+          "id": 6312,
+          "ref": "mushroom",
+          "sprite": "mushroom_big",
+          "weight": 10
+        },
+        {
+          "id": 6313,
+          "ref": "mushroom",
+          "sprite": "mushroom_tiny",
+          "weight": 12
+        },
+        {
+          "id": 6314,
+          "ref": "mushroom",
+          "sprite": "whiteshroom1",
+          "weight": 10
+        },
+        {
+          "id": 6316,
+          "ref": "mushroom",
+          "sprite": "direshroom",
+          "weight": 4
+        },
+        {
+          "id": 6317,
+          "ref": "mushroom",
+          "sprite": "swordcap",
+          "weight": 4
+        },
+        {
+          "id": 6318,
+          "ref": "herb",
+          "sprite": "caster_fern",
+          "weight": 8
+        },
+        {
+          "id": 6319,
+          "ref": "herb",
+          "sprite": "energy_root",
+          "weight": 6
+        }
       ]
     },
-
     "mushroom_common": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 800,
-      "presence_based":    true,
+      "encounter_method": "forage",
+      "presence_based": true,
       "variants": [
-        { "id": 6300, "ref": "mushroom", "sprite": "mushroom1", "weight": 60 },
-        { "id": 6301, "ref": "mushroom", "sprite": "mushroom2", "weight": 40 }
+        {
+          "id": 6300,
+          "ref": "mushroom",
+          "sprite": "mushroom1",
+          "weight": 60
+        },
+        {
+          "id": 6301,
+          "ref": "mushroom",
+          "sprite": "mushroom2",
+          "weight": 40
+        }
       ]
     },
-
     "herb_common": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 800,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6302, "ref": "herb", "sprite": "herb1" }
+        {
+          "id": 6302,
+          "ref": "herb",
+          "sprite": "herb1"
+        }
       ]
     },
-
     "flower_common": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 800,
-      "presence_based":    true,
+      "encounter_method": "forage",
+      "presence_based": true,
       "variants": [
-        { "id": 6303, "ref": "flower", "sprite": "flower1" }
+        {
+          "id": 6303,
+          "ref": "flower",
+          "sprite": "flower1"
+        }
       ]
     },
-
     "berrytree_oran": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6400, "ref": "berrytree_oran", "sprite": "berrytree_ORANBERRY" }
+        {
+          "id": 6400,
+          "ref": "berrytree_oran",
+          "sprite": "berrytree_ORANBERRY"
+        }
       ]
     },
-
     "berrytree_cheri": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6401, "ref": "berrytree_cheri", "sprite": "berrytree_CHERIBERRY" }
+        {
+          "id": 6401,
+          "ref": "berrytree_cheri",
+          "sprite": "berrytree_CHERIBERRY"
+        }
       ]
     },
-
     "berrytree_pecha": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6402, "ref": "berrytree_pecha", "sprite": "berrytree_PECHABERRY" }
+        {
+          "id": 6402,
+          "ref": "berrytree_pecha",
+          "sprite": "berrytree_PECHABERRY"
+        }
       ]
     },
-
     "berrytree_rawst": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6403, "ref": "berrytree_rawst", "sprite": "berrytree_RAWSTBERRY" }
+        {
+          "id": 6403,
+          "ref": "berrytree_rawst",
+          "sprite": "berrytree_RAWSTBERRY"
+        }
       ]
     },
-
     "berrytree_aspear": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6404, "ref": "berrytree_aspear", "sprite": "berrytree_ASPEARBERRY" }
+        {
+          "id": 6404,
+          "ref": "berrytree_aspear",
+          "sprite": "berrytree_ASPEARBERRY"
+        }
       ]
     },
-
     "berrytree_sitrus": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6405, "ref": "berrytree_sitrus", "sprite": "berrytree_SITRUSBERRY" }
+        {
+          "id": 6405,
+          "ref": "berrytree_sitrus",
+          "sprite": "berrytree_SITRUSBERRY"
+        }
       ]
     },
-
     "berrytree_leppa": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6406, "ref": "berrytree_leppa", "sprite": "berrytree_LEPPABERRY" }
+        {
+          "id": 6406,
+          "ref": "berrytree_leppa",
+          "sprite": "berrytree_LEPPABERRY"
+        }
       ]
     },
-
     "berrytree_lum": {
-      "anim":              "Harvest",
+      "anim": "Harvest",
       "swing_duration_ms": 1000,
-      "presence_based":    true,
+      "presence_based": true,
       "variants": [
-        { "id": 6407, "ref": "berrytree_lum", "sprite": "berrytree_LUMBERRY" }
+        {
+          "id": 6407,
+          "ref": "berrytree_lum",
+          "sprite": "berrytree_LUMBERRY"
+        }
       ]
     }
   }

@@ -297,7 +297,8 @@
           2.0,
           19.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [
@@ -309,8 +310,9 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_mtmoon_patch1",
+      "encounter_group": "kanto_mtmoon_cave",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_0",
       "polygon": [
         [
@@ -631,6 +633,9 @@
       },
       "id": "sign_19_26",
       "kind": "Sign",
+      "properties": {
+        "dialogue": "Beware Zubat swarms!"
+      },
       "script": "scripted",
       "tile_x": 19,
       "tile_y": 26
@@ -1201,7 +1206,7 @@
       "id": "resourcenode_26_12",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1212,38 +1217,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_28_12",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 28,
-      "tile_y": 12
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_27_12",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 27,
-      "tile_y": 12
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_29_12",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1257,7 +1234,7 @@
       "id": "resourcenode_13_24",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1268,24 +1245,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_17_24",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 17,
-      "tile_y": 24
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_18_24",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1299,7 +1262,7 @@
       "id": "resourcenode_16_24",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1310,38 +1273,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_15_24",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 15,
-      "tile_y": 24
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_14_24",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 14,
-      "tile_y": 24
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_20_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1355,7 +1290,7 @@
       "id": "resourcenode_21_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1366,38 +1301,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_22_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 22,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_23_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 23,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_24_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1408,24 +1315,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_25_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 25,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_26_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1436,66 +1329,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_27_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 27,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_28_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 28,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_30_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 30,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_31_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 31,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_32_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1506,24 +1343,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_33_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 33,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_34_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1537,7 +1360,7 @@
       "id": "resourcenode_35_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1548,52 +1371,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_36_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 36,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_37_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 37,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_39_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 39,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_38_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1604,38 +1385,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_40_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 40,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
-      "id": "resourcenode_41_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 41,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_42_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1646,24 +1399,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_43_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 43,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_44_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1677,7 +1416,7 @@
       "id": "resourcenode_45_1",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_wall_common"
       },
       "script": "default",
@@ -1688,24 +1427,10 @@
       "activation": [
         "FacePress"
       ],
-      "id": "resourcenode_29_1",
-      "kind": "ResourceNode",
-      "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
-        "OBJECT_TYPE": "mining_wall_common"
-      },
-      "script": "default",
-      "tile_x": 29,
-      "tile_y": 1
-    },
-    {
-      "activation": [
-        "FacePress"
-      ],
       "id": "resourcenode_3_25",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1719,7 +1444,7 @@
       "id": "resourcenode_6_26",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1733,7 +1458,7 @@
       "id": "resourcenode_5_23",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1747,7 +1472,7 @@
       "id": "resourcenode_3_22",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1761,7 +1486,7 @@
       "id": "resourcenode_4_23",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1775,7 +1500,7 @@
       "id": "resourcenode_42_7",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_uncommon"
       },
       "script": "default",
@@ -1789,7 +1514,7 @@
       "id": "resourcenode_43_7",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_uncommon"
       },
       "script": "default",
@@ -1897,7 +1622,7 @@
       "id": "resourcenode_40_34",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1911,7 +1636,7 @@
       "id": "resourcenode_43_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1925,7 +1650,7 @@
       "id": "resourcenode_44_33",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1939,7 +1664,7 @@
       "id": "resourcenode_40_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1953,7 +1678,7 @@
       "id": "resourcenode_45_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemushroom",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
         "OBJECT_TYPE": "mushroom_common"
       },
       "script": "default",
@@ -1967,7 +1692,7 @@
       "id": "resourcenode_24_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_rare"
       },
       "script": "default",
@@ -1981,7 +1706,7 @@
       "id": "resourcenode_26_32",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_uncommon"
       },
       "script": "default",
@@ -1995,7 +1720,7 @@
       "id": "resourcenode_27_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_common"
       },
       "script": "default",
@@ -2009,7 +1734,7 @@
       "id": "resourcenode_4_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_uncommon"
       },
       "script": "default",
@@ -2023,7 +1748,7 @@
       "id": "resourcenode_9_35",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_common"
       },
       "script": "default",
@@ -2037,7 +1762,7 @@
       "id": "resourcenode_11_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_common"
       },
       "script": "default",
@@ -2064,7 +1789,7 @@
       "id": "resourcenode_11_33",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_rare"
       },
       "script": "default",
@@ -2078,7 +1803,7 @@
       "id": "resourcenode_6_36",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_uncommon"
       },
       "script": "default",
@@ -2092,7 +1817,7 @@
       "id": "resourcenode_8_37",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_common"
       },
       "script": "default",
@@ -2119,7 +1844,7 @@
       "id": "resourcenode_2_37",
       "kind": "ResourceNode",
       "properties": {
-        "ENCOUNTER_GROUP": "kanto_mtmoon_resourcemine",
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
         "OBJECT_TYPE": "mining_common"
       },
       "script": "default",
@@ -2438,11 +2163,8 @@
       ],
       "placement_ids": [
         "resourcenode_13_24",
-        "resourcenode_17_24",
         "resourcenode_18_24",
-        "resourcenode_16_24",
-        "resourcenode_15_24",
-        "resourcenode_14_24"
+        "resourcenode_16_24"
       ],
       "polygon": [
         [
@@ -2471,8 +2193,6 @@
       ],
       "placement_ids": [
         "resourcenode_26_12",
-        "resourcenode_28_12",
-        "resourcenode_27_12",
         "resourcenode_29_12"
       ],
       "polygon": [
@@ -2503,30 +2223,15 @@
       "placement_ids": [
         "resourcenode_20_1",
         "resourcenode_21_1",
-        "resourcenode_22_1",
-        "resourcenode_23_1",
         "resourcenode_24_1",
-        "resourcenode_25_1",
         "resourcenode_26_1",
-        "resourcenode_27_1",
-        "resourcenode_28_1",
-        "resourcenode_30_1",
-        "resourcenode_31_1",
         "resourcenode_32_1",
-        "resourcenode_33_1",
         "resourcenode_34_1",
         "resourcenode_35_1",
-        "resourcenode_36_1",
-        "resourcenode_37_1",
-        "resourcenode_39_1",
         "resourcenode_38_1",
-        "resourcenode_40_1",
-        "resourcenode_41_1",
         "resourcenode_42_1",
-        "resourcenode_43_1",
         "resourcenode_44_1",
-        "resourcenode_45_1",
-        "resourcenode_29_1"
+        "resourcenode_45_1"
       ],
       "polygon": [
         [

@@ -1,6 +1,6 @@
 class_name ValCheck
 ## Shared, pure helpers for the validators: building lookup sets from Catalog entry arrays, and the
-## set of every known item id (Catalog snapshot ∪ the working-copy custom_items, so freshly-authored
+## set of every known item id (Catalog snapshot ∪ the working-copy items.json, so freshly-authored
 ## custom ids resolve before the DB is regenerated). No UI, no model dependencies.
 
 ## The wire protocol prefixes every String field with a single byte (crates/protocol `write_string`),
@@ -26,12 +26,12 @@ static func value_set(entries: Array) -> Dictionary:
 
 
 ## {int item_id: true} for every item the server would know: the Catalog snapshot (PokeAPI + custom
-## already in the DB) plus any custom_items.json ids in the designer's working copy not yet regenerated.
+## already in the DB) plus any items.json ids in the designer's working copy not yet regenerated.
 static func item_id_set(content_dir: String) -> Dictionary:
 	var s := {}
 	for e in Catalog.items:
 		s[int(str(e["value"]))] = true
-	var custom: Variant = JsonIO.load_file(content_dir + "/custom_items.json")
+	var custom: Variant = JsonIO.load_file(content_dir + "/items.json")
 	if typeof(custom) == TYPE_ARRAY:
 		for it in custom:
 			if typeof(it) == TYPE_DICTIONARY and it.has("item_id"):
@@ -39,10 +39,10 @@ static func item_id_set(content_dir: String) -> Dictionary:
 	return s
 
 
-## {item slug: true} known to the server: Catalog item slugs ∪ slugified custom_items names.
+## {item slug: true} known to the server: Catalog item slugs ∪ slugified items.json names.
 static func item_slug_set(content_dir: String) -> Dictionary:
 	var s := value_set(Catalog.item_slugs)
-	var custom: Variant = JsonIO.load_file(content_dir + "/custom_items.json")
+	var custom: Variant = JsonIO.load_file(content_dir + "/items.json")
 	if typeof(custom) == TYPE_ARRAY:
 		for it in custom:
 			if typeof(it) == TYPE_DICTIONARY and it.has("name"):

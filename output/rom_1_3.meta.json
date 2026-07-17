@@ -321,7 +321,8 @@
           3.0,
           8.0
         ]
-      ]
+      ],
+      "region": "kanto"
     },
     {
       "climate": "none",
@@ -444,7 +445,8 @@
           28.0,
           28.0
         ]
-      ]
+      ],
+      "region": "kanto"
     },
     {
       "climate": "none",
@@ -519,7 +521,8 @@
           33.0,
           7.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [
@@ -586,8 +589,9 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_mtmoon_patch1",
+      "encounter_group": "kanto_mtmoon_cave",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_0",
       "polygon": [
         [
@@ -898,8 +902,9 @@
       "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_mtmoon_patch2",
+      "encounter_group": "kanto_mtmoon_cave",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_3",
       "polygon": [
         [
@@ -1018,8 +1023,9 @@
       "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_mtmoon_patch2",
+      "encounter_group": "kanto_mtmoon_cave",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_4",
       "polygon": [
         [
@@ -1283,9 +1289,9 @@
         "time_of_day": []
       },
       "script": "trainer",
-      "tile_x": 20,
+      "tile_x": 15,
       "tile_y": 21,
-      "vision_range": 11
+      "vision_range": 3
     }
   ],
   "properties": {

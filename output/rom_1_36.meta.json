@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "cave_1",
+      "day_track": "mt_moon",
       "display_name": "Diglett's Cave",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "cave_1",
+      "night_track": "mt_moon",
       "polygon": [
         [
           2.0,
@@ -41,7 +41,8 @@
           2.0,
           7.0
         ]
-      ]
+      ],
+      "region": "kanto"
     }
   ],
   "collision_overrides": [
@@ -53,7 +54,7 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_diglettscave_patch1",
+      "encounter_group": "kanto_diglettscave_cave1",
       "fish_encounter_group": "",
       "name": "encounter_1",
       "polygon": [
