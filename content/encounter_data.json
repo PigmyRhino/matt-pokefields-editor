@@ -2232,6 +2232,17 @@
       "morning_allowed": false,
       "day_allowed": true,
       "night_allowed": false
+    },
+    {
+      "encounter": "kanto_encounter_26",
+      "pokemon": "aggron",
+      "min_level": 5,
+      "max_level": 10,
+      "slots": 10,
+      "held_item_groups": "",
+      "morning_allowed": true,
+      "day_allowed": true,
+      "night_allowed": true
     }
   ],
   "total_slots_combined": 38673

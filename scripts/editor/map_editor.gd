@@ -750,8 +750,14 @@ func _build_enc_popup() -> void:
 	_enc_add_group_row.add_child(grp_lbl)
 	_enc_add_group_name = LineEdit.new()
 	_enc_add_group_name.custom_minimum_size = Vector2(160, 0)
-	_enc_add_group_name.placeholder_text = "encounter_group_id"
+	_enc_add_group_name.placeholder_text = "group name"
+	_enc_add_group_name.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_enc_add_group_row.add_child(_enc_add_group_name)
+	var grp_pick_btn := Button.new()
+	grp_pick_btn.text = "▼"
+	grp_pick_btn.custom_minimum_size = Vector2(24, 0)
+	grp_pick_btn.pressed.connect(func() -> void: _open_group_picker())
+	_enc_add_group_row.add_child(grp_pick_btn)
 	form_vb.add_child(_enc_add_group_row)
 	# Species row
 	var species_hb := HBoxContainer.new()
@@ -883,6 +889,9 @@ func _show_enc_add_popup(group: String) -> void:
 	_update_enc_add_pct()
 	_enc_popup_list_box.visible = false
 	_enc_add_form.visible = true
+	# Temporarily allow focus so LineEdits can receive keyboard input.
+	_enc_popup.set_flag(Window.FLAG_NO_FOCUS, false)
+	_enc_add_group_name.call_deferred("grab_focus")
 
 
 func _show_enc_edit_popup(group: String, entry: Dictionary) -> void:
@@ -901,6 +910,8 @@ func _show_enc_edit_popup(group: String, entry: Dictionary) -> void:
 	_update_enc_add_pct()
 	_enc_popup_list_box.visible = false
 	_enc_add_form.visible = true
+	_enc_popup.set_flag(Window.FLAG_NO_FOCUS, false)
+	_enc_add_species.call_deferred("grab_focus")
 
 
 func _close_enc_add_form() -> void:
@@ -908,6 +919,21 @@ func _close_enc_add_form() -> void:
 	_enc_popup_list_box.visible = true
 	_enc_edit_entry = {}
 	_rebuild_enc_popup_list()
+	# Restore no-focus so the map stays clickable.
+	_enc_popup.set_flag(Window.FLAG_NO_FOCUS, true)
+
+
+func _open_group_picker() -> void:
+	var groups := ContentScan.encounter_groups()
+	var popup := PopupMenu.new()
+	for g in groups:
+		popup.add_item(str(g["label"]))
+	popup.id_pressed.connect(func(id: int) -> void:
+		_enc_add_group_name.text = popup.get_item_text(id))
+	add_child(popup)
+	popup.position = _enc_add_group_name.global_position as Vector2i
+	popup.popup()
+	popup.popup_hide.connect(func() -> void: popup.queue_free())
 
 
 func _update_enc_add_pct() -> void:
@@ -987,6 +1013,9 @@ func _save_enc_data() -> void:
 			raw["entries"] = []
 		raw["entries"] = _enc_popup_data
 		JsonIO.save_file("res://content/encounter_data.json", raw)
+		_encounter_groups = ValCheck.value_set(ContentScan.encounter_groups())
+		_data_panel.reload_encounters()
+		_revalidate()
 
 
 func _rebuild_enc_popup_list() -> void:

@@ -136,6 +136,13 @@ func reveal_encounter(group_id: String) -> void:
 		_editor.reveal(p)
 
 
+func reload_encounters() -> void:
+	if _active_name != "Encounters":
+		return
+	if _editor != null:
+		_editor.load_data()
+
+
 func _index_of(name: String) -> int:
 	for i in DATASETS.size():
 		if str(DATASETS[i]["name"]) == name:
