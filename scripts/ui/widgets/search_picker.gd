@@ -114,15 +114,21 @@ func _open() -> void:
 	if _dropdown.visible:
 		_close()
 		return
-	# Add to the same Window (viewport) this button lives in so coordinates match.
-	var win: Window = get_window()
-	if _dropdown.get_parent() != win:
+	# Add the dropdown to the same canvas layer this button lives in so it isn't hidden behind one.
+	var host: Node = get_window()
+	var p := get_parent()
+	while p != null:
+		if p is CanvasLayer:
+			host = p
+			break
+		p = p.get_parent()
+	if _dropdown.get_parent() != host:
 		if _dropdown.get_parent():
 			_dropdown.get_parent().remove_child(_dropdown)
-		win.add_child(_dropdown)
+		host.add_child(_dropdown)
 	_filter.text = ""
 	_populate()
-	_dropdown.position = position + Vector2(0, size.y)
+	_dropdown.position = global_position + Vector2(0, size.y)
 	_dropdown.custom_minimum_size = Vector2(int(maxf(size.x, 220)), 320)
 	_dropdown.visible = true
 	_filter.grab_focus()
