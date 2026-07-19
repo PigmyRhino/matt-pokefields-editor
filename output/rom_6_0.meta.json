@@ -180,7 +180,7 @@
       },
       "render": {
         "direction": 1,
-        "display_name": "",
+        "display_name": "Receptionist",
         "sprite": 25,
         "time_of_day": []
       },

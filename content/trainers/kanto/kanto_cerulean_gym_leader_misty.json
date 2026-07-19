@@ -39,7 +39,7 @@
     },
     {
       "species": "psyduck",
-      "ability": "cloud_nine",
+      "ability": "swift_swim",
       "nature": "modest",
       "gender": "female",
       "iv_hp": 31,
@@ -86,7 +86,8 @@
         "confusion"
       ],
       "level_offset": 3,
-      "held_item": "sitrus_berry"
+      "held_item": "sitrus_berry",
+      "is_shiny": true
     },
     {
       "species": "marill",

@@ -119,8 +119,8 @@
     },
     {
       "job_id": "cerulean_challenge_misty",
-      "title": "Make Waves",
-      "description": "Show the gym you've got what it takes — defeat Misty in an official rematch.",
+      "title": "Gym Leader Misty!",
+      "description": "Show the gym you've got what it takes — defeat Misty!",
       "cadence": "weekly",
       "objective": {
         "kind": "defeat_trainer",
