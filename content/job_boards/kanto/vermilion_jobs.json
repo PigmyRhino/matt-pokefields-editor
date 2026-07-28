@@ -4,23 +4,23 @@
 {
   "board_id": "vermilion_jobs",
   "name": "Vermilion City",
-  "daily_slots": 3,
-  "weekly_slots": 2,
+  "daily_slots": 4,
+  "weekly_slots": 3,
   "jobs": [
     {
       "job_id": "vermilion_drowzee_watch",
-      "title": "Drowzee Watch",
+      "title": "Downing Drowzee",
       "description": "Dock workers keep dozing off mid-shift — Drowzee are feeding on their dreams. Drive them off Route 11.",
       "cadence": "daily",
       "objective": {
         "kind": "defeat_species",
         "species": "drowzee",
-        "count": 8
+        "count": 10
       },
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 2600
+          "amount": 16000
         }
       ]
     },
@@ -32,79 +32,18 @@
       "objective": {
         "kind": "defeat_species",
         "species": "magnemite",
-        "count": 8
+        "count": 10
       },
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 2600
-        }
-      ]
-    },
-    {
-      "job_id": "vermilion_meowth_cargo",
-      "title": "Cargo Stowaways",
-      "description": "Meowth keep raiding the warehouse. The harbourmaster wants a few caught alive.",
-      "cadence": "daily",
-      "objective": {
-        "kind": "catch_pokemon",
-        "species": "meowth",
-        "count": 2
-      },
-      "rewards": [
-        {
-          "kind": "pokeyen",
-          "amount": 2200
-        },
-        {
-          "kind": "item",
-          "item": "poke_ball",
-          "qty": 5
-        }
-      ]
-    },
-    {
-      "job_id": "vermilion_tentacool_sweep",
-      "title": "Jellyfish Sweep",
-      "description": "Tentacool are stinging swimmers off the Route 11 shore. Fish a few out of the water.",
-      "cadence": "daily",
-      "objective": {
-        "kind": "catch_pokemon",
-        "species": "tentacool",
-        "count": 3
-      },
-      "rewards": [
-        {
-          "kind": "pokeyen",
-          "amount": 2000
-        }
-      ]
-    },
-    {
-      "job_id": "vermilion_flower_order",
-      "title": "Harbour Bouquets",
-      "description": "The flower stall by the docks pays for fresh wildflowers. Forage a bundle.",
-      "cadence": "daily",
-      "objective": {
-        "kind": "gather_item",
-        "item": "wildflower",
-        "count": 5
-      },
-      "rewards": [
-        {
-          "kind": "pokeyen",
-          "amount": 1500
-        },
-        {
-          "kind": "skill_xp",
-          "skill": "foraging",
-          "amount": 300
+          "amount": 10000
         }
       ]
     },
     {
       "job_id": "vermilion_psychic_hustler",
-      "title": "Roadside Hustler",
+      "title": "Psychic Edward",
       "description": "Psychic Edward keeps fleecing rookies on Route 11. Beat him at his own game.",
       "cadence": "daily",
       "objective": {
@@ -114,7 +53,12 @@
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 2800
+          "amount": 12000
+        },
+        {
+          "kind": "item",
+          "qty": 1,
+          "item": "tm04"
         }
       ]
     },
@@ -130,13 +74,13 @@
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 1800
+          "amount": 25000
         }
       ]
     },
     {
       "job_id": "vermilion_challenge_surge",
-      "title": "Storm the Gym",
+      "title": "Leader Surge!",
       "description": "Show the gym you've got what it takes — defeat Lt. Surge in an official rematch.",
       "cadence": "weekly",
       "objective": {
@@ -146,13 +90,13 @@
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 12000
+          "amount": 75000
         }
       ]
     },
     {
       "job_id": "vermilion_shiny_proof",
-      "title": "A Rare Find",
+      "title": "I'd Rather Be SHINY!",
       "description": "Bring proof of a shiny capture — any species will do. A sailor pays handsomely.",
       "cadence": "weekly",
       "objective": {
@@ -163,29 +107,146 @@
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 25000
+          "amount": 75000
         }
       ]
     },
     {
-      "job_id": "vermilion_anne_gauntlet",
-      "title": "S.S. Anne Gauntlet",
-      "description": "The passengers aboard the S.S. Anne love a wager. Win trainer battles until word gets around.",
+      "job_id": "vermilion_chopper",
+      "title": "Elite Woodsman",
+      "description": "We need timber! Go get some logs for us!",
       "cadence": "weekly",
       "objective": {
-        "kind": "win_battles",
-        "trainer_only": true,
+        "kind": "gather_item",
+        "count": 100,
+        "item": "oak_log"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 100000
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_diglett",
+      "title": "Dig Dug",
+      "description": "Diglett's Cave Diglett population is getting out of hand... ",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "count": 15,
+        "species": "diglett"
+      },
+      "rewards": [
+        {
+          "kind": "item",
+          "qty": 1,
+          "item": "tm78"
+        },
+        {
+          "kind": "pokeyen",
+          "amount": 10000
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_pidgey_pest",
+      "title": "Pidgey Pest Control",
+      "description": "Flocks of Pidgey are swarming the Route 6 farmland. The farmers need them chased off before they strip the crops.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "pidgey",
+        "count": 12
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3500
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_oddish_gathering",
+      "title": "Oddish Uproot",
+      "description": "Oddish have taken root all along Route 6. Dig them up before they choke out everything else.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "oddish",
         "count": 10
       },
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 10000
+          "amount": 4000
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_timber_demand",
+      "title": "Timber Demand",
+      "description": "The harbour's construction crews are burning through oak logs faster than expected. Get more from the forest.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "oak_log",
+        "count": 15
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 7000
+        },
+        {
+          "kind": "skill_xp",
+          "skill": "foraging",
+          "amount": 250
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_cave_deep",
+      "title": "Diglett's Den",
+      "description": "Diglett's Cave goes deeper than anyone thought. Push to the end and take down the Dugtrio guarding the passage.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "dugtrio",
+        "count": 3
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 20000
         },
         {
           "kind": "item",
-          "item": "oran_berry",
-          "qty": 10
+          "qty": 3,
+          "item": "hyper_potion"
+        }
+      ]
+    },
+    {
+      "job_id": "vermilion_sailor_showdown",
+      "title": "Sailor Showdown",
+      "description": "The toughest sailors from the harbour and S.S. Anne are lining up for a fight. Win enough bouts to earn their respect.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "count": 10,
+        "trainer_only": true
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 25000
+        },
+        {
+          "kind": "item",
+          "qty": 10,
+          "item": "oran_berry"
         }
       ]
     }

@@ -10,6 +10,7 @@ const KIND_COLORS := {
 	"Facility": Color(0.75, 0.55, 1.0),
 	"ResourceNode": Color(0.4, 0.9, 0.45),
 	"Trigger": Color(1.0, 0.5, 0.5),
+	"Barrier": Color(1.0, 0.9, 0.2),
 }
 const WARP_COLOR := Color(1.0, 0.6, 0.2)
 const TARGET_COLOR := Color(0.3, 0.9, 0.9)
@@ -173,6 +174,20 @@ func _draw_zone(z: Zone) -> void:
 		pts.append(Vector2(v.x * _tile, v.y * _tile))
 	draw_colored_polygon(pts, Color(col, 0.18))
 	_draw_poly_outline(z.polygon, col, 1.0)
+	if not z.cells.is_empty():
+		for c: Vector2i in z.cells:
+			var cx := c.x
+			var cy := c.y
+			var px := cx * _tile
+			var py := cy * _tile
+			if not z.cells.has(Vector2i(cx, cy - 1)):
+				draw_line(Vector2(px, py), Vector2(px + _tile, py), col, 1.0)
+			if not z.cells.has(Vector2i(cx + 1, cy)):
+				draw_line(Vector2(px + _tile, py), Vector2(px + _tile, py + _tile), col, 1.0)
+			if not z.cells.has(Vector2i(cx, cy + 1)):
+				draw_line(Vector2(px, py + _tile), Vector2(px + _tile, py + _tile), col, 1.0)
+			if not z.cells.has(Vector2i(cx - 1, cy)):
+				draw_line(Vector2(px, py), Vector2(px, py + _tile), col, 1.0)
 	if _problem_objs.has(z):
 		_draw_poly_outline(z.polygon, PROBLEM_ERR if _problem_objs[z] else PROBLEM_WARN, 2.0)
 	if _font != null and z.name != "":

@@ -1,0 +1,106 @@
+{
+  "area_zones": [],
+  "collision_overrides": [],
+  "encounter_zones": [],
+  "gate_zones": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_6_8",
+      "kind": "ResourceNode",
+      "properties": {
+        "OBJECT_TYPE": "cuttree"
+      },
+      "script": "default",
+      "tile_x": 6,
+      "tile_y": 8
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_9_6",
+      "kind": "ResourceNode",
+      "properties": {
+        "OBJECT_TYPE": "cuttree"
+      },
+      "script": "default",
+      "tile_x": 9,
+      "tile_y": 6
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_3_5",
+      "kind": "ResourceNode",
+      "properties": {
+        "OBJECT_TYPE": "cuttree"
+      },
+      "script": "default",
+      "tile_x": 3,
+      "tile_y": 5
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_celadon_gym_leader_erika",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Erika",
+        "sprite": 165,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 6,
+      "tile_y": 4
+    }
+  ],
+  "properties": {
+    "is_dark": false
+  },
+  "resource_areas": [],
+  "tile_overrides": [],
+  "warp_targets": [
+    {
+      "direction": 0,
+      "name": "t_6_18",
+      "target_warp": "",
+      "tile_x": 6,
+      "tile_y": 18
+    }
+  ],
+  "warps": [
+    {
+      "door_type": "",
+      "name": "warp_5_18",
+      "target_map": "kanto",
+      "target_warp": "t_191_150",
+      "tile_x": 5,
+      "tile_y": 18,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_6_18",
+      "target_map": "kanto",
+      "target_warp": "t_191_150",
+      "tile_x": 6,
+      "tile_y": 18,
+      "warp_type": ""
+    },
+    {
+      "door_type": "",
+      "name": "warp_7_18",
+      "target_map": "kanto",
+      "target_warp": "t_191_150",
+      "tile_x": 7,
+      "tile_y": 18,
+      "warp_type": ""
+    }
+  ]
+}

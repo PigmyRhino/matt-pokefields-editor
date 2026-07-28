@@ -7,7 +7,12 @@
   "payout_base": 450,
   "payout_per_level": 22,
   "badge_award": null,
-  "items": [],
+  "items": [
+    {
+      "item": "full_restore",
+      "qty": 1
+    }
+  ],
   "initial_field": null,
   "team": [
     {

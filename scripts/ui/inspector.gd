@@ -12,6 +12,12 @@ signal waypoint_edit_toggled(enabled: bool)
 const BEHAVIORS := ["Stationary", "Look Around", "Wander", "Patrol"]
 const PATROL_MODES := ["Loop", "Ping-Pong"]
 const SPRITE_SOURCES := ["Character", "Pokémon"]
+const BARRIER_CONDITIONS := [
+	"Present until a flag is set",
+	"Present once a flag is set",
+	"Present with a gym badge",
+	"Present with N gym badges",
+]
 
 @onready var _id: LineEdit = %IdEdit
 @onready var _kind: OptionButton = %KindOption
@@ -36,7 +42,7 @@ const SPRITE_SOURCES := ["Character", "Pokémon"]
 @onready var _display_name: LineEdit = %DisplayNameEdit
 @onready var _trainer_link_row: Control = %TrainerLinkRow
 @onready var _trainer_link: SearchPicker = %TrainerLinkOption
-@onready var _tod: Array[CheckBox] = [%TodMorning, %TodDay, %TodDusk, %TodNight]
+@onready var _tod: Array[CheckBox] = [%TodMorning, %TodDay, %TodNight]
 @onready var _trainer: CheckBox = %TrainerCheck
 @onready var _vision: SpinBox = %VisionSpin
 @onready var _behavior: OptionButton = %BehaviorOption
@@ -69,6 +75,11 @@ var _npc_dlg: TextEdit
 var _scripted_header: Label
 var _graph_btn: Button
 var _graph_canvas: GraphCanvas
+
+var _barrier_header: Label
+var _barrier_cond: OptionButton
+var _barrier_flag: LineEdit
+var _barrier_num: SpinBox
 
 
 func _ready() -> void:
@@ -138,6 +149,7 @@ func _ready() -> void:
 
 	_build_dialogue_ui()
 	_build_scripted_ui()
+	_build_barrier_ui()
 	visible = false
 
 
@@ -174,6 +186,76 @@ func _build_scripted_ui() -> void:
 	add_child(_graph_canvas)
 
 
+## The Barrier field group — sprite id + presence condition — inserted above Delete, shown only for
+## kind == "Barrier". A barrier exists (blocks + renders) only while its condition holds.
+func _build_barrier_ui() -> void:
+	_barrier_header = Label.new()
+	_barrier_header.text = "— barrier (opens when its condition fails; reuses the ROM tile) —"
+	_fields.add_child(_barrier_header)
+
+	_barrier_cond = OptionButton.new()
+	for label in BARRIER_CONDITIONS:
+		_barrier_cond.add_item(label)
+	_barrier_cond.item_selected.connect(func(_i: int) -> void: _write_barrier())
+	_fields.add_child(_barrier_cond)
+
+	_barrier_flag = LineEdit.new()
+	_barrier_flag.placeholder_text = "flag key (e.g. gym_vermilion_barriers_down)"
+	_barrier_flag.text_changed.connect(func(_t: String) -> void: _write_barrier())
+	_fields.add_child(_barrier_flag)
+
+	_barrier_num = SpinBox.new()
+	_barrier_num.min_value = 0
+	_barrier_num.max_value = 31
+	_barrier_num.prefix = "value "
+	_barrier_num.value_changed.connect(func(_v: float) -> void: _write_barrier())
+	_fields.add_child(_barrier_num)
+
+	for n in [_barrier_header, _barrier_cond, _barrier_flag, _barrier_num]:
+		_fields.move_child(n, _delete.get_index())
+
+
+func _load_barrier() -> void:
+	if _it == null:
+		return
+	var was := _loading
+	_loading = true
+	var c := _it.condition
+	match str(c.get("kind", "flag_unset")):
+		"flag_set":
+			_barrier_cond.selected = 1
+			_barrier_flag.text = str(c.get("key", ""))
+		"has_badge":
+			_barrier_cond.selected = 2
+			_barrier_num.value = int(c.get("badge_id", 0))
+		"badge_count_at_least":
+			_barrier_cond.selected = 3
+			_barrier_num.value = int(c.get("count", 1))
+		_:
+			_barrier_cond.selected = 0
+			_barrier_flag.text = str(c.get("key", ""))
+	_loading = was
+
+
+func _write_barrier() -> void:
+	if _guarded(): return
+	match _barrier_cond.selected:
+		1: _it.condition = { "kind": "flag_set", "key": _barrier_flag.text.strip_edges() }
+		2: _it.condition = { "kind": "has_badge", "badge_id": int(_barrier_num.value) }
+		3: _it.condition = { "kind": "badge_count_at_least", "count": int(_barrier_num.value) }
+		_: _it.condition = { "kind": "flag_unset", "key": _barrier_flag.text.strip_edges() }
+	_update_barrier_field_visibility()
+	changed.emit()
+
+
+## Flag conditions show the key field; badge conditions show the number field. Only when the whole
+## barrier group is visible (kind == "Barrier").
+func _update_barrier_field_visibility() -> void:
+	var is_flag := _barrier_cond.selected <= 1
+	_barrier_flag.visible = _barrier_header.visible and is_flag
+	_barrier_num.visible = _barrier_header.visible and not is_flag
+
+
 func bind(it: Interactable) -> void:
 	_it = it
 	visible = it != null
@@ -199,6 +281,7 @@ func bind(it: Interactable) -> void:
 	update_waypoint_count()
 	_load_dialogue()
 	_refresh_graph_btn()
+	_load_barrier()
 	_refresh_visibility()
 	_loading = false
 
@@ -232,6 +315,10 @@ func _refresh_visibility() -> void:
 	# other-scripted NPC speaks via its own script (trainer.lua reads the trainer file), so no line here.
 	_npc_dlg.visible = _uses_npc_dialogue()
 	_dlg_header.visible = _uses_npc_dialogue()
+	var is_barrier := _it.kind == "Barrier"
+	_barrier_header.visible = is_barrier
+	_barrier_cond.visible = is_barrier
+	_update_barrier_field_visibility()
 
 
 # -- common field handlers --
@@ -425,20 +512,20 @@ func _on_display_name_changed(text: String) -> void:
 # -- NPC: time of day --
 
 func _load_time_of_day(it: Interactable) -> void:
-	# Empty = all phases (always visible) → show all four ticked.
+	# Empty = all phases (always visible) → show every box ticked.
 	var all := it.time_of_day.is_empty()
-	for i in 4:
+	for i in Interactable.PHASES.size():
 		_tod[i].button_pressed = all or (Interactable.PHASES[i] in it.time_of_day)
 
 
 func _on_tod_changed(_pressed: bool) -> void:
 	if _guarded(): return
 	var phases: Array[String] = []
-	for i in 4:
+	for i in Interactable.PHASES.size():
 		if _tod[i].button_pressed:
 			phases.append(str(Interactable.PHASES[i]))
 	# All (or none) ticked means "no restriction" → empty array.
-	if phases.size() == 4:
+	if phases.size() == Interactable.PHASES.size():
 		phases.clear()
 	_it.time_of_day = phases
 	changed.emit()

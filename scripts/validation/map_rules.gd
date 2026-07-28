@@ -44,6 +44,8 @@ static func validate(doc: MapDoc, trainer_names: Dictionary, region: String,
 		if it.script_name == "job_board":
 			_job_board(it, job_board_ids, out)
 
+	_switch_index_contiguity(doc, out)
+
 	# Warp targets: names present + unique (the server keys a HashMap on name — dups overwrite).
 	var seen_targets := {}
 	for t in doc.warp_targets:
@@ -108,6 +110,28 @@ static func _dialogue_lines(it: Interactable, ctx: String, out: Array) -> void:
 			_check_len("dialogue line", t, ctx, it, out)
 
 
+static func _switch_index_contiguity(doc: MapDoc, out: Array) -> void:
+	var groups := {}  # script_name -> { "idxs": Array[int], "loc": Interactable }
+	for it in doc.interactables:
+		if not it.properties.has("switch_index"):
+			continue
+		var raw := str(it.properties["switch_index"])
+		if not raw.is_valid_int():
+			out.append(Problem.err("%s has a non-integer switch_index '%s'" % [it.id, raw], it.id, it))
+			continue
+		if not groups.has(it.script_name):
+			groups[it.script_name] = {"idxs": [], "loc": it}
+		groups[it.script_name]["idxs"].append(int(raw))
+	for script_name: String in groups:
+		var idxs: Array = groups[script_name]["idxs"]
+		idxs.sort()
+		if idxs != range(idxs.size()):
+			out.append(Problem.err(
+					"switch cans (script '%s') need contiguous switch_index 0..%d (no gaps or duplicates); got %s"
+							% [script_name, idxs.size() - 1, str(idxs)],
+					script_name, groups[script_name]["loc"]))
+
+
 static func _interactable(it: Interactable, trainer_names: Dictionary, object_types: Dictionary,
 		is_blocked: Callable, out: Array) -> void:
 	var ctx := it.id if it.id != "" else it.kind
@@ -126,6 +150,16 @@ static func _interactable(it: Interactable, trainer_names: Dictionary, object_ty
 				out.append(Problem.warn("resource node %s has no OBJECT_TYPE (inert)" % ctx, ctx, it))
 			elif not object_types.has(ot):
 				out.append(Problem.warn("resource node %s OBJECT_TYPE %s is not in the catalog (inert)" % [ctx, ot], ctx, it))
+		"Barrier":
+			var cond: Dictionary = it.condition
+			if cond.is_empty():
+				out.append(Problem.warn("barrier %s has no condition — it is always present and can never open" % ctx, ctx, it))
+			else:
+				var key := str(cond.get("key", "")).strip_edges()
+				if cond.get("kind", "") in ["flag_set", "flag_unset"] and key == "":
+					out.append(Problem.err("barrier %s condition has no flag key" % ctx, ctx, it))
+				elif key != "":
+					_check_len("barrier flag key", key, ctx, it, out)
 		_:
 			pass
 

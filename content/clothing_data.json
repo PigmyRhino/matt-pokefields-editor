@@ -86,7 +86,8 @@
     { "id_start": 40025, "style": "straw_hat",        "name": "Straw Hat",         "description": "A breezy straw hat.", "price": 400 },
     { "id_start": 40026, "style": "summerhat",        "name": "Summer Hat",        "description": "A light summer hat.", "price": 500 },
     { "id_start": 40027, "style": "sun_hat",          "name": "Sun Hat",           "description": "A wide-brimmed sun hat.", "price": 500 },
-    { "id_start": 40028, "style": "taterhat",         "name": "Tater Hat",         "description": "A quirky potato-shaped hat.", "price": 2000, "sellable": false, "tradable": false },
-    { "id_start": 40029, "style": "youngster_cap",    "name": "Youngster Cap",     "description": "A classic trainer's cap.", "price": 300, "colors": ["blue", "yellow"] }
+    { "id_start": 40028, "style": "bosshat",          "name": "Boss Hat",          "description": "A quirky potato-shaped hat.", "price": 2000, "sellable": false, "tradable": false },
+    { "id_start": 40029, "style": "youngster_cap",    "name": "Youngster Cap",     "description": "A classic trainer's cap.", "price": 300, "colors": ["blue", "yellow"] },
+    { "id_start": 40031, "style": "golden_wing_helmet", "name": "Golden Wing Helmet", "description": "A gleaming helm crowned with golden wings.", "price": 5000, "sellable": false, "tradable": false }
   ]
 }

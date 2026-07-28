@@ -7,7 +7,12 @@
   "payout_base": 1800,
   "payout_per_level": 50,
   "badge_award": 0,
-  "items": [],
+  "items": [
+    {
+      "item": "full_restore",
+      "qty": 3
+    }
+  ],
   "initial_field": {
     "weather": "Sandstorm",
     "terrain": null,
@@ -22,76 +27,79 @@
       "species": "geodude",
       "ability": "sturdy",
       "nature": "adamant",
+      "moves": [
+        "rock_tomb",
+        "rock_throw",
+        "defense_curl",
+        "rock_polish"
+      ],
+      "level_offset": 0,
       "gender": "male",
-      "held_item": "oran_berry",
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 0,
       "ev_atk": 252,
-      "ev_def": 252,
-      "ev_spa": 0,
-      "ev_spd": 0,
-      "ev_spe": 6,
-      "moves": [
-        "rock_tomb"
-      ],
-      "level_offset": 0
+      "ev_spd": 252
     },
     {
-      "species": "sudowoodo",
-      "ability": "sturdy",
-      "nature": "adamant",
+      "species": "vulpix",
+      "ability": "flash_fire",
+      "nature": "modest",
+      "moves": [
+        "ember",
+        "confuse_ray",
+        "will_o_wisp",
+        "toxic"
+      ],
       "gender": "male",
-      "held_item": "oran_berry",
+      "level_offset": 0,
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 0,
-      "ev_atk": 252,
-      "ev_def": 0,
-      "ev_spa": 0,
-      "ev_spd": 252,
-      "ev_spe": 6,
-      "moves": [
-        "rock_tomb"
-      ],
-      "level_offset": 1
+      "ev_spa": 252,
+      "ev_spe": 252
     },
     {
       "species": "omanyte",
-      "ability": "swift_swim",
+      "ability": "weak_armor",
       "nature": "modest",
-      "gender": "female",
-      "held_item": null,
+      "moves": [
+        "shell_smash",
+        "water_gun",
+        "ancient_power",
+        "rock_tomb"
+      ],
+      "level_offset": 1,
+      "gender": "male",
+      "held_item": "white_herb",
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 252,
-      "ev_atk": 0,
-      "ev_def": 0,
-      "ev_spa": 252,
-      "ev_spd": 0,
-      "ev_spe": 6,
-      "moves": [
-        "rock_tomb"
-      ],
-      "level_offset": 1
+      "ev_spe": 252,
+      "ev_spa": 252
     },
     {
       "species": "onix",
-      "ability": "rock_head",
+      "ability": "sturdy",
       "nature": "adamant",
+      "moves": [
+        "rock_tomb",
+        "iron_tail",
+        "dig",
+        "screech"
+      ],
+      "level_offset": 2,
       "gender": "male",
+      "is_shiny": true,
       "held_item": "oran_berry",
       "iv_hp": 31,
       "iv_atk": 31,
@@ -99,17 +107,8 @@
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 252,
-      "ev_atk": 252,
-      "ev_def": 0,
-      "ev_spa": 0,
-      "ev_spd": 0,
-      "ev_spe": 6,
-      "moves": [
-        "rock_tomb"
-      ],
-      "is_shiny": true,
-      "level_offset": 3
+      "ev_spd": 252,
+      "ev_atk": 252
     }
   ],
   "dialogue": {

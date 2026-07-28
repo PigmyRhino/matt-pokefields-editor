@@ -80,7 +80,8 @@
           {
             "cond": {
               "item_id": 427,
-              "kind": "has_item"
+              "kind": "has_item",
+              "min_qty": 1
             },
             "id": "check",
             "if_false": "offer",
@@ -93,7 +94,8 @@
               "text": "How's the Bicycle treating you? Nothing beats the wind in your hair!"
             },
             "id": "already",
-            "kind": "action"
+            "kind": "action",
+            "next": "n1"
           },
           {
             "action": {
@@ -121,6 +123,59 @@
             },
             "id": "outro",
             "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "Cut_Quest_Started",
+              "kind": "flag_set"
+            },
+            "id": "n1",
+            "if_true": "n6",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Oh. The president's Bike Parts?"
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Yeah, here you go!"
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "action": {
+              "kind": "say_system",
+              "text": "You got the Bike Parts!"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "key": "Got_Bike_Parts",
+              "kind": "set_flag"
+            },
+            "id": "n5",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "Player_Got_Cut",
+              "kind": "flag_set"
+            },
+            "id": "n6",
+            "if_false": "n2",
+            "kind": "condition"
           }
         ]
       },

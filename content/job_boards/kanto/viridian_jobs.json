@@ -4,8 +4,8 @@
 {
   "board_id": "viridian_jobs",
   "name": "Viridian City",
-  "daily_slots": 3,
-  "weekly_slots": 1,
+  "daily_slots": 4,
+  "weekly_slots": 2,
   "jobs": [
     {
       "job_id": "viridian_lumberjack",
@@ -77,6 +77,111 @@
         {
           "kind": "pokeyen",
           "amount": 75000
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_mankey_menace",
+      "title": "Mankey Mayhem",
+      "description": "A pack of Mankey on Route 22 is charging travellers. Thin the herd before someone gets hurt.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "mankey",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 4000
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_weedle_wrangle",
+      "title": "Weedle Wrangle",
+      "description": "Weedle are chewing through the Viridian Forest canopy. Drive them back before the whole forest wilts.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "weedle",
+        "count": 15
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 1500
+        },
+        {
+          "kind": "item",
+          "qty": 8,
+          "item": "poke_ball"
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_forest_forage",
+      "title": "Forest Foraging",
+      "description": "The Viridian apothecary needs fresh mushrooms from the forest floor. Fill a basket while watching for bugs.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "mushroom",
+        "count": 8
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3200
+        },
+        {
+          "kind": "skill_xp",
+          "skill": "foraging",
+          "amount": 300
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_forest_gauntlet",
+      "title": "Bug Catcher Gauntlet",
+      "description": "Every Bug Catcher in Viridian Forest wants to prove their team. Beat them all and earn your stripes.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "count": 8,
+        "trainer_only": true
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 18000
+        },
+        {
+          "kind": "item",
+          "qty": 10,
+          "item": "oran_berry"
+        }
+      ]
+    },
+    {
+      "job_id": "viridian_nidoran_catch",
+      "title": "Nidoran Roundup",
+      "description": "Professor Oak needs Mankey specimens from Route 22 for a behavioural study. Catch a few.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "mankey",
+        "count": 25
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 15000
+        },
+        {
+          "kind": "item",
+          "qty": 5,
+          "item": "great_ball"
         }
       ]
     }

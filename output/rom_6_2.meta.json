@@ -162,7 +162,7 @@
       "kind": "Npc",
       "render": {
         "direction": 0,
-        "display_name": "Gym Leader Brock",
+        "display_name": "Brock",
         "sprite": 167,
         "time_of_day": []
       },
@@ -196,7 +196,7 @@
   "tile_overrides": [],
   "warp_targets": [
     {
-      "direction": 2,
+      "direction": 3,
       "name": "t_6_14",
       "target_warp": "",
       "tile_x": 6,

@@ -26,6 +26,14 @@
       "min_badges": 1
     },
     {
+      "item": "tm54",
+      "min_badges": 1
+    },
+    {
+      "item": "tm89",
+      "min_badges": 1
+    },
+    {
       "item": "tm44",
       "min_badges": 2
     },
@@ -42,10 +50,6 @@
       "min_badges": 2
     },
     {
-      "item": "tm89",
-      "min_badges": 1
-    },
-    {
       "item": "tm36",
       "min_badges": 2
     },
@@ -60,6 +64,14 @@
     {
       "item": "tm75",
       "min_badges": 2
+    },
+    {
+      "item": "tm42",
+      "min_badges": 3
+    },
+    {
+      "item": "tm13",
+      "min_badges": 3
     }
   ]
 }

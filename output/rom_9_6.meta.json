@@ -38,7 +38,339 @@
   ],
   "encounter_zones": [],
   "gate_zones": [],
-  "interactables": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_leader_surge",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "Lt. Surge",
+        "sprite": 162,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 5,
+      "tile_y": 2
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_vermilion_gym_engineer_tucker",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Engineer Tucker",
+        "sprite": 41,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 2,
+      "tile_y": 11,
+      "vision_range": 3
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_vermilion_gym_gentleman_vinny",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Gentleman Vinny",
+        "sprite": 39,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 9,
+      "tile_y": 13,
+      "vision_range": 4
+    },
+    {
+      "activation": [
+        "FacePress",
+        "Vision"
+      ],
+      "id": "kanto_vermilion_gym_lady_joanne",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Lady Joanne",
+        "sprite": 28,
+        "time_of_day": []
+      },
+      "script": "trainer",
+      "tile_x": 9,
+      "tile_y": 9,
+      "vision_range": 8
+    },
+    {
+      "activation": [],
+      "condition": {
+        "key": "gym_vermilion_barriers_down",
+        "kind": "flag_unset"
+      },
+      "id": "kanto_vermilion_gym_gate_0",
+      "kind": "Barrier",
+      "tile_x": 5,
+      "tile_y": 6
+    },
+    {
+      "activation": [],
+      "condition": {
+        "key": "gym_vermilion_barriers_down",
+        "kind": "flag_unset"
+      },
+      "id": "kanto_vermilion_gym_gate_1",
+      "kind": "Barrier",
+      "tile_x": 5,
+      "tile_y": 7
+    },
+    {
+      "activation": [],
+      "condition": {
+        "key": "gym_vermilion_barriers_down",
+        "kind": "flag_unset"
+      },
+      "id": "barrier_4_7",
+      "kind": "Barrier",
+      "tile_x": 4,
+      "tile_y": 7
+    },
+    {
+      "activation": [],
+      "condition": {
+        "key": "gym_vermilion_barriers_down",
+        "kind": "flag_unset"
+      },
+      "id": "barrier_4_6",
+      "kind": "Barrier",
+      "tile_x": 4,
+      "tile_y": 6
+    },
+    {
+      "activation": [],
+      "condition": {
+        "key": "gym_vermilion_barriers_down",
+        "kind": "flag_unset"
+      },
+      "id": "barrier_6_6",
+      "kind": "Barrier",
+      "tile_x": 6,
+      "tile_y": 6
+    },
+    {
+      "activation": [],
+      "condition": {
+        "key": "gym_vermilion_barriers_down",
+        "kind": "flag_unset"
+      },
+      "id": "barrier_6_7",
+      "kind": "Barrier",
+      "tile_x": 6,
+      "tile_y": 7
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_1_10",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "0"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 1,
+      "tile_y": 10
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_3_10",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "1"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 3,
+      "tile_y": 10
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_5_10",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "2"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 5,
+      "tile_y": 10
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_7_10",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "3"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 7,
+      "tile_y": 10
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_9_10",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "4"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 9,
+      "tile_y": 10
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_1_12",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "5"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 1,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_3_12",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "6"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 3,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_5_12",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "7"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 5,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_7_12",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "8"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 7,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_9_12",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "9"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 9,
+      "tile_y": 12
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_1_14",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "10"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 1,
+      "tile_y": 14
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_3_14",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "11"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 3,
+      "tile_y": 14
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_5_14",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "12"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 5,
+      "tile_y": 14
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_7_14",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "13"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 7,
+      "tile_y": 14
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "kanto_vermilion_gym_can_9_14",
+      "kind": "Sign",
+      "properties": {
+        "switch_index": "14"
+      },
+      "script": "vermilion_gym_switch",
+      "tile_x": 9,
+      "tile_y": 14
+    }
+  ],
   "properties": {
     "is_dark": false
   },

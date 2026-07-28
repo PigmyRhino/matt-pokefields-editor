@@ -5,8 +5,8 @@
 {
   "board_id": "pewter_jobs",
   "name": "Pewter City",
-  "daily_slots": 3,
-  "weekly_slots": 2,
+  "daily_slots": 4,
+  "weekly_slots": 3,
   "jobs": [
     {
       "job_id": "pewter_zubat_swarm",
@@ -73,7 +73,7 @@
       "job_id": "pewter_prospector_dues",
       "title": "Prospector's Dues",
       "description": "The mining guild pays for pickaxe work. Put in a shift at the veins.",
-      "cadence": "daily",
+      "cadence": "weekly",
       "objective": {
         "kind": "earn_skill_xp",
         "skill": "mining",
@@ -82,7 +82,7 @@
       "rewards": [
         {
           "kind": "pokeyen",
-          "amount": 1800
+          "amount": 50000
         }
       ]
     },
@@ -104,7 +104,7 @@
     },
     {
       "job_id": "pewter_shiny_proof",
-      "title": "A Rare Find",
+      "title": "Shing! Sparkle Sparkle!",
       "description": "Bring proof of a shiny capture — any species will do. The museum pays handsomely.",
       "cadence": "weekly",
       "objective": {
@@ -155,6 +155,111 @@
         {
           "kind": "pokeyen",
           "amount": 10000
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_geodude_patrol",
+      "title": "Geodude Patrol",
+      "description": "Geodude are throwing rocks at hikers on Route 3. Climb up there and sort them out.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "geodude",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 4500
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_nidoran_hunt",
+      "title": "Nidoran Safari",
+      "description": "The museum wants Nidoran specimens from Route 3. Bring back a few without bruising them.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "catch_pokemon",
+        "count": 3,
+        "species": "nidoran_m"
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3000
+        },
+        {
+          "kind": "item",
+          "qty": 5,
+          "item": "poke_ball"
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_ore_shipping",
+      "title": "Ore Shipment",
+      "description": "Pewter's forges need a fresh load of iron ore. Mine the veins around Mt. Moon and bring it back.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "iron_chunk",
+        "count": 8
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 8000
+        },
+        {
+          "kind": "skill_xp",
+          "skill": "mining",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_moon_gauntlet_ii",
+      "title": "Deep Moon Expedition",
+      "description": "The deeper caves of Mt. Moon hide tougher trainers and rarer finds. Push through and emerge victorious.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "count": 10,
+        "trainer_only": true
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 20000
+        },
+        {
+          "kind": "item",
+          "qty": 5,
+          "item": "ultra_ball"
+        }
+      ]
+    },
+    {
+      "job_id": "pewter_clefairy_hunt",
+      "title": "Clefairy Hunt",
+      "description": "Clefairy are rumoured to dance under the moonlight in Mt. Moon's deepest chambers. Catch a few for the observatory.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "catch_pokemon",
+        "species": "clefairy",
+        "count": 5
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 25000
+        },
+        {
+          "kind": "item",
+          "qty": 3,
+          "item": "ultra_ball"
         }
       ]
     }

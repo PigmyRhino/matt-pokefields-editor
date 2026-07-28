@@ -3,12 +3,20 @@
   "display_name": "Gym Leader Lt. Surge",
   "sprite": null,
   "rank": "Pro",
-  "music_key": null,
-  "payout_base": 1800,
+  "music_key": "battle_pewter_gym_trainer",
+  "payout_base": 3000,
   "payout_per_level": 50,
   "badge_award": 2,
-  "items": [],
-  "initial_field": null,
+  "items": [
+    {
+      "item": "full_restore",
+      "qty": 4
+    }
+  ],
+  "initial_field": {
+    "weather": "Rain",
+    "terrain": "Electric"
+  },
   "team": [
     {
       "species": "voltorb",
@@ -33,11 +41,12 @@
         "screech",
         "self_destruct"
       ],
-      "level_offset": 2
+      "level_offset": 0,
+      "held_item": "sitrus_berry"
     },
     {
-      "species": "magnemite",
-      "ability": "sturdy",
+      "species": "magneton",
+      "ability": "magnet_pull",
       "nature": "modest",
       "gender": "genderless",
       "iv_hp": 31,
@@ -54,61 +63,79 @@
       "ev_spe": 6,
       "moves": [
         "shock_wave",
-        "sonic_boom",
-        "thunder_wave",
-        "supersonic"
+        "volt_switch",
+        "flash_cannon",
+        "lock_on"
       ],
-      "level_offset": 2
+      "level_offset": 0,
+      "held_item": "focus_sash"
+    },
+    {
+      "species": "lanturn",
+      "ability": "volt_absorb",
+      "nature": "modest",
+      "moves": [
+        "surf",
+        "thunderbolt",
+        "shock_wave",
+        "signal_beam"
+      ],
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_spa": 252,
+      "ev_spe": 252,
+      "gender": "male",
+      "level_offset": 2,
+      "held_item": "air_balloon"
+    },
+    {
+      "species": "ampharos",
+      "ability": "static",
+      "nature": "hardy",
+      "moves": [
+        "cotton_spore",
+        "shock_wave",
+        "thunder_punch",
+        "power_gem"
+      ],
+      "gender": "male",
+      "level_offset": 2,
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_spa": 252,
+      "ev_spe": 252,
+      "held_item": "sitrus_berry"
     },
     {
       "species": "raichu",
       "ability": "static",
-      "nature": "timid",
-      "gender": "male",
-      "iv_hp": 31,
-      "iv_atk": 31,
-      "iv_def": 31,
-      "iv_spa": 31,
-      "iv_spd": 31,
-      "iv_spe": 31,
-      "ev_hp": 0,
-      "ev_atk": 0,
-      "ev_def": 6,
-      "ev_spa": 252,
-      "ev_spd": 0,
-      "ev_spe": 252,
+      "nature": "modest",
       "moves": [
         "shock_wave",
-        "thunder_wave",
-        "quick_attack",
-        "slam"
+        "thunder",
+        "grass_knot",
+        "surf"
       ],
-      "level_offset": 3
-    },
-    {
-      "species": "elekid",
-      "ability": "static",
-      "nature": "jolly",
-      "gender": "male",
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 0,
-      "ev_atk": 252,
-      "ev_def": 0,
-      "ev_spa": 0,
-      "ev_spd": 0,
+      "ev_spa": 252,
       "ev_spe": 252,
-      "moves": [
-        "thunder_punch",
-        "quick_attack",
-        "swift",
-        "screech"
-      ],
-      "level_offset": 2
+      "is_shiny": true,
+      "gender": "male",
+      "held_item": "leftovers",
+      "level_offset": 4
     }
   ],
   "dialogue": {
@@ -116,5 +143,6 @@
     "loss": "WHOAAA! You've got some serious voltage, soldier! Take this Thunder Badge — you've earned it!",
     "post_defeat": "The Thunder Badge lets you use Fly outside of battle. Makes traveling Kanto a breeze!"
   },
-  "rebattle": "weekly"
+  "rebattle": "weekly",
+  "scaling_min_level": 26
 }

@@ -77,7 +77,7 @@ func _build_slot(slot: String, record: Variant, into: VBoxContainer) -> void:
 			if v.has(key):
 				into.add_child(_row(key, _bool_field(v, key, false), _BOOL_TIPS.get(key, "")))
 		into.add_child(_row("tradable", _bool_field(v, "tradable", true), _BOOL_TIPS.get("tradable", "")))
-		into.add_child(_row("sellable", _bool_field(v, "sellable", true), _BOOL_TIPS.get("sellable", "")))
+		into.add_child(_row("sellable", _bool_field(v, "sellable", false), _BOOL_TIPS.get("sellable", "")))
 		var chips := ChipSelect.new()
 		chips.set_entries(_colors)
 		chips.set_values((v.get("colors", []) as Array).duplicate())

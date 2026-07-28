@@ -1,0 +1,46 @@
+{
+  "unique_name": "kanto_evergreengrove_hiker_desmond",
+  "display_name": "Hiker Desmond",
+  "sprite": null,
+  "rank": "Novice",
+  "music_key": null,
+  "payout_base": 600,
+  "payout_per_level": 8,
+  "badge_award": null,
+  "items": [],
+  "initial_field": null,
+  "team": [
+    {
+      "species": "nosepass",
+      "ability": "magnet_pull",
+      "nature": "adamant",
+      "moves": [
+        "spark",
+        "harden",
+        "rock_tomb"
+      ],
+      "gender": "male",
+      "level_offset": 1
+    },
+    {
+      "species": "makuhita",
+      "ability": "guts",
+      "nature": "adamant",
+      "moves": [
+        "arm_thrust",
+        "vital_throw",
+        "sand_attack",
+        "focus_energy"
+      ],
+      "gender": "male",
+      "level_offset": 2
+    }
+  ],
+  "rebattle": "daily",
+  "scaling_min_level": 20,
+  "dialogue": {
+    "start": "I came from Hoenn. Let's see what youre made of!",
+    "loss": "Wow! You've got it!",
+    "post_defeat": "I've got some training to do."
+  }
+}

@@ -3,9 +3,9 @@ extends RefCounted
 ## One authored map object, mirroring pkmn_core::interactable::InteractableDef. `to_dict()` emits the
 ## canonical meta.json shape verified by the Rust contract test `editor_overlay_format_round_trips`.
 
-const KINDS := ["Npc", "Sign", "Facility", "ResourceNode", "Trigger"]
+const KINDS := ["Npc", "Sign", "Facility", "ResourceNode", "Trigger", "Barrier"]
 const DIRECTIONS := ["Down", "Left", "Right", "Up"]  # index = direction byte 0..3
-const PHASES := ["Morning", "Day", "Dusk", "Night"]
+const PHASES := ["Morning", "Day", "Night"]
 
 var id := ""
 var tile := Vector2i.ZERO
@@ -28,6 +28,8 @@ var waypoints: Array[Vector2i] = []
 # { "entry": String, "nodes": Array[Dictionary] }, mirroring pkmn_core::interaction_graph::InteractionGraph.
 var graph: Dictionary = {}
 
+var condition: Dictionary = {}
+
 
 ## Activation categories, mirroring the map-processor defaults. ResourceNode is a placeholder the
 ## server re-derives from OBJECT_TYPE at load (assign_resource_script).
@@ -37,6 +39,8 @@ func activation() -> Array:
 			return ["FacePress", "Vision"] if vision_range >= 0 else ["FacePress"]
 		"Trigger":
 			return ["StepOn"]
+		"Barrier":
+			return []  # a pure obstacle — not talked to; presence is the only interaction
 		_:
 			return ["FacePress"]
 
@@ -66,6 +70,9 @@ func to_dict() -> Dictionary:
 			for w in waypoints:
 				wp.append({ "x": w.x, "y": w.y })
 			d["waypoints"] = wp
+	elif kind == "Barrier":
+		if not condition.is_empty():
+			d["condition"] = _ints_deep(condition)
 	return d
 
 
@@ -124,6 +131,7 @@ static func from_dict(d: Dictionary) -> Interactable:
 		it.time_of_day.append(str(p))
 	it.vision_range = int(d.get("vision_range", -1))
 	it.graph = (d.get("graph", {}) as Dictionary).duplicate(true)
+	it.condition = (d.get("condition", {}) as Dictionary).duplicate(true)
 	it.behavior = (d.get("behavior", {}) as Dictionary).duplicate()
 	for w in d.get("waypoints", []):
 		it.waypoints.append(Vector2i(int(w.get("x", 0)), int(w.get("y", 0))))

@@ -152,7 +152,7 @@ func _build_trainer(t: Dictionary, path: String, into: VBoxContainer) -> void:
 		"Unique id and filename stem. Editing this renames the trainer's .json file (same folder) on the next Save."))
 	into.add_child(_row("display_name", _str_field(t, "display_name"), "Name shown in the battle UI."))
 	if t.has("rank"):
-		into.add_child(_row("rank", _picker_field(_enum(RANKS), t, "rank", false), "Trainer rank; affects AI tier."))
+		into.add_child(_row("rank", _picker_field(_enum(RANKS), t, "rank", false), "Trainer rank; sole AI difficulty dial."))
 	if t.has("sprite"):
 		into.add_child(_row("sprite", _nullable_str_field(t, "sprite"), "Overworld/battle sprite asset name. Empty = default."))
 	if t.has("music_key"):
@@ -326,6 +326,30 @@ func _member_block(team: Array, i: int) -> VBoxContainer:
 	h.text = "#%d  %s" % [i + 1, str(m.get("species", "?"))]
 	h.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	hdr.add_child(h)
+	if i > 0:
+		var up := Button.new()
+		up.text = "▲"
+		up.tooltip_text = "Move earlier in team"
+		up.custom_minimum_size = Vector2(28, 0)
+		up.pressed.connect(func() -> void:
+			var tmp: Variant = team[i - 1]
+			team[i - 1] = team[i]
+			team[i] = tmp
+			_rebuild()
+			dirty.emit())
+		hdr.add_child(up)
+	if i < team.size() - 1:
+		var dn := Button.new()
+		dn.text = "▼"
+		dn.tooltip_text = "Move later in team"
+		dn.custom_minimum_size = Vector2(28, 0)
+		dn.pressed.connect(func() -> void:
+			var tmp: Variant = team[i + 1]
+			team[i + 1] = team[i]
+			team[i] = tmp
+			_rebuild()
+			dirty.emit())
+		hdr.add_child(dn)
 	hdr.add_child(_icon_remove_button(func() -> void:
 		team.remove_at(i)
 		_rebuild()

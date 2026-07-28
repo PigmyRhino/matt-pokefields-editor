@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "",
+      "day_track": "pallet_indoors",
       "display_name": "Vermilion City",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "",
+      "night_track": "pallet_indoors",
       "polygon": [
         [
           0.0,
@@ -38,7 +38,80 @@
   ],
   "encounter_zones": [],
   "gate_zones": [],
-  "interactables": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "key": "old_lady_candy",
+              "kind": "flag_set"
+            },
+            "id": "n1",
+            "if_false": "n2",
+            "if_true": "n5",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "My my, child, your pokemon look like they could use a treat. Take these"
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "item_id": 50,
+              "kind": "give_item",
+              "qty": 3
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "action": {
+              "key": "old_lady_candy",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "n4",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "What do I look like, the candy fairy? Beggars can't be choosers."
+            },
+            "id": "n5",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_4_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 2,
+        "display_name": "Ethel",
+        "sprite": 19,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 4,
+      "tile_y": 4
+    }
+  ],
   "properties": {
     "is_dark": false
   },

@@ -2,11 +2,11 @@
   "area_zones": [
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt Moon Passage",
       "name": "area_0",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -38,11 +38,11 @@
     },
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt Moon Passage",
       "name": "area_1",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -98,11 +98,11 @@
     },
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt Moon Passage",
       "name": "area_2",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -166,11 +166,11 @@
     },
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt Moon Passage",
       "name": "area_3",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -635,12 +635,331 @@
       "script": "scripted",
       "tile_x": 41,
       "tile_y": 2
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_43_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 43,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_45_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 45,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_19_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 19,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_25_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 25,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_23_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 23,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_18_1",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 18,
+      "tile_y": 1
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_14_15",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 14,
+      "tile_y": 15
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_19_15",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 19,
+      "tile_y": 15
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_16_15",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 16,
+      "tile_y": 15
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_28_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 28,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_34_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 34,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_31_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 31,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_36_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 36,
+      "tile_y": 33
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_30_33",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 30,
+      "tile_y": 33
     }
   ],
   "properties": {
     "is_dark": true
   },
-  "resource_areas": [],
+  "resource_areas": [
+    {
+      "max_active": 1,
+      "name": "resourcearea_8",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_43_1",
+        "resourcenode_45_1"
+      ],
+      "polygon": [
+        [
+          42.0,
+          1.0
+        ],
+        [
+          46.0,
+          1.0
+        ],
+        [
+          46.0,
+          2.0
+        ],
+        [
+          42.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "max_active": 3,
+      "name": "resourcearea_9",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_19_1",
+        "resourcenode_25_1",
+        "resourcenode_23_1",
+        "resourcenode_18_1"
+      ],
+      "polygon": [
+        [
+          18.0,
+          1.0
+        ],
+        [
+          26.0,
+          1.0
+        ],
+        [
+          26.0,
+          2.0
+        ],
+        [
+          18.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "max_active": 2,
+      "name": "resourcearea_10",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_14_15",
+        "resourcenode_19_15",
+        "resourcenode_16_15"
+      ],
+      "polygon": [
+        [
+          14.0,
+          15.0
+        ],
+        [
+          20.0,
+          15.0
+        ],
+        [
+          20.0,
+          16.0
+        ],
+        [
+          14.0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "max_active": 3,
+      "name": "resourcearea_11",
+      "object_types": [
+        "mining_wall_common"
+      ],
+      "placement_ids": [
+        "resourcenode_28_33",
+        "resourcenode_34_33",
+        "resourcenode_31_33",
+        "resourcenode_36_33",
+        "resourcenode_30_33"
+      ],
+      "polygon": [
+        [
+          28.0,
+          33.0
+        ],
+        [
+          37.0,
+          33.0
+        ],
+        [
+          37.0,
+          34.0
+        ],
+        [
+          28.0,
+          34.0
+        ]
+      ]
+    }
+  ],
   "tile_overrides": [],
   "warp_targets": [
     {

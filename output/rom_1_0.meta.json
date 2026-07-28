@@ -663,7 +663,7 @@
       "script": "trainer",
       "tile_x": 3,
       "tile_y": 58,
-      "vision_range": 6
+      "vision_range": 4
     },
     {
       "activation": [
@@ -723,7 +723,7 @@
       "script": "trainer",
       "tile_x": 31,
       "tile_y": 45,
-      "vision_range": 8
+      "vision_range": 5
     },
     {
       "activation": [
@@ -860,7 +860,7 @@
       ],
       "behavior": {
         "kind": "wander",
-        "pause_ms": 0,
+        "pause_ms": 3000,
         "radius": 2
       },
       "graph": {
@@ -877,7 +877,7 @@
               "kind": "flag_set"
             },
             "id": "check_quest",
-            "if_false": "no_quest",
+            "if_false": "n2",
             "if_true": "check_notes",
             "kind": "condition"
           },
@@ -907,7 +907,8 @@
               "value": "true"
             },
             "id": "set_notes",
-            "kind": "action"
+            "kind": "action",
+            "next": "n4"
           },
           {
             "action": {
@@ -923,6 +924,34 @@
               "text": "My Clefairy loves this forest. The trees filter the moonlight just right"
             },
             "id": "no_quest",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "daniella_has_data",
+              "kind": "flag_set"
+            },
+            "id": "n2",
+            "if_false": "no_quest",
+            "if_true": "already_gave",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "key": "daniella_needs_data",
+              "kind": "clear_flag"
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "key": "daniella_needs_data",
+              "kind": "set_flag",
+              "value": "false"
+            },
+            "id": "n5",
             "kind": "action"
           }
         ]

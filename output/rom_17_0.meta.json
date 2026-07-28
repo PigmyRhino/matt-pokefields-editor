@@ -1,5 +1,34 @@
 {
-  "area_zones": [],
+  "area_zones": [
+    {
+      "climate": "none",
+      "day_ambience": "",
+      "day_track": "pallet_indoors",
+      "display_name": "Day Care",
+      "name": "area_0",
+      "night_ambience": "",
+      "night_track": "pallet_indoors",
+      "polygon": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          12.0,
+          2.0
+        ],
+        [
+          12.0,
+          8.0
+        ],
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "region": "kanto"
+    }
+  ],
   "collision_overrides": [
     {
       "flags": 0,

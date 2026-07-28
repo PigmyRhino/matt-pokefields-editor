@@ -218,11 +218,6 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Day"
 
-[node name="TodDusk" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Dusk"
-
 [node name="TodNight" type="CheckBox" parent="Margin/Scroll/Fields/NpcBox/TimeRow"]
 unique_name_in_owner = true
 layout_mode = 2

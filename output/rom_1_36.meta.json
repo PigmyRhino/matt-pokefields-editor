@@ -2,11 +2,11 @@
   "area_zones": [
     {
       "climate": "none",
-      "day_ambience": "",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Diglett's Cave",
       "name": "area_0",
-      "night_ambience": "",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -54,8 +54,9 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_diglettscave_cave1",
+      "encounter_group": "kanto_diglettscave_cave",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_1",
       "polygon": [
         [

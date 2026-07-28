@@ -235,7 +235,7 @@
       "kind": "Npc",
       "render": {
         "direction": 0,
-        "display_name": "Gym Leader Misty",
+        "display_name": "Misty",
         "sprite": 164,
         "time_of_day": []
       },

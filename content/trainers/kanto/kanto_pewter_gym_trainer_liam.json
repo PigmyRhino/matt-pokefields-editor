@@ -64,7 +64,8 @@
       "iv_spd": 14,
       "iv_spe": 14,
       "moves": [],
-      "level_offset": 2
+      "level_offset": 2,
+      "held_item": "oran_berry"
     }
   ],
   "dialogue": {

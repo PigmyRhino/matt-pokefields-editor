@@ -397,6 +397,7 @@
 1240|Gold Sycamore Shovel
 1190|Gold Sycamore Trowel
 2340|Gold Trowel Head
+40031|Golden Wing Helmet
 594|Grass Gem
 912|Grass Memory
 821|Grassium Z

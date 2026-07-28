@@ -285,7 +285,7 @@ func _entry_row(idx: int, pct_labels: Array, recompute: Callable) -> HBoxContain
 	row.add_child(pct)
 
 	row.add_child(_tod_check(e, "morning_allowed", "M", "Appears in the morning.", recompute))
-	row.add_child(_tod_check(e, "day_allowed", "D", "Appears during the day (and dusk).", recompute))
+	row.add_child(_tod_check(e, "day_allowed", "D", "Appears during the day.", recompute))
 	row.add_child(_tod_check(e, "night_allowed", "N", "Appears at night.", recompute))
 
 	var held := _picker_field(_loot, e, "held_item_groups", true)

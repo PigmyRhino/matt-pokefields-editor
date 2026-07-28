@@ -2,11 +2,11 @@
   "area_zones": [
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt. Moon Sub Floor",
       "name": "area_5",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -326,11 +326,11 @@
     },
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt Moon Sub Floor Cavern",
       "name": "area_6",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -450,11 +450,11 @@
     },
     {
       "climate": "none",
-      "day_ambience": "ambience_cave_wind",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Mt Moon Sub Floor Crag",
       "name": "area_7",
-      "night_ambience": "ambience_cave_wind",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -589,7 +589,7 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_mtmoon_cave",
+      "encounter_group": "kanto_mtmoon_cave2",
       "fish_encounter_group": "",
       "fish_rod_tier": 0,
       "name": "encounter_0",
@@ -902,7 +902,7 @@
       "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_mtmoon_cave",
+      "encounter_group": "kanto_mtmoon_cave2",
       "fish_encounter_group": "",
       "fish_rod_tier": 0,
       "name": "encounter_3",
@@ -1023,7 +1023,7 @@
       "terrain": "cave_floor"
     },
     {
-      "encounter_group": "kanto_mtmoon_cave",
+      "encounter_group": "kanto_mtmoon_cave2",
       "fish_encounter_group": "",
       "fish_rod_tier": 0,
       "name": "encounter_4",
@@ -1104,7 +1104,7 @@
       ],
       "behavior": {
         "kind": "wander",
-        "pause_ms": 0,
+        "pause_ms": 1000,
         "radius": 3
       },
       "graph": {
@@ -1292,12 +1292,174 @@
       "tile_x": 15,
       "tile_y": 21,
       "vision_range": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_31_20",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 31,
+      "tile_y": 20
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_34_22",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_common"
+      },
+      "script": "default",
+      "tile_x": 34,
+      "tile_y": 22
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_18_27",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 16,
+      "tile_y": 28
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_20_28",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ground",
+        "OBJECT_TYPE": "mushroom_common"
+      },
+      "script": "default",
+      "tile_x": 20,
+      "tile_y": 28
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_17_26",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_route24_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 17,
+      "tile_y": 26
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "resourcenode_20_26",
+      "kind": "ResourceNode",
+      "properties": {
+        "ENCOUNTER_GROUP": "kanto_mtmoon_ore",
+        "OBJECT_TYPE": "mining_wall_common"
+      },
+      "script": "default",
+      "tile_x": 20,
+      "tile_y": 26
     }
   ],
   "properties": {
     "is_dark": true
   },
-  "resource_areas": [],
+  "resource_areas": [
+    {
+      "max_active": 2,
+      "name": "resourcearea_6",
+      "object_types": [
+        "mining_common"
+      ],
+      "placement_ids": [
+        "resourcenode_31_20",
+        "resourcenode_34_22"
+      ],
+      "polygon": [
+        [
+          30.0,
+          20.0
+        ],
+        [
+          35.0,
+          20.0
+        ],
+        [
+          35.0,
+          23.0
+        ],
+        [
+          30.0,
+          23.0
+        ]
+      ]
+    },
+    {
+      "max_active": 3,
+      "name": "resourcearea_7",
+      "object_types": [
+        "mining_wall_common",
+        "mushroom_common"
+      ],
+      "placement_ids": [
+        "resourcenode_18_27",
+        "resourcenode_20_28",
+        "resourcenode_17_26",
+        "resourcenode_20_26"
+      ],
+      "polygon": [
+        [
+          16.0,
+          26.0
+        ],
+        [
+          21.0,
+          26.0
+        ],
+        [
+          21.0,
+          29.0
+        ],
+        [
+          16.0,
+          29.0
+        ],
+        [
+          16.0,
+          28.0
+        ],
+        [
+          15.0,
+          28.0
+        ],
+        [
+          15.0,
+          27.0
+        ],
+        [
+          16.0,
+          27.0
+        ]
+      ]
+    }
+  ],
   "tile_overrides": [],
   "warp_targets": [
     {

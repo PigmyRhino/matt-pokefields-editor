@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "",
+      "day_track": "pallet_indoors",
       "display_name": "Vermilion City",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "",
+      "night_track": "pallet_indoors",
       "polygon": [
         [
           0.0,
@@ -38,7 +38,89 @@
   ],
   "encounter_zones": [],
   "gate_zones": [],
-  "interactables": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "key": "got_brick_break",
+              "kind": "flag_set"
+            },
+            "id": "n1",
+            "if_false": "n2",
+            "if_true": "n6",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Breaking Bricks is the best! I LOVE IT"
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Now YOU can love it too!!"
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "action": {
+              "item_id": 335,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n4",
+            "kind": "action",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "key": "got_brick_break",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "n5",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Are you breaking bricks, brother?? Isn't it amazing?!"
+            },
+            "id": "n6",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_7_4",
+      "kind": "Npc",
+      "render": {
+        "direction": 1,
+        "display_name": "Black Belt Kyu",
+        "sprite": 48,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 7,
+      "tile_y": 4
+    }
+  ],
   "properties": {
     "is_dark": false
   },

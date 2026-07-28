@@ -46,7 +46,7 @@
   "tile_overrides": [],
   "warp_targets": [
     {
-      "direction": 0,
+      "direction": 3,
       "name": "t_3_7",
       "target_warp": "",
       "tile_x": 3,

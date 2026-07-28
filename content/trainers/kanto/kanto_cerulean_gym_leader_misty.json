@@ -7,41 +7,50 @@
   "payout_base": 1400,
   "payout_per_level": 40,
   "badge_award": 1,
-  "items": [],
+  "items": [
+    {
+      "item": "full_restore",
+      "qty": 3
+    }
+  ],
   "initial_field": {
     "weather": "Rain"
   },
   "team": [
     {
-      "species": "staryu",
-      "ability": "natural_cure",
+      "species": "tentacool",
+      "ability": "clear_body",
       "nature": "timid",
-      "gender": "genderless",
+      "moves": [
+        "toxic_spikes",
+        "water_pulse",
+        "acid",
+        "constrict"
+      ],
+      "gender": "female",
+      "level_offset": 0,
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 0,
-      "ev_atk": 0,
-      "ev_def": 0,
-      "ev_spa": 252,
-      "ev_spd": 0,
       "ev_spe": 252,
-      "moves": [
-        "recover",
-        "tackle",
-        "water_pulse",
-        "bubble_beam"
-      ],
-      "level_offset": 0
+      "ev_spd": 252
     },
     {
-      "species": "psyduck",
-      "ability": "swift_swim",
-      "nature": "modest",
+      "species": "wooper",
+      "ability": "unaware",
+      "nature": "sassy",
+      "moves": [
+        "scald",
+        "recover",
+        "bulldoze",
+        "encore"
+      ],
+      "level_offset": 1,
       "gender": "female",
+      "held_item": "eviolite",
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
@@ -49,70 +58,52 @@
       "iv_spd": 31,
       "iv_spe": 31,
       "ev_hp": 252,
-      "ev_atk": 0,
-      "ev_def": 0,
-      "ev_spa": 252,
-      "ev_spd": 0,
-      "ev_spe": 6,
+      "ev_atk": 252
+    },
+    {
+      "species": "carvanha",
+      "ability": "rough_skin",
+      "nature": "adamant",
       "moves": [
-        "water_pulse",
-        "confusion",
-        "disable",
-        "scratch"
+        "bite",
+        "aqua_jet",
+        "swagger",
+        "water_pulse"
       ],
-      "level_offset": 1
+      "gender": "female",
+      "level_offset": 2,
+      "held_item": "focus_sash",
+      "iv_hp": 31,
+      "iv_atk": 31,
+      "iv_def": 31,
+      "iv_spa": 31,
+      "iv_spd": 31,
+      "iv_spe": 31,
+      "ev_atk": 252,
+      "ev_spe": 252
     },
     {
       "species": "starmie",
       "ability": "natural_cure",
-      "nature": "timid",
-      "gender": "genderless",
-      "iv_hp": 31,
-      "iv_atk": 31,
-      "iv_def": 31,
-      "iv_spa": 31,
-      "iv_spd": 31,
-      "iv_spe": 31,
-      "ev_hp": 0,
-      "ev_atk": 0,
-      "ev_def": 6,
-      "ev_spa": 252,
-      "ev_spd": 0,
-      "ev_spe": 252,
+      "nature": "modest",
       "moves": [
+        "psychic",
+        "thunderbolt",
         "water_pulse",
-        "recover",
-        "bubble_beam",
-        "confusion"
+        "recover"
       ],
+      "gender": null,
+      "is_shiny": true,
       "level_offset": 3,
       "held_item": "sitrus_berry",
-      "is_shiny": true
-    },
-    {
-      "species": "marill",
-      "ability": "huge_power",
-      "nature": "adamant",
-      "gender": "female",
       "iv_hp": 31,
       "iv_atk": 31,
       "iv_def": 31,
       "iv_spa": 31,
       "iv_spd": 31,
       "iv_spe": 31,
-      "ev_hp": 0,
-      "ev_atk": 252,
-      "ev_def": 0,
-      "ev_spa": 0,
-      "ev_spd": 0,
-      "ev_spe": 252,
-      "moves": [
-        "water_pulse",
-        "defense_curl",
-        "tail_whip",
-        "surf"
-      ],
-      "level_offset": 1
+      "ev_spa": 225,
+      "ev_spe": 252
     }
   ],
   "dialogue": {

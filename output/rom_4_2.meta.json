@@ -114,23 +114,22 @@
             },
             "id": "n_daniella_check",
             "if_false": "n5",
-            "if_true": "n_daniella_unclaimed",
+            "if_true": "n15",
             "kind": "condition"
           },
           {
             "cond": {
-              "key": "daniella_analysis_done",
+              "key": "daniella_analysis_needed",
               "kind": "flag_unset"
             },
             "id": "n_daniella_unclaimed",
             "if_false": "n5",
-            "if_true": "n_daniella_say",
             "kind": "condition"
           },
           {
             "action": {
               "kind": "say",
-              "text": "What's this? Daniella's survey data? Let me see... [flips through journal pages] ...She's right. The Clefairy in Mt. Moon and the one in Viridian Forest are responding to the SAME lunar frequency!\n\nThat means they're part of a single migration route. The mineral deposits in Mt. Moon aren't attracting them — they're following the moon's reflection on the cave water!\n\nTell Daniella the pattern peaks during the waxing crescent. She'll know what to do. Here — I added my analysis notes to her journal. Take it back to her."
+              "text": "What's this? Daniella's survey data? She's right. The various Clefairy categorized are responding to the SAME frequency!\n\n That means they're part of a single migration route. \n\nTell Daniella I added my analysis notes to her journal. Take it back to her."
             },
             "id": "n_daniella_say",
             "kind": "action",
@@ -144,7 +143,7 @@
             },
             "id": "n_daniella_flag",
             "kind": "action",
-            "next": "n5"
+            "next": "n16"
           },
           {
             "cond": {
@@ -217,6 +216,25 @@
               "text": "I already gave you those Great Balls. Good luck out there!"
             },
             "id": "n12",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "daniella_analysis_needed",
+              "kind": "flag_set"
+            },
+            "id": "n15",
+            "if_false": "n5",
+            "if_true": "n_daniella_say",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "key": "daniella_analysis_needed",
+              "kind": "set_flag",
+              "value": "false"
+            },
+            "id": "n16",
             "kind": "action"
           }
         ]

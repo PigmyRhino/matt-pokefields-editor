@@ -392,6 +392,7 @@ gold_sycamore_pickaxe|Gold Sycamore Pickaxe
 gold_sycamore_shovel|Gold Sycamore Shovel
 gold_sycamore_trowel|Gold Sycamore Trowel
 gold_trowel_head|Gold Trowel Head
+golden_wing_helmet|Golden Wing Helmet
 grass_gem|Grass Gem
 grass_memory|Grass Memory
 grassium_z|Grassium Z

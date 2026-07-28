@@ -375,6 +375,7 @@
     "herb_common": {
       "anim": "Harvest",
       "swing_duration_ms": 800,
+      "encounter_method": "forage",
       "presence_based": true,
       "variants": [
         {

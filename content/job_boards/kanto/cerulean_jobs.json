@@ -4,8 +4,8 @@
 {
   "board_id": "cerulean_jobs",
   "name": "Cerulean City",
-  "daily_slots": 3,
-  "weekly_slots": 2,
+  "daily_slots": 4,
+  "weekly_slots": 3,
   "jobs": [
     {
       "job_id": "cerulean_oddish_overgrowth",
@@ -108,7 +108,8 @@
       "cadence": "daily",
       "objective": {
         "kind": "win_battles",
-        "count": 5
+        "count": 5,
+        "trainer_only": true
       },
       "rewards": [
         {
@@ -135,7 +136,7 @@
     },
     {
       "job_id": "cerulean_shiny_proof",
-      "title": "A Rare Find",
+      "title": "Shine Bright Like a... You know.",
       "description": "Bring proof of a shiny capture — any species will do. The collector pays handsomely.",
       "cadence": "weekly",
       "objective": {
@@ -169,6 +170,79 @@
           "kind": "item",
           "item": "oran_berry",
           "qty": 10
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_bellsprout_thinning",
+      "title": "Bellsprout Thinning",
+      "description": "Bellsprout are strangling the tall grass along Route 4. Pull them up before they take over completely.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "bellsprout",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_tentacool_trouble",
+      "title": "Tentacool Trouble",
+      "description": "Tentacool are clogging the waters near the cape. Swimmers can barely get through. Clear them out.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "tentacool",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 4500
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_route9_patrol",
+      "title": "Route 9 Patrol",
+      "description": "Ekans are slithering across Route 9 and biting hikers. Put a stop to it before someone gets hurt.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "ekans",
+        "count": 10
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 4000
+        }
+      ]
+    },
+    {
+      "job_id": "cerulean_route25_gauntlet",
+      "title": "Trainer Tussle",
+      "description": "Win enough battles to earn some peace and quiet in Kanto.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "count": 10,
+        "trainer_only": true
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 12000
+        },
+        {
+          "kind": "item",
+          "qty": 5,
+          "item": "sitrus_berry"
         }
       ]
     }

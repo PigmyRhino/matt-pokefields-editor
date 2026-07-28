@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "",
+      "day_track": "pallet_indoors",
       "display_name": "Pokemon Fan Club",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "",
+      "night_track": "pallet_indoors",
       "polygon": [
         [
           0.0,
@@ -43,18 +43,192 @@
       "activation": [
         "FacePress"
       ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n1"
+          },
+          {
+            "cond": {
+              "key": "Player_Got_Cut",
+              "kind": "flag_set"
+            },
+            "id": "n1",
+            "if_false": "n9",
+            "if_true": "n21",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Ha! You've gotten two badges already? Excellent!"
+            },
+            "id": "n2",
+            "kind": "action",
+            "next": "n3"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "You've got amazing grit!"
+            },
+            "id": "n3",
+            "kind": "action",
+            "next": "n10"
+          },
+          {
+            "action": {
+              "key": "Player_Got_Cut",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "n7",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Use Cut on trees out in the world to unlock shortcuts!"
+            },
+            "id": "n8",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "Cut_Quest_Started",
+              "kind": "flag_set"
+            },
+            "id": "n9",
+            "if_false": "n2",
+            "if_true": "n13",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Can you do me a favor? Can you head to Cerulean and pick up Bike Parts I ordered at the Bike Shop?"
+            },
+            "id": "n10",
+            "kind": "action",
+            "next": "n11"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Thanks!"
+            },
+            "id": "n11",
+            "kind": "action",
+            "next": "n12"
+          },
+          {
+            "action": {
+              "key": "Cut_Quest_Started",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "n12",
+            "kind": "action"
+          },
+          {
+            "cond": {
+              "key": "Got_Bike_Parts",
+              "kind": "flag_set"
+            },
+            "id": "n13",
+            "if_false": "n14",
+            "if_true": "n16",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Do you have my Bike Parts?"
+            },
+            "id": "n14",
+            "kind": "action",
+            "next": "n15"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Come back when you do!"
+            },
+            "id": "n15",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "My Bike Parts! Excellent!"
+            },
+            "id": "n16",
+            "kind": "action",
+            "next": "n17"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take this!"
+            },
+            "id": "n17",
+            "kind": "action",
+            "next": "n18"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "That there is Cut! Use it on small trees to clear the way!"
+            },
+            "id": "n18",
+            "kind": "action",
+            "next": "n19"
+          },
+          {
+            "action": {
+              "item_id": 397,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n19",
+            "kind": "action",
+            "next": "n7"
+          },
+          {
+            "cond": {
+              "item_id": 397,
+              "kind": "has_item",
+              "min_qty": 1
+            },
+            "id": "n21",
+            "if_false": "n22",
+            "if_true": "n8",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "item_id": 397,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n22",
+            "kind": "action",
+            "next": "n8"
+          }
+        ]
+      },
       "id": "npc_6_4",
       "kind": "Npc",
-      "properties": {
-        "dialogue": "Rapidash is still my favorite! No one can tell me otherwise!"
-      },
       "render": {
         "direction": 0,
         "display_name": "Fan Club President",
         "sprite": 39,
         "time_of_day": []
       },
-      "script": "simple_dialogue",
+      "script": "scripted",
       "tile_x": 6,
       "tile_y": 4
     },
@@ -88,7 +262,7 @@
       },
       "render": {
         "direction": 1,
-        "display_name": "",
+        "display_name": "Pikachu",
         "sprite": 322,
         "time_of_day": []
       },

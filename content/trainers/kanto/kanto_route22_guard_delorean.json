@@ -2,12 +2,17 @@
   "unique_name": "kanto_route22_guard_delorean",
   "display_name": "Guard Delorean",
   "sprite": null,
-  "rank": "Novice",
+  "rank": "Ace",
   "music_key": null,
   "payout_base": 300,
   "payout_per_level": 14,
   "badge_award": null,
-  "items": [],
+  "items": [
+    {
+      "item": "full_restore",
+      "qty": 1
+    }
+  ],
   "initial_field": null,
   "team": [
     {

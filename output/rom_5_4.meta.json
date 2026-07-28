@@ -95,6 +95,22 @@
       "script": "default",
       "tile_x": 7,
       "tile_y": 2
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_8_2",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "",
+        "sprite": 411,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 8,
+      "tile_y": 2
     }
   ],
   "properties": {

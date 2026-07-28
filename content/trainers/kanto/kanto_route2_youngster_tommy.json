@@ -2,12 +2,17 @@
   "unique_name": "kanto_route2_youngster_tommy",
   "display_name": "Youngster Tommy",
   "sprite": null,
-  "rank": "Novice",
+  "rank": "Ace",
   "music_key": null,
   "payout_base": 380,
   "payout_per_level": 16,
   "badge_award": null,
-  "items": [],
+  "items": [
+    {
+      "item": "full_restore",
+      "qty": 1
+    }
+  ],
   "initial_field": null,
   "team": [
     {

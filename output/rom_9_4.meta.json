@@ -3,11 +3,11 @@
     {
       "climate": "none",
       "day_ambience": "",
-      "day_track": "",
+      "day_track": "pallet_indoors",
       "display_name": "Vermilion City",
       "name": "area_0",
       "night_ambience": "",
-      "night_track": "",
+      "night_track": "pallet_indoors",
       "polygon": [
         [
           0.0,
@@ -38,7 +38,27 @@
   ],
   "encounter_zones": [],
   "gate_zones": [],
-  "interactables": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_4_4",
+      "kind": "Npc",
+      "properties": {
+        "dialogue": "Kanto now is the home to some Johto and Hoenn Pokemon?\nThat's so interesting!"
+      },
+      "render": {
+        "direction": 2,
+        "display_name": "Marsha",
+        "sprite": 17,
+        "time_of_day": []
+      },
+      "script": "simple_dialogue",
+      "tile_x": 4,
+      "tile_y": 4
+    }
+  ],
   "properties": {
     "is_dark": false
   },

@@ -2,11 +2,11 @@
   "area_zones": [
     {
       "climate": "none",
-      "day_ambience": "",
+      "day_ambience": "ambience_cave2",
       "day_track": "mt_moon",
       "display_name": "Diglett's Cave",
       "name": "area_0",
-      "night_ambience": "",
+      "night_ambience": "ambience_cave2",
       "night_track": "mt_moon",
       "polygon": [
         [
@@ -38,8 +38,9 @@
   ],
   "encounter_zones": [
     {
-      "encounter_group": "kanto_diglettscave_cave1",
+      "encounter_group": "kanto_diglettscave_cave",
       "fish_encounter_group": "",
+      "fish_rod_tier": 0,
       "name": "encounter_1",
       "polygon": [
         [
@@ -79,7 +80,127 @@
     }
   ],
   "gate_zones": [],
-  "interactables": [],
+  "interactables": [
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "graph": {
+        "entry": "start",
+        "nodes": [
+          {
+            "id": "start",
+            "kind": "start",
+            "next": "n5"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "What's your favorite type of Pokemon Move?"
+            },
+            "id": "n1",
+            "kind": "action",
+            "next": "n4"
+          },
+          {
+            "id": "n4",
+            "kind": "choice",
+            "options": [
+              {
+                "label": "Fire",
+                "next": "n6"
+              },
+              {
+                "label": "Water",
+                "next": "n7"
+              },
+              {
+                "label": "Grass",
+                "next": "n8"
+              }
+            ]
+          },
+          {
+            "cond": {
+              "key": "element_given",
+              "kind": "flag_set"
+            },
+            "id": "n5",
+            "if_false": "n1",
+            "if_true": "n11",
+            "kind": "condition"
+          },
+          {
+            "action": {
+              "item_id": 226,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n6",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "item_id": 220,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n7",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "item_id": 216,
+              "kind": "give_item",
+              "qty": 1
+            },
+            "id": "n8",
+            "kind": "action",
+            "next": "n9"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "Take this then! haha!"
+            },
+            "id": "n9",
+            "kind": "action",
+            "next": "n10"
+          },
+          {
+            "action": {
+              "key": "element_given",
+              "kind": "set_flag",
+              "value": "true"
+            },
+            "id": "n10",
+            "kind": "action"
+          },
+          {
+            "action": {
+              "kind": "say",
+              "text": "That's a held item that boosts the type of move you said!"
+            },
+            "id": "n11",
+            "kind": "action"
+          }
+        ]
+      },
+      "id": "npc_7_2",
+      "kind": "Npc",
+      "render": {
+        "direction": 3,
+        "display_name": "Hiker Boris",
+        "sprite": 35,
+        "time_of_day": []
+      },
+      "script": "scripted",
+      "tile_x": 7,
+      "tile_y": 2
+    }
+  ],
   "properties": {
     "is_dark": true
   },

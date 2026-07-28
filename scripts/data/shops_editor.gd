@@ -81,9 +81,24 @@ func _build_shop(raw: Dictionary, path: String, into: VBoxContainer) -> void:
 	if not raw.has("entries"):
 		raw["entries"] = []
 	var entries: Array = raw["entries"]
+	# Draggable entries container.
+	var entries_box: VBoxContainer = preload("res://scripts/data/_shop_drag_container.gd").new()
+	entries_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	entries_box._entries = entries
+	entries_box._rebuild_cb = func() -> void: _rebuild()
+	entries_box._dirty_cb = func() -> void: dirty.emit()
 	for i in entries.size():
 		var e: Dictionary = entries[i]
 		var row := HBoxContainer.new()
+		row.mouse_filter = Control.MOUSE_FILTER_STOP
+		row.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		# Drag handle.
+		var grip := Label.new()
+		grip.text = "⠿"
+		grip.tooltip_text = "Drag to reorder"
+		grip.add_theme_font_size_override("font_size", 16)
+		grip.add_theme_color_override("font_color", Color(0.5, 0.5, 0.5))
+		row.add_child(grip)
 		var pick := _item_slug_picker(e, "item", false)
 		pick.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		pick.tooltip_text = "Item for sale (by name)."
@@ -93,7 +108,8 @@ func _build_shop(raw: Dictionary, path: String, into: VBoxContainer) -> void:
 			entries.remove_at(i)
 			_rebuild()
 			dirty.emit()))
-		into.add_child(row)
+		entries_box.add_child(row)
+	into.add_child(entries_box)
 	var add := Button.new()
 	add.text = "+ add item"
 	add.pressed.connect(func() -> void:

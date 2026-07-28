@@ -4,8 +4,8 @@
 {
   "board_id": "lavender_jobs",
   "name": "Lavender Town",
-  "daily_slots": 3,
-  "weekly_slots": 1,
+  "daily_slots": 4,
+  "weekly_slots": 3,
   "jobs": [
     {
       "job_id": "lavender_gastly_unrest",
@@ -154,6 +154,106 @@
           "kind": "item",
           "item": "sitrus_berry",
           "qty": 3
+        }
+      ]
+    },
+    {
+      "job_id": "lavender_haunter_hunt",
+      "title": "Haunter's Feast",
+      "description": "Haunter are draining the life force of visitors in the upper floors of Pokemon Tower. Drive them back.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "haunter",
+        "count": 5
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 4000
+        }
+      ]
+    },
+    {
+      "job_id": "lavender_machop_movers",
+      "title": "Machop Movers",
+      "description": "Machop are causing rockslides in Rock Tunnel. Put a stop to their demolition work before the whole passage collapses.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "machop",
+        "count": 8
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 3500
+        }
+      ]
+    },
+    {
+      "job_id": "lavender_iron_transport",
+      "title": "Iron Delivery",
+      "description": "The Lavender foundry needs a steady supply of iron ore from Rock Tunnel. Keep the furnaces fed.",
+      "cadence": "daily",
+      "objective": {
+        "kind": "gather_item",
+        "item": "iron_chunk",
+        "count": 8
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 6000
+        },
+        {
+          "kind": "skill_xp",
+          "skill": "mining",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "job_id": "lavender_channeler_cleansing",
+      "title": "Channeler Cleansing",
+      "description": "A ring of Channelers has summoned restless spirits throughout the tower. Break their hold and quiet the building.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "win_battles",
+        "count": 8,
+        "trainer_only": true
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 12000
+        },
+        {
+          "kind": "item",
+          "qty": 5,
+          "item": "hyper_potion"
+        }
+      ]
+    },
+    {
+      "job_id": "lavender_rocktunnel_clear",
+      "title": "Rock Tunnel Clearout",
+      "description": "The miners' guild wants Rock Tunnel cleared of hostile Pokemon once and for all. Thin out the Geodude and Zubat swarms.",
+      "cadence": "weekly",
+      "objective": {
+        "kind": "defeat_species",
+        "species": "geodude",
+        "count": 20
+      },
+      "rewards": [
+        {
+          "kind": "pokeyen",
+          "amount": 15000
+        },
+        {
+          "kind": "item",
+          "qty": 5,
+          "item": "great_ball"
         }
       ]
     }

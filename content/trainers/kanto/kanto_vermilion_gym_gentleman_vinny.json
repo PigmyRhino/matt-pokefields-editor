@@ -49,8 +49,8 @@
       ]
     },
     {
-      "species": "pidgey",
-      "ability": "keen_eye",
+      "species": "electrike",
+      "ability": "lightning_rod",
       "nature": "timid",
       "gender": "male",
       "level_offset": 1,
@@ -61,9 +61,9 @@
       "iv_spd": 14,
       "iv_spe": 14,
       "moves": [
-        "tackle",
-        "sand_attack",
-        "gust",
+        "thunder_fang",
+        "spark",
+        "howl",
         "quick_attack"
       ]
     }
@@ -73,5 +73,6 @@
     "loss": "You've converted me — back to being a believer in well-rounded teams!",
     "post_defeat": "Ground types are the only way to reliably deal with electric Pokemon."
   },
-  "rebattle": "daily"
+  "rebattle": "daily",
+  "scaling_min_level": 25
 }

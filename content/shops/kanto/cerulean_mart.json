@@ -6,8 +6,20 @@
       "min_badges": 0
     },
     {
+      "item": "great_ball",
+      "min_badges": 1
+    },
+    {
+      "item": "ultra_ball",
+      "min_badges": 2
+    },
+    {
       "item": "potion",
       "min_badges": 0
+    },
+    {
+      "item": "super_potion",
+      "min_badges": 1
     },
     {
       "item": "paralyze_heal",
@@ -22,19 +34,7 @@
       "min_badges": 0
     },
     {
-      "item": "super_potion",
-      "min_badges": 1
-    },
-    {
-      "item": "great_ball",
-      "min_badges": 1
-    },
-    {
       "item": "repel",
-      "min_badges": 0
-    },
-    {
-      "item": "escape_rope",
       "min_badges": 0
     },
     {
@@ -42,11 +42,19 @@
       "min_badges": 1
     },
     {
+      "item": "escape_rope",
+      "min_badges": 0
+    },
+    {
       "item": "moon_stone",
       "min_badges": 1
     },
     {
       "item": "fire_stone",
+      "min_badges": 1
+    },
+    {
+      "item": "leaf_stone",
       "min_badges": 1
     },
     {
@@ -58,12 +66,32 @@
       "min_badges": 1
     },
     {
+      "item": "sun_stone",
+      "min_badges": 1
+    },
+    {
+      "item": "dawn_stone",
+      "min_badges": 1
+    },
+    {
+      "item": "dusk_stone",
+      "min_badges": 1
+    },
+    {
+      "item": "metal_coat",
+      "min_badges": 1
+    },
+    {
+      "item": "king_s_rock",
+      "min_badges": 1
+    },
+    {
       "item": "ether",
       "min_badges": 0
     },
     {
       "item": "max_ether",
-      "min_badges": 0
+      "min_badges": 1
     }
   ]
 }

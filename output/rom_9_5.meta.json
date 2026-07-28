@@ -54,6 +54,48 @@
       "script": "poke_mart",
       "tile_x": 2,
       "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "npc_1_3",
+      "kind": "Npc",
+      "render": {
+        "direction": 0,
+        "display_name": "TM Vendor",
+        "sprite": 23,
+        "time_of_day": []
+      },
+      "script": "default",
+      "tile_x": 1,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_3_3",
+      "kind": "Facility",
+      "properties": {
+        "shop_id": "cerulean_mart"
+      },
+      "script": "poke_mart",
+      "tile_x": 3,
+      "tile_y": 3
+    },
+    {
+      "activation": [
+        "FacePress"
+      ],
+      "id": "facility_1_4",
+      "kind": "Facility",
+      "properties": {
+        "shop_id": "tm_shop"
+      },
+      "script": "poke_mart",
+      "tile_x": 1,
+      "tile_y": 4
     }
   ],
   "properties": {

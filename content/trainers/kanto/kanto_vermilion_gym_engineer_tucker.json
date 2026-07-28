@@ -73,5 +73,6 @@
     "loss": "Your battle style bypassed all my security systems!",
     "post_defeat": "The switches in this gym are hidden in trash cans. Old Surge loves his puzzles."
   },
-  "rebattle": "daily"
+  "rebattle": "daily",
+  "scaling_min_level": 25
 }
